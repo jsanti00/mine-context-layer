@@ -1,0 +1,64 @@
+{
+  "_descripcion_campos": {
+    "_nota": "Este bloque explica en lenguaje simple cada campo. No es dato operativo.",
+    "meta": "Encabezado: a que turno pertenece el inventario y resumen de cuantos frentes hay en cada estado.",
+    "frentes": "Universo de frentes de la mina con su estado de preparacion, ley, toneladas disponibles y tiempo para activarlos. El agente usa los que estan 'disponible' como alternativas cuando un frente se cae.",
+    "estado_preparacion": "en_produccion = se esta trabajando ahora (esta en el plan); disponible = listo, se puede activar de inmediato; en_preparacion = aun no listo, necesita trabajo previo; bloqueado = no se puede usar (tema geotecnico o ventilacion).",
+    "toneladas_disponibles": "Toneladas que se pueden extraer del frente si se activa.",
+    "onzas_disponibles": "Oro contenido recuperable estimado = toneladas x ley / 31.1035.",
+    "tiempo_activacion_h": "Horas que toma dejar el frente operando desde que se decide activarlo.",
+    "supuestos": "Rangos y supuestos para defender las cifras."
+  },
+
+  "meta": {
+    "shift_id": "T-2026-06-30-D",
+    "fecha": "2026-06-30",
+    "turno": "Dia",
+    "fuente": "Planeamiento mina / geologia (stope status)",
+    "version": "1.0-baseline",
+    "resumen_estados": {
+      "en_produccion": 12,
+      "disponible": 6,
+      "en_preparacion": 2,
+      "bloqueado": 2
+    },
+    "comentario": "Los frentes 'disponible' son las alternativas que el agente puede recomendar. Los alternativos de cada incidente ya estan aqui y son disjuntos entre si."
+  },
+
+  "frentes": [
+    { "id": "TP-1310-04", "nivel": 1310, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 8.4, "toneladas_disponibles": 300, "onzas_disponibles": 81.0, "listo_para": "carguio", "tiempo_activacion_h": 0, "observaciones": "Tajo de mayor ley del turno, en carguio con LH-07." },
+    { "id": "TP-1340-06", "nivel": 1340, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 7.6, "toneladas_disponibles": 260, "onzas_disponibles": 63.5, "listo_para": "carguio", "tiempo_activacion_h": 0, "observaciones": "En carguio con LH-03." },
+    { "id": "TP-1340-03", "nivel": 1340, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 7.2, "toneladas_disponibles": 250, "onzas_disponibles": 57.9, "listo_para": "carguio", "tiempo_activacion_h": 0, "observaciones": "En carguio con LH-01." },
+    { "id": "TP-1280-02", "nivel": 1280, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 7.0, "toneladas_disponibles": 240, "onzas_disponibles": 54.0, "listo_para": "perforacion-voladura", "tiempo_activacion_h": 0, "observaciones": "En perforacion/voladura con PP-01." },
+    { "id": "TP-1310-07", "nivel": 1310, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 6.8, "toneladas_disponibles": 240, "onzas_disponibles": 52.5, "listo_para": "perforacion", "tiempo_activacion_h": 0, "observaciones": "En perforacion con PP-03." },
+    { "id": "TP-1340-09", "nivel": 1340, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 6.5, "toneladas_disponibles": 230, "onzas_disponibles": 48.1, "listo_para": "carguio", "tiempo_activacion_h": 0, "observaciones": "En carguio con LH-09." },
+    { "id": "TP-1310-11", "nivel": 1310, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 6.0, "toneladas_disponibles": 220, "onzas_disponibles": 42.4, "listo_para": "carguio", "tiempo_activacion_h": 0, "observaciones": "En carguio con LH-10." },
+    { "id": "TP-1280-06", "nivel": 1280, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 5.5, "toneladas_disponibles": 210, "onzas_disponibles": 37.1, "listo_para": "carguio", "tiempo_activacion_h": 0, "observaciones": "En carguio con LH-08." },
+    { "id": "DF-1310-05", "nivel": 1310, "tipo": "tajo produccion", "metodo": "drift and fill", "estado_preparacion": "en_produccion", "ley_gt": 5.2, "toneladas_disponibles": 200, "onzas_disponibles": 33.4, "listo_para": "relleno-carguio", "tiempo_activacion_h": 0, "observaciones": "Relleno en pasta con PB-01, carguio con LH-02." },
+    { "id": "TP-1250-08", "nivel": 1250, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 5.8, "toneladas_disponibles": 220, "onzas_disponibles": 41.0, "listo_para": "carguio", "tiempo_activacion_h": 0, "observaciones": "En carguio con LH-05." },
+    { "id": "TP-1250-02", "nivel": 1250, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 4.1, "toneladas_disponibles": 200, "onzas_disponibles": 26.4, "listo_para": "carguio", "tiempo_activacion_h": 0, "observaciones": "Tajo de baja ley, baja prioridad. Candidato a ceder su scoop LH-11 si se necesita en alta ley." },
+    { "id": "TP-1220-01", "nivel": 1220, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_produccion", "ley_gt": 3.9, "toneladas_disponibles": 180, "onzas_disponibles": 22.6, "listo_para": "perforacion", "tiempo_activacion_h": 0, "observaciones": "Baja ley, baja prioridad. Perforacion con PP-05." },
+
+    { "id": "TP-1280-09", "nivel": 1280, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "disponible", "ley_gt": 7.1, "toneladas_disponibles": 250, "onzas_disponibles": 57.1, "listo_para": "carguio", "tiempo_activacion_h": 0.5, "observaciones": "Reserva de alta ley lista. Mejor alternativa cuando se cae un tajo rico." },
+    { "id": "TP-1340-12", "nivel": 1340, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "disponible", "ley_gt": 6.9, "toneladas_disponibles": 230, "onzas_disponibles": 51.0, "listo_para": "carguio", "tiempo_activacion_h": 0.5, "observaciones": "Reserva lista de buena ley." },
+    { "id": "TP-1280-11", "nivel": 1280, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "disponible", "ley_gt": 6.6, "toneladas_disponibles": 240, "onzas_disponibles": 50.9, "listo_para": "carguio", "tiempo_activacion_h": 0.5, "observaciones": "Reserva lista para desviar carguio." },
+    { "id": "TP-1310-09", "nivel": 1310, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "disponible", "ley_gt": 6.2, "toneladas_disponibles": 210, "onzas_disponibles": 41.9, "listo_para": "carguio", "tiempo_activacion_h": 1.0, "observaciones": "Reserva lista, requiere reposicionar un scoop." },
+    { "id": "GD-1280-05", "nivel": 1280, "tipo": "frente desarrollo", "metodo": "desarrollo", "estado_preparacion": "disponible", "ley_gt": null, "toneladas_disponibles": null, "onzas_disponibles": null, "listo_para": "perforacion-desarrollo", "tiempo_activacion_h": 0.5, "observaciones": "Frente de desarrollo con ventilacion OK. Alternativa para reubicar un jumbo y su cuadrilla." },
+    { "id": "GD-1340-07", "nivel": 1340, "tipo": "frente desarrollo", "metodo": "desarrollo", "estado_preparacion": "disponible", "ley_gt": null, "toneladas_disponibles": null, "onzas_disponibles": null, "listo_para": "sostenimiento", "tiempo_activacion_h": 0.5, "observaciones": "Frente que requiere sostenimiento. Alternativa para reubicar cuadrilla a tarea util cuando un jumbo cae." },
+
+    { "id": "TP-1250-05", "nivel": 1250, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "en_preparacion", "ley_gt": 5.4, "toneladas_disponibles": 190, "onzas_disponibles": 33.0, "listo_para": "carguio", "tiempo_activacion_h": 8.0, "observaciones": "Requiere voladura secundaria antes de cargar. No sirve como alternativa inmediata en este turno." },
+    { "id": "GD-1250-07", "nivel": 1250, "tipo": "frente desarrollo", "metodo": "desarrollo", "estado_preparacion": "en_preparacion", "ley_gt": null, "toneladas_disponibles": null, "onzas_disponibles": null, "listo_para": "perforacion-desarrollo", "tiempo_activacion_h": 4.0, "observaciones": "Frente en preparacion, requiere acuñadura y ventilacion antes de operar." },
+
+    { "id": "TP-1220-04", "nivel": 1220, "tipo": "tajo produccion", "metodo": "long hole transversal", "estado_preparacion": "bloqueado", "ley_gt": 4.5, "toneladas_disponibles": 170, "onzas_disponibles": 24.6, "listo_para": "n/d", "tiempo_activacion_h": null, "observaciones": "Bloqueado por acuñadura pendiente. No disponible este turno." },
+    { "id": "GD-1280-09", "nivel": 1280, "tipo": "frente desarrollo", "metodo": "desarrollo", "estado_preparacion": "bloqueado", "ley_gt": null, "toneladas_disponibles": null, "onzas_disponibles": null, "listo_para": "n/d", "tiempo_activacion_h": null, "observaciones": "Bloqueado por ventilacion insuficiente pendiente de correccion." }
+  ],
+
+  "supuestos": [
+    "12 frentes en produccion = los del plan de turno (mismas leyes y toneladas).",
+    "6 frentes 'disponible' como alternativas: 4 tajos de produccion (ley 6.2 a 7.1 g/t) y 2 frentes de desarrollo.",
+    "Tiempo de activacion de un tajo listo 0.5 a 1.0 h (reposicionar equipo y cuadrilla); en preparacion 4 a 8 h.",
+    "Toneladas disponibles por reserva 170 a 250 t, consistente con el tamano de tajo del plan.",
+    "onzas_disponibles = toneladas x ley / 31.1035; aplica solo a tajos de produccion, no a frentes de desarrollo.",
+    "Alternativos por incidente, todos disjuntos: TP-1280-09 (frente caido alta ley), TP-1340-12 (desvio carguio por dilucion), TP-1280-11 (desvio por bloqueo de acceso), GD-1280-05 (reubicar jumbo por ventilacion), GD-1340-07 (reubicar cuadrilla por jumbo en falla)."
+  ]
+}

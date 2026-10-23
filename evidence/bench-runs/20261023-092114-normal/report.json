@@ -1,0 +1,73 @@
+{
+  "scenario": "normal",
+  "answer_key": "INC-01 / ACC-01: move LH-11 from TP-1250-02 to TP-1310-04",
+  "id_resolution_ok": true,
+  "proposal_id": "PR-0002",
+  "proposed": "move LH-11 from TP-1250-02 to TP-1310-04",
+  "action_correct": true,
+  "tonnes_at_risk_no_action": {
+    "agent": 225,
+    "key": 190,
+    "error_pct": 18.4
+  },
+  "oz_at_risk_no_action": {
+    "agent": 60.77,
+    "key": 51.3,
+    "error_pct": 18.5
+  },
+  "with_action_note": {
+    "agent_net_oz_protected": 16.13,
+    "agent_oz_lost_at_donor_stope": 15.6,
+    "key_residual_tonnes_excluding_donor": 30
+  },
+  "cites_failure_event": true,
+  "confidence": 0.65,
+  "missing_info": [
+    "The repair estimate rests on a diagnosis by sound and has not been inspected. A maintenance technician at 1310-04 should confirm the pump diagnosis.",
+    "Pump spare stock is not in the data. The warehouse or CMMS stock should confirm it.",
+    "Maintenance crew availability is not in the data. The maintenance supervisor should confirm it.",
+    "The 30 t/h and 20 t/h rates are the planned shift tonnes spread evenly over 10 h. Actual rates, face readiness and the ramp route for LH-11 should be confirmed with the shift boss (jefe de guardia).",
+    "Not used here: the idle reserve places (e.g. TP-1280-09) cannot be loaded because there is no spare loader."
+  ],
+  "decision": "approved",
+  "seconds_radio_to_proposal": 68.7,
+  "within_15_min_window": true,
+  "cost_usd_total": 0.163,
+  "cost_per_correct_proposal": 0.163,
+  "agents": [
+    {
+      "agent": "radio-agent",
+      "seconds": 9.2,
+      "cost_usd": 0.0143,
+      "turns": 2,
+      "final": "I published one event, EV-0001: scoop 7 (LH-07) is down at 1310-04 (TP-1310-04) with hydraulic pressure lost. It can't move under its own power and needs maintenance on site. Maintenance guesses a hydraulic pump and at least 4 hours of repair. That estimate is a guess by sound, so I gave it low reliability. I put the supervisor's 09:28 warning (1310-04 is the shift's high-grade stope) and the Jefe de Guardia's 09:31 search for a covering scoop in the payload. Both mentions resolved, and I skipped the routine lines.",
+      "ok": true
+    },
+    {
+      "agent": "cmms-agent",
+      "seconds": 12.5,
+      "cost_usd": 0.0254,
+      "turns": 4,
+      "final": "LH-07 was the only equipment with an open failure (EV-0001). I published two CMMS events for it:\n- **EV-0002 (maintenance_record):** LH-07 is flagged chronic for hydraulic faults. It has three closed corrective work orders: OT-2041 (3.5 h), OT-2068 (hydraulic pump repair, 5.0 h) and OT-2095 (2.5 h).\n- **EV-0003 (maintenance_plan):** Preventive order OT-2110, a 500 h hydraulic inspection, is overdue. It was scheduled for 2026-06-26 at high priority.",
+      "ok": true
+    },
+    {
+      "agent": "maintenance-agent",
+      "seconds": 13.8,
+      "cost_usd": 0.0317,
+      "turns": 4,
+      "final": "I submitted assessment PR-0001 for the one open failure, LH-07 at 1310-04. I estimate 3 h low, 5 h likely and 7 h high, with the loader back at about 14:30. The cause is probably the hydraulic pump, but the crew only guessed that by sound. Confidence is 0.6. The unit hasn't been inspected, and I couldn't check pump spares or crew availability.",
+      "ok": true
+    },
+    {
+      "agent": "planning-agent",
+      "seconds": 33.1,
+      "cost_usd": 0.0916,
+      "turns": 8,
+      "final": "I submitted proposal PR-0002, which is waiting for human approval. It moves LH-11 from TP-1250-02 to TP-1310-04, leaving at 09:35 and arriving at 10:35. LH-11 comes from the lowest-grade stope that is loading only, as the operating rules require (LOADER-BACKUP-01 and -02).\n\nLH-11 covers the stope until LH-07 is repaired (likely 14:30), then returns to TP-1250-02 by 15:30.\n\n| Option | Tonnes lost | Ounces lost |\n|---|---|---|\n| Do nothing | 225 | 60.77 |\n| Wait for repair | 150 | 40.51 |\n| Reassign LH-11 | 150.8 | 24.38 |\n\nReassigning protects 31.73 oz at TP-1310-04 and loses 15.60 oz at TP-1250-02, a net gain of 16.13 oz. If the repair slips to the high case of 16:30, LH-11 should stay at TP-1310-04, which makes the gain larger.\n\nConfidence is 0.65 because nobody has inspected LH-07. The pump diagnosis was made by sound, and pump stock and crew availability aren't in the data. The hourly rates are the planned shift tonnes spread evenly over 10 hours.",
+      "ok": true
+    }
+  ],
+  "tool_calls": 14,
+  "denied_calls": 0
+}

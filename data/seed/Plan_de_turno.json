@@ -1,0 +1,1422 @@
+{
+  "_descripcion_campos": {
+    "_nota": "Este bloque explica en lenguaje simple qué significa cada campo del archivo. No es dato operativo, es la guía de lectura.",
+    "meta": "Encabezado del turno: identificador, fecha, horario, metas globales y supuestos de la operacion.",
+    "targets_por_funcion": "Resumen de la meta del turno separada en las 4 funciones del demo: produccion, equipos, frentes y personal.",
+    "tajos_produccion": "Lista de los lugares de produccion que se trabajan en el turno, cada uno con su meta de toneladas, ley (gramos de oro por tonelada), dilucion planeada y el equipo y la cuadrilla asignados.",
+    "frentes_desarrollo": "Lista de frentes de desarrollo (galerias, cruceros, rampa) que avanzan en el turno, con metros objetivo y equipo asignado.",
+    "equipos_requeridos": "Flota que el plan necesita operativa para cumplir el turno, con su asignacion a un tajo o frente.",
+    "dotacion_cuadrillas": "Personal underground planeado por cuadrilla (cuantas personas y que roles).",
+    "supuestos": "Rangos y supuestos numericos usados para que las cifras sean defendibles.",
+    "cronograma": "Secuencia de actividades del turno por frente en bloques de 30 min (06:00-18:00), alineados a la hora en punto o y media. La primera hora (06:00-07:00) es siempre ingreso a mina y traslado al frente, y la ultima (17:00-18:00) retiro y salida a superficie: la ventana productiva es 07:00-17:00. Es el cronograma PLAN (ideal, sin incidentes); el real lo altera la logica de incidentes en tiempo de demo.",
+    "compromisos_nota": "Los compromisos habilitadores del turno NO viven en este archivo: su fuente canonica es Reunion_inicio_turno.json -> compromisos_extraidos (mas los derivados de incidentes activos en Incidentes_modulos.json). La pestana Plan (bloque 2) los lee de alli."
+  },
+  "meta": {
+    "shift_id": "T-2026-06-30-D",
+    "fecha": "2026-06-30",
+    "turno": "Dia",
+    "hora_inicio": "06:00",
+    "hora_fin": "18:00",
+    "duracion_horas": 12,
+    "mina": "Operacion subterranea generica de oro de alta ley (LatAm)",
+    "metodo": "Long hole stoping transversal + drift and fill; relleno en pasta",
+    "meta_produccion_t": 2750,
+    "meta_desarrollo_m": 26.5,
+    "meta_onzas_oro": 559.9,
+    "lugares_activos": 20,
+    "tajos_produccion_count": 12,
+    "frentes_desarrollo_count": 8,
+    "flota_activa_aprox": 55,
+    "dotacion_underground_planeada": 135,
+    "version": "1.2-baseline",
+    "comentario": "Baseline = turno perfecto, sin incidentes. Los incidentes se aplican como modulos por separado y modifican estos numeros en tiempo de demo.",
+    "valoracion_economica": {
+      "_nota": "Base para traducir disrupciones a dolares, SOLO a nivel total del turno, nunca por tajo. A nivel tajo el demo muestra solo onzas. Se usa MARGEN (utilidad), no ingreso: margen = recuperacion x (precio_oro - AISC). Impacto en dolares de cada disrupcion = onzas contenidas en riesgo x margen_usd_por_oz_contenida.",
+      "base": "margen",
+      "precio_oro_usd_por_oz": 3800,
+      "recuperacion_metalurgica_pct": 92,
+      "aisc_usd_por_oz": 1150,
+      "margen_usd_por_oz_recuperada": 2650,
+      "margen_usd_por_oz_contenida": 2440,
+      "valor_margen_plan_total_usd": 1366156
+    }
+  },
+  "targets_por_funcion": {
+    "produccion": {
+      "toneladas_objetivo": 2750,
+      "onzas_objetivo": 559.9,
+      "ley_promedio_plan_gt": 6.33,
+      "dilucion_promedio_plan_pct": 10
+    },
+    "equipos": {
+      "equipos_requeridos_operativos": 24,
+      "disponibilidad_mecanica_objetivo_pct": 85,
+      "comentario": "Disponibilidad mecanica objetivo tipica de flota subterranea mid-tier."
+    },
+    "frentes": {
+      "frentes_a_operar": 20,
+      "metros_desarrollo_objetivo": 26.5,
+      "frentes_produccion": 12,
+      "frentes_desarrollo": 8
+    },
+    "personal": {
+      "dotacion_planeada": 135,
+      "cuadrillas": 5,
+      "ausentismo_esperado_pct": 5
+    }
+  },
+  "tajos_produccion": [
+    {
+      "id": "TP-1310-04",
+      "nivel": 1310,
+      "metodo": "long hole transversal",
+      "fase": "carguio",
+      "toneladas_objetivo": 300,
+      "ley_plan_gt": 8.4,
+      "dilucion_plan_pct": 9,
+      "onzas_plan": 81.0,
+      "equipo_carguio": "LH-07",
+      "equipo_perforacion": null,
+      "cuadrilla": "carguio",
+      "prioridad": 1,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe carguio 1310",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "11:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carguio final y limpieza del punto",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "TP-1340-06",
+      "nivel": 1340,
+      "metodo": "long hole transversal",
+      "fase": "carguio",
+      "toneladas_objetivo": 260,
+      "ley_plan_gt": 7.6,
+      "dilucion_plan_pct": 10,
+      "onzas_plan": 63.5,
+      "equipo_carguio": "LH-03",
+      "equipo_perforacion": null,
+      "cuadrilla": "carguio",
+      "prioridad": 2,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe carguio 1340",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "11:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carguio final y limpieza del punto",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "TP-1340-03",
+      "nivel": 1340,
+      "metodo": "long hole transversal",
+      "fase": "carguio",
+      "toneladas_objetivo": 250,
+      "ley_plan_gt": 7.2,
+      "dilucion_plan_pct": 10,
+      "onzas_plan": 57.9,
+      "equipo_carguio": "LH-01",
+      "equipo_perforacion": null,
+      "cuadrilla": "carguio",
+      "prioridad": 3,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe carguio 1340",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "11:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carguio final y limpieza del punto",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "TP-1280-02",
+      "nivel": 1280,
+      "metodo": "long hole transversal",
+      "fase": "carguio-perforacion",
+      "toneladas_objetivo": 240,
+      "ley_plan_gt": 7.0,
+      "dilucion_plan_pct": 11,
+      "onzas_plan": 54.0,
+      "equipo_carguio": "LH-12",
+      "equipo_perforacion": "PP-01",
+      "cuadrilla": "carguio",
+      "prioridad": 4,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe perforacion 1280",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "perforacion de produccion (siguiente disparo)",
+          "hora_inicio": "11:30",
+          "hora_fin": "14:30"
+        },
+        {
+          "actividad": "carguio y carga de taladros",
+          "hora_inicio": "14:30",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "TP-1310-07",
+      "nivel": 1310,
+      "metodo": "long hole transversal",
+      "fase": "carguio-perforacion",
+      "toneladas_objetivo": 240,
+      "ley_plan_gt": 6.8,
+      "dilucion_plan_pct": 10,
+      "onzas_plan": 52.5,
+      "equipo_carguio": "LH-06",
+      "equipo_perforacion": "PP-03",
+      "cuadrilla": "carguio",
+      "prioridad": 5,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe perforacion 1310",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "perforacion de produccion (siguiente disparo)",
+          "hora_inicio": "11:30",
+          "hora_fin": "14:30"
+        },
+        {
+          "actividad": "carguio y carga de taladros",
+          "hora_inicio": "14:30",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "TP-1340-09",
+      "nivel": 1340,
+      "metodo": "long hole transversal",
+      "fase": "carguio",
+      "toneladas_objetivo": 230,
+      "ley_plan_gt": 6.5,
+      "dilucion_plan_pct": 10,
+      "onzas_plan": 48.1,
+      "equipo_carguio": "LH-09",
+      "equipo_perforacion": null,
+      "cuadrilla": "carguio",
+      "prioridad": 6,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe carguio 1340",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "11:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carguio final y limpieza del punto",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "TP-1310-11",
+      "nivel": 1310,
+      "metodo": "long hole transversal",
+      "fase": "carguio",
+      "toneladas_objetivo": 220,
+      "ley_plan_gt": 6.0,
+      "dilucion_plan_pct": 11,
+      "onzas_plan": 42.4,
+      "equipo_carguio": "LH-10",
+      "equipo_perforacion": null,
+      "cuadrilla": "carguio",
+      "prioridad": 7,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe carguio 1310",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "11:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carguio final y limpieza del punto",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "TP-1280-06",
+      "nivel": 1280,
+      "metodo": "long hole transversal",
+      "fase": "carguio",
+      "toneladas_objetivo": 210,
+      "ley_plan_gt": 5.5,
+      "dilucion_plan_pct": 12,
+      "onzas_plan": 37.1,
+      "equipo_carguio": "LH-08",
+      "equipo_perforacion": null,
+      "cuadrilla": "carguio",
+      "prioridad": 8,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe carguio 1280",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "11:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carguio final y limpieza del punto",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "DF-1310-05",
+      "nivel": 1310,
+      "metodo": "drift and fill",
+      "fase": "relleno-carguio",
+      "toneladas_objetivo": 200,
+      "ley_plan_gt": 5.2,
+      "dilucion_plan_pct": 8,
+      "onzas_plan": 33.4,
+      "equipo_carguio": "LH-02",
+      "equipo_perforacion": null,
+      "equipo_relleno": "PB-01",
+      "cuadrilla": "carguio",
+      "prioridad": 9,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe relleno 1310",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio de mineral",
+          "hora_inicio": "07:00",
+          "hora_fin": "10:30"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "10:30",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "relleno en pasta (bombeo)",
+          "hora_inicio": "11:00",
+          "hora_fin": "15:00"
+        },
+        {
+          "actividad": "fraguado y preparacion siguiente tajada",
+          "hora_inicio": "15:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "TP-1250-08",
+      "nivel": 1250,
+      "metodo": "long hole transversal",
+      "fase": "carguio",
+      "toneladas_objetivo": 220,
+      "ley_plan_gt": 5.8,
+      "dilucion_plan_pct": 10,
+      "onzas_plan": 41.0,
+      "equipo_carguio": "LH-05",
+      "equipo_perforacion": null,
+      "cuadrilla": "carguio",
+      "prioridad": 10,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe carguio 1250",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "11:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carguio final y limpieza del punto",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "TP-1250-02",
+      "nivel": 1250,
+      "metodo": "long hole transversal",
+      "fase": "carguio",
+      "toneladas_objetivo": 200,
+      "ley_plan_gt": 4.1,
+      "dilucion_plan_pct": 12,
+      "onzas_plan": 26.4,
+      "equipo_carguio": "LH-11",
+      "equipo_perforacion": null,
+      "cuadrilla": "carguio",
+      "prioridad": 11,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe carguio 1250",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "11:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carguio final y limpieza del punto",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "TP-1220-01",
+      "nivel": 1220,
+      "metodo": "long hole transversal",
+      "fase": "carguio-perforacion",
+      "toneladas_objetivo": 180,
+      "ley_plan_gt": 3.9,
+      "dilucion_plan_pct": 12,
+      "onzas_plan": 22.6,
+      "equipo_carguio": "LH-04",
+      "equipo_perforacion": "PP-05",
+      "cuadrilla": "carguio",
+      "prioridad": 12,
+      "ventana_horaria": "06:00-18:00",
+      "supervisor": "Jefe perforacion 1220",
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "carguio continuo",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "perforacion de produccion (siguiente disparo)",
+          "hora_inicio": "11:30",
+          "hora_fin": "14:30"
+        },
+        {
+          "actividad": "carguio y carga de taladros",
+          "hora_inicio": "14:30",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    }
+  ],
+  "frentes_desarrollo": [
+    {
+      "id": "GD-1340-01",
+      "nivel": 1340,
+      "tipo": "galeria",
+      "metros_objetivo": 5.0,
+      "fase": "perforacion-desarrollo",
+      "jumbo": "JD-01",
+      "bolter": null,
+      "cuadrilla": "perforacion",
+      "secuencia": 1,
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "perforacion (jumbo)",
+          "hora_inicio": "07:00",
+          "hora_fin": "09:30"
+        },
+        {
+          "actividad": "carga de explosivos",
+          "hora_inicio": "09:30",
+          "hora_fin": "10:30"
+        },
+        {
+          "actividad": "voladura y ventilacion",
+          "hora_inicio": "10:30",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "desate y limpieza (scoop)",
+          "hora_inicio": "11:30",
+          "hora_fin": "12:30"
+        },
+        {
+          "actividad": "sostenimiento (bolter / shotcrete)",
+          "hora_inicio": "12:30",
+          "hora_fin": "13:30"
+        },
+        {
+          "actividad": "perforacion segundo ciclo",
+          "hora_inicio": "13:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carga y preparacion de voladura",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "GD-1340-04",
+      "nivel": 1340,
+      "tipo": "crucero",
+      "metros_objetivo": 4.5,
+      "fase": "perforacion-desarrollo",
+      "jumbo": "JD-03",
+      "bolter": null,
+      "cuadrilla": "perforacion",
+      "secuencia": 2,
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "perforacion (jumbo)",
+          "hora_inicio": "07:00",
+          "hora_fin": "09:30"
+        },
+        {
+          "actividad": "carga de explosivos",
+          "hora_inicio": "09:30",
+          "hora_fin": "10:30"
+        },
+        {
+          "actividad": "voladura y ventilacion",
+          "hora_inicio": "10:30",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "desate y limpieza (scoop)",
+          "hora_inicio": "11:30",
+          "hora_fin": "12:30"
+        },
+        {
+          "actividad": "sostenimiento (bolter / shotcrete)",
+          "hora_inicio": "12:30",
+          "hora_fin": "13:30"
+        },
+        {
+          "actividad": "perforacion segundo ciclo",
+          "hora_inicio": "13:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carga y preparacion de voladura",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "GD-1310-02",
+      "nivel": 1310,
+      "tipo": "galeria",
+      "metros_objetivo": 4.5,
+      "fase": "perforacion-desarrollo",
+      "jumbo": "JD-04",
+      "bolter": null,
+      "cuadrilla": "perforacion",
+      "secuencia": 3,
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "perforacion (jumbo)",
+          "hora_inicio": "07:00",
+          "hora_fin": "09:30"
+        },
+        {
+          "actividad": "carga de explosivos",
+          "hora_inicio": "09:30",
+          "hora_fin": "10:30"
+        },
+        {
+          "actividad": "voladura y ventilacion",
+          "hora_inicio": "10:30",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "desate y limpieza (scoop)",
+          "hora_inicio": "11:30",
+          "hora_fin": "12:30"
+        },
+        {
+          "actividad": "sostenimiento (bolter / shotcrete)",
+          "hora_inicio": "12:30",
+          "hora_fin": "13:30"
+        },
+        {
+          "actividad": "perforacion segundo ciclo",
+          "hora_inicio": "13:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carga y preparacion de voladura",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "GD-1310-04",
+      "nivel": 1310,
+      "tipo": "rampa",
+      "metros_objetivo": 0.0,
+      "fase": "sostenimiento",
+      "jumbo": null,
+      "bolter": "BL-04",
+      "cuadrilla": "sostenimiento",
+      "secuencia": 4,
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "sostenimiento (pernos y malla)",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "shotcrete",
+          "hora_inicio": "11:30",
+          "hora_fin": "15:30"
+        },
+        {
+          "actividad": "acunado y control de terreno",
+          "hora_inicio": "15:30",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "GD-1250-03",
+      "nivel": 1250,
+      "tipo": "crucero",
+      "metros_objetivo": 4.0,
+      "fase": "perforacion-desarrollo",
+      "jumbo": "JD-02",
+      "bolter": null,
+      "cuadrilla": "perforacion",
+      "secuencia": 5,
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "perforacion (jumbo)",
+          "hora_inicio": "07:00",
+          "hora_fin": "09:30"
+        },
+        {
+          "actividad": "carga de explosivos",
+          "hora_inicio": "09:30",
+          "hora_fin": "10:30"
+        },
+        {
+          "actividad": "voladura y ventilacion",
+          "hora_inicio": "10:30",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "desate y limpieza (scoop)",
+          "hora_inicio": "11:30",
+          "hora_fin": "12:30"
+        },
+        {
+          "actividad": "sostenimiento (bolter / shotcrete)",
+          "hora_inicio": "12:30",
+          "hora_fin": "13:30"
+        },
+        {
+          "actividad": "perforacion segundo ciclo",
+          "hora_inicio": "13:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carga y preparacion de voladura",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "GD-1250-06",
+      "nivel": 1250,
+      "tipo": "galeria",
+      "metros_objetivo": 4.5,
+      "fase": "perforacion-desarrollo",
+      "jumbo": "JD-05",
+      "bolter": null,
+      "cuadrilla": "perforacion",
+      "secuencia": 6,
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "perforacion (jumbo)",
+          "hora_inicio": "07:00",
+          "hora_fin": "09:30"
+        },
+        {
+          "actividad": "carga de explosivos",
+          "hora_inicio": "09:30",
+          "hora_fin": "10:30"
+        },
+        {
+          "actividad": "voladura y ventilacion",
+          "hora_inicio": "10:30",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "desate y limpieza (scoop)",
+          "hora_inicio": "11:30",
+          "hora_fin": "12:30"
+        },
+        {
+          "actividad": "sostenimiento (bolter / shotcrete)",
+          "hora_inicio": "12:30",
+          "hora_fin": "13:30"
+        },
+        {
+          "actividad": "perforacion segundo ciclo",
+          "hora_inicio": "13:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carga y preparacion de voladura",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "GD-1280-03",
+      "nivel": 1280,
+      "tipo": "galeria",
+      "metros_objetivo": 4.0,
+      "fase": "perforacion-desarrollo",
+      "jumbo": "JD-06",
+      "bolter": null,
+      "cuadrilla": "perforacion",
+      "secuencia": 7,
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "perforacion (jumbo)",
+          "hora_inicio": "07:00",
+          "hora_fin": "09:30"
+        },
+        {
+          "actividad": "carga de explosivos",
+          "hora_inicio": "09:30",
+          "hora_fin": "10:30"
+        },
+        {
+          "actividad": "voladura y ventilacion",
+          "hora_inicio": "10:30",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "desate y limpieza (scoop)",
+          "hora_inicio": "11:30",
+          "hora_fin": "12:30"
+        },
+        {
+          "actividad": "sostenimiento (bolter / shotcrete)",
+          "hora_inicio": "12:30",
+          "hora_fin": "13:30"
+        },
+        {
+          "actividad": "perforacion segundo ciclo",
+          "hora_inicio": "13:30",
+          "hora_fin": "16:00"
+        },
+        {
+          "actividad": "carga y preparacion de voladura",
+          "hora_inicio": "16:00",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    },
+    {
+      "id": "GD-1280-08",
+      "nivel": 1280,
+      "tipo": "crucero",
+      "metros_objetivo": 0.0,
+      "fase": "sostenimiento",
+      "jumbo": null,
+      "bolter": "BL-02",
+      "cuadrilla": "sostenimiento",
+      "secuencia": 8,
+      "cronograma": [
+        {
+          "actividad": "ingreso a mina y traslado al frente",
+          "hora_inicio": "06:00",
+          "hora_fin": "07:00"
+        },
+        {
+          "actividad": "sostenimiento (pernos y malla)",
+          "hora_inicio": "07:00",
+          "hora_fin": "11:00"
+        },
+        {
+          "actividad": "colacion / relevo",
+          "hora_inicio": "11:00",
+          "hora_fin": "11:30"
+        },
+        {
+          "actividad": "shotcrete",
+          "hora_inicio": "11:30",
+          "hora_fin": "15:30"
+        },
+        {
+          "actividad": "acunado y control de terreno",
+          "hora_inicio": "15:30",
+          "hora_fin": "17:00"
+        },
+        {
+          "actividad": "retiro del frente y salida a superficie",
+          "hora_inicio": "17:00",
+          "hora_fin": "18:00"
+        }
+      ]
+    }
+  ],
+  "equipos_requeridos": [
+    {
+      "equipo_id": "LH-01",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1340-03",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-02",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "DF-1310-05",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-03",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1340-06",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-05",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1250-08",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-07",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1310-04",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-08",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1280-06",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-09",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1340-09",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-10",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1310-11",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-11",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1250-02",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-04",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1220-01",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-06",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1310-07",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "LH-12",
+      "tipo": "LHD/Scoop 17t",
+      "funcion": "carguio",
+      "asignacion": "TP-1280-02",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "PP-01",
+      "tipo": "Perforadora produccion (Simba)",
+      "funcion": "perforacion",
+      "asignacion": "TP-1280-02",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "PP-03",
+      "tipo": "Perforadora produccion (Simba)",
+      "funcion": "perforacion",
+      "asignacion": "TP-1310-07",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "PP-05",
+      "tipo": "Perforadora produccion (Simba)",
+      "funcion": "perforacion",
+      "asignacion": "TP-1220-01",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "JD-01",
+      "tipo": "Jumbo desarrollo",
+      "funcion": "desarrollo",
+      "asignacion": "GD-1340-01",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "JD-02",
+      "tipo": "Jumbo desarrollo",
+      "funcion": "desarrollo",
+      "asignacion": "GD-1250-03",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "JD-03",
+      "tipo": "Jumbo desarrollo",
+      "funcion": "desarrollo",
+      "asignacion": "GD-1340-04",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "JD-04",
+      "tipo": "Jumbo desarrollo",
+      "funcion": "desarrollo",
+      "asignacion": "GD-1310-02",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "JD-05",
+      "tipo": "Jumbo desarrollo",
+      "funcion": "desarrollo",
+      "asignacion": "GD-1250-06",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "JD-06",
+      "tipo": "Jumbo desarrollo",
+      "funcion": "desarrollo",
+      "asignacion": "GD-1280-03",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "BL-02",
+      "tipo": "Bolter (sostenimiento)",
+      "funcion": "sostenimiento",
+      "asignacion": "GD-1280-08",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "BL-04",
+      "tipo": "Bolter (sostenimiento)",
+      "funcion": "sostenimiento",
+      "asignacion": "GD-1310-04",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "BL-01",
+      "tipo": "Bolter (sostenimiento)",
+      "funcion": "sostenimiento",
+      "asignacion": "soporte/reserva",
+      "estado_plan": "reserva"
+    },
+    {
+      "equipo_id": "BL-03",
+      "tipo": "Bolter (sostenimiento)",
+      "funcion": "sostenimiento",
+      "asignacion": "soporte/reserva",
+      "estado_plan": "reserva"
+    },
+    {
+      "equipo_id": "CM-01",
+      "tipo": "Camion bajo perfil 51t",
+      "funcion": "acarreo",
+      "asignacion": "circuito rampa principal",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "CM-02",
+      "tipo": "Camion bajo perfil 51t",
+      "funcion": "acarreo",
+      "asignacion": "circuito rampa principal",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "CM-03",
+      "tipo": "Camion bajo perfil 51t",
+      "funcion": "acarreo",
+      "asignacion": "circuito niveles 1340-1310",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "CM-04",
+      "tipo": "Camion bajo perfil 51t",
+      "funcion": "acarreo",
+      "asignacion": "circuito rampa nivel 1280",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "CM-05",
+      "tipo": "Camion bajo perfil 51t",
+      "funcion": "acarreo",
+      "asignacion": "circuito niveles 1280-1250",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "CM-06",
+      "tipo": "Camion bajo perfil 51t",
+      "funcion": "acarreo",
+      "asignacion": "circuito rampa principal",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "PB-01",
+      "tipo": "Bomba de relleno en pasta",
+      "funcion": "relleno",
+      "asignacion": "DF-1310-05",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "AX-01",
+      "tipo": "Equipo auxiliar (cargador/scaler)",
+      "funcion": "servicios",
+      "asignacion": "servicios mina",
+      "estado_plan": "operativo"
+    },
+    {
+      "equipo_id": "AX-02",
+      "tipo": "Equipo auxiliar (remolque/rescate)",
+      "funcion": "servicios",
+      "asignacion": "servicios mina",
+      "estado_plan": "operativo"
+    }
+  ],
+  "dotacion_cuadrillas": [
+    {
+      "cuadrilla": "perforacion",
+      "headcount_planeado": 28,
+      "roles": [
+        "operador jumbo",
+        "operador perforadora produccion",
+        "ayudante perforacion"
+      ]
+    },
+    {
+      "cuadrilla": "voladura",
+      "headcount_planeado": 18,
+      "roles": [
+        "cargador de explosivos",
+        "supervisor voladura",
+        "ayudante"
+      ]
+    },
+    {
+      "cuadrilla": "carguio",
+      "headcount_planeado": 30,
+      "roles": [
+        "operador LHD/scoop",
+        "operador camion",
+        "controlador de carguio"
+      ]
+    },
+    {
+      "cuadrilla": "sostenimiento",
+      "headcount_planeado": 22,
+      "roles": [
+        "operador bolter",
+        "acuñador",
+        "ayudante sostenimiento"
+      ]
+    },
+    {
+      "cuadrilla": "servicios",
+      "headcount_planeado": 25,
+      "roles": [
+        "ventilacion",
+        "relleno",
+        "topografia",
+        "mantencion de terreno"
+      ]
+    },
+    {
+      "cuadrilla": "supervision",
+      "headcount_planeado": 12,
+      "roles": [
+        "jefe de turno",
+        "supervisor de area",
+        "despachador COM"
+      ]
+    }
+  ],
+  "supuestos": [
+    "Produccion del turno 2,750 t = mitad de ~5,500 t/dia en 2 turnos de 12 h.",
+    "Ley promedio plan 6.33 g/t Au, rango por tajo 3.9 a 8.4 g/t, tipico de operacion subterranea de alta ley.",
+    "Dilucion plan 8 a 12% por tajo, rango normal para long hole transversal y drift and fill.",
+    "Onzas plan = toneladas x ley(g/t) / 31.1035 g/oz. Total ~559.9 oz.",
+    "12 tajos de produccion (9 en carguio, 2 en perforacion, 1 drift and fill en relleno-carguio) + 8 frentes de desarrollo = 20 lugares activos.",
+    "Flota activa ~55 equipos; el plan asigna explicitamente los ~24 criticos y deja reservas de sostenimiento (BL-01, BL-03). Los 12 scoops (LH-01 a LH-12) van asignados a los 12 tajos, sin scoop de reserva: ante falla de un scoop, el relevo sale de reasignar el de menor ley (logica de INC-01).",
+    "Dotacion underground 135 personas en 5 cuadrillas operativas + supervision, dentro del rango 100-200.",
+    "Tasa de carguio de referencia 180-220 t/h por LHD en sector activo; MTTR de referencia para incidentes 3-5 h (se detalla en cada modulo de incidente).",
+    "Niveles de la mina: 1340, 1310, 1280, 1250, 1220 msnm, acceso por rampa.",
+    "Valoracion en MARGEN (utilidad), no ingreso: oro 3,800 USD/oz, recuperacion 92%, AISC 1,150 USD/oz -> margen 2,650 USD/oz recuperada (~2,440 USD/oz contenida). Margen del plan completo ~1.37M USD/turno. El impacto en dolares de las disrupciones se muestra a nivel total, no por tajo. Precio y AISC son parametros ajustables."
+  ]
+}

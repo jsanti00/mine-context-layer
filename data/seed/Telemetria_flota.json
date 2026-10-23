@@ -1,0 +1,110 @@
+{
+  "_descripcion_campos": {
+    "_nota": "Explicacion simple de cada campo. Simula el export de un sistema de gestion de flota (FMS) tipo Wenco/Modular/Sandvik.",
+    "meta": "Encabezado: turno y aclaracion de que la telemetria NO captura todo (algunos incidentes solo se ven en el radio).",
+    "equipos_baseline": "Estado de cada equipo critico al cierre del turno perfecto (sin incidentes): estado, ubicacion, produccion y disponibilidad.",
+    "estados_por_incidente": "Eventos de falla/detencion que inyecta cada incidente. Se aplican solo cuando ese incidente sale en la corrida.",
+    "campo_estado": "operativo/cargando/acarreando/perforando/sostenimiento/en_falla/detenido/disponible.",
+    "nota_cobertura": "Incidentes sin evento de telemetria (INC-03, INC-06, INC-09) demuestran el valor del radio: la flota no los ve, la voz si."
+  },
+
+  "meta": {
+    "shift_id": "T-2026-06-30-D",
+    "fecha": "2026-06-30",
+    "turno": "Dia",
+    "fuente": "Fleet Management System (telemetria, estado y ubicacion, tiempos de ciclo)",
+    "vista": "Acumulado al cierre del turno (escenario perfecto). Los incidentes modifican estos valores via estados_por_incidente.",
+    "toneladas_por_ciclo_lhd": 11,
+    "version": "1.0-baseline"
+  },
+
+  "equipos_baseline": [
+    { "equipo_id": "LH-07", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1310-04", "toneladas_movidas_turno": 300, "ciclos_turno": 27, "tiempo_ciclo_prom_min": 6, "disponibilidad_pct": 93, "horas_operacion": 10.8 },
+    { "equipo_id": "LH-03", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1340-06", "toneladas_movidas_turno": 260, "ciclos_turno": 24, "tiempo_ciclo_prom_min": 6, "disponibilidad_pct": 91, "horas_operacion": 10.6 },
+    { "equipo_id": "LH-01", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1340-03", "toneladas_movidas_turno": 250, "ciclos_turno": 23, "tiempo_ciclo_prom_min": 6, "disponibilidad_pct": 90, "horas_operacion": 10.5 },
+    { "equipo_id": "LH-12", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1280-02", "toneladas_movidas_turno": 240, "ciclos_turno": 22, "tiempo_ciclo_prom_min": 7, "disponibilidad_pct": 89, "horas_operacion": 10.4 },
+    { "equipo_id": "LH-06", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1310-07", "toneladas_movidas_turno": 240, "ciclos_turno": 22, "tiempo_ciclo_prom_min": 7, "disponibilidad_pct": 90, "horas_operacion": 10.4 },
+    { "equipo_id": "LH-09", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1340-09", "toneladas_movidas_turno": 230, "ciclos_turno": 21, "tiempo_ciclo_prom_min": 6, "disponibilidad_pct": 92, "horas_operacion": 10.6 },
+    { "equipo_id": "LH-10", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1310-11", "toneladas_movidas_turno": 220, "ciclos_turno": 20, "tiempo_ciclo_prom_min": 7, "disponibilidad_pct": 88, "horas_operacion": 10.3 },
+    { "equipo_id": "LH-05", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1250-08", "toneladas_movidas_turno": 220, "ciclos_turno": 20, "tiempo_ciclo_prom_min": 7, "disponibilidad_pct": 89, "horas_operacion": 10.3 },
+    { "equipo_id": "LH-08", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1280-06", "toneladas_movidas_turno": 210, "ciclos_turno": 19, "tiempo_ciclo_prom_min": 7, "disponibilidad_pct": 90, "horas_operacion": 10.2 },
+    { "equipo_id": "LH-02", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "DF-1310-05", "toneladas_movidas_turno": 200, "ciclos_turno": 18, "tiempo_ciclo_prom_min": 8, "disponibilidad_pct": 88, "horas_operacion": 10.0 },
+    { "equipo_id": "LH-11", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1250-02", "toneladas_movidas_turno": 200, "ciclos_turno": 18, "tiempo_ciclo_prom_min": 7, "disponibilidad_pct": 89, "horas_operacion": 10.1 },
+    { "equipo_id": "LH-04", "tipo": "LHD/Scoop 17t", "estado": "cargando",    "ubicacion": "TP-1220-01", "toneladas_movidas_turno": 180, "ciclos_turno": 16, "tiempo_ciclo_prom_min": 8, "disponibilidad_pct": 87, "horas_operacion": 9.8 },
+
+    { "equipo_id": "PP-01", "tipo": "Perforadora produccion", "estado": "perforando", "ubicacion": "TP-1280-02", "metros_perforados_turno": 32, "tiempo_ciclo_prom_min": null, "disponibilidad_pct": 90, "horas_operacion": 10.4 },
+    { "equipo_id": "PP-03", "tipo": "Perforadora produccion", "estado": "perforando", "ubicacion": "TP-1310-07", "metros_perforados_turno": 30, "tiempo_ciclo_prom_min": null, "disponibilidad_pct": 89, "horas_operacion": 10.2 },
+    { "equipo_id": "PP-05", "tipo": "Perforadora produccion", "estado": "perforando", "ubicacion": "TP-1220-01", "metros_perforados_turno": 28, "tiempo_ciclo_prom_min": null, "disponibilidad_pct": 88, "horas_operacion": 10.0 },
+
+    { "equipo_id": "JD-01", "tipo": "Jumbo desarrollo", "estado": "perforando", "ubicacion": "GD-1340-01", "metros_avance_turno": 5.0, "disponibilidad_pct": 90, "horas_operacion": 10.3 },
+    { "equipo_id": "JD-02", "tipo": "Jumbo desarrollo", "estado": "perforando", "ubicacion": "GD-1250-03", "metros_avance_turno": 4.0, "disponibilidad_pct": 89, "horas_operacion": 10.1 },
+    { "equipo_id": "JD-03", "tipo": "Jumbo desarrollo", "estado": "perforando", "ubicacion": "GD-1340-04", "metros_avance_turno": 4.5, "disponibilidad_pct": 90, "horas_operacion": 10.2 },
+    { "equipo_id": "JD-04", "tipo": "Jumbo desarrollo", "estado": "perforando", "ubicacion": "GD-1310-02", "metros_avance_turno": 4.5, "disponibilidad_pct": 88, "horas_operacion": 10.0 },
+    { "equipo_id": "JD-05", "tipo": "Jumbo desarrollo", "estado": "perforando", "ubicacion": "GD-1250-06", "metros_avance_turno": 4.5, "disponibilidad_pct": 89, "horas_operacion": 10.1 },
+    { "equipo_id": "JD-06", "tipo": "Jumbo desarrollo", "estado": "perforando", "ubicacion": "GD-1280-03", "metros_avance_turno": 4.0, "disponibilidad_pct": 88, "horas_operacion": 10.0 },
+
+    { "equipo_id": "BL-02", "tipo": "Bolter sostenimiento", "estado": "sostenimiento", "ubicacion": "GD-1280-08", "pernos_instalados_turno": 64, "disponibilidad_pct": 90, "horas_operacion": 10.2 },
+    { "equipo_id": "BL-04", "tipo": "Bolter sostenimiento", "estado": "sostenimiento", "ubicacion": "GD-1310-04", "pernos_instalados_turno": 58, "disponibilidad_pct": 89, "horas_operacion": 10.0 },
+    { "equipo_id": "BL-01", "tipo": "Bolter sostenimiento", "estado": "disponible", "ubicacion": "Taller/reserva", "pernos_instalados_turno": 0, "disponibilidad_pct": 95, "horas_operacion": 0.0 },
+    { "equipo_id": "BL-03", "tipo": "Bolter sostenimiento", "estado": "disponible", "ubicacion": "Taller/reserva", "pernos_instalados_turno": 0, "disponibilidad_pct": 95, "horas_operacion": 0.0 },
+
+    { "equipo_id": "CM-01", "tipo": "Camion bajo perfil 51t", "estado": "acarreando", "ubicacion": "Rampa principal", "toneladas_transportadas_turno": 470, "ciclos_turno": 9, "tiempo_ciclo_prom_min": 52, "disponibilidad_pct": 91, "horas_operacion": 10.5 },
+    { "equipo_id": "CM-02", "tipo": "Camion bajo perfil 51t", "estado": "acarreando", "ubicacion": "Rampa principal", "toneladas_transportadas_turno": 460, "ciclos_turno": 9, "tiempo_ciclo_prom_min": 53, "disponibilidad_pct": 90, "horas_operacion": 10.4 },
+    { "equipo_id": "CM-03", "tipo": "Camion bajo perfil 51t", "estado": "acarreando", "ubicacion": "Circuito 1340-1310", "toneladas_transportadas_turno": 455, "ciclos_turno": 9, "tiempo_ciclo_prom_min": 50, "disponibilidad_pct": 90, "horas_operacion": 10.4 },
+    { "equipo_id": "CM-04", "tipo": "Camion bajo perfil 51t", "estado": "acarreando", "ubicacion": "Rampa nivel 1280", "toneladas_transportadas_turno": 450, "ciclos_turno": 9, "tiempo_ciclo_prom_min": 54, "disponibilidad_pct": 88, "horas_operacion": 10.2 },
+    { "equipo_id": "CM-05", "tipo": "Camion bajo perfil 51t", "estado": "acarreando", "ubicacion": "Circuito 1280-1250", "toneladas_transportadas_turno": 455, "ciclos_turno": 9, "tiempo_ciclo_prom_min": 55, "disponibilidad_pct": 89, "horas_operacion": 10.3 },
+    { "equipo_id": "CM-06", "tipo": "Camion bajo perfil 51t", "estado": "acarreando", "ubicacion": "Rampa principal", "toneladas_transportadas_turno": 460, "ciclos_turno": 9, "tiempo_ciclo_prom_min": 52, "disponibilidad_pct": 90, "horas_operacion": 10.4 },
+
+    { "equipo_id": "PB-01", "tipo": "Bomba de relleno en pasta", "estado": "operativo", "ubicacion": "DF-1310-05", "m3_relleno_turno": 180, "disponibilidad_pct": 87, "horas_operacion": 9.5 },
+    { "equipo_id": "AX-01", "tipo": "Equipo auxiliar (scaler)",  "estado": "disponible", "ubicacion": "Servicios mina", "disponibilidad_pct": 93, "horas_operacion": 6.0 },
+    { "equipo_id": "AX-02", "tipo": "Equipo auxiliar (remolque)", "estado": "disponible", "ubicacion": "Servicios mina", "disponibilidad_pct": 94, "horas_operacion": 4.0 }
+  ],
+
+  "estados_por_incidente": [
+    { "incidente_id": "INC-01", "captura_telemetria": true,  "eventos": [
+      { "equipo_id": "LH-07", "timestamp": "09:20", "estado_nuevo": "en_falla", "motivo": "Falla de bomba hidraulica", "downtime_min": 240, "ubicacion": "TP-1310-04" }
+    ]},
+    { "incidente_id": "INC-02", "captura_telemetria": true,  "eventos": [
+      { "equipo_id": "CM-04", "timestamp": "11:05", "estado_nuevo": "en_falla", "motivo": "Falla de transmision, camion inmovilizado en rampa", "downtime_min": 120, "ubicacion": "Rampa nivel 1280" },
+      { "equipo_id": "LH-08", "timestamp": "11:11", "estado_nuevo": "detenido", "motivo": "En cola por bloqueo de rampa", "downtime_min": 40, "ubicacion": "TP-1280-06" }
+    ]},
+    { "incidente_id": "INC-08", "captura_telemetria": true,  "eventos": [
+      { "equipo_id": "JD-04", "timestamp": "12:40", "estado_nuevo": "en_falla", "motivo": "Falla electrica de tablero", "downtime_min": 300, "ubicacion": "GD-1310-02" }
+    ]},
+    { "incidente_id": "INC-03", "captura_telemetria": false, "eventos": [
+      { "equipo_id": "LH-03", "timestamp": "06:40", "estado_nuevo": "detenido", "motivo": "Frente no cargable (tiro colgado/sobre-tamaño). La causa NO la ve la telemetria, solo el radio", "downtime_min": 60, "ubicacion": "TP-1340-06" }
+    ]},
+    { "incidente_id": "INC-05", "captura_telemetria": true,  "eventos": [
+      { "equipo_id": "JD-02", "timestamp": "08:30", "estado_nuevo": "detenido", "motivo": "Frente cerrado por ventilacion (NOx alto)", "downtime_min": 180, "ubicacion": "GD-1250-03" }
+    ]},
+    { "incidente_id": "INC-10", "captura_telemetria": true,  "eventos": [
+      { "equipo_id": "LH-01", "timestamp": "07:50", "estado_nuevo": "detenido", "motivo": "Acceso bloqueado por planchon/caida de roca", "downtime_min": 120, "ubicacion": "TP-1340-03" }
+    ]},
+    { "incidente_id": "INC-06", "captura_telemetria": false, "eventos": [],
+      "nota": "Sin evento de telemetria. El atraso de explosivos en TP-1280-02 solo aparece en el radio." },
+    { "incidente_id": "INC-07", "captura_telemetria": true,  "eventos": [
+      { "equipo_id": "PB-01", "timestamp": "10:10", "estado_nuevo": "en_falla", "motivo": "Falla de bomba de pasta", "downtime_min": 180, "ubicacion": "DF-1310-05" },
+      { "equipo_id": "LH-02", "timestamp": "10:15", "estado_nuevo": "detenido", "motivo": "Sin relleno, secuencia de corte frenada", "downtime_min": 60, "ubicacion": "DF-1310-05" }
+    ]},
+    { "incidente_id": "INC-09", "captura_telemetria": false, "eventos": [],
+      "nota": "Sin evento de telemetria. LH-05 sigue cargando normal; la dilucion de TP-1250-08 solo se detecta por radio/control de leyes, no por el FMS." },
+    { "incidente_id": "INC-04", "captura_telemetria": true,  "eventos": [
+      { "equipo_id": "PP-03", "timestamp": "06:15", "estado_nuevo": "detenido", "motivo": "Sin operador (ausentismo)", "downtime_min": 60, "ubicacion": "TP-1310-07" }
+    ]},
+    { "incidente_id": "INC-11", "captura_telemetria": true,  "eventos": [
+      { "equipo_id": "LH-09", "timestamp": "12:30", "estado_nuevo": "detenido", "motivo": "Sin relevo de colacion", "downtime_min": 90, "ubicacion": "TP-1340-09" }
+    ]},
+    { "incidente_id": "INC-12", "captura_telemetria": true,  "eventos": [
+      { "equipo_id": "BL-04", "timestamp": "09:00", "estado_nuevo": "detenido", "motivo": "Operador retirado a enfermeria (lesion menor)", "downtime_min": 240, "ubicacion": "GD-1310-04" }
+    ]}
+  ],
+
+  "supuestos": [
+    "12 LHD/scoop, uno por tajo; toneladas_movidas_turno = meta del tajo en el escenario perfecto.",
+    "Toneladas por ciclo LHD 11 t efectivas; ciclo 6-8 min; disponibilidad 87-93%.",
+    "6 camiones bajo perfil 51 t transportan las 2,750 t; ciclo 50-55 min por la subida a superficie.",
+    "Perforadoras de produccion 28-32 m/turno; jumbos de desarrollo 4.0-5.0 m de avance; bolters 58-64 pernos.",
+    "downtime_min de cada falla consistente con el MTTR del archivo de incidentes (3-5 h en fallas mayores).",
+    "INC-03, INC-06 e INC-09 sin captura de telemetria a proposito: muestran que el radio ve lo que la flota no."
+  ]
+}

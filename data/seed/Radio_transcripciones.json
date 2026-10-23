@@ -1,0 +1,164 @@
+{
+  "_descripcion_campos": {
+    "_nota": "Explicacion simple de cada campo. No es dato operativo.",
+    "meta": "Encabezado: turno, canales, y aclaracion de que el rol y el indicativo del hablante los INFIERE Synappse, no vienen en el audio crudo.",
+    "glosario_radio": "Terminos de fraseologia de radio para poder leer las transcripciones.",
+    "mensajes_baseline": "Comunicaciones normales del turno sin incidentes, repartidas en las 12 horas y por canal. Cada mensaje tiene hora, canal, indicativo del hablante, rol inferido y texto.",
+    "mensajes_por_incidente": "Se llena despues: lineas de radio propias de cada incidente, etiquetadas con incidente_id, que se inyectan solo cuando ese incidente sale en la corrida.",
+    "campo_canal": "DESP=Despacho/Operaciones, PROD=Produccion/Carguio, DES=Desarrollo/Perforacion/Voladura, MANT=Mantencion/Servicios, EMER=Emergencia.",
+    "campo_incidente_id": "null si la linea es chatter normal; el id del incidente si pertenece a un modulo."
+  },
+
+  "meta": {
+    "shift_id": "T-2026-06-30-D",
+    "fecha": "2026-06-30",
+    "turno": "Dia",
+    "hora_inicio": "06:00",
+    "hora_fin": "18:00",
+    "fuente": "Leaky feeder, head-end en superficie. Audio crudo half-duplex PTT.",
+    "nota_producto": "El audio crudo no trae quien habla. El indicativo (ej. 'scoop 7') y el rol ('operador', 'jefe_turno') los INFIERE Synappse por diarizacion y contexto. Es parte del valor del producto, no un dato entregado por la mina.",
+    "canales": {
+      "DESP": "Despacho / Operaciones (Control COM coordina con jefes y supervisores)",
+      "PROD": "Produccion / Carguio (scoops, camiones, controlador de carguio)",
+      "DES": "Desarrollo / Perforacion / Voladura (jumbos, perforadoras)",
+      "MANT": "Mantencion / Servicios (fallas de equipo, ventilacion, relleno)",
+      "EMER": "Emergencia (solo se activa en eventos)"
+    },
+    "version": "1.0-baseline"
+  },
+
+  "glosario_radio": {
+    "cambio": "Termine de transmitir, responda.",
+    "copiado / QSL": "Recibido, entendido.",
+    "QAP": "En espera / a la escucha.",
+    "Control / Despacho": "Centro de Operaciones Mina (COM).",
+    "guardia": "Cuadrilla o turno de trabajo.",
+    "balde / baldada": "Carga de un scoop/LHD.",
+    "frente": "Zona de trabajo activa.",
+    "quema": "Voladura."
+  },
+
+  "mensajes_baseline": [
+    { "timestamp": "06:02", "canal": "DESP", "indicativo": "Control",              "rol_hablante": "despachador_com", "texto": "Buenos dias, Control en linea para guardia A. Reporten novedades de bajada, cambio.", "incidente_id": null },
+    { "timestamp": "06:06", "canal": "DESP", "indicativo": "Jefe Guardia A",       "rol_hablante": "jefe_turno",      "texto": "Control, Jefe Guardia A, dotacion completa en superficie, bajando cuadrillas a niveles, cambio.", "incidente_id": null },
+    { "timestamp": "06:12", "canal": "PROD", "indicativo": "Scoop 1",              "rol_hablante": "operador",        "texto": "Control, scoop 1 en tajo 1340-03, iniciando carguio, cambio.", "incidente_id": null },
+    { "timestamp": "06:14", "canal": "PROD", "indicativo": "Control",              "rol_hablante": "despachador_com", "texto": "Copiado scoop 1, QSL. Mantenga reporte de baldadas, cambio.", "incidente_id": null },
+    { "timestamp": "06:18", "canal": "PROD", "indicativo": "Scoop 7",              "rol_hablante": "operador",        "texto": "Control, scoop 7 en posicion tajo 1310-04, arrancando carguio de alta ley, cambio.", "incidente_id": null },
+    { "timestamp": "06:20", "canal": "DES",  "indicativo": "Jumbo 1",              "rol_hablante": "operador",        "texto": "Control, jumbo 1 en galeria 1340-01, iniciando perforacion de avance, cambio.", "incidente_id": null },
+    { "timestamp": "06:25", "canal": "DES",  "indicativo": "Perforadora 3",        "rol_hablante": "operador",        "texto": "Control, perforadora 3 en tajo 1310-07, montando barras, cambio.", "incidente_id": null },
+    { "timestamp": "06:30", "canal": "MANT", "indicativo": "Mantencion",           "rol_hablante": "mantencion",      "texto": "Control, mantencion bajando a relevo de filtros del ventilador VAF-12, novedad menor, cambio.", "incidente_id": null },
+    { "timestamp": "06:40", "canal": "PROD", "indicativo": "Scoop 5",              "rol_hablante": "operador",        "texto": "Control, scoop 5 cargando en 1250-08, primer balde, cambio.", "incidente_id": null },
+    { "timestamp": "06:48", "canal": "DESP", "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",      "texto": "Control, supervisor produccion recorriendo niveles altos, todo normal por ahora, cambio.", "incidente_id": null },
+    { "timestamp": "07:00", "canal": "DESP", "indicativo": "Control",              "rol_hablante": "despachador_com", "texto": "Atencion guardias, recordar reporte de avance cada dos horas. QAP.", "incidente_id": null },
+    { "timestamp": "07:15", "canal": "PROD", "indicativo": "Camion 1",             "rol_hablante": "operador",        "texto": "Control, camion 1 cargado en pique 1310, subiendo a superficie, cambio.", "incidente_id": null },
+    { "timestamp": "07:30", "canal": "DES",  "indicativo": "Voladura",             "rol_hablante": "voladura",        "texto": "Control, cuadrilla voladura preparando carga en tajo 1280-02 para quema de medio turno, cambio.", "incidente_id": null },
+    { "timestamp": "07:45", "canal": "PROD", "indicativo": "Scoop 3",              "rol_hablante": "operador",        "texto": "Control, scoop 3 en 1340-06, carguio normal, llevo seis baldes, cambio.", "incidente_id": null },
+    { "timestamp": "08:00", "canal": "DESP", "indicativo": "Jefe Guardia A",       "rol_hablante": "jefe_turno",      "texto": "Control, primer reporte de avance: produccion arranco bien en niveles 1340 y 1310, cambio.", "incidente_id": null },
+    { "timestamp": "08:20", "canal": "PROD", "indicativo": "Scoop 8",              "rol_hablante": "operador",        "texto": "Control, scoop 8 cargando en 1280-06, sin novedad, cambio.", "incidente_id": null },
+    { "timestamp": "08:30", "canal": "DES",  "indicativo": "Jumbo 5",              "rol_hablante": "operador",        "texto": "Control, jumbo 5 en galeria 1250-06, perforando, cambio.", "incidente_id": null },
+    { "timestamp": "08:45", "canal": "MANT", "indicativo": "Mantencion",           "rol_hablante": "mantencion",      "texto": "Control, mantencion termino relevo de filtros, ventilador VAF-12 operando normal, cambio.", "incidente_id": null },
+    { "timestamp": "09:00", "canal": "DESP", "indicativo": "Control",              "rol_hablante": "despachador_com", "texto": "Copiado mantencion, QSL. Guardias, vamos en linea con el plan, cambio.", "incidente_id": null },
+    { "timestamp": "09:20", "canal": "PROD", "indicativo": "Scoop 10",             "rol_hablante": "operador",        "texto": "Control, scoop 10 en 1310-11, carguio continuo, cambio.", "incidente_id": null },
+    { "timestamp": "09:40", "canal": "DES",  "indicativo": "Perforadora 1",        "rol_hablante": "operador",        "texto": "Control, perforadora 1 avanzando en 1280-02, cambio.", "incidente_id": null },
+    { "timestamp": "10:00", "canal": "DESP", "indicativo": "Jefe Guardia A",       "rol_hablante": "jefe_turno",      "texto": "Control, segundo reporte: vamos parejos, sin novedades mayores, cambio.", "incidente_id": null },
+    { "timestamp": "10:30", "canal": "PROD", "indicativo": "Camion 3",             "rol_hablante": "operador",        "texto": "Control, camion 3 en circuito 1340-1310, ciclo normal, cambio.", "incidente_id": null },
+    { "timestamp": "11:00", "canal": "PROD", "indicativo": "Scoop 1",              "rol_hablante": "operador",        "texto": "Control, scoop 1 termino corte en 1340-03, paso a reacomodar, cambio.", "incidente_id": null },
+    { "timestamp": "11:30", "canal": "DES",  "indicativo": "Voladura",             "rol_hablante": "voladura",        "texto": "Control, carga de tajo 1280-02 al sesenta por ciento, cambio.", "incidente_id": null },
+    { "timestamp": "12:00", "canal": "DESP", "indicativo": "Control",              "rol_hablante": "despachador_com", "texto": "Atencion, inicio de colaciones escalonadas, mantener equipos criticos operando, cambio.", "incidente_id": null },
+    { "timestamp": "12:15", "canal": "PROD", "indicativo": "Scoop 9",              "rol_hablante": "operador",        "texto": "Control, scoop 9 entro a colacion, dejo 1340-09 detenido quince minutos, cambio.", "incidente_id": null },
+    { "timestamp": "12:30", "canal": "PROD", "indicativo": "Control",              "rol_hablante": "despachador_com", "texto": "Copiado scoop 9, QSL, coordine relevo con su grupo, cambio.", "incidente_id": null },
+    { "timestamp": "13:00", "canal": "DESP", "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",      "texto": "Control, supervisor produccion, retomando ritmo post colacion en niveles altos, cambio.", "incidente_id": null },
+    { "timestamp": "13:30", "canal": "DES",  "indicativo": "Jumbo 3",              "rol_hablante": "operador",        "texto": "Control, jumbo 3 termino avance en 1340-04, cuatro coma cinco metros, cambio.", "incidente_id": null },
+    { "timestamp": "14:00", "canal": "DESP", "indicativo": "Jefe Guardia A",       "rol_hablante": "jefe_turno",      "texto": "Control, tercer reporte: produccion acumulada en linea, desarrollo cumpliendo metros, cambio.", "incidente_id": null },
+    { "timestamp": "14:30", "canal": "PROD", "indicativo": "Scoop 7",              "rol_hablante": "operador",        "texto": "Control, scoop 7, alta ley 1310-04 avanzando bien, llevo buena carga, cambio.", "incidente_id": null },
+    { "timestamp": "15:00", "canal": "PROD", "indicativo": "Camion 5",             "rol_hablante": "operador",        "texto": "Control, camion 5 cargado, subiendo desde 1250, cambio.", "incidente_id": null },
+    { "timestamp": "15:30", "canal": "DES",  "indicativo": "Voladura",             "rol_hablante": "voladura",        "texto": "Control, voladura solicitando ventana para quema en 1280-02 al cierre de turno, cambio.", "incidente_id": null },
+    { "timestamp": "15:45", "canal": "DESP", "indicativo": "Control",              "rol_hablante": "despachador_com", "texto": "Copiado voladura, coordinamos despeje de personal a las 17:30, cambio.", "incidente_id": null },
+    { "timestamp": "16:00", "canal": "DESP", "indicativo": "Jefe Guardia A",       "rol_hablante": "jefe_turno",      "texto": "Control, cuarto reporte: vamos cumpliendo, preparando cierre de turno, cambio.", "incidente_id": null },
+    { "timestamp": "16:30", "canal": "PROD", "indicativo": "Scoop 5",              "rol_hablante": "operador",        "texto": "Control, scoop 5 terminando carguio en 1250-08, cambio.", "incidente_id": null },
+    { "timestamp": "17:00", "canal": "DESP", "indicativo": "Control",              "rol_hablante": "despachador_com", "texto": "Atencion guardias, inicio despeje de frentes para voladura, confirmen personal fuera, cambio.", "incidente_id": null },
+    { "timestamp": "17:15", "canal": "DES",  "indicativo": "Voladura",             "rol_hablante": "voladura",        "texto": "Control, voladura lista, esperando confirmacion de despeje, cambio.", "incidente_id": null },
+    { "timestamp": "17:30", "canal": "DESP", "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",      "texto": "Control, niveles altos despejados, personal fuera, cambio.", "incidente_id": null },
+    { "timestamp": "17:40", "canal": "DESP", "indicativo": "Jefe Guardia A",       "rol_hablante": "jefe_turno",      "texto": "Control, confirmo frentes despejados, autorizo secuencia de quema, cambio.", "incidente_id": null },
+    { "timestamp": "17:45", "canal": "DES",  "indicativo": "Voladura",             "rol_hablante": "voladura",        "texto": "Control, quema ejecutada en 1280-02, sin novedad, cambio.", "incidente_id": null },
+    { "timestamp": "17:55", "canal": "DESP", "indicativo": "Control",              "rol_hablante": "despachador_com", "texto": "Copiado voladura. Guardia A cerrando turno, gracias a todos, preparar parte de turno, cambio.", "incidente_id": null }
+  ],
+
+  "mensajes_por_incidente": [
+    { "incidente_id": "INC-01", "categoria": "Equipos", "mensajes": [
+      { "timestamp": "09:18", "canal": "PROD", "indicativo": "Scoop 7",               "rol_hablante": "operador",        "texto": "Control, scoop 7, se me cayo la presion hidraulica, no levanta el balde, quedo detenido en 1310-04, cambio.", "incidente_id": "INC-01" },
+      { "timestamp": "09:21", "canal": "PROD", "indicativo": "Control",               "rol_hablante": "despachador_com", "texto": "Copiado scoop 7, confirme si sale por sus medios, cambio.", "incidente_id": "INC-01" },
+      { "timestamp": "09:23", "canal": "PROD", "indicativo": "Scoop 7",               "rol_hablante": "operador",        "texto": "Negativo Control, requiero mantencion en sitio, cambio.", "incidente_id": "INC-01" },
+      { "timestamp": "09:26", "canal": "MANT", "indicativo": "Mantencion",            "rol_hablante": "mantencion",      "texto": "Control, vamos a 1310-04, suena a bomba hidraulica, eso es minimo cuatro horas, cambio.", "incidente_id": "INC-01" },
+      { "timestamp": "09:28", "canal": "DESP", "indicativo": "Supervisor Produccion", "rol_hablante": "supervisor",      "texto": "Control, ojo que 1310-04 es la alta ley del turno, no podemos perder ese carguio, cambio.", "incidente_id": "INC-01" },
+      { "timestamp": "09:31", "canal": "DESP", "indicativo": "Jefe Guardia A",        "rol_hablante": "jefe_turno",      "texto": "Copiado, viendo de donde sacamos un scoop para cubrir esa frente, cambio.", "incidente_id": "INC-01" }
+    ]},
+    { "incidente_id": "INC-02", "categoria": "Equipos", "mensajes": [
+      { "timestamp": "11:04", "canal": "PROD", "indicativo": "Camion 4",             "rol_hablante": "operador",        "texto": "Control, camion 4 se quedo sin transmision en la rampa del 1280, no me puedo mover, cambio.", "incidente_id": "INC-02" },
+      { "timestamp": "11:07", "canal": "PROD", "indicativo": "Control",              "rol_hablante": "despachador_com", "texto": "Copiado camion 4, esta bloqueando el carril? cambio.", "incidente_id": "INC-02" },
+      { "timestamp": "11:08", "canal": "PROD", "indicativo": "Camion 4",             "rol_hablante": "operador",        "texto": "Afirmativo, estoy atravesado, no pasa nadie, cambio.", "incidente_id": "INC-02" },
+      { "timestamp": "11:11", "canal": "PROD", "indicativo": "Scoop 8",              "rol_hablante": "operador",        "texto": "Control, scoop 8 con balde lleno esperando, se esta formando cola en el 1280, cambio.", "incidente_id": "INC-02" },
+      { "timestamp": "11:13", "canal": "DESP", "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",      "texto": "Control, hay que liberar esa rampa ya, tenemos tres tajos sin evacuar, cambio.", "incidente_id": "INC-02" }
+    ]},
+    { "incidente_id": "INC-08", "categoria": "Equipos", "mensajes": [
+      { "timestamp": "12:39", "canal": "DES",  "indicativo": "Jumbo 4",             "rol_hablante": "operador",        "texto": "Control, jumbo 4 se apago, no levanta, parece falla electrica, estoy en 1310-02, cambio.", "incidente_id": "INC-08" },
+      { "timestamp": "12:42", "canal": "MANT", "indicativo": "Mantencion",          "rol_hablante": "mantencion",      "texto": "Control, vamos para 1310-02, si es el tablero electrico puede ser largo, cinco horas, cambio.", "incidente_id": "INC-08" },
+      { "timestamp": "12:45", "canal": "DESP", "indicativo": "Jefe Guardia A",      "rol_hablante": "jefe_turno",      "texto": "Copiado, no quiero la cuadrilla parada, busquemos donde ponerlos, cambio.", "incidente_id": "INC-08" },
+      { "timestamp": "12:48", "canal": "DES",  "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",     "texto": "Control, hay sostenimiento pendiente en 1340-07, podemos mover la gente para alla, cambio.", "incidente_id": "INC-08" }
+    ]},
+    { "incidente_id": "INC-03", "categoria": "Frentes", "mensajes": [
+      { "timestamp": "06:38", "canal": "PROD", "indicativo": "Scoop 3",             "rol_hablante": "operador",        "texto": "Control, scoop 3 en 1340-06, esto quedo con puros bolones, hay un tiro colgado, no puedo cargar, cambio.", "incidente_id": "INC-03" },
+      { "timestamp": "06:41", "canal": "PROD", "indicativo": "Control",             "rol_hablante": "despachador_com", "texto": "Copiado scoop 3, confirme tiro colgado, no se acerque, cambio.", "incidente_id": "INC-03" },
+      { "timestamp": "06:43", "canal": "DES",  "indicativo": "Voladura",            "rol_hablante": "voladura",        "texto": "Control, voladura, eso de 1340-06 necesita secundaria, no sale este turno, cambio.", "incidente_id": "INC-03" },
+      { "timestamp": "06:46", "canal": "DESP", "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",     "texto": "Control, 1340-06 es alta ley, perdemos esas toneladas si no metemos otra frente, cambio.", "incidente_id": "INC-03" },
+      { "timestamp": "06:49", "canal": "DESP", "indicativo": "Jefe Guardia A",      "rol_hablante": "jefe_turno",      "texto": "Copiado, evaluando reemplazo, cambio.", "incidente_id": "INC-03" }
+    ]},
+    { "incidente_id": "INC-05", "categoria": "Frentes", "mensajes": [
+      { "timestamp": "08:28", "canal": "DES",  "indicativo": "Jumbo 2",             "rol_hablante": "operador",        "texto": "Control, jumbo 2 en 1250-03, el monitor marca NOx alto, la ventilacion no esta dando, cambio.", "incidente_id": "INC-05" },
+      { "timestamp": "08:31", "canal": "MANT", "indicativo": "Mantencion",          "rol_hablante": "mantencion",      "texto": "Control, confirmo caudal bajo en 1250-03, hay que cerrar el frente por norma, cambio.", "incidente_id": "INC-05" },
+      { "timestamp": "08:34", "canal": "DESP", "indicativo": "Jefe Guardia A",      "rol_hablante": "jefe_turno",      "texto": "Copiado, cerramos 1250-03. Jumbo 2 sin frente, hay que reubicar, cambio.", "incidente_id": "INC-05" },
+      { "timestamp": "08:37", "canal": "DES",  "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",     "texto": "Control, 1280-05 esta disponible y con ventilacion buena, cambio.", "incidente_id": "INC-05" }
+    ]},
+    { "incidente_id": "INC-10", "categoria": "Frentes", "mensajes": [
+      { "timestamp": "07:48", "canal": "PROD", "indicativo": "Scoop 1",             "rol_hablante": "operador",        "texto": "Control, scoop 1, cayo roca en el acceso a 1340-03, hay un planchon suelto en la corona, me sali, cambio.", "incidente_id": "INC-10" },
+      { "timestamp": "07:51", "canal": "PROD", "indicativo": "Control",             "rol_hablante": "despachador_com", "texto": "Copiado scoop 1, evacue y acordone la zona, no entre nadie, cambio.", "incidente_id": "INC-10" },
+      { "timestamp": "07:54", "canal": "DESP", "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",     "texto": "Control, 1340-03 queda detenido, eso necesita acuñadura antes de seguir, cambio.", "incidente_id": "INC-10" },
+      { "timestamp": "07:57", "canal": "DESP", "indicativo": "Jefe Guardia A",      "rol_hablante": "jefe_turno",      "texto": "Copiado, mandemos sostenimiento y veamos como no perder ese carguio, cambio.", "incidente_id": "INC-10" }
+    ]},
+    { "incidente_id": "INC-06", "categoria": "Produccion", "mensajes": [
+      { "timestamp": "13:28", "canal": "DES",  "indicativo": "Voladura",            "rol_hablante": "voladura",        "texto": "Control, voladura, no han subido la emulsion para la quema de 1280-02, el camion de explosivos viene atrasado, cambio.", "incidente_id": "INC-06" },
+      { "timestamp": "13:31", "canal": "DESP", "indicativo": "Control",             "rol_hablante": "despachador_com", "texto": "Copiado, cuanto les falta para alcanzar la ventana de quema? cambio.", "incidente_id": "INC-06" },
+      { "timestamp": "13:33", "canal": "DES",  "indicativo": "Voladura",            "rol_hablante": "voladura",        "texto": "Si no llega pronto perdemos la ventana del cierre de turno, cambio.", "incidente_id": "INC-06" },
+      { "timestamp": "13:36", "canal": "DESP", "indicativo": "Jefe Guardia A",      "rol_hablante": "jefe_turno",      "texto": "Copiado, hay que repriorizar esa entrega, cambio.", "incidente_id": "INC-06" }
+    ]},
+    { "incidente_id": "INC-07", "categoria": "Produccion", "mensajes": [
+      { "timestamp": "10:08", "canal": "MANT", "indicativo": "Mantencion",          "rol_hablante": "mantencion",      "texto": "Control, la bomba de pasta PB-01 se detuvo, no esta dando presion, cambio.", "incidente_id": "INC-07" },
+      { "timestamp": "10:11", "canal": "DESP", "indicativo": "Control",             "rol_hablante": "despachador_com", "texto": "Copiado, eso frena el relleno de 1310-05? cambio.", "incidente_id": "INC-07" },
+      { "timestamp": "10:13", "canal": "DES",  "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",     "texto": "Afirmativo, sin relleno no avanza el corte, hay que reordenar la secuencia, cambio.", "incidente_id": "INC-07" },
+      { "timestamp": "10:16", "canal": "DESP", "indicativo": "Jefe Guardia A",      "rol_hablante": "jefe_turno",      "texto": "Copiado, abran aviso de mantencion prioritario y adelantemos carguio que no dependa de pasta, cambio.", "incidente_id": "INC-07" }
+    ]},
+    { "incidente_id": "INC-09", "categoria": "Produccion", "mensajes": [
+      { "timestamp": "13:58", "canal": "PROD", "indicativo": "Scoop 5",             "rol_hablante": "operador",        "texto": "Control, scoop 5 en 1250-08, esto esta saliendo con mucho esteril, se ve diluido, cambio.", "incidente_id": "INC-09" },
+      { "timestamp": "14:02", "canal": "DESP", "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",     "texto": "Control, control de leyes confirma dilucion alta en 1250-08, la ley se cayo, cambio.", "incidente_id": "INC-09" },
+      { "timestamp": "14:05", "canal": "DESP", "indicativo": "Control",             "rol_hablante": "despachador_com", "texto": "Copiado, no vale la pena seguir cargando esteril ahi, cambio.", "incidente_id": "INC-09" },
+      { "timestamp": "14:08", "canal": "DESP", "indicativo": "Jefe Guardia A",      "rol_hablante": "jefe_turno",      "texto": "Copiado, cerramos ese draw y movemos el scoop a ley sana, cambio.", "incidente_id": "INC-09" }
+    ]},
+    { "incidente_id": "INC-04", "categoria": "Personal", "mensajes": [
+      { "timestamp": "06:14", "canal": "DESP", "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",     "texto": "Control, no bajo el operador de perforadora 3, la cuadrilla de 1310-07 quedo corta, cambio.", "incidente_id": "INC-04" },
+      { "timestamp": "06:17", "canal": "DESP", "indicativo": "Control",             "rol_hablante": "despachador_com", "texto": "Copiado, sin operador no arranca la perforacion de 1310-07, cambio.", "incidente_id": "INC-04" },
+      { "timestamp": "06:20", "canal": "DESP", "indicativo": "Jefe Guardia A",      "rol_hablante": "jefe_turno",      "texto": "Copiado, ese tajo es de buena ley, hay que cubrir esa perforadora, cambio.", "incidente_id": "INC-04" },
+      { "timestamp": "06:23", "canal": "DES",  "indicativo": "Perforadora 5",       "rol_hablante": "operador",        "texto": "Control, perforadora 5 esta en 1220-01 que es baja ley, de aca puede salir el operador, cambio.", "incidente_id": "INC-04" }
+    ]},
+    { "incidente_id": "INC-11", "categoria": "Personal", "mensajes": [
+      { "timestamp": "12:28", "canal": "PROD", "indicativo": "Scoop 9",             "rol_hablante": "operador",        "texto": "Control, scoop 9, no llego mi relevo de colacion, si paro dejo 1340-09 detenido, cambio.", "incidente_id": "INC-11" },
+      { "timestamp": "12:31", "canal": "PROD", "indicativo": "Control",             "rol_hablante": "despachador_com", "texto": "Copiado scoop 9, no pare todavia, buscamos quien lo cubra, cambio.", "incidente_id": "INC-11" },
+      { "timestamp": "12:34", "canal": "DESP", "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",     "texto": "Control, hay un operador volante disponible, lo mando a 1340-09 y escalonamos las colaciones, cambio.", "incidente_id": "INC-11" }
+    ]},
+    { "incidente_id": "INC-12", "categoria": "Personal", "mensajes": [
+      { "timestamp": "08:58", "canal": "DES",  "indicativo": "Operador Bolter 4",   "rol_hablante": "operador",        "texto": "Control, tuve un golpe en la mano en 1310-04, nada grave pero me tengo que retirar a enfermeria, cambio.", "incidente_id": "INC-12" },
+      { "timestamp": "09:01", "canal": "EMER", "indicativo": "Control",             "rol_hablante": "despachador_com", "texto": "Copiado, retirese con cuidado, confirmo que va a enfermeria, cambio.", "incidente_id": "INC-12" },
+      { "timestamp": "09:04", "canal": "DESP", "indicativo": "Supervisor Produccion","rol_hablante": "supervisor",     "texto": "Control, la cuadrilla de sostenimiento quedo corta con BL-04 fuera, tenemos sostenimiento critico pendiente, cambio.", "incidente_id": "INC-12" },
+      { "timestamp": "09:07", "canal": "DESP", "indicativo": "Jefe Guardia A",      "rol_hablante": "jefe_turno",      "texto": "Copiado, reasignemos la cuadrilla de BL-01 para cubrir lo critico, cambio.", "incidente_id": "INC-12" }
+    ]}
+  ]
+}

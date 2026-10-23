@@ -1,0 +1,50 @@
+{
+  "source": "Synappse sales-demo dataset, Incidentes_modulos.json v1.3",
+  "incident": {
+    "id": "INC-01",
+    "categoria": "Equipos",
+    "titulo": "Falla hidraulica de scoop en tajo de alta ley",
+    "hora_deteccion": "09:20",
+    "funcion_afectada": "produccion/equipos",
+    "contexto": {
+      "equipo": "LH-07",
+      "lugar": "TP-1310-04",
+      "ley_gt": 8.4,
+      "causa_raiz": "Falla de bomba hidraulica del LHD",
+      "mttr_h": 4
+    },
+    "alerta": {
+      "severidad": "alta",
+      "hora": "09:25",
+      "texto": "Scoop LH-07 detenido por falla hidraulica en TP-1310-04 (tajo de mayor ley del turno). MTTR estimado 4 h. Carguio de alta ley en riesgo."
+    },
+    "recomendacion": {
+      "id": "ACC-01",
+      "titulo": "Reasignar scoop de baja ley a la alta ley",
+      "recurso_origen": "LH-11 (en TP-1250-02, baja ley)",
+      "recurso_destino": "TP-1310-04",
+      "tiempo_implementacion_h": 1.0,
+      "texto": "Mover LH-11 desde TP-1250-02 (4.1 g/t) para sostener el carguio de TP-1310-04. Se sacrifica carguio de baja ley para no perder la alta ley."
+    },
+    "impacto": {
+      "rechazado": {
+        "toneladas": 190,
+        "onzas": 51.3
+      },
+      "aceptado": {
+        "toneladas_residual": 30,
+        "onzas_residual": 8.1,
+        "toneladas_recuperadas": 160,
+        "onzas_recuperadas": 43.2
+      }
+    },
+    "refs": {
+      "radio_incidente_id": "INC-01",
+      "telemetria_equipos": [
+        "LH-07",
+        "LH-11"
+      ]
+    }
+  },
+  "margin_usd_per_oz_contained": 2440
+}

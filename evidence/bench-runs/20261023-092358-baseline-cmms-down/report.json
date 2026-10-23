@@ -1,0 +1,47 @@
+{
+  "scenario": "baseline-cmms-down",
+  "proposed": "move LH-11 from TP-1250-02 to TP-1310-04",
+  "action_correct": true,
+  "id_resolution_ok": true,
+  "missing_info": [
+    "CMMS is down (503), so the repair estimate relies only on the radio call from Maintenance (at least 4 h, pump suspected). There is no confirmed work order, parts availability or ETA.",
+    "Telemetry is baseline only, with no live status for LH-07 or LH-11, so it does not confirm the failure or show where each loader is now.",
+    "Tonnes are spread evenly over 07:00-17:00. Actual tonnes already loaded at TP-1310-04 before 09:18 are unknown, so the figures are estimates. Taking the full planned 300 t / 81.0 oz as the at-risk figure for do_nothing gives a higher number.",
+    "LOADER-BACKUP-02 is a builder assumption not yet validated by the project owner. Without it, LH-04 at TP-1220-01 (3.9 g/t) would be the lowest-grade donor.",
+    "Whether TP-1310-04 has a muck pile ready for loading and a free access route for LH-11 is not confirmed.",
+    "The 0.5 h to 1 h activation time of the reserve stopes was not used. Reserve stopes were not considered because no free loader is available."
+  ],
+  "tonnes_at_risk_no_action": {
+    "agent": 231.0,
+    "key": 190,
+    "error_pct": 21.6
+  },
+  "oz_at_risk_no_action": {
+    "agent": 62.4,
+    "key": 51.3,
+    "error_pct": 21.6
+  },
+  "confidence": "medium",
+  "sources": [
+    "Plan_de_turno.json: TP-1310-04 (LH-07, 300 t, 8.4 g/t, 81.0 oz, phase carguio), TP-1250-02 (LH-11, 200 t, 4.1 g/t, 26.4 oz, phase carguio), TP-1220-01 (LH-04, carguio-perforacion), TP-1280-02, TP-1310-07, DF-1310-05, supuestos (no spare scoop)",
+    "Telemetria_flota.json: LH-07 and LH-11 baseline records only; no failure event is recorded",
+    "Inventario_de_frentes.json: TP-1310-04, TP-1250-02, TP-1220-01 (the note on TP-1250-02 says it is a candidate to give up LH-11)",
+    "site_rules.json: LOADER-BACKUP-01, LOADER-BACKUP-02, MOVE-TIME-01",
+    "radio://PROD/09:18/scoop-7, radio://PROD/09:23/scoop-7, radio://MANT/09:26/mantencion, radio://DESP/09:28/supervisor-produccion, radio://DESP/09:31/jefe-guardia-a"
+  ],
+  "parsed_answer": true,
+  "seconds_radio_to_proposal": 34.6,
+  "within_15_min_window": true,
+  "cost_usd_total": 0.179,
+  "cost_per_correct_proposal": 0.179,
+  "agents": [
+    {
+      "agent": "single-agent",
+      "seconds": 34.6,
+      "cost_usd": 0.179,
+      "turns": 5,
+      "final": "{\"failed_equipment\":\"LH-07 (Scoop 7, LHD 17 t, hydraulic pressure loss; Maintenance suspects the pump, 4 h minimum)\",\"failed_place\":\"TP-1310-04 (level 1310, 8.4 g/t, highest grade of the shift)\",\"recommendation\":{\"action_type\":\"reassign_loader\",\"equipment_id\":\"LH-11\",\"from_place\":\"TP-1250-02\",\"to_place\":\"TP-1310-04\",\"start_by\":\"09:31 (now). LH-11 arrives about 10:31 after the 1 h ramp move from level 1250 to 1310.\",\"tonnes_protected\":194.5,\"oz_protected\":52.5,\"tonnes_lost_elsewhere\":149.7,\"oz_lost_elsewhere\":19.7,\"net_oz_protected\":32.8},\"options\":[{\"option_id\":\"do_nothing\",\"description\":\"Leave TP-1310-04 without a loader from 09:18 to 17:00 (7.7 h).\",\"tonnes_at_risk\":231.0,\"oz_at_risk\":62.4},{\"option_id\":\"wait_for_repair\",\"description\":\"Wait for LH-07 to be repaired. Maintenance says at least 4 h from about 09:26, so back no earlier than about 13:26. The repair time is a minimum, so this is a lower-bound loss.\",\"tonnes_at_risk\":124.0,\"oz_at_risk\":33.5},{\"option_id\":\"reassign_loader\",\"description\":\"Move LH-11 from TP-1250-02 (4.1 g/t, phase 'carguio') to TP-1310-04. TP-1310-04 is uncovered 09:18-10:31 and TP-1250-02 is uncovered 09:31-17:00. Total loss for the shift is 186.2 t and 29.6 oz (9.9 oz at 1310-04 plus 19.7 oz at 1250-02).\",\"tonnes_at_risk\":186.2,\"oz_at_risk\":29.6}],\"calculation\":\"Rates: the plan tonnes are spread over the 10 h productive window (07:00-17:00). TP-1310-04 is 300 t / 10 h = 30 t/h at 8.4 g/t. TP-1250-02 is 200 t / 10 h = 20 t/h at 4.1 g/t. oz = t x g/t / 31.1035. Donor choice: LOADER-BACKUP-01 says take the loader from the lowest-grade stope. LOADER-BACKUP-02 excludes combined-cycle stopes. TP-1220-01 (3.9 g/t) is 'carguio-perforacion' so it keeps LH-04. The lowest-grade stope in phase 'carguio' is TP-1250-02 (4.1 g/t, LH-11). do_nothing: 7.7 h x 30 = 231 t, 62.4 oz. wait_for_repair: 09:18 to 13:26 = 4.13 h x 30 = 124 t, 33.5 oz, at minimum. reassign_loader: TP-1310-04 loses 09:18 to 10:31 = 1.22 h = 36.5 t, 9.9 oz. TP-1250-02 loses 09:31 to 17:00 = 7.48 h = 149.7 t, 19.7 oz. Total loss is 186.2 t and 29.6 oz. Protected versus do_nothing: 231.0 - 36.5 = 194.5 t and 62.4 - 9.9 = 52.5 oz. Net = 52.5 - 19.7 = 32.8 oz. Reassigning also beats waiting, whose loss is 33.5 oz even in the best case. If LH-07 is repaired at about 13:26, send LH-11 back (1 h move). TP-1250-02 would then lose only about 98 t and 13.0 oz, so the total loss falls to about 22.8 oz.\",\"sources\":[\"Plan_de_turno.json: TP-1310-04 (LH-07, 300 t, 8.4 g/t, 81.0 oz, phase carguio), TP-1250-02 (LH-11, 200 t, 4.1 g/t, 26.4 oz, phase carguio), TP-1220-01 (LH-04, carguio-perforacion), TP-1280-02, TP-1310-07, DF-1310-05, supuestos (no spare scoop)\",\"Telemetria_flota.json: LH-07 and LH-11 baseline records only; no failure event is recorded\",\"Inventario_de_frentes.json: TP-1310-04, TP-1250-02, TP-1220-01 (the note on TP-1250-02 says it is a candidate to give up LH-11)\",\"site_rules.json: LOADER-BACKUP-01, LOADER-BACKUP-02, MOVE-TIME-01\",\"radio://PROD/09:18/scoop-7, radio://PROD/09:23/scoop-7, radio://MANT/09:26/mantencion, radio://DESP/09:28/supervisor-produccion, radio://DESP/09:31/jefe-guardia-a\"],\"confidence\":\"medium\",\"missing_info\":[\"CMMS is down (503), so the repair estimate relies only on the radio call from Maintenance (at least 4 h, pump suspected). There is no confirmed work order, parts availability or ETA.\",\"Telemetry is baseline only, with no live status for LH-07 or LH-11, so it does not confirm the failure or show where each loader is now.\",\"Tonnes are spread evenly over 07:00-17:00. Actual tonnes already loaded at TP-1310-04 before 09:18 are unknown, so the figures are estimates. Taking the full planned 300 t / 81.0 oz as the at-risk figure for do_nothing gives a higher number.\",\"LOADER-BACKUP-02 is a builder assumption not yet validated by the project owner. Without it, LH-04 at TP-1220-01 (3.9 g/t) would be the lowest-grade donor.\",\"Whether TP-1310-04 has a muck pile ready for loading and a free access route for LH-11 is not confirmed.\",\"The 0.5 h to 1 h activation time of the reserve stopes was not used. Reserve stopes were not considered because no free loader is available.\"]}",
+      "ok": true
+    }
+  ]
+}

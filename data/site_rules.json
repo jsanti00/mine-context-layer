@@ -1,0 +1,8 @@
+{
+  "_note": "Standing dispatch rules of the synthetic mine. Part of the synthetic dataset, not real site data. Rule LOADER-BACKUP-02 was validated by the project owner (a mining operations consultant) on 2026-10-23.",
+  "rules": [
+    {"id": "LOADER-BACKUP-01", "text": "There is no spare loader on shift. When a loader fails, cover the affected stope by reassigning the loader from the lowest-grade stope."},
+    {"id": "LOADER-BACKUP-02", "text": "Stopes in a combined cycle (phase with drilling or fill, e.g. 'carguio-perforacion' or 'relleno-carguio') keep their loader, because pulling it stalls the drill or fill sequence. Only stopes in phase 'carguio' (loading only) can give up their loader."},
+    {"id": "MOVE-TIME-01", "text": "Moving a loader to another level through the ramp takes about 1 h; within the same level about 0.5 h."}
+  ]
+}

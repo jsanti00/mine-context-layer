@@ -1,0 +1,64 @@
+{
+  "scenario": "cmms-down",
+  "answer_key": "INC-01 / ACC-01: move LH-11 from TP-1250-02 to TP-1310-04",
+  "id_resolution_ok": true,
+  "proposal_id": "PR-0002",
+  "proposed": "move LH-11 from TP-1250-02 to TP-1310-04",
+  "action_correct": true,
+  "tonnes_at_risk_no_action": {
+    "agent": 231,
+    "key": 190,
+    "error_pct": 21.6
+  },
+  "oz_at_risk_no_action": {
+    "agent": 62.4,
+    "key": 51.3,
+    "error_pct": 21.6
+  },
+  "with_action_note": {
+    "agent_net_oz_protected": 32.8,
+    "agent_oz_lost_at_donor_stope": 19.7,
+    "key_residual_tonnes_excluding_donor": 30
+  },
+  "cites_failure_event": true,
+  "confidence": 0.55,
+  "missing_info": [
+    "CMMS down since 09:00: no LH-07 repair history. Ask the maintenance planner or CMMS admin.",
+    "Pump diagnosis is by sound only: the crew at 1310-04 should confirm. Check pump stock with the workshop supervisor.",
+    "Actual LH-11 availability and travel route: confirm with the Jefe Guardia.",
+    "Rates assume a flat t/h over the 10 h productive window."
+  ],
+  "decision": "approved",
+  "seconds_radio_to_proposal": 62.3,
+  "within_15_min_window": true,
+  "cost_usd_total": 0.1194,
+  "cost_per_correct_proposal": 0.1194,
+  "agents": [
+    {
+      "agent": "radio-agent",
+      "seconds": 8.9,
+      "cost_usd": 0.0151,
+      "turns": 2,
+      "final": "I published one event, EV-0001: scoop 7 (LH-07) is down at 1310-04 (TP-1310-04) with a hydraulic failure. Both mentions resolved.\n\n- **Operator report:** Scoop 7 lost hydraulic pressure and can't lift the bucket. It can't move on its own, so maintenance has to come to it.\n- **Repair estimate:** Maintenance thinks it's the hydraulic pump and says at least 4 hours. That diagnosis is by sound only, so I treated it as less reliable.\n- **Production context:** The supervisor says 1310-04 is the shift's high-grade place. The shift boss is looking for another scoop to cover it.\n\nI skipped the other lines as routine chatter, including scoop 10's report from 1310-11.",
+      "ok": true
+    },
+    {
+      "agent": "maintenance-agent",
+      "seconds": 14.0,
+      "cost_usd": 0.0296,
+      "turns": 6,
+      "final": "I submitted assessment PR-0001 for the one open failure, LH-07 (Scoop 7, hydraulic pressure loss at 1310-04). I estimate 4 h low, 6 h likely and 10 h high, with a likely return at 15:30.\n\n- **Basis:** The only source is the radio report in EV-0001. Maintenance guessed a hydraulic pump by sound alone and said \"minimum 4 hours\". I treated 4 h as the floor.\n- **High case:** At 10 h the scoop would be back around 19:30. That is after the productive window ends at 17:00, so it would not return this shift.\n- **Missing information:** The CMMS has been down since 09:00 (HTTP 503), so I had no repair history for LH-07. I widened the range and set confidence to 0.4. The proposal asks for the CMMS history, the pump spare stock and a confirmed diagnosis from the crew on site.",
+      "ok": true
+    },
+    {
+      "agent": "planning-agent",
+      "seconds": 39.3,
+      "cost_usd": 0.0747,
+      "turns": 8,
+      "final": "I submitted proposal PR-0002 (pending approval). It moves LH-11 from TP-1250-02 (4.1 g/t, lowest-grade loading-only stope) to TP-1310-04, a net of about 32.8 oz protected. The move takes about 1 h and should start by 09:45.\n\n- **Gain at TP-1310-04:** about 194.5 t and 52.5 oz recovered, with LH-11 loading from about 10:31 to 17:00.\n- **Loss at TP-1250-02:** about 149.5 t and 19.7 oz.\n- **Other options:** doing nothing loses 62.4 oz. Waiting for the likely 15:30 repair loses 50.2 oz. Moving LH-10 from TP-1310-11 instead nets only 24.7 oz.\n- **Confidence (0.55):** the CMMS has been down since 09:00, so there is no repair history for LH-07. The pump diagnosis was made by sound only.\n- **Assumption:** LH-11 stays at TP-1310-04 until 17:00, even if LH-07 comes back around 15:30.",
+      "ok": true
+    }
+  ],
+  "tool_calls": 13,
+  "denied_calls": 0
+}

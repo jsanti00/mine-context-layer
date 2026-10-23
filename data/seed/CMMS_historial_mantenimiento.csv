@@ -1,0 +1,19 @@
+orden_id,equipo_id,tipo_equipo,fecha,tipo_mantencion,sistema,descripcion,horas_reparacion_mttr,estado,cronico
+OT-2041,LH-07,LHD/Scoop,2026-05-12,correctivo,hidraulico,Cambio de manguera hidraulica por fuga,3.5,cerrada,si
+OT-2068,LH-07,LHD/Scoop,2026-05-28,correctivo,hidraulico,Reparacion de bomba hidraulica,5.0,cerrada,si
+OT-2095,LH-07,LHD/Scoop,2026-06-15,correctivo,hidraulico,Cambio de sello de cilindro de levante,2.5,cerrada,si
+OT-2052,JD-04,Jumbo,2026-05-18,correctivo,electrico,Falla de tablero de control,4.5,cerrada,si
+OT-2081,JD-04,Jumbo,2026-06-05,correctivo,electrico,Reemplazo de contactor de fuerza,3.0,cerrada,si
+OT-2099,JD-04,Jumbo,2026-06-20,correctivo,electrico,Revision de cableado de fuerza,2.5,cerrada,si
+OT-2049,CM-04,Camion,2026-05-15,preventivo,transmision,Cambio de aceite y filtros de transmision,2.0,cerrada,no
+OT-2087,CM-04,Camion,2026-06-10,correctivo,transmision,Reparacion de convertidor de torque,6.0,cerrada,si
+OT-2060,PB-01,Bomba pasta,2026-05-22,correctivo,bomba,Cambio de sellos de piston,4.0,cerrada,no
+OT-2092,PB-01,Bomba pasta,2026-06-18,correctivo,bomba,Reparacion de valvula de descarga,3.5,cerrada,no
+OT-2055,LH-03,LHD/Scoop,2026-05-20,preventivo,motor,PM 250 horas,2.0,cerrada,no
+OT-2070,LH-01,LHD/Scoop,2026-05-30,correctivo,frenos,Ajuste de sistema de frenos,1.5,cerrada,no
+OT-2075,JD-02,Jumbo,2026-06-02,preventivo,hidraulico,PM 500 horas,3.0,cerrada,no
+OT-2083,CM-06,Camion,2026-06-08,correctivo,electrico,Cambio de alternador,2.5,cerrada,no
+OT-2090,LH-09,LHD/Scoop,2026-06-14,preventivo,general,PM 250 horas,2.0,cerrada,no
+OT-2097,BL-04,Bolter,2026-06-19,correctivo,hidraulico,Fuga en circuito de perforacion,2.0,cerrada,no
+OT-2100,PP-03,Perforadora produccion,2026-06-22,correctivo,neumatico,Cambio de mangueras de aire,1.5,cerrada,no
+OT-2103,LH-05,LHD/Scoop,2026-06-25,preventivo,general,PM 500 horas,3.5,cerrada,no

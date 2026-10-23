@@ -1,0 +1,73 @@
+{
+  "scenario": "normal",
+  "answer_key": "INC-01 / ACC-01: move LH-11 from TP-1250-02 to TP-1310-04",
+  "id_resolution_ok": true,
+  "proposal_id": "PR-0002",
+  "proposed": "move LH-11 from TP-1250-02 to TP-1310-04",
+  "action_correct": true,
+  "tonnes_at_risk_no_action": {
+    "agent": 225,
+    "key": 190,
+    "error_pct": 18.4
+  },
+  "oz_at_risk_no_action": {
+    "agent": 60.8,
+    "key": 51.3,
+    "error_pct": 18.5
+  },
+  "with_action_note": {
+    "agent_net_oz_protected": 32.4,
+    "agent_oz_lost_at_donor_stope": 19.5,
+    "key_residual_tonnes_excluding_donor": 30
+  },
+  "cites_failure_event": true,
+  "confidence": 0.7,
+  "missing_info": [
+    "Repair time is unconfirmed (crew guess by sound, range 4-7 h). Ask the maintenance supervisor at 1310-04 for an inspection result.",
+    "Spare hydraulic pump availability is unknown. Check warehouse or CMMS stock.",
+    "Check that LH-11 can leave TP-1250-02 safely and that the ramp route to 1310 is clear. Ask the shift supervisor or jefe de guardia.",
+    "Check whether LH-07 blocks access to the 1310-04 face. It cannot move under its own power. Ask the supervisor.",
+    "Check whether TP-1250-02 can be reassigned later and the 1250 to 1310 move time. Ask the dispatcher."
+  ],
+  "decision": "approved",
+  "seconds_radio_to_proposal": 69.4,
+  "within_15_min_window": true,
+  "cost_usd_total": 0.1642,
+  "cost_per_correct_proposal": 0.1642,
+  "agents": [
+    {
+      "agent": "radio-agent",
+      "seconds": 9.3,
+      "cost_usd": 0.0141,
+      "turns": 2,
+      "final": "I published one event, EV-0001: scoop 7 (LH-07) is down at 1310-04 (TP-1310-04) with a hydraulic pressure loss. The operator says it can't move on its own. Maintenance guesses a hydraulic pump and at least 4 hours, but that is a guess made before inspection, so I recorded it with lower reliability. The supervisor's note that 1310-04 is the shift's high-grade stope, and the shift boss's search for a replacement scoop, are in the payload. Both mentions resolved. I skipped the routine chatter.",
+      "ok": true
+    },
+    {
+      "agent": "cmms-agent",
+      "seconds": 11.9,
+      "cost_usd": 0.0254,
+      "turns": 4,
+      "final": "I published two CMMS events for LH-07, the only equipment with an open failure (EV-0001). Both resolved to LH-07 with no unresolved mentions.\n\n- **EV-0002, maintenance record:** LH-07 has three closed corrective hydraulic work orders, all flagged chronic. They are OT-2041, OT-2068 (hydraulic pump repair, 5.0 h) and OT-2095, totalling 11.0 repair hours.\n- **EV-0003, maintenance plan:** OT-2110, the 500 h hydraulic system inspection, is overdue and high priority. It was scheduled for 2026-06-26.",
+      "ok": true
+    },
+    {
+      "agent": "maintenance-agent",
+      "seconds": 15.3,
+      "cost_usd": 0.0332,
+      "turns": 4,
+      "final": "I submitted assessment PR-0001 for LH-07, the only open equipment failure. It estimates a repair of 4 to 7 hours, most likely 5, with the scoop back at about 14:30 on the shift clock. The 4-hour low case would put it back at 13:30 and the 7-hour high case at 16:30. Confidence is 0.6.\n\n- **Cause:** The likely cause is the hydraulic pump, but that is only the crew's guess by sound.\n- **Basis for 5 hours:** The last pump repair on this scoop (OT-2068) took 5.0 hours, and the crew said \"minimum four hours.\" It also has three chronic hydraulic repairs in about five weeks and an overdue hydraulic inspection (OT-2110).\n- **Not yet known:** Someone needs to get the inspection result from the crew at 1310-04. They should also check whether a spare pump is in stock and whether the repair can be done on site, since the scoop can't move under its own power.",
+      "ok": true
+    },
+    {
+      "agent": "planning-agent",
+      "seconds": 32.8,
+      "cost_usd": 0.0915,
+      "turns": 7,
+      "final": "I submitted proposal PR-0002 for approval: move LH-11 from TP-1250-02 to TP-1310-04 to cover the failed LH-07, starting by 09:35. It nets about 32.4 oz protected, and my confidence is 0.7 because the repair time is unconfirmed.\n\n- **Do nothing:** loses 225 t and 60.8 oz at TP-1310-04.\n- **Wait for repair:** the likely repair finishes at 14:30, which loses 150 t and 40.5 oz.\n- **Move LH-11:** TP-1250-02 is the lowest-grade loading-only stope, at 4.1 g/t. The ramp move to 1310 takes 1 h. It protects 192.5 t and 52.0 oz at TP-1310-04 and loses 148.3 t and 19.5 oz at TP-1250-02. Total at risk drops to 180.8 t and 28.3 oz.\n- **Move LH-10 instead:** the same-level move is faster, but the net is only 24.5 oz because the donor stope grades 6.0 g/t.\n\nI kept LH-11 at 1310-04 until 17:00. Sending it back after LH-07 is repaired could recover some of the 19.5 oz, but I did not count that.\n\nThe repair time is still a crew guess by sound (4–7 h). Someone should check the inspection result, spare pump availability and whether the ramp to 1310 is clear.",
+      "ok": true
+    }
+  ],
+  "tool_calls": 13,
+  "denied_calls": 0
+}

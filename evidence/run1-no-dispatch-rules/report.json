@@ -1,0 +1,67 @@
+{
+  "scenario": "normal",
+  "answer_key": "INC-01 / ACC-01: move LH-11 from TP-1250-02 to TP-1310-04",
+  "id_resolution_ok": true,
+  "proposal_id": "PR-0002",
+  "proposed": "move LH-02 from DF-1310-05 to TP-1310-04",
+  "action_correct": false,
+  "tonnes_at_risk_no_action": {
+    "agent": 231,
+    "key": 190,
+    "error_pct": 21.6
+  },
+  "tonnes_lost_with_action": {
+    "agent": 131,
+    "key": 30,
+    "error_abs_t": 101.0
+  },
+  "cites_failure_event": true,
+  "confidence": 0.6,
+  "missing_info": [
+    "Actual move time of a scoop between places is not in the data. I assumed 0.5 h for the same level and 1.0 h across levels, based on the activation_h of the reserve places. Dispatch or the shift boss can confirm.",
+    "Diagnosis is not confirmed (suspected pump). Maintenance can confirm on site at 1310-04. Spare pump stock is unknown (check the warehouse or CMMS).",
+    "I don't know whether DF-1310-05 (a fill phase) has downstream dependencies. Check with the production supervisor.",
+    "Whether the 1310-04 access is clear while LH-07 is stuck there. Ask maintenance or dispatch."
+  ],
+  "decision": "approved",
+  "seconds_radio_to_proposal": 77.4,
+  "within_15_min_window": true,
+  "cost_usd_total": 0.2056,
+  "cost_per_correct_proposal": null,
+  "agents": [
+    {
+      "agent": "radio-agent",
+      "seconds": 10.8,
+      "cost_usd": 0.0331,
+      "turns": 2,
+      "final": "I published one event, EV-0001, for scoop 7 (LH-07). It broke down at 09:18 in TP-1310-04 with a hydraulic pressure loss and can't leave on its own. Maintenance estimates at least 4 hours and suspects the hydraulic pump, which is a guess by ear rather than a diagnosis. The supervisor's note that 1310-04 is the shift's high-grade face and the shift boss's search for a covering scoop are in the payload. I skipped the routine chatter, and all mentions resolved.",
+      "ok": true
+    },
+    {
+      "agent": "cmms-agent",
+      "seconds": 11.5,
+      "cost_usd": 0.0345,
+      "turns": 4,
+      "final": "I published two CMMS events for LH-07, the only equipment with an open failure (EV-0001). Both were accepted with no unresolved mentions.\n\n- **EV-0002, maintenance record:** LH-07 has three closed corrective hydraulic work orders, all flagged chronic: OT-2041, OT-2068 (hydraulic pump repair, 5.0 h) and OT-2095. They total 11.0 repair hours.\n- **EV-0003, maintenance plan:** preventive order OT-2110 (PM 500 h hydraulic inspection, due 2026-06-26) is overdue and high priority.",
+      "ok": true
+    },
+    {
+      "agent": "maintenance-agent",
+      "seconds": 14.8,
+      "cost_usd": 0.0351,
+      "turns": 4,
+      "final": "I submitted assessment PR-0001 for LH-07, the only open equipment failure. It estimates a repair of 4 to 7 hours, most likely 5, with the scoop back around 14:30. The range is 13:30 to 16:30.\n\n- **Cause:** The suspected cause is the hydraulic pump, which the maintenance crew heard on site but hasn't confirmed. LH-07 has had three hydraulic repairs in about five weeks, and its 500 h hydraulic inspection (OT-2110) is overdue.\n- **Basis:** The 4 hours is the crew's radio minimum. The 5 hours matches the last pump repair, OT-2068, which took 5.0 hours. The high end adds 2 hours because the diagnosis is unconfirmed and the faults keep recurring.\n- **Confidence:** 0.65. Both the radio feed and the maintenance system (CMMS) were online. What's missing is a confirmed diagnosis, which the crew can give after inspecting at 1310-04. Whether a spare hydraulic pump is in stock is also unknown, and the warehouse or CMMS stock could answer that.",
+      "ok": true
+    },
+    {
+      "agent": "planning-agent",
+      "seconds": 40.2,
+      "cost_usd": 0.1029,
+      "turns": 7,
+      "final": "I submitted action proposal PR-0002, which is waiting for human approval. It moves LH-02 from DF-1310-05 to TP-1310-04 to cover the 8.4 g/t stope while LH-07 is repaired. The plan assumes LH-07 is back at 14:30, per the maintenance assessment PR-0001.\n\n| Option | Tonnes at risk | Oz at risk |\n|---|---|---|\n| Do nothing | 231 | 62.4 |\n| Wait for repair | 156 | 42.1 |\n| Reassign LH-02 | 131 | 24.1 |\n\nThe reassignment protects about 36.5 oz and loses about 18.4 oz at DF-1310-05, a net gain of about 18.1 oz.\n\nThe move time is my assumption: 0.5 h on the same level and 1.0 h across levels, based on how long the idle reserve places take to activate. LH-04 from TP-1220-01 nets about 18.8 oz, which is within the error of that assumption. I chose LH-02 because it is on the same level and doesn't idle drill PP-05. The diagnosis is also not confirmed, so I set confidence at 0.6.",
+      "ok": true
+    }
+  ],
+  "tool_calls": 13,
+  "denied_calls": 0
+}

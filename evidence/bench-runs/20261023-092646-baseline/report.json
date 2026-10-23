@@ -1,0 +1,53 @@
+{
+  "scenario": "baseline",
+  "proposed": "move LH-11 from TP-1250-02 to TP-1310-04",
+  "action_correct": true,
+  "id_resolution_ok": true,
+  "missing_info": [
+    "Actual diagnosis and repair time for LH-07. The 4 h is Maintenance's radio estimate ('minimo cuatro horas', by sound). The history shows hydraulic repairs of 2.5-5.0 h.",
+    "Whether an LH-07 repair would be quick enough to return LH-11 to 1250-02 (hybrid plan).",
+    "Whether an operator is available to move LH-11, and whether the ramp route is clear.",
+    "Real-time loading rates. The tonnes are modelled as a linear rate over the 9.5 h loading window.",
+    "LOADER-BACKUP-02 is an unvalidated builder assumption pending confirmation by the project owner.",
+    "Telemetry is baseline only, with no live status for LH-07 or LH-11. The wait-for-repair option also assumes the 09:26 arrival time and ignores the scoop's current position and the loading already done."
+  ],
+  "tonnes_at_risk_no_action": {
+    "agent": 227.4,
+    "key": 190,
+    "error_pct": 19.7
+  },
+  "oz_at_risk_no_action": {
+    "agent": 61.4,
+    "key": 51.3,
+    "error_pct": 19.7
+  },
+  "confidence": "medium",
+  "sources": [
+    "radio://PROD/09:18/scoop-7",
+    "radio://PROD/09:23/scoop-7",
+    "radio://MANT/09:26/mantencion",
+    "radio://DESP/09:28/supervisor-produccion",
+    "radio://DESP/09:31/jefe-guardia-a",
+    "Plan_de_turno.json: TP-1310-04, TP-1250-02, TP-1220-01, TP-1310-11, equipos_requeridos LH-07/LH-11, cronograma and supuestos",
+    "Telemetria_flota.json: LH-07, LH-11 (state cargando, baseline only)",
+    "Inventario_de_frentes.json: TP-1310-04, TP-1250-02",
+    "site_rules.json: LOADER-BACKUP-01, LOADER-BACKUP-02, MOVE-TIME-01",
+    "CMMS_plan_preventivo.csv: OT-2110 (LH-07 hydraulic PM 500 h, overdue since 2026-06-26)",
+    "CMMS_historial_mantenimiento.csv: OT-2041, OT-2068, OT-2095 (LH-07 chronic hydraulic failures, MTTR 3.5, 5.0 and 2.5 h)"
+  ],
+  "parsed_answer": true,
+  "seconds_radio_to_proposal": 40.3,
+  "within_15_min_window": true,
+  "cost_usd_total": 0.1958,
+  "cost_per_correct_proposal": 0.1958,
+  "agents": [
+    {
+      "agent": "single-agent",
+      "seconds": 40.3,
+      "cost_usd": 0.1958,
+      "turns": 8,
+      "final": "```json\n{\n  \"failed_equipment\": \"LH-07 (Scoop 7, LHD 17t). Hydraulic pressure lost and the bucket won't lift. Probable hydraulic pump failure. Not visible in telemetry; known only from radio.\",\n  \"failed_place\": \"TP-1310-04 (level 1310, grade 8.4 g/t, 300 t planned, 81.0 oz planned, the highest-grade stope of the shift)\",\n  \"recommendation\": {\n    \"action_type\": \"reassign_loader\",\n    \"equipment_id\": \"LH-11\",\n    \"from_place\": \"TP-1250-02\",\n    \"to_place\": \"TP-1310-04\",\n    \"start_by\": \"09:31 (immediately). The ramp move takes about 1 h, so LH-11 loads at 1310-04 from about 10:31.\",\n    \"tonnes_protected\": 188.9,\n    \"oz_protected\": 51.0,\n    \"tonnes_lost_elsewhere\": 147.0,\n    \"oz_lost_elsewhere\": 19.4,\n    \"net_oz_protected\": 31.7\n  },\n  \"options\": [\n    {\n      \"option_id\": \"do_nothing\",\n      \"description\": \"No cover. TP-1310-04 stays without a loader from 09:18 to 17:00. The remaining loading time is lost.\",\n      \"tonnes_at_risk\": 227.4,\n      \"oz_at_risk\": 61.4\n    },\n    {\n      \"option_id\": \"wait_for_repair\",\n      \"description\": \"Wait for Maintenance to repair LH-07 on site. Assumes the minimum of 4 h from their 09:26 arrival, so back at about 13:26. If the repair takes 5 h (the 5.0 h pump repair OT-2068 on LH-07, a chronic failure), the loss rises to about 146 t and 39.5 oz.\",\n      \"tonnes_at_risk\": 114.7,\n      \"oz_at_risk\": 31.0\n    },\n    {\n      \"option_id\": \"reassign_loader\",\n      \"description\": \"Move LH-11 from TP-1250-02 (4.1 g/t) to TP-1310-04. Total loss for the shift is 38.4 t / 10.4 oz at 1310-04 while LH-11 travels, plus 147.0 t / 19.4 oz at 1250-02 with no loader for the rest of the shift.\",\n      \"tonnes_at_risk\": 185.5,\n      \"oz_at_risk\": 29.8\n    }\n  ],\n  \"calculation\": \"Loading window per plan: 07:00-17:00 minus the 11:00-11:30 lunch = 9.5 h. Rate at TP-1310-04 = 300/9.5 = 31.58 t/h. Rate at TP-1250-02 = 200/9.5 = 21.05 t/h. oz = t x g/t / 31.1035. Lowest-grade stope: TP-1220-01 (3.9 g/t), but its phase is carguio-perforacion, so under LOADER-BACKUP-02 it keeps its loader. Next lowest: TP-1250-02 (4.1 g/t, phase carguio, so eligible), with loader LH-11. Move 1250 to 1310 takes 1 h (MOVE-TIME-01). Do nothing: 09:18-17:00 = 7.7 h minus 0.5 h lunch = 7.2 h, giving 227.4 t x 8.4 / 31.1035 = 61.4 oz. Wait for repair: 09:18-13:26 = 4.13 h minus 0.5 h lunch = 3.63 h, giving 114.7 t and 31.0 oz. Reassign at 1310-04: 09:18-10:31 = 1.22 h, giving 38.4 t and 10.4 oz lost. Protected = 227.4 - 38.4 = 188.9 t and 61.4 - 10.4 = 51.0 oz. Loss at 1250-02: 09:31-17:00 = 7.48 h minus 0.5 h lunch = 6.98 h, giving 147.0 t x 4.1 / 31.1035 = 19.4 oz. Net protected = 51.0 - 19.4 = 31.7 oz. Total loss with reassignment = 185.5 t and 29.8 oz. Comparison: reassigning beats waiting by about 1.2 oz at the 4 h repair and by about 9.7 oz at a 5 h repair. The margin is thin if the repair really takes only 4 h. Using the closer LH-10 (same level, 6.0 g/t) is worse, at about 22.6 t / 6.1 oz lost at 1310-04 plus 161.7 t / 31.2 oz lost at 1310-11. Reassigning is the lowest-loss option and is more robust to a longer repair. A possible improvement not modelled is to return LH-11 to 1250-02 once LH-07 is repaired (about 13:26 plus a 1 h move).\",\n  \"sources\": [\n    \"radio://PROD/09:18/scoop-7\",\n    \"radio://PROD/09:23/scoop-7\",\n    \"radio://MANT/09:26/mantencion\",\n    \"radio://DESP/09:28/supervisor-produccion\",\n    \"radio://DESP/09:31/jefe-guardia-a\",\n    \"Plan_de_turno.json: TP-1310-04, TP-1250-02, TP-1220-01, TP-1310-11, equipos_requeridos LH-07/LH-11, cronograma and supuestos\",\n    \"Telemetria_flota.json: LH-07, LH-11 (state cargando, baseline only)\",\n    \"Inventario_de_frentes.json: TP-1310-04, TP-1250-02\",\n    \"site_rules.json: LOADER-BACKUP-01, LOADER-BACKUP-02, MOVE-TIME-01\",\n    \"CMMS_plan_preventivo.csv: OT-2110 (LH-07 hydraulic PM 500 h, overdue since 2026-06-26)\",\n    \"CMMS_historial_mantenimiento.csv: OT-2041, OT-2068, OT-2095 (LH-07 chronic hydraulic failures, MTTR 3.5, 5.0 and 2.5 h)\"\n  ],\n  \"confidence\": \"medium\",\n  \"missing_info\": [\n    \"Actual diagnosis and repair time for LH-07. The 4 h is Maintenance's radio estimate ('minimo cuatro horas', by sound). The history shows hydraulic repairs of 2.5-5.0 h.\",\n    \"Whether an LH-07 repair would be quick enough to return LH-11 to 1250-02 (hybrid plan).\",\n    \"Whether an operator is available to move LH-11, and whether the ramp route is clear.\",\n    \"Real-time loading rates. The tonnes are modelled as a linear rate over the 9.5 h loading window.\",\n    \"LOADER-BACKUP-02 is an unvalidated builder assumption pending confirmation by the project owner.\",\n    \"Telemetry is baseline only, with no live status for LH-07 or LH-11. The wait-for-repair option also assumes the 09:26 arrival time and ignores the scoop's current position and the loading already done.\"\n  ]\n}\n```",
+      "ok": true
+    }
+  ]
+}

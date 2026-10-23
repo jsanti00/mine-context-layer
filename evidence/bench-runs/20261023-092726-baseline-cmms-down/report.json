@@ -1,0 +1,51 @@
+{
+  "scenario": "baseline-cmms-down",
+  "proposed": "move LH-11 from TP-1250-02 to TP-1310-04",
+  "action_correct": true,
+  "id_resolution_ok": true,
+  "missing_info": [
+    "CMMS is down (HTTP 503), so there is no confirmed repair ETA, work order or parts availability. The 4 h figure is only maintenance's radio estimate.",
+    "No data on tonnes already loaded at TP-1310-04 or TP-1250-02 before the failure. The loss figures use the planned loading rate (pro-rata).",
+    "Not confirmed that LH-07 can be cleared from, or bypassed in, the 1310-04 heading so LH-11 can load there.",
+    "Not confirmed that LH-11 is healthy and that trucks can haul the extra loading at 1310.",
+    "Not confirmed that the ramp move really takes only 1 h, or whether any activation time applies.",
+    "The telemetry file has no failure event for LH-07; the failure is known only from the radio."
+  ],
+  "tonnes_at_risk_no_action": {
+    "agent": 227.4,
+    "key": 190,
+    "error_pct": 19.7
+  },
+  "oz_at_risk_no_action": {
+    "agent": 61.4,
+    "key": 51.3,
+    "error_pct": 19.7
+  },
+  "confidence": "medium",
+  "sources": [
+    "radio://PROD/09:18/scoop-7",
+    "radio://PROD/09:23/scoop-7",
+    "radio://MANT/09:26/mantencion",
+    "radio://DESP/09:28/supervisor-produccion",
+    "radio://DESP/09:31/jefe-guardia-a",
+    "Plan_de_turno.json: TP-1310-04 (LH-07), TP-1250-02 (LH-11), TP-1220-01 (LH-04, PP-05), cronograma, equipos_requeridos, supuestos (no spare scoop)",
+    "Inventario_de_frentes.json: TP-1310-04, TP-1250-02, TP-1220-01",
+    "Telemetria_flota.json: LH-07 and LH-11 baseline only; no failure event recorded",
+    "site_rules.json: LOADER-BACKUP-01, LOADER-BACKUP-02, MOVE-TIME-01"
+  ],
+  "parsed_answer": true,
+  "seconds_radio_to_proposal": 39.9,
+  "within_15_min_window": true,
+  "cost_usd_total": 0.1861,
+  "cost_per_correct_proposal": 0.1861,
+  "agents": [
+    {
+      "agent": "single-agent",
+      "seconds": 39.9,
+      "cost_usd": 0.1861,
+      "turns": 6,
+      "final": "```json\n{\n  \"failed_equipment\": \"LH-07 (Scoop 7, LHD 17t): hydraulic pressure lost, bucket will not lift. Maintenance suspects the hydraulic pump (radio 09:26).\",\n  \"failed_place\": \"TP-1310-04 (level 1310, grade 8.4 g/t, plan 300 t / 81.0 oz, phase carguio, priority 1)\",\n  \"recommendation\": {\n    \"action_type\": \"reassign_loader\",\n    \"equipment_id\": \"LH-11\",\n    \"from_place\": \"TP-1250-02\",\n    \"to_place\": \"TP-1310-04\",\n    \"start_by\": \"09:31 (now). Ramp move of about 1 h, so it loads from about 10:31.\",\n    \"tonnes_protected\": 189.0,\n    \"oz_protected\": 51.0,\n    \"tonnes_lost_elsewhere\": 147.0,\n    \"oz_lost_elsewhere\": 19.4,\n    \"net_oz_protected\": 31.6\n  },\n  \"options\": [\n    {\n      \"option_id\": \"do_nothing\",\n      \"description\": \"Leave TP-1310-04 without a loader until 17:00. Loading is lost from 09:18.\",\n      \"tonnes_at_risk\": 227.4,\n      \"oz_at_risk\": 61.4\n    },\n    {\n      \"option_id\": \"wait_for_repair\",\n      \"description\": \"Wait for LH-07 to be repaired. Maintenance says at least 4 h from arrival at 09:26, so back about 13:26 at best. With no CMMS there is no confirmed ETA, and the repair could run longer.\",\n      \"tonnes_at_risk\": 114.7,\n      \"oz_at_risk\": 31.0\n    },\n    {\n      \"option_id\": \"reassign_loader\",\n      \"description\": \"Move LH-11 from TP-1250-02 (4.1 g/t, loading only) to TP-1310-04. This loses 38.4 t / 10.4 oz at TP-1310-04 during the move, plus 147.0 t / 19.4 oz at the donor stope TP-1250-02, which has no loader for the rest of the shift.\",\n      \"tonnes_at_risk\": 185.4,\n      \"oz_at_risk\": 29.8\n    }\n  ],\n  \"calculation\": \"Assumed loading rate = plan tonnes / loading hours. Loading hours are 07:00-11:00, 11:30-16:00 and 16:00-17:00, which is 9.5 h. TP-1310-04 rate = 300/9.5 = 31.58 t/h. TP-1250-02 rate = 200/9.5 = 21.05 t/h. oz = t x g/t / 31.1035. The rate is a pro-rata assumption; tonnes already loaded before 09:18 are not in the data. The at-risk figures are for loading from the failure onward. LOADER-BACKUP-01 sends the move to the lowest-grade stope. LOADER-BACKUP-02 excludes TP-1220-01 (3.9 g/t) because its phase is carguio-perforacion and PP-05 is drilling there. TP-1250-02 (4.1 g/t, phase carguio) is the lowest-grade stope that can give up its loader. MOVE-TIME-01 gives 1 h for the 1250 to 1310 ramp move. do_nothing: loading hours from 09:18 are 1.7 + 4.5 + 1.0 = 7.2 h, so 227.4 t x 8.4 / 31.1035 = 61.4 oz. wait_for_repair: loading hours from 09:18 to 13:26 are 1.7 + 1.93 = 3.63 h, so 114.7 t = 31.0 oz. reassign_loader: TP-1310-04 loses 09:18-10:31 = 1.22 h, which is 38.4 t = 10.4 oz. The donor loses 09:31-17:00 = 6.98 h x 21.05 = 147.0 t x 4.1 / 31.1035 = 19.4 oz. Total loss is 185.4 t / 29.8 oz. Protected versus do_nothing: 227.4 - 38.4 = 189.0 t and 61.4 - 10.4 = 51.0 oz. Net = 51.0 - 19.4 = 31.6 oz (wait_for_repair protects 30.4 oz). Reassigning is only about 1 oz better than the best case of waiting. It is the safer choice because it does not depend on the unconfirmed 4 h repair time. If the repair takes longer, the gap grows. Alternatives not chosen: TP-1220-01 is a combined cycle and cannot give up its loader. The other loaders are on stopes of 5.2 g/t or higher, which would lose more ounces.\",\n  \"sources\": [\n    \"radio://PROD/09:18/scoop-7\",\n    \"radio://PROD/09:23/scoop-7\",\n    \"radio://MANT/09:26/mantencion\",\n    \"radio://DESP/09:28/supervisor-produccion\",\n    \"radio://DESP/09:31/jefe-guardia-a\",\n    \"Plan_de_turno.json: TP-1310-04 (LH-07), TP-1250-02 (LH-11), TP-1220-01 (LH-04, PP-05), cronograma, equipos_requeridos, supuestos (no spare scoop)\",\n    \"Inventario_de_frentes.json: TP-1310-04, TP-1250-02, TP-1220-01\",\n    \"Telemetria_flota.json: LH-07 and LH-11 baseline only; no failure event recorded\",\n    \"site_rules.json: LOADER-BACKUP-01, LOADER-BACKUP-02, MOVE-TIME-01\"\n  ],\n  \"confidence\": \"medium\",\n  \"missing_info\": [\n    \"CMMS is down (HTTP 503), so there is no confirmed repair ETA, work order or parts availability. The 4 h figure is only maintenance's radio estimate.\",\n    \"No data on tonnes already loaded at TP-1310-04 or TP-1250-02 before the failure. The loss figures use the planned loading rate (pro-rata).\",\n    \"Not confirmed that LH-07 can be cleared from, or bypassed in, the 1310-04 heading so LH-11 can load there.\",\n    \"Not confirmed that LH-11 is healthy and that trucks can haul the extra loading at 1310.\",\n    \"Not confirmed that the ramp move really takes only 1 h, or whether any activation time applies.\",\n    \"The telemetry file has no failure event for LH-07; the failure is known only from the radio.\"\n  ]\n}\n```",
+      "ok": true
+    }
+  ]
+}

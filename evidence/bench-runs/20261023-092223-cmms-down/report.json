@@ -1,0 +1,64 @@
+{
+  "scenario": "cmms-down",
+  "answer_key": "INC-01 / ACC-01: move LH-11 from TP-1250-02 to TP-1310-04",
+  "id_resolution_ok": true,
+  "proposal_id": "PR-0002",
+  "proposed": "move LH-11 from TP-1250-02 to TP-1310-04",
+  "action_correct": true,
+  "tonnes_at_risk_no_action": {
+    "agent": 231,
+    "key": 190,
+    "error_pct": 21.6
+  },
+  "oz_at_risk_no_action": {
+    "agent": 62.4,
+    "key": 51.3,
+    "error_pct": 21.6
+  },
+  "with_action_note": {
+    "agent_net_oz_protected": 32.8,
+    "agent_oz_lost_at_donor_stope": 19.7,
+    "key_residual_tonnes_excluding_donor": 30
+  },
+  "cites_failure_event": true,
+  "confidence": 0.55,
+  "missing_info": [
+    "CMMS has been down since 09:00. LH-07 repair history and pump stock are unavailable. Ask the maintenance planner or the warehouse.",
+    "The pump diagnosis is a crew guess from the sound. Confirm it with an on-site inspection by maintenance.",
+    "Check that TP-1310-04 is accessible and safe for LH-11 while LH-07 is stopped there. The supervisor or jefe de guardia should confirm.",
+    "Per-stope loading rates are assumed constant (planned tonnes / 10 h). Real rates and the current stope tonnes would come from production records."
+  ],
+  "decision": "approved",
+  "seconds_radio_to_proposal": 55.4,
+  "within_15_min_window": true,
+  "cost_usd_total": 0.1234,
+  "cost_per_correct_proposal": 0.1234,
+  "agents": [
+    {
+      "agent": "radio-agent",
+      "seconds": 8.2,
+      "cost_usd": 0.014,
+      "turns": 2,
+      "final": "I published one event, EV-0001: scoop 7 (LH-07) is down at 1310-04 (TP-1310-04) with a hydraulic failure. The operator reported it and said it needs maintenance on site. The maintenance crew's \"minimum four hours, sounds like the hydraulic pump\" is only a guess, so I marked it low reliability in the payload. I also noted in the payload that 1310-04 is the shift's high-grade stope and that the shift boss is looking for a scoop to cover it. Both mentions resolved, and I skipped the routine lines.",
+      "ok": true
+    },
+    {
+      "agent": "maintenance-agent",
+      "seconds": 13.2,
+      "cost_usd": 0.0266,
+      "turns": 4,
+      "final": "I submitted assessment PR-0001 for LH-07 (Scoop 7). It estimates a repair of 4 h low, 5.5 h likely and 8 h high, with a likely return at 14:48 (range 13:18 to 17:18). Confidence is 0.4.\n\nThe suspected cause is the hydraulic pump, but that is only maintenance's guess from the sound, before any inspection. The CMMS has been down since 09:00, so there was no repair history to use. The 4 h low case is maintenance's stated minimum from radio. The 5.5 h and 8 h cases are my own margins.\n\nThe proposal lists what is missing and who could supply it:\n- **Repair history:** the CMMS administrator or IT, or the maintenance planner.\n- **Spare pump availability:** the maintenance warehouse or maintenance supervisor.\n- **Confirmed diagnosis:** an on-site inspection by the maintenance crew.",
+      "ok": true
+    },
+    {
+      "agent": "planning-agent",
+      "seconds": 34.0,
+      "cost_usd": 0.0828,
+      "turns": 7,
+      "final": "I submitted PR-0002, which is pending approval. It proposes moving LH-11 from TP-1250-02 (4.1 g/t, lowest-grade loading-only stope) to TP-1310-04, starting at 09:31 and arriving about 10:31. That protects about 52.5 oz at TP-1310-04 and loses about 19.7 oz at TP-1250-02, a net gain of 32.8 oz.\n\nTotal ounces lost under each option:\n\n| Option | Oz lost | Tonnes lost |\n|---|---|---|\n| do_nothing | 62.4 | 231.0 |\n| wait_for_repair (likely 14:48) | 44.6 | 165.0 |\n| reassign_loader (LH-11) | 29.6 | 186.2 |\n\nThe reassignment follows rules LOADER-BACKUP-01 and -02 (only loading-only stopes can give up a loader). It also follows MOVE-TIME-01, which gives 1 h for a cross-level move.\n\nIf LH-07 comes back at the low estimate of 13:18, waiting loses about the same as reassigning (32.4 oz versus 29.6 oz).\n\nConfidence is 0.55 because the CMMS has been down since 09:00. The pump diagnosis is also only a crew guess from the sound, so the repair time is uncertain.",
+      "ok": true
+    }
+  ],
+  "tool_calls": 10,
+  "denied_calls": 0
+}

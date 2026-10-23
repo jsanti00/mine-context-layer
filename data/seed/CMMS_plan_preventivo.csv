@@ -1,0 +1,11 @@
+orden_id,equipo_id,tipo_equipo,fecha_programada,tipo,sistema,descripcion,estado,prioridad
+OT-2110,LH-07,LHD/Scoop,2026-06-26,preventivo,hidraulico,PM 500 h - inspeccion de sistema hidraulico,vencida,alta
+OT-2111,JD-04,Jumbo,2026-06-28,preventivo,electrico,Inspeccion de tablero electrico,vencida,alta
+OT-2113,PB-01,Bomba pasta,2026-06-30,inspeccion,bomba,Inspeccion de valvulas y sellos,programada,alta
+OT-2112,CM-04,Camion,2026-07-01,preventivo,transmision,PM transmision 500 h,programada,media
+OT-2116,JD-02,Jumbo,2026-07-01,preventivo,hidraulico,PM 250 h,programada,media
+OT-2114,LH-03,LHD/Scoop,2026-07-02,preventivo,general,PM 250 h,programada,media
+OT-2117,BL-04,Bolter,2026-07-02,inspeccion,hidraulico,Inspeccion de circuito de perforacion,programada,media
+OT-2119,LH-01,LHD/Scoop,2026-07-03,preventivo,frenos,Inspeccion de sistema de frenos,programada,media
+OT-2115,LH-09,LHD/Scoop,2026-07-03,preventivo,general,PM 250 h,programada,baja
+OT-2118,CM-06,Camion,2026-07-04,preventivo,general,PM 500 h,programada,baja

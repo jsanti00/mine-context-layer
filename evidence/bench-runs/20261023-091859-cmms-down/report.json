@@ -1,0 +1,64 @@
+{
+  "scenario": "cmms-down",
+  "answer_key": "INC-01 / ACC-01: move LH-11 from TP-1250-02 to TP-1310-04",
+  "id_resolution_ok": true,
+  "proposal_id": "PR-0002",
+  "proposed": "move LH-11 from TP-1250-02 to TP-1310-04",
+  "action_correct": true,
+  "tonnes_at_risk_no_action": {
+    "agent": 231,
+    "key": 190,
+    "error_pct": 21.6
+  },
+  "oz_at_risk_no_action": {
+    "agent": 62.39,
+    "key": 51.3,
+    "error_pct": 21.6
+  },
+  "with_action_note": {
+    "agent_net_oz_protected": 31.53,
+    "agent_oz_lost_at_donor_stope": 19.11,
+    "key_residual_tonnes_excluding_donor": 30
+  },
+  "cites_failure_event": true,
+  "confidence": 0.55,
+  "missing_info": [
+    "CMMS has been down since 09:00. There is no LH-07 repair history or parts stock. Maintenance planning or the CMMS administrator can supply them.",
+    "The pump diagnosis is unconfirmed. The crew at 1310-04 should confirm it after inspection, and the maintenance warehouse should confirm the pump spare is in stock.",
+    "LH-11 operator and ramp availability, and whether TP-1250-02 has any constraint on stopping loading. Ask the shift supervisor (jefe de guardia).",
+    "The assumed start time of 09:45 depends on the approval time."
+  ],
+  "decision": "approved",
+  "seconds_radio_to_proposal": 51.6,
+  "within_15_min_window": true,
+  "cost_usd_total": 0.1225,
+  "cost_per_correct_proposal": 0.1225,
+  "agents": [
+    {
+      "agent": "radio-agent",
+      "seconds": 8.5,
+      "cost_usd": 0.0145,
+      "turns": 2,
+      "final": "Published one event, EV-0001: scoop 7 (LH-07) is down at 1310-04 (TP-1310-04) with lost hydraulic pressure. It can't move under its own power. Maintenance suspects the hydraulic pump and estimates at least 4 hours, but that is a guess by ear, so I recorded it as such. The event payload also notes the supervisor's high-grade warning and the shift lead looking for a replacement scoop. I skipped the rest as routine chatter, including scoop 10 loading normally at 1310-11.",
+      "ok": true
+    },
+    {
+      "agent": "maintenance-agent",
+      "seconds": 14.3,
+      "cost_usd": 0.0294,
+      "turns": 6,
+      "final": "I submitted assessment PR-0001 for LH-07, the only open failure. The estimate is 4 h low, 5 h likely and 8 h high, with a likely return at 14:30 on the shift clock. Confidence is 0.4.\n\n- **Cause:** Probably the hydraulic pump. The crew diagnosed it by ear, so it isn't confirmed.\n- **Basis:** The estimate rests on the crew's radio guess of \"minimum 4 hours\". I assumed repair started about 09:30 and added 1 h to the likely case.\n- **High case:** The 8 h case would put the machine back around 17:30, after the productive window closes at 17:00. It covers parts not being in stock or the cause not being the pump.\n- **Missing information:** The CMMS has been down since 09:00, so there is no repair history for LH-07 and no parts data. A person could get the repair history from maintenance planning or the CMMS administrator, and pump spare availability from the maintenance warehouse. The crew at 1310-04 can confirm the diagnosis once they inspect it.",
+      "ok": true
+    },
+    {
+      "agent": "planning-agent",
+      "seconds": 28.8,
+      "cost_usd": 0.0786,
+      "turns": 8,
+      "final": "I submitted proposal PR-0002 for approval. It moves LH-11 from TP-1250-02 to TP-1310-04 to cover the failed LH-07, starting by 09:45. The move takes 1 h, so LH-11 arrives at 10:45.\n\n- **Why LH-11:** TP-1250-02 is the lowest-grade stope (4.1 g/t) among those that load only. Under LOADER-BACKUP-02, stopes in a combined cycle can't give up their loader.\n- **Net result:** about 187.5 t (50.64 oz) is protected at TP-1310-04. TP-1250-02 loses about 145 t (19.11 oz), so the net protected is 31.53 oz.\n- **Options compared (shift loss in total):**\n\n| Option | Tonnes lost | Ounces lost |\n|---|---|---|\n| Do nothing | 231 | 62.39 |\n| Wait for repair (back about 14:30) | 156 | 42.13 |\n| Reassign LH-11 | 188.5 | 30.86 |\n\n- **Confidence:** 0.55. The 09:45 start is my assumption. The repair estimate is only a crew guess because the CMMS has been down since 09:00. I listed who to ask for the missing information in the proposal.",
+      "ok": true
+    }
+  ],
+  "tool_calls": 13,
+  "denied_calls": 0
+}

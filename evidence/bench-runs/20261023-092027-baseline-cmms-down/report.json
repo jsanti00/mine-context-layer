@@ -1,0 +1,52 @@
+{
+  "scenario": "baseline-cmms-down",
+  "proposed": "move LH-11 from TP-1250-02 to TP-1310-04",
+  "action_correct": true,
+  "id_resolution_ok": true,
+  "missing_info": [
+    "CMMS unavailable (HTTP 503 since 09:00): no work order, parts or ETA for the pump repair, so the 4 h minimum is not confirmed",
+    "Tonnes already loaded at TP-1310-04 before 09:18 are not available, so all figures are pro-rated from the plan",
+    "LOADER-BACKUP-02 is a builder assumption pending validation by the project owner",
+    "Actual LH-11 position and the ramp travel and handover time are not confirmed (1 h assumed from MOVE-TIME-01)",
+    "Whether the loader reassignment is safe for hauling and the trucks' capacity at 1310 was not checked",
+    "Whether LH-11 can be returned to TP-1250-02 once LH-07 is repaired was not modelled",
+    "Plan dates (2026-06-30) differ from today's date, so the shift files may not be this shift's"
+  ],
+  "tonnes_at_risk_no_action": {
+    "agent": 227.4,
+    "key": 190,
+    "error_pct": 19.7
+  },
+  "oz_at_risk_no_action": {
+    "agent": 61.4,
+    "key": 51.3,
+    "error_pct": 19.7
+  },
+  "confidence": "medium",
+  "sources": [
+    "radio://PROD/09:18/scoop-7",
+    "radio://PROD/09:23/scoop-7",
+    "radio://MANT/09:26/mantencion",
+    "radio://DESP/09:28/supervisor-produccion",
+    "radio://DESP/09:31/jefe-guardia-a",
+    "Plan_de_turno.json: tajos_produccion TP-1310-04 (LH-07, 'carguio', 300 t, 8.4 g/t, 81.0 oz, schedule), TP-1250-02 (LH-11, 'carguio', 200 t, 4.1 g/t, 26.4 oz), TP-1220-01 (LH-04, 'carguio-perforacion'), equipos_requeridos (LH-07, LH-11, no spare scoop)",
+    "Inventario_de_frentes.json: TP-1310-04, TP-1250-02 (observations: candidate to give up LH-11), TP-1280-09 (no loader free to cover it)",
+    "site_rules.json: LOADER-BACKUP-01, LOADER-BACKUP-02 (a builder assumption pending validation), MOVE-TIME-01",
+    "Telemetria_flota.json: LH-07 and LH-11 baseline records (no failure event recorded)"
+  ],
+  "parsed_answer": true,
+  "seconds_radio_to_proposal": 47.4,
+  "within_15_min_window": true,
+  "cost_usd_total": 0.2008,
+  "cost_per_correct_proposal": 0.2008,
+  "agents": [
+    {
+      "agent": "single-agent",
+      "seconds": 47.4,
+      "cost_usd": 0.2008,
+      "turns": 6,
+      "final": "{\"failed_equipment\":\"LH-07 (radio: Scoop 7, hydraulic pressure lost, bucket won't lift)\",\"failed_place\":\"TP-1310-04 (level 1310, 8.4 g/t, plan 300 t / 81.0 oz, the highest grade of the shift)\",\"recommendation\":{\"action_type\":\"reassign_loader\",\"equipment_id\":\"LH-11\",\"from_place\":\"TP-1250-02\",\"to_place\":\"TP-1310-04\",\"start_by\":\"09:31 (immediately; about 1 h by ramp, on site about 10:31)\",\"tonnes_protected\":189.0,\"oz_protected\":51.0,\"tonnes_lost_elsewhere\":200.0,\"oz_lost_elsewhere\":26.4,\"net_oz_protected\":24.7},\"options\":[{\"option_id\":\"do_nothing\",\"description\":\"Leave TP-1310-04 without a loader for the rest of the shift. It is the best-grade stope, and no other stope is affected.\",\"tonnes_at_risk\":227.4,\"oz_at_risk\":61.4},{\"option_id\":\"wait_for_repair\",\"description\":\"Wait for maintenance to fix LH-07. They estimate a minimum of 4 h and the cause is only suspected (hydraulic pump), so done about 13:26 at the earliest. The estimate has no CMMS confirmation and no parts or ETA information.\",\"tonnes_at_risk\":114.7,\"oz_at_risk\":31.0},{\"option_id\":\"reassign_loader\",\"description\":\"Move LH-11 from TP-1250-02 (4.1 g/t, loading-only phase, lowest-grade stope allowed to give up a loader) to TP-1310-04. The move takes about 1 h and leaves 1250-02 idle for the whole shift. LH-04 on TP-1220-01 (3.9 g/t) is lower grade but is in a combined loading-and-drilling phase and keeps its loader.\",\"tonnes_at_risk\":238.4,\"oz_at_risk\":36.7}],\"calculation\":\"Productive loading time uses the TP-1310-04 plan schedule: 07:00-11:00, 11:30-16:00 and 16:00-17:00, which is 9.5 h for 300 t, so 31.58 t/h. The telemetry only gives end-of-shift totals, so the tonnes already loaded before 09:18 are not known and the loading rate is pro-rated from the plan. Oz = t x g/t / 31.1035. do_nothing: loading time remaining from 09:18 is 1.7 h (to 11:00) plus 5.5 h (11:30-17:00) = 7.2 h, so 227.4 t x 8.4 / 31.1035 = 61.4 oz. wait_for_repair: loading lost from 09:18 to 13:26 is 1.7 h + 1.93 h = 3.63 h, so 114.7 t, 31.0 oz, and this is a floor. reassign_loader: LH-11 leaves at 09:31 and arrives about 10:31, so 09:18-10:31 = 1.22 h is lost at 1310-04 = 38.4 t / 10.4 oz. The whole of TP-1250-02 is lost, 200 t x 4.1 / 31.1035 = 26.4 oz. Total at risk is 238.4 t / 36.7 oz. Protected at 1310-04 = 227.4 - 38.4 = 189.0 t (61.4 - 10.4 = 51.0 oz). Net = 51.0 - 26.4 = 24.7 oz. Caveat: on these numbers, if the repair really takes exactly 4 h, waiting loses less (31.0 oz vs 36.7 oz). Reassigning is better if the repair finishes after about 14:10, roughly 8.5 oz lost per extra hour of downtime. I recommend reassigning because 4 h is a stated minimum, the diagnosis was by ear, the CMMS is down, and supervision says this stope cannot be lost. The reassignment can be reversed: if LH-07 comes back earlier than expected, return LH-11 to 1250-02, about 1 h by ramp. Not modelled: the lost loading time at 1250-02 would be less than the whole stope if that happens.\",\"sources\":[\"radio://PROD/09:18/scoop-7\",\"radio://PROD/09:23/scoop-7\",\"radio://MANT/09:26/mantencion\",\"radio://DESP/09:28/supervisor-produccion\",\"radio://DESP/09:31/jefe-guardia-a\",\"Plan_de_turno.json: tajos_produccion TP-1310-04 (LH-07, 'carguio', 300 t, 8.4 g/t, 81.0 oz, schedule), TP-1250-02 (LH-11, 'carguio', 200 t, 4.1 g/t, 26.4 oz), TP-1220-01 (LH-04, 'carguio-perforacion'), equipos_requeridos (LH-07, LH-11, no spare scoop)\",\"Inventario_de_frentes.json: TP-1310-04, TP-1250-02 (observations: candidate to give up LH-11), TP-1280-09 (no loader free to cover it)\",\"site_rules.json: LOADER-BACKUP-01, LOADER-BACKUP-02 (a builder assumption pending validation), MOVE-TIME-01\",\"Telemetria_flota.json: LH-07 and LH-11 baseline records (no failure event recorded)\"],\"confidence\":\"medium\",\"missing_info\":[\"CMMS unavailable (HTTP 503 since 09:00): no work order, parts or ETA for the pump repair, so the 4 h minimum is not confirmed\",\"Tonnes already loaded at TP-1310-04 before 09:18 are not available, so all figures are pro-rated from the plan\",\"LOADER-BACKUP-02 is a builder assumption pending validation by the project owner\",\"Actual LH-11 position and the ramp travel and handover time are not confirmed (1 h assumed from MOVE-TIME-01)\",\"Whether the loader reassignment is safe for hauling and the trucks' capacity at 1310 was not checked\",\"Whether LH-11 can be returned to TP-1250-02 once LH-07 is repaired was not modelled\",\"Plan dates (2026-06-30) differ from today's date, so the shift files may not be this shift's\"]}",
+      "ok": true
+    }
+  ]
+}

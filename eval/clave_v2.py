@@ -233,10 +233,21 @@ def hhmm(t):
     return f"{int(t):02d}:{round(t % 1 * 60):02d}"
 
 
-def clave(mina, patron, red=None):
-    """Recorre los eventos del caso y devuelve la mejor decisión en cada uno con la información de ese momento."""
+def politica_optima(T, t, ctx):
+    # La clave: la mejor asignación posible con la información de ese momento
+    return decidir(T, t)[1]
+
+
+def clave(mina, patron, red=None, politica=None, registro=None):
+    """Recorre los eventos del caso. En cada evento decide la "politica" (por defecto, la clave).
+
+    registro: lista donde se guarda, por cada decisión, lo que decidió la política, lo mejor posible
+    y cuántas onzas esperadas se pierden frente a lo mejor (para evaluar agentes).
+    """
     red = red or Red(mina)
+    politica = politica or politica_optima
     T = Turno(mina, red)
+    T.hechos = []          # lo que las fuentes (radio, CMMS, mantenimiento) han informado hasta ahora
     rol = roles(mina)
     eventos = sorted(PATRONES[patron], key=lambda e: hora(e[0]))
     # Fin real de cada reparación: el valor más probable del último rango conocido
@@ -254,18 +265,28 @@ def clave(mina, patron, red=None):
         ultimo = i == len(eventos) - 1 or eventos[i + 1][0] != h
         T.avanzar(t)
         if tipo == "reporte_dudoso":
+            T.hechos.append({"hora": h, "tipo": "aviso_radio_no_confirmado", "lugar": tajo,
+                             "scoop": next(s for s, c in T.casa.items() if c == tajo)})
+            T.dudosos = getattr(T, "dudosos", set()) | {tajo}
             salida.append((h, f"aviso no confirmado en {tajo}", "no mover; pedir confirmación al jefe de área", 0.0))
         elif tipo == "falla":
             s = next(s for s, c in T.casa.items() if c == tajo)
             T.caidos[tajo] = {"scoop": s, "rango_abs": tuple(t + d for d in dato[0]), "lugar": dato[1]}
             T.pos[s] = None
+            T.hechos.append({"hora": h, "tipo": "falla", "lugar": tajo, "scoop": s,
+                             "rango_h": dato[0], "lugar_reparacion": dato[1]})
         elif tipo == "actualiza":
             T.caidos[tajo]["rango_abs"] = tuple(t0[r] + d for d in dato)
+            T.hechos.append({"hora": h, "tipo": "actualizacion_estimado", "lugar": tajo,
+                             "scoop": T.caidos[tajo]["scoop"], "rango_h": dato, "desde_falla": hhmm(t0[r])})
         elif tipo == "detenido":
             T.detenidos[tajo] = tuple(t + d for d in dato)
+            T.hechos.append({"hora": h, "tipo": "tajo_detenido", "lugar": tajo, "rango_h": dato,
+                             "scoop": next(s for s, c in T.casa.items() if c == tajo), "causa": "ventilacion insuficiente"})
         elif tipo == "reparado":
             c = T.caidos.pop(tajo)
             s = c["scoop"]
+            T.hechos.append({"hora": h, "tipo": "reparado", "lugar": tajo, "scoop": s})
             sitio = tajo if c["lugar"] == "en sitio" else c["lugar"]
             prestado = next((x for x, p in T.pos.items() if p == tajo and x != s), None)
             if prestado:
@@ -292,7 +313,23 @@ def clave(mina, patron, red=None):
             continue
         if not ultimo:
             continue
-        gana, asign = decidir(T, t)
+        ctx = {"hora": h, "eventos": [e for e in eventos if e[0] == h], "rol": rol}
+        gana_opt, asign_opt = decidir(T, t)
+        if politica is politica_optima:
+            gana, asign = gana_opt, asign_opt
+        else:
+            asign = politica(T, t, ctx) or {}
+            st = T.estado_en(t)
+            base = evaluar(T, t, st, {})
+            limpia = {k: v for k, v in asign.items() if (k in T.caidos and v in T.mina["scoops"])
+                      or (k in T.mina["scoops"] and v in T.mina["reservas"])}
+            gana = round(evaluar(T, t, st, limpia) - base, 1) if limpia else 0.0
+            if registro is not None:
+                registro.append({"hora": h, "patron": patron, "agente": asign, "agente_valida": limpia,
+                                 "mejor": asign_opt, "oz_agente": gana, "oz_mejor": gana_opt,
+                                 "perdida_oz": round(max(0.0, gana_opt - gana), 1),
+                                 "dudosos": sorted(getattr(T, "dudosos", set()))})
+            asign = limpia
         texto = "; ".join(f"{v} a {k}" if k in T.caidos else f"{k} a reserva {v}" for k, v in asign.items()) or "no mover nada"
         aplicar(T, t, asign)
         quien = ", ".join(f"{e[1]} {rol[e[2]]}" for e in eventos if e[0] == h and e[1] in ("falla", "actualiza", "detenido"))

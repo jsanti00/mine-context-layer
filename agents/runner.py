@@ -35,7 +35,8 @@ def short(obj, n=110):
 
 
 def run_agent(name, role, system_prompt, user_prompt, db_path, source="", model="sonnet",
-              builtin_tools="", workdir=None, use_layer=True, log_dir=None):
+              builtin_tools="", workdir=None, use_layer=True, log_dir=None,
+              server="mcl/server.py", extra_env=None, quiet=False):
     """Start the agent, stream its tool calls, and return cost, time and final message."""
     color = COLORS.get(name, "")
     cfg_dir = Path(tempfile.mkdtemp(prefix="mcl-"))
@@ -46,8 +47,9 @@ def run_agent(name, role, system_prompt, user_prompt, db_path, source="", model=
     if use_layer:
         # The MCP server knows who this agent is through environment variables
         cfg = {"mcpServers": {"mcl": {
-            "command": str(ROOT / ".venv/bin/python"), "args": [str(ROOT / "mcl/server.py")],
-            "env": {"MCL_DB": str(db_path), "MCL_AGENT": name, "MCL_ROLE": role, "MCL_SOURCE": source}}}}
+            "command": str(ROOT / ".venv/bin/python"), "args": [str(ROOT / server)],
+            "env": {"MCL_DB": str(db_path), "MCL_AGENT": name, "MCL_ROLE": role, "MCL_SOURCE": source,
+                    **(extra_env or {})}}}}
         (cfg_dir / "mcp.json").write_text(json.dumps(cfg))
         cmd += ["--mcp-config", str(cfg_dir / "mcp.json"), "--strict-mcp-config",
                 "--allowedTools", "mcp__mcl__*"]
@@ -73,14 +75,15 @@ def run_agent(name, role, system_prompt, user_prompt, db_path, source="", model=
             for block in msg["message"].get("content", []):
                 if block.get("type") == "tool_use":
                     tool = block["name"].replace("mcp__mcl__", "")
-                    print(f"{color}[{name}] -> {tool}{RESET} {DIM}{short(block['input'])}{RESET}")
+                    if not quiet:
+                        print(f"{color}[{name}] -> {tool}{RESET} {DIM}{short(block['input'])}{RESET}")
         # Print the layer's short answer for writes, so ids are visible
         if msg.get("type") == "user":
             for block in msg["message"].get("content", []):
                 if block.get("type") == "tool_result":
                     text = block.get("content")
                     text = text[0].get("text", "") if isinstance(text, list) and text else str(text)
-                    if '"event_id"' in text or '"proposal_id"' in text or '"error"' in text:
+                    if not quiet and ('"event_id"' in text or '"proposal_id"' in text or '"error"' in text):
                         print(f"{color}[{name}] <- {RESET}{DIM}{text[:160]}{RESET}")
         if msg.get("type") == "result":
             result = msg

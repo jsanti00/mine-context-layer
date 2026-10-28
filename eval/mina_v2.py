@@ -23,7 +23,14 @@ OZ = 31.1035                      # gramos por onza troy
 INICIO, FIN = 7.0, 17.0           # ventana productiva del turno de día (06:00 ingreso, 17:00 retiro)
 COLACION = (11.0, 11.5)
 DT = 0.1                          # paso de la simulación: 6 minutos
-VALOR_DESARROLLO_OZ_H = 1.0       # supuesto a validar: 1 hora de scoop sacada de desarrollo equivale a 1 oz
+# Valor de una hora de scoop en un frente de desarrollo, según para qué sirve el frente (oz equivalentes por hora).
+# Supuesto validado en concepto por Santiago (depende del frente); los rangos son supuestos y se sensibilizan.
+TIPOS_DESARROLLO = {
+    "ruta critica": (4.0, 6.0),       # habilita el próximo tajo del plan: atrasarlo atrasa producción
+    "preparacion": (1.0, 2.0),        # accesos a tajos futuros sin urgencia
+    "infraestructura": (0.2, 0.5),    # refugios, bahías, exploración
+}
+MULT_DESARROLLO = 1.0                 # escenario de sensibilidad: 0,5 = bajo, 1 = base, 2 = alto
 LEY_CORTE = 5.5
 
 MODELOS = {"LH514": {"t": 14, "t_h": 42}, "LH410": {"t": 10, "t_h": 30}}   # t/h efectivas a 100 m de acopio
@@ -94,8 +101,10 @@ def generar(semilla=0):
     for k in range(2):
         nombre, nv = rng.choice(lugares)
         did = _id("DS", nombre, nv, k + 1)
+        tipo = rng.choice(list(TIPOS_DESARROLLO))
         mina["desarrollos"][did] = {"id": did, "mina": nombre, "nivel": nv, "m_rampa": rng.randint(200, 700),
-                                    "lado": rng.choice("EW")}
+                                    "lado": rng.choice("EW"), "tipo": tipo,
+                                    "valor_oz_h": round(rng.uniform(*TIPOS_DESARROLLO[tipo]), 1)}
     for x in list(mina["tajos"].values()) + list(mina["reservas"].values()) + list(mina["desarrollos"].values()):
         mina["aristas"].append((x["id"], f"R-{x['mina']}-{x['nivel']}", x["m_rampa"], "drift"))
 
@@ -105,10 +114,15 @@ def generar(semilla=0):
     carguio = sorted([t for t in mina["tajos"] if mina["tajos"][t]["fase"] == "carguio"],
                      key=lambda t: -mina["tajos"][t]["ley"])
     destinos = carguio[:6] + [carguio[6]] + list(mina["desarrollos"]) + ["TALLER-564"]
+    # Mantenimiento preventivo: arranca en el cambio de turno (06:00), un solo scoop a la vez.
+    # Servicio de 250 h: 4 a 6 h; de 500 h: 8 a 12 h (supuestos sin fuente dura); a veces no hay ninguno.
+    pm = rng.choices(["250 h", "500 h", "ninguno"], weights=[60, 25, 15])[0]
+    dur = {"250 h": rng.choice([4, 5, 6]), "500 h": rng.choice([8, 10, 12]), "ninguno": 0}[pm]
+    mina["mantenimiento"] = {"servicio": pm, "inicio": 6.0, "horas": dur}
     for k, (mod, dest) in enumerate(zip(modelos, destinos)):
         sid = f"LH-{k + 1:02d}"
-        mina["scoops"][sid] = {"id": sid, "modelo": mod, "casa": dest,
-                               "disponible_desde": 13.0 if dest == "TALLER-564" else INICIO}
+        desde = INICIO if dest != "TALLER-564" else (INICIO if pm == "ninguno" else 6.0 + dur)
+        mina["scoops"][sid] = {"id": sid, "modelo": mod, "casa": dest, "disponible_desde": desde}
     return mina
 
 
@@ -191,7 +205,9 @@ def simular(mina, red, agenda, desde=INICIO, estado=None):
                 if lugar is None or lugar in ocupado:
                     continue
                 if lugar in mina["desarrollos"]:
-                    st["desarrollo_h"] += DT; ocupado.add(lugar); continue
+                    st["desarrollo_h"] += DT
+                    st["desarrollo_oz"] = st.get("desarrollo_oz", 0.0) + DT * mina["desarrollos"][lugar]["valor_oz_h"] * MULT_DESARROLLO
+                    ocupado.add(lugar); continue
                 if lugar not in info:
                     continue
                 x = info[lugar]
@@ -207,6 +223,7 @@ def simular(mina, red, agenda, desde=INICIO, estado=None):
                 espacio = mina["minas"][n]["acopio_cap_t"] - st["acopio_t"][n]
                 carga = max(0.0, min(tasa_scoop(mina, sid, lugar) * DT, st["tajo_t"][lugar], espacio))
                 st["tajo_t"][lugar] -= carga
+                st["t_cargada"] = st.get("t_cargada", 0.0) + carga
                 st["acopio_t"][n] += carga
                 st["acopio_oz"][n] += carga * x["ley"] / OZ
                 ocupado.add(lugar)
@@ -218,7 +235,7 @@ def simular(mina, red, agenda, desde=INICIO, estado=None):
                     st["acopio_oz"][n] -= oz; st["oz_sup"] += oz
                 st["acopio_t"][n] -= sube; st["t_sup"] += sube
         t = round(t + DT, 6)
-    st["valor"] = st["oz_sup"] + VALOR_DESARROLLO_OZ_H * st["desarrollo_h"]
+    st["valor"] = st["oz_sup"] + st.get("desarrollo_oz", 0.0)
     return st
 
 
@@ -240,7 +257,9 @@ if __name__ == "__main__":
                 n = mina["tajos"][x["casa"]]["mina"]
                 carga[n] = carga.get(n, 0) + round(tasa_scoop(mina, s, x["casa"]))
         leyes = [x["ley"] for x in mina["tajos"].values()]
-        print(f"turno {semilla}: {round(r['t_sup'])} t y {round(r['oz_sup'])} oz a superficie; "
+        print(f"turno {semilla}: cargadas {round(r['t_cargada'])} t, acarreadas {round(r['t_sup'])} t "
+              f"({round(r['oz_sup'])} oz), variación de acopios {round(sum(r['acopio_t'].values()) - sum(m['acopio_t'] for m in mina['minas'].values())):+d} t; "
+              f"mantenimiento {mina['mantenimiento']['servicio']} ({mina['mantenimiento']['horas']} h); "
               f"ley media {sum(leyes) / len(leyes):.1f} g/t (min {min(leyes)}, max {max(leyes)}); "
               f"desarrollo {r['desarrollo_h']:.1f} h")
         print("   camiones t/h por mina:", cap, "| scoops t/h por mina:", carga,

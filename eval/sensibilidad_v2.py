@@ -11,7 +11,7 @@ ESC_VEL = {"bajo": ({"drift": 8, "ramp": 4, "surface": 25}, 0.5), "base": (None,
 
 def decisiones(vel, maniobra, dev):
     # Corre todos los casos y guarda solo las decisiones (sin onzas)
-    mina_v2.VALOR_DESARROLLO_OZ_H = dev
+    mina_v2.MULT_DESARROLLO = dev
     out = {}
     for s in TURNOS:
         m = generar(s); red = Red(m, vel, maniobra)
@@ -27,6 +27,6 @@ for nombre, (vel, man) in ESC_VEL.items():
         continue
     otro = decisiones(vel, man, 1.0)
     print(f"velocidad {nombre}: cambia la decisión en {sum(otro[k] != base[k] for k in base)} de {len(base)}")
-for dev in (0.0, 3.0, 6.0):
+for dev in (0.0, 0.5, 2.0):
     otro = decisiones(None, None, dev)
-    print(f"desarrollo {dev} oz/h: cambia la decisión en {sum(otro[k] != base[k] for k in base)} de {len(base)}")
+    print(f"valor del desarrollo x{dev}: cambia la decisión en {sum(otro[k] != base[k] for k in base)} de {len(base)}")

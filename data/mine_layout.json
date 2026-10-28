@@ -1,0 +1,51 @@
+{
+  "_note": "Synthetic mine layout. Loosely inspired by a multi-zone underground vein gold mine (Cerro Negro style, Santa Cruz, Argentina): several veins reached by separate declines and joined by a surface road. All names, distances and positions are invented. No real site data.",
+  "speeds_kmh": {"drift": 6, "ramp": 4, "surface": 10},
+  "fixed_move_overhead_h": 0.5,
+  "_fixed_move_overhead_note": "Per transfer: stop and park the loader, radio clearance with traffic control, pre-use check at destination.",
+  "zones": {
+    "Principal": "Main zone. One central ramp joins levels 1340 to 1250; each level has an east and a west drift along the vein.",
+    "Sur": "South zone. Own decline from its own portal; not connected underground to the main zone. Reached by a 3 km surface road between portals."
+  },
+  "nodes": [
+    {"id": "PORTAL-P", "zone": "Principal", "kind": "portal"},
+    {"id": "R-1340", "zone": "Principal", "kind": "ramp", "level": 1340},
+    {"id": "R-1310", "zone": "Principal", "kind": "ramp", "level": 1310},
+    {"id": "R-1280", "zone": "Principal", "kind": "ramp", "level": 1280},
+    {"id": "R-1250", "zone": "Principal", "kind": "ramp", "level": 1250},
+    {"id": "PORTAL-S", "zone": "Sur", "kind": "portal"},
+    {"id": "RS-1250", "zone": "Sur", "kind": "ramp", "level": 1250},
+    {"id": "RS-1220", "zone": "Sur", "kind": "ramp", "level": 1220},
+    {"id": "TALLER-1280", "zone": "Principal", "kind": "workshop", "level": 1280}
+  ],
+  "edges": [
+    {"a": "PORTAL-P", "b": "R-1340", "m": 450, "type": "ramp"},
+    {"a": "R-1340", "b": "R-1310", "m": 250, "type": "ramp"},
+    {"a": "R-1310", "b": "R-1280", "m": 250, "type": "ramp"},
+    {"a": "R-1280", "b": "R-1250", "m": 250, "type": "ramp"},
+    {"a": "PORTAL-P", "b": "PORTAL-S", "m": 3000, "type": "surface"},
+    {"a": "PORTAL-S", "b": "RS-1250", "m": 600, "type": "ramp"},
+    {"a": "RS-1250", "b": "RS-1220", "m": 250, "type": "ramp"},
+    {"a": "R-1280", "b": "TALLER-1280", "m": 100, "type": "drift"}
+  ],
+  "stope_access": [
+    {"stope": "TP-1340-06", "node": "R-1340", "m": 400, "side": "E"},
+    {"stope": "TP-1340-03", "node": "R-1340", "m": 350, "side": "W"},
+    {"stope": "TP-1340-09", "node": "R-1340", "m": 900, "side": "E"},
+    {"stope": "TP-1340-12", "node": "R-1340", "m": 800, "side": "W"},
+    {"stope": "TP-1310-04", "node": "R-1310", "m": 300, "side": "E"},
+    {"stope": "TP-1310-07", "node": "R-1310", "m": 500, "side": "W"},
+    {"stope": "TP-1310-11", "node": "R-1310", "m": 1100, "side": "E"},
+    {"stope": "DF-1310-05", "node": "R-1310", "m": 200, "side": "W"},
+    {"stope": "TP-1310-09", "node": "R-1310", "m": 700, "side": "E"},
+    {"stope": "TP-1280-02", "node": "R-1280", "m": 250, "side": "E"},
+    {"stope": "TP-1280-06", "node": "R-1280", "m": 900, "side": "W"},
+    {"stope": "TP-1280-09", "node": "R-1280", "m": 600, "side": "E"},
+    {"stope": "TP-1280-11", "node": "R-1280", "m": 400, "side": "W"},
+    {"stope": "TP-1250-02", "node": "R-1250", "m": 300, "side": "W"},
+    {"stope": "TP-1250-08", "node": "RS-1250", "m": 300, "side": "E"},
+    {"stope": "TP-1250-05", "node": "RS-1250", "m": 500, "side": "W"},
+    {"stope": "TP-1220-01", "node": "RS-1220", "m": 400, "side": "E"},
+    {"stope": "TP-1220-04", "node": "RS-1220", "m": 650, "side": "W"}
+  ]
+}

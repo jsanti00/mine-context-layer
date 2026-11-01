@@ -1,0 +1,54 @@
+{
+ "turno": 0,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-N574-15": "LH-08",
+    "TJ-C512-10": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-N574-15": "LH-08",
+    "TJ-C512-10": "LH-09"
+   },
+   "mejor": {
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 10.6,
+   "oz_mejor": 17.1,
+   "perdida_oz": 6.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-15"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 90.0,
+    "rationale": "Both radio and CMMS confirm LH-01 and LH-06 are down, with repairs not finished before 12:30 to 13:30 at best. C512-10 holds 136 t at 13.4 g/t (about 58 oz). N574-15 holds 168 t at 9.4 g/t (about 51 oz). LH-08 comes from the infrastructure heading (0.5 oz/h) to N574-15, 0.34 h away. LH-09 comes from the preparation heading (2 oz/h) to C512-10, 0.74 h away. Each stope needs about 5 h of loading by a loan. Estimated development cost is about 3 oz for LH-08 and about 11 oz for LH-09, against about 109 oz of ore gained. Stockpiles have room and the trucks are not limiting. No producing loader is taken, because those stopes' own ore would be lost.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 19.6,
+   "costo_usd": 0.0539,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

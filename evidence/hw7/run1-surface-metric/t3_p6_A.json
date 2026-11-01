@@ -1,0 +1,94 @@
+{
+ "turno": 3,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 42,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 28.2,
+   "perdida_oz": 28.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 20.0,
+    "rationale": "LH-01 is down until about 13:20 (range 12:20 to 14:20). Central is already truck-limited: loader inflow is 110 t/h against truck capacity of 91 t/h, so an extra loader at C590-09 adds almost nothing. Este has about 13 t/h of spare truck capacity (inflow 59, trucks 72). I lend LH-08 from the infrastructure heading DS-E569-01, which costs 0.4 oz/h, to E543-07 (8.3 g/t, 311 t). Travel is 0.33 h. The gain is about 13 t/h x 7.3 h x 8.3 g/t / 31.1 = 25 oz, less about 3 oz of development value. Norte has spare truck capacity but only one producing stope, and a reserve there can only be opened by a stopped stope's loader, so I skip it. LH-10 stays at the workshop.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [
+    "préstamo inválido LH-08 -> TJ-E543-07"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 21.2,
+   "costo_usd": 0.0543,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 28.2
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C590-09": "LH-10",
+    "TJ-C564-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-10",
+    "TJ-C564-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-04",
+    "TJ-C564-08": "LH-05"
+   },
+   "oz_agente": 10.2,
+   "oz_mejor": 35.5,
+   "perdida_oz": 25.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 120.0,
+    "rationale": "Radio and CMMS agree on both failures (LH-01 back 12:20-14:20, LH-02 15:00-17:00). LH-10 is idle at the workshop, 0.33 h from C590-09 (16.5 g/t, 260 t): about 6.2 h x 30 t/h x 16.5/31.1 = ~98 oz. LH-08 comes from the infrastructure heading (0.4 oz/h) to C564-08 (9 g/t), 0.52 h away: about 6 h x 25.4 t/h gives ~44 oz gross against ~2.4 oz heading cost. Central has 309 t of 450 t stockpile and trucks at 91 t/h, so both loaders will hit the truck limit near 14:00, which I estimate cuts the LH-08 gain by about 30%. The critical-path LH-09 stays put (5.7 oz/h). No reserve activations, because no stope was stopped.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.1,
+   "costo_usd": 0.0533,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 25.3
+  }
+ ]
+}

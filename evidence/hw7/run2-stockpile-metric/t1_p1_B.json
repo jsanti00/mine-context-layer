@@ -1,0 +1,30 @@
+{
+ "turno": 1,
+ "patron": "1 una falla",
+ "config": "B",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.7,
+   "costo_usd": 0.0443,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

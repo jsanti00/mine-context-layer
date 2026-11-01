@@ -1,0 +1,44 @@
+{
+ "turno": 4,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 28,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-03": "RS-N548-03"
+   },
+   "agente_valida": {
+    "LH-03": "RS-N548-03"
+   },
+   "mejor": {
+    "LH-03": "RS-N548-03"
+   },
+   "oz_agente": 109.0,
+   "oz_mejor": 109.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-03",
+      "reserve": "RS-N548-03"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 115.0,
+    "rationale": "Radio at 10:00 stops TJ-E569-08 (ventilation), which frees LH-03 (LH514). The CMMS is empty, so the radio and CMMS do not conflict. Per RESERVE-01, a reserve can only be activated with that freed loader, so there are no loans. Central has 4 trucks (about 90 t/h by my estimate) against 4 loaders (about 160 t/h), so it is truck-limited and a reserve there adds nothing. Norte has 3 trucks (about 66 t/h) but only LH-07 mucking (about 29 t/h), so it is loader-limited and a second loader fills the gap. RS-N548-03 is 18.4 g/t, which is about 0.59 oz/t, with 311 t of broken ore. LH514 at 160 m from the stockpile mucks 42*100/(100+0.15*60) = about 38.5 t/h. Timing: travel is about 0.72 h (Este to Norte via the surface road) plus 1.0 h activation, so loading starts about 11:45 and runs to 17:00, roughly 5.2 h. That is about 200 t, under the 311 t available, so about 118 oz. Together with LH-07 the Norte trucks run near capacity (about 67 t/h), so I add no further loaders. I subtract a few oz for haul lag and uncertainty, giving about 115 oz net. No development loader is moved, so there is no development cost. LH-10 sits in TALLER-564 with no CMMS work order, so I do not rely on it."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 28.2,
+   "costo_usd": 0.0675,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

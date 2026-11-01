@@ -12,10 +12,12 @@ DECISION_FORMAT = """Decision format:
 - expected_net_oz: ounces you expect to gain versus doing nothing (one number).
 - rationale: your calculation in a few lines."""
 
-GOAL = """GOAL: maximize the expected value of the rest of the day shift: ounces hauled to surface by
-17:00 plus the value of development hours (oz equivalent per loader hour, given per heading).
-Things that matter: each loader mucks into its mine's level stockpile and trucks haul to surface,
-so a truck-limited mine gains little from an extra loader; moving a loader takes travel time and
+GOAL = """GOAL: maximize the expected value of the rest of the day shift: ounces hauled to surface plus
+ounces sitting in the level stockpiles at 17:00, plus the value of development hours (oz equivalent
+per loader hour, given per heading). Broken ore left in a stope does not count.
+Things that matter: each loader mucks into its mine's level stockpile and trucks haul to surface;
+a stockpile holds at most its capacity, and when it is full the loaders feeding it stop, so a
+truck-limited mine with a nearly full stockpile gains little from an extra loader; moving a loader takes travel time and
 its home place loses production (or development) while it is away; repair times are ranges.
 Follow the operating rules exactly."""
 
@@ -43,3 +45,17 @@ Finish with ONLY a JSON object (no other text) with these keys:
  "expected_net_oz": 0.0, "rationale": "..."}
 
 """ + DECISION_FORMAT
+
+
+# Capa v3 (mejora de HW7): mismas instrucciones, más dos herramientas de contexto derivado
+LAYER_V3 = LAYER.replace(
+    "When ready, call submit_decision once.",
+    """Two extra layer tools help you decide:
+- rank_loan_options: per down stope, every loader that could be lent, with gain, home loss and net
+  oz. It includes loaders from producing stopes: lending from a lower-grade stope can pay more
+  than lending a development loader. Use it to compare, then choose the best combination (each
+  loader goes to one place) and check stockpile room.
+- check_decision: dry run against the operating rules. An invalid decision is dropped entirely,
+  so run it before submitting and fix any violation.
+
+When ready, call submit_decision once.""")

@@ -1,0 +1,49 @@
+{
+ "turno": 1,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "A",
+ "segundos_total": 26,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E569-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": -2.3,
+   "oz_mejor": 8.2,
+   "perdida_oz": 10.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E569-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 5.0,
+    "rationale": "Radio and CMMS agree on both failures. E569-10 has 259 t at 5.8 g/t, and LH-06 is back around 11:30 (range 11:00 to 12:00). Even at its likely return it can't clear the stope by 17:00 (about 211 t). LH-08 is the cheaper heading loader (1.0 oz/h) and is 0.73 h away. It would load about 41 t (7.7 oz) before LH-06 returns, at a cost of about 2.2 oz. Este has room in its stockpile (162/450 t), so the trucks aren't a limit. C564-14 (134 t at 12.1 g/t): LH-01's likely return at 13:30 still leaves about 143 t of loading time before 17:00, enough to clear it. A loan from LH-09 would cost about 1.5 oz/h for 3.7 h or more, so I'm not covering it. If the repair runs to the high estimate it would be worth revisiting.",
+    "confidence": 0.65,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 25.4,
+   "costo_usd": 0.0613,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 10.5
+  }
+ ]
+}

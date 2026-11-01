@@ -1,0 +1,55 @@
+{
+ "turno": 0,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {},
+   "oz_agente": -0.1,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.1,
+   "dudosos": [
+    "TJ-N574-15"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N574-15",
+      "ask": "Call the Norte area chief to confirm whether LH-06 is stopped or operating. The radio and CMMS disagree. Nothing is moved for this place until confirmed."
+     }
+    ],
+    "expected_net_oz": 55.0,
+    "rationale": "LH-01 is down at C512-10 until about 13:30 (range 12:30–14:30), and the radio and CMMS agree. The stope holds 136 t at 13.4 g/t, which is about 58.6 oz and would sit unmined. LH-08 is on an infrastructure heading worth only 0.5 oz per loader hour. It is the cheapest loader to lend and is 0.69 h away. At 29.1 t/h it clears the 136 t in about 4.7 h and finishes by about 15:30 even with lunch. The cost is about 0.5 oz/h × 5.5 h, or 2.8 oz. LH-07 is 0.39 h away but its stope grades 6.7 g/t, so losing it costs more ore. LH-09 is on a 2.0 oz/h preparation heading, which is too expensive. Central's trucks (91 t/h) can take the extra inflow (about 92 t/h). LH-06 is not moved because of CONFIRM-01.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-N574-15"
+   ],
+   "segundos": 15.6,
+   "costo_usd": 0.0449,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

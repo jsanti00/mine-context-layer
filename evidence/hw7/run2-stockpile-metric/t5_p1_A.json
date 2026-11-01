@@ -1,0 +1,49 @@
+{
+ "turno": 5,
+ "patron": "1 una falla",
+ "config": "A",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 27.0,
+   "perdida_oz": 27.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 80.0,
+    "rationale": "N600-09 holds 243 t at 11.9 g/t (~93 oz) and LH-01 is down until about 13:20 (range 12:20 to 14:20). Radio and CMMS agree, so a loan is allowed. LH-08 comes from the infrastructure heading, which costs only 0.2 oz/h, and arrives in about 0.65 h. It can muck about 165 t (~63 oz) by 17:00 alone. LH-10 is free after preventive maintenance at 11:00 and arrives about 11:35, adding about 75 t (~29 oz) at no home-place cost. The Norte stockpile has room (238 of 450 t) and ore in it counts. Cost is about 1.5 oz of development value.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 18.3,
+   "costo_usd": 0.0471,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

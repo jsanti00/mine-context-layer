@@ -1,0 +1,127 @@
+{
+ "turno": 1,
+ "patron": "5 tres fallas casi juntas",
+ "config": "C",
+ "segundos_total": 112,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 9.1,
+   "perdida_oz": 9.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 10.0,
+    "rationale": "Radio (LH-01 hydraulic failure at C564-14) and CMMS OT-5100 (3-5 h, likely 4 h) agree, so no confirmation is needed. LH-01 is out until about 12:30-14:30. C564-14 is a carguio stope at 12.1 g/t (0.39 oz/t) with about 134 t of broken ore left (236 t at start of shift, 102 t mucked) and only 120 m from the stockpile. LH-10 is in 250 h preventive maintenance from 06:00 for 6 h, so it is free from about 12:00. PM-01 applies. It is in TALLER-564, about 0.5 km from the stope, so it arrives around 12:15-12:20. It then mucks about 41 t/h, which clears the remaining ore in about 3.3 h, before 17:00. Central has 4 trucks, which I estimate haul about 100 t/h (my calculation, not from the files). The two remaining Central stope loaders, LH-02 and LH-03, muck about 78 t/h, and the 174 t stockpile roughly covers the gap, so the mine is close to truck-limited. LH-10 therefore adds little tonnage. Its value is mostly in putting 12.1 g/t ore ahead of 8.4-9.2 g/t ore in the haul queue, about 134 t x (12.1-8.8)/31.1, or roughly 10-14 oz. LH-10 is idle, so the loan costs nothing. I did not take a development loader, because DS-C564-02 would cost 1.5 oz/h for little gain in a truck-limited mine. No reserve is activated, because no stope is stopped (RESERVE-01). LH-04 and LH-07 in Este, and LH-05 in Norte, stay where they are."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 31.6,
+   "costo_usd": 0.0814,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 9.1
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C590-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C590-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-06"
+   },
+   "oz_agente": -6.0,
+   "oz_mejor": 5.9,
+   "perdida_oz": 11.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 60.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C564-14) and LH-03 (C590-07) are down for 3-5 h (likely 4 h), so no confirmation is needed. LH-10 is in preventive maintenance until about 12:00 and is not available now. No reserve is activated, because the stopped stopes' loaders are broken and the reserves are in Norte and Este. I estimated the Central truck capacity at roughly 90 t/h (4 trucks, about 0.4 h cycle, factor 0.227); this is approximate. Central has 171 t in the stockpile, and with only LH-02 mucking (about 43 t/h from C512-06) the trucks would run under capacity, so an extra loader adds ounces. LH-09 (LH410, 1.5 oz/h development cost) moves from DS-C564-02 to C564-14 in about 0.35 h. At 120 m it mucks about 29 t/h of 12.1 g/t ore, which is 0.389 oz/t or about 11 oz/h. The stope has 134 t left (236 t broken minus 102 t mucked), worth about 52 oz, against about 8 oz of development cost, for about +44 oz. LH-08 (LH410, 1.0 oz/h at Norte DS-N522-01) travels about 0.7 h to C590-07. There it mucks about 25 t/h of 8.4 g/t ore (0.27 oz/t, about 7 oz/h) from 316 t remaining. Central trucks saturate once both loaders run, so I count only the spare truck capacity: about 90 t, or about 25 oz, less about 6 oz of development cost, for about +19 oz. Total is about +60 oz. LH-01 stays in repair and is not loaned."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 32.4,
+   "costo_usd": 0.0734,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 11.9
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-06",
+    "TJ-N600-08": "LH-04"
+   },
+   "oz_agente": 7.1,
+   "oz_mejor": 17.7,
+   "perdida_oz": 10.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 31,
+    "rationale": "Radio and CMMS agree that LH-01, LH-03 and LH-05 are down (hydraulic failures, repairs of 3-5 h), so nothing needs confirming. I estimated the truck rates (3-4 trucks, 40 t, factor 0.227, cycle of about 0.4 h) at roughly 67 t/h for Norte and 95 t/h for Central. Loading time left is 6.67 h (to 11:00, then 11:30 to 17:00). Central is truck-limited. LH-02 gives 43 t/h and the stockpile holds 172 t, so one extra loader of about 26 t/h is enough to keep the trucks full. A second extra loader adds almost nothing. Keep LH-09 (LH410, 29 t/h) on TJ-C564-14: it has 128 t of broken ore left at 12.1 gpt, which is about 0.39 oz/t, and it costs 1.5 oz/h of development. That is about 65 oz net, against about 40 oz net for LH-08 on TJ-C590-07 at 8.4 gpt. So I release LH-08. Norte has 3 trucks (about 67 t/h), a 7 t stockpile and no producing loader, since TJ-N600-08 is stopped with 274 t of broken ore at 5.8 gpt (0.187 oz/t). LH-08 on TJ-N600-08 at 160 m gives 27.5 t/h, or about 5.1 oz/h. Travel from Central is about 0.55 h (ramp, 6 km on the surface, ramp, drift, 0.25 h manoeuvre), so about 6.1 productive hours and about 31 oz. LH-08 is already off DS-N522-01, so the 1.0 oz/h development loss is the same whether it works at Central or Norte. LH-10 is in preventive maintenance until 12:00 and Norte ore is limited to about 274 t, so I do not use it. No stope is stopped, so there are no reserve activations. RETURN-01 handles the loaders after repair."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 45.4,
+   "costo_usd": 0.0903,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 10.6
+  }
+ ]
+}

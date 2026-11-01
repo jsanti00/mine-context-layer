@@ -1,0 +1,85 @@
+{
+ "turno": 0,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "B",
+ "segundos_total": 38,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07"
+   },
+   "oz_agente": -0.4,
+   "oz_mejor": 1.1,
+   "perdida_oz": 1.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 21.1,
+   "costo_usd": 0.0502,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.5
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N574-15": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N574-15": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07",
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 19.1,
+   "oz_mejor": 22.6,
+   "perdida_oz": 3.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 16.8,
+   "costo_usd": 0.0452,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.5
+  }
+ ]
+}

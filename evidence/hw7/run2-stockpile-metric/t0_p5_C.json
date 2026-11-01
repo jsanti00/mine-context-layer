@@ -1,0 +1,132 @@
+{
+ "turno": 0,
+ "patron": "5 tres fallas casi juntas",
+ "config": "C",
+ "segundos_total": 90,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-08"
+   },
+   "oz_agente": 3.4,
+   "oz_mejor": 3.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 54.0,
+    "rationale": "The radio (LH-01 hydraulic failure at C512-10) and CMMS OT-5100 (hydraulic, 3-5 h, repaired in TALLER-564) agree, so LH-01 is out for the rest of the loading window and no confirmation is needed. C512-10 holds 238-102 = 136 t of broken ore at 13.4 g/t, about 58.6 oz, which is the best grade available and does not count unless it is mucked. The best lender is LH-08, which is on the cheap infrastructure heading DS-N600-01 and costs 0.5 oz/h under DEV-COST-01. LH-09 costs 2.0 oz/h. Taking LH-07 from C590-14 would lose a producing stope. LH-10 is in preventive maintenance until 14:00 (PM-01), so it is not available. Travel from Norte to Central is about 0.7 h (ramp, 6 km surface, ramp, drift, plus 0.25 h manoeuvre). At 120 m the LH410 rate is about 29 t/h, so the 136 t takes about 4.7 h and is cleared by about 15:30, before 17:00. The Central stockpile is at 125 of 450 t and 4 trucks are not the limit, so the muck is not blocked. The development cost is about 0.5 × 6 h ≈ 3 oz, so the net gain is about 58.6 - 3 - margin ≈ 54 oz. No reserves can be activated because no stope is stopped."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 24.6,
+   "costo_usd": 0.0613,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 13.4,
+   "oz_mejor": 18.2,
+   "perdida_oz": 4.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 96.0,
+    "rationale": "The radio and the CMMS agree that LH-01 (C512-10) and LH-02 (N600-08) are down with a hydraulic fault, 3 to 5 h likely 4 h. CONFIRM-01 is not triggered, so no confirmations are needed. No stope is stopped, so no reserves are activated (RESERVE-01). I assumed LH-10 is in 500 h preventive maintenance from 06:00 for 8 h, so it is unavailable until 14:00 (PM-01). It is also too late to be worth moving.\n\n1) Keep LH-08 (LH410) on loan from DS-N600-01 to C512-10. The stope is at 120 m, so the loader rate is 30×100/103, about 29 t/h. Remaining ore is 238−108 = 130 t, at 13.4 g/t (0.431 oz/t), about 56 oz. This takes about 4.5 h and costs 0.5 oz/h of development, about 2 oz. Net about 54 oz. Central has 4 trucks, about 88 t/h, and a stockpile of 125 t out of 450 t, so it is not full.\n\n2) Loan LH-09 (LH410) from DS-N522-02 to N600-08. The stope is at 280 m, so the rate is 30×100/127, about 23.6 t/h. Travel is about 0.4 h inside Norte (235 m drift, 525 m ramp, 589 m drift, plus 0.25 h manoeuvre). That leaves about 6.4 h of mucking, about 152 t of the 165 t remaining, at 11.5 g/t (0.370 oz/t), about 56 oz. The development cost is 2.0 oz/h × about 6.8 h, about 13.6 oz. Net about 43 oz. Norte stockpile is 158 t out of 450 t. LH-06 (about 43 t/h) plus LH-09 (about 24 t/h) is about 67 t/h, roughly matching the 3 trucks at about 66 t/h, so no stockpile-full problem.\n\nOther loan options were skipped. Drilling and fill stopes cannot lend a loader (LOADER-SOURCE-01). LH-07 and the other producing loaders are better left in place. Truck and stockpile figures are my own estimates from the map and the truck factor."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 33.0,
+   "costo_usd": 0.077,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09",
+    "TJ-E569-01": "LH-07"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09",
+    "TJ-E569-01": "LH-07"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08",
+    "TJ-E569-01": "LH-06"
+   },
+   "oz_agente": 16.2,
+   "oz_mejor": 35.1,
+   "perdida_oz": 18.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-N600-08"
+     },
+     {
+      "loader": "LH-07",
+      "to": "TJ-E569-01"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 9.0,
+    "rationale": "The radio and the CMMS agree on all three breakdowns (LH-01, LH-02 and LH-03, each hydraulic, repair 2-5 h). CONFIRM-01 is therefore not triggered. About 6.7 loading hours remain (09:50-11:00 and 11:30-17:00). Keep the two loans already in force. LH-08 covers C512-10: 124 t left at 13.4 g/t is about 53 oz, against 0.5 oz/h given up at DS-N600-01, about 3 oz. LH-09 covers N600-08: about 157 t reachable at 11.5 g/t is about 58 oz, against 2.0 oz/h given up at DS-N522-02, about 13 oz, so the net is about +45 oz. New loan: LH-07 (LH410) goes from TJ-C590-14 (6.7 g/t, 169 t left, 80 m from the stockpile) to TJ-E569-01 (10.4 g/t, 319 t left, 280 m from the stockpile, so about 23.6 t/h). Travel is about 0.45 h. It works about 2 h before LH-03 is repaired (likely 3 h), which is about 47 t and 15.8 oz. C590-14 loses about 33 t, about 7 oz. The net is about +9 oz. The Este stockpile is 112 of 450 t, so there is room. I did not use LH-10 because it is in 500 h preventive maintenance until 14:00. I did not take LH-04, LH-05 or LH-06, because each is producing at its own stope. I activated no reserve, because no stope is stopped. The estimate of about +9 oz is for the new LH-07 loan only. The two existing loans are kept and are not counted in it."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 30.5,
+   "costo_usd": 0.0702,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

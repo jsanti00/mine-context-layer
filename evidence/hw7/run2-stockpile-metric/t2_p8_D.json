@@ -1,0 +1,91 @@
+{
+ "turno": 2,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "D",
+ "segundos_total": 28,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C564-14": "LH-03"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-03"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": 1.7,
+   "oz_mejor": 1.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-03",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 1.7,
+    "rationale": "LH-01 repair in place, likely 09:54 (high 10:00); the repaired loader clears 235 t alone by 17:00. A loan only adds about 0.1 productive hours. LH-03 has the best net (+1.7 oz, no home loss). Other options are about zero or negative, so I'm not moving anything else.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.2,
+   "costo_usd": 0.0288,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C564-14": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-10"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-10"
+   },
+   "oz_agente": 44.4,
+   "oz_mejor": 44.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-03",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 80.0,
+    "rationale": "LH-01 repair now likely 15:30 (high 17:30). Keep LH-03 at C564-14 (+61 oz) and add idle LH-10 from the workshop (+41 oz, no home loss). Together they roughly clear the 306 t (~105 oz) there, so the combined gain is a bit below the sum. Central stockpile has room (229 t) and the trucks can keep up. Other options lose more at their home place than they gain.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.4,
+   "costo_usd": 0.029,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "turno": 2,
+ "patron": "5 tres fallas casi juntas",
+ "config": "A",
+ "segundos_total": 52,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-06"
+   },
+   "oz_agente": 16.7,
+   "oz_mejor": 31.0,
+   "perdida_oz": 14.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "LH-02 is down (radio and CMMS agree), and the likely repair is 13:30. The Este mine has no loader, and its trucks have spare capacity (72 t/h against 0 inflow). LH-10 is idle at the workshop, 0.49 h from TJ-E569-07, so it takes no production or development from anywhere. It would arrive about 10:00 and load at 27.5 t/h. The 164 t at 10.5 g/t is about 55 oz and can be cleared before 17:00. No other loader is moved, because that would cost its home place production or development value.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.4,
+   "costo_usd": 0.0384,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 14.3
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-06",
+    "TJ-C564-14": "LH-05"
+   },
+   "oz_agente": 13.4,
+   "oz_mejor": 35.6,
+   "perdida_oz": 22.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "Keep LH-10 at E569-07 (158 t at 10.5 g/t, LH-02 down until ~13:30). LH-01 down at C564-14 (317 t at 10.7 g/t, about 109 oz). Lend LH-08 from the cheap preparation heading (1.3 oz/h); 0.33 h travel. It loads about 25 t/h for about 6.5 h, so about 165 t and 57 oz, against about 9 oz of development lost. Net is about +48 oz. Central stockpile has room (234/450), so the small truck limit is not binding. I did not take LH-09 (critical path, 4.2 oz/h). Radio and CMMS agree on both failures, so no confirmation is needed. Nothing is freed for reserves.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.0,
+   "costo_usd": 0.0439,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 22.2
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-08",
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-08",
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-06",
+    "TJ-C564-14": "LH-05",
+    "TJ-N600-11": "LH-07"
+   },
+   "oz_agente": 13.3,
+   "oz_mejor": 39.2,
+   "perdida_oz": 25.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Radio and CMMS agree on all three failures, so no confirmation is needed. No free loader exists. LH-09 is on a critical-path heading worth 4.2 oz/h, so it stays. Norte is already truck-limited: 66 t/h of truck capacity against 244 t in the stockpile plus 581 t of ore in its stopes, so a loader for N600-11 adds nothing. Central is also truck-limited, but LH-08 (1.3 oz/h at home) is loading the highest-grade ore at C564-14 (10.7 g/t), so I keep it there. Este is not truck-limited (28 t/h inflow against 72 t/h), so LH-10 keeps mucking E569-07 (10.5 g/t, 153 t). There is no stopped stope, so no reserve can be activated. I keep both existing loans and make no changes.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.9,
+   "costo_usd": 0.0531,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 25.9
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "turno": 1,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "B",
+ "segundos_total": 31,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C512-06": "LH-09",
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-06": "LH-09",
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {
+    "TJ-C512-06": "LH-09"
+   },
+   "oz_agente": -4.3,
+   "oz_mejor": 29.3,
+   "perdida_oz": 33.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C512-06"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 30.1,
+   "costo_usd": 0.0854,
+   "agentes": 2,
+   "sin_decision": false
+  }
+ ]
+}

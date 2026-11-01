@@ -1,0 +1,35 @@
+{
+ "turno": 1,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "C",
+ "segundos_total": 38,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 8.2,
+   "perdida_oz": 8.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C564-14, 3-5 h) and LH-06 (E569-10, 1.5-2.5 h) are down, so no confirmation is needed. I rebuilt truck capacity from the map and haulage data, and it matches the 574 t hauled in 2.5 h (about 230 t/h). Capacity is about 91 t/h for Central, 72 t/h for Este and 63 t/h for Norte. Central is truck-limited: without LH-01 the loaders still supply about 79 t/h (LH-02 about 43, LH-03 about 36) on top of a 174 t stockpile. That is about 727 t available against about 637 t of truck capacity to 17:00, so a loan to C564-14 adds tonnage only through grade mix, not enough to cover the lender's loss of 1.5 oz/h (LH-09 on DS-C564-02). Este is also truck-limited: LH-04 (about 33 t/h) and LH-07 (about 29 t/h) give about 62 t/h, plus a 162 t stockpile, against 72 t/h of trucks. Losing LH-06 on a 5.8 g/t stope therefore costs almost nothing, and a loan would have to come from LH-08 or LH-09 at 1.0 or 1.5 oz/h of development loss plus travel. Norte is loader-limited, but its only loading stope, N600-08, has about 290 t left and LH-05 will muck about 270 t of it, so an extra loader gains about 20 t at 5.8 g/t, which is less than the development cost. Reserves can only be activated with a loader from a stopped stope, and none is stopped. LH-10 is in preventive maintenance (6 h from 06:00) and is not available before 12:00. Best decision: no loans and no reserves, and keep the development loaders working. Expected gain versus doing nothing is 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 37.2,
+   "costo_usd": 0.0796,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 8.2
+  }
+ ]
+}

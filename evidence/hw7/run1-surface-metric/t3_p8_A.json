@@ -1,0 +1,80 @@
+{
+ "turno": 3,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 29,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E543-07": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.7,
+   "perdida_oz": 0.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 repair is estimated at 09:45 to 10:00 (likely 09:54), and the radio and CMMS agree. The nearest loader, LH-08, needs 0.33 h to reach E543-07 and would arrive about 09:50. That is almost when LH-03 is back, so it would add under 1 oz. It would also cost the 0.4 oz/h of infrastructure development plus the return trip. Este has truck spare capacity but the stope's ore stays in place and is loaded after the repair. No moves are justified.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.3,
+   "costo_usd": 0.0395,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.7
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-E543-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E543-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E543-07": "LH-05"
+   },
+   "oz_agente": 33.1,
+   "oz_mejor": 47.6,
+   "perdida_oz": 14.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 38.0,
+    "rationale": "LH-03 is down at TJ-E543-07 (radio and CMMS agree). The revised repair estimate puts it back at 14:30 at the earliest, likely 15:30. The stope holds 307 t at 8.3 g/t and has no loader. LH-10 is free at the workshop, 0.49 h away, and costs no production or development hours. Este is not truck-limited (inflow 24 against 72 t/h capacity). LH-10 mucks at 25.4 t/h for about 6 h of loading time (0.5 h before 11:00, then 11:30 to 17:00), roughly 150 t, or about 40 oz. I took no loaders from development headings or producing stopes.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.2,
+   "costo_usd": 0.0404,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 14.5
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "turno": 1,
+ "patron": "9 tajo detenido y reserva",
+ "config": "A",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-05": "RS-N522-03"
+   },
+   "agente_valida": {
+    "LH-05": "RS-N522-03"
+   },
+   "mejor": {
+    "LH-05": "RS-N522-03"
+   },
+   "oz_agente": 61.0,
+   "oz_mejor": 61.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-05",
+      "reserve": "RS-N522-03"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 65.0,
+    "rationale": "N600-08 stopped 5-8h, so LH-05 is idle. Norte has empty stockpile and trucks at 66 t/h with 0 inflow, so it is not truck-limited. RS-N522-03 has 412 t at 9.5 g/t and LH514 loads 38.5 t/h. Travel is 0.37 h plus 0.5 h activation, leaving about 5.6 loading hours, or about 217 t, which is about 66 oz. RS-N574-01 would give about 56 oz. RS-E543-02 is in Este, which is already truck-limited. Taking loaders from producing places is not allowed, and the development headings are worth more at home. No loans.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.8,
+   "costo_usd": 0.0419,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

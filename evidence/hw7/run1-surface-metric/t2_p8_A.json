@@ -1,0 +1,89 @@
+{
+ "turno": 2,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 29,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C564-14": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-10"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-06"
+   },
+   "oz_agente": 0.2,
+   "oz_mejor": 2.0,
+   "perdida_oz": 1.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 1.0,
+    "rationale": "LH-01 is down at C564-14 (radio and CMMS agree). Repair is likely by 09:54, with a high estimate of 10:00. The stope holds 324 t at 10.7 g/t, which is more than the loader can muck by 17:00, so the only loss is the downtime. LH-10 is idle at the workshop and takes 0.3 h to reach the stope, so it costs nothing at home. It covers roughly 0.1-0.2 h of downtime at 25.4 t/h, which is about 1 oz. I'm not moving any producing loader or development loader because the downtime is too short to pay for the travel. Central is near its truck limit (84 inflow against 91 capacity), so an extra loader adds little. No reserve activation, because no stope has been stopped.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.5,
+   "costo_usd": 0.0423,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.8
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C564-14": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-10"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-06"
+   },
+   "oz_agente": 7.4,
+   "oz_mejor": 25.4,
+   "perdida_oz": 18.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 repair now likely 15:30 (5-8h estimate; radio and CMMS agree, so no confirmation needed). Keeping LH-10 on TJ-C564-14 is the best use. It is a workshop loader, so no home place loses output. The stope has 311 t at 10.7 g/t (~107 oz), and LH-10 can load about 178 t by 17:00. Central's stockpile has room (237 of 450 t), so the truck limit doesn't block this. Taking loaders from the producing stopes or the development headings would cost more than it gains. No reserve can be activated because no stope is stopped.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.6,
+   "costo_usd": 0.0399,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 18.0
+  }
+ ]
+}

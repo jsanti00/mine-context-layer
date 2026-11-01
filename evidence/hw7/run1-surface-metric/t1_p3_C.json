@@ -1,0 +1,45 @@
+{
+ "turno": 1,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 40,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C564-14": "LH-07"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-07"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-06",
+    "TJ-C512-06": "LH-03"
+   },
+   "oz_agente": 12.3,
+   "oz_mejor": 16.7,
+   "perdida_oz": 4.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-07",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45,
+    "rationale": "Radio and CMMS agree that LH-01 (C564-14, 3/4/5 h) and LH-02 (C512-06, 4/5/6 h) are down, so no confirmation is needed. Central is left with only LH-03 (LH514 at 220 m, about 35.6 t/h). Este is truck-limited. Its 3 trucks haul about 73 t/h, while LH-04 (33), LH-06 (38.5) and LH-07 (29) muck about 100 t/h. Este also starts with 162 t in its stockpile. Lending LH-07, an LH410 from a carguio stope, costs Este about 0 oz. LH-07 reaches C564-14 in about 0.55 h (drift 568 m, ramp about 1.3 km, surface 800 m, manoeuvre 0.25 h). At C564-14 (grade 12.1 g/t, about 0.389 oz/t, 120 m from the stockpile) it mucks about 29 t/h. That stope has 134 t of broken ore left. Over the roughly 4 h repair window that is about 110-120 t, or about 45 oz. C512-06 grade is only 9.2 g/t (0.296 oz/t), so C564-14 is the better target. I did not move LH-09 from development. Central trucks (4 at about 91 t/h) are already saturated once LH-07 is added, so a second loan adds almost no ounces and costs 1.5 oz/h of development. LH-08 is in Norte, 6 km away, so I left it. LH-10 is in preventive maintenance until 12:00 and is unavailable. No reserve is activated because no stope is stopped."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 40.0,
+   "costo_usd": 0.0804,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 4.4
+  }
+ ]
+}

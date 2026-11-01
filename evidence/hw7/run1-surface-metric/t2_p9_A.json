@@ -1,0 +1,48 @@
+{
+ "turno": 2,
+ "patron": "9 tajo detenido y reserva",
+ "config": "A",
+ "segundos_total": 19,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-04": "RS-E569-01"
+   },
+   "agente_valida": {
+    "LH-04": "RS-E569-01"
+   },
+   "mejor": {
+    "LH-04": "RS-E569-01"
+   },
+   "oz_agente": 55.5,
+   "oz_mejor": 55.5,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-04",
+      "reserve": "RS-E569-01"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 50.0,
+    "rationale": "N600-11 stopped 5-8h, so LH-04 is free. Norte trucks (66 t/h) are already saturated: 247 t in stockpile plus 59 t/h inflow exceeds what they can haul by 17:00. A Norte reserve would add nothing. Este has spare truck capacity (72 t/h vs 38 t/h inflow, 31 t stockpile). Activating RS-E569-01 (9.2 g/t, 421 t) with LH-04 costs 0.63 h travel plus 1 h activation, leaving about 5 h of loading at 35.6 t/h. About 180 t at 0.296 oz/t is roughly 50 oz. No development loader is taken, so no development cost.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 18.7,
+   "costo_usd": 0.0487,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

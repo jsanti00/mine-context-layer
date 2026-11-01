@@ -1,0 +1,44 @@
+{
+ "turno": 0,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 28,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C512-10": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 2.1,
+   "perdida_oz": 2.1,
+   "dudosos": [
+    "TJ-N574-15"
+   ],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N574-15",
+      "ask": "Call the Norte area chief. Radio at 09:30 says scoop 6 (LH-06) is stopped at N574-15, but CMMS OT-5001 shows it closed 20 min ago and operational. Confirm whether LH-06 is actually running. Until then, move nothing for that place (CONFIRM-01)."
+     }
+    ],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at TJ-C512-10 (OT-5100, repaired on site, 3/4/5 h). That stope has only 238-102 = 136 t of broken ore left, worth about 58.6 oz at 13.4 g/t. Without a loan, the repaired LH-01 (LH514, 120 m, about 40.8 t/h) is back by 12:30, 13:30 or 14:30. In the low and likely cases it clears the 136 t by 17:00. In the high case it clears about 102 t, so the loss is about 34 t, or 14.6 oz. The only cheap lender is LH-08 (LH410, DS-N600-01, 0.5 oz/h). It would need about 0.7 h of travel from Norte to Central, would muck about 29 t/h, and would leave the heading for roughly 4-5 h. That costs about 2-2.5 oz of development value against an expected gain of 0-3 oz, so it does not pay. LH-09 costs 2 oz/h, so it is out. LH-10 is in preventive maintenance until 14:00 (06:00 start plus 8 h). Reserves can only be activated with a loader from a stopped stope, and there is none. LH-06 is in a radio/CMMS conflict, so I am moving nothing for N574-15 and asking the area chief to confirm. Net: no moves, 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-N574-15"
+   ],
+   "segundos": 27.4,
+   "costo_usd": 0.066,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.1
+  }
+ ]
+}

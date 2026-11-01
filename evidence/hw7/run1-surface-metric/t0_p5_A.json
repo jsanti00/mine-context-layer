@@ -1,0 +1,146 @@
+{
+ "turno": 0,
+ "patron": "5 tres fallas casi juntas",
+ "config": "A",
+ "segundos_total": 54,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07"
+   },
+   "oz_agente": 0.9,
+   "oz_mejor": 3.6,
+   "perdida_oz": 2.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "C512-10 has 136 t at 13.4 g/t (~58.6 oz) stranded; LH-01 repair likely 13:30 (range 12:30-14:30). Radio and CMMS agree, so a loan is allowed. LH-08 comes from the cheapest source, infrastructure heading DS-N600-01 (0.5 oz/h), and travel is 0.69 h. At 29.1 t/h the ore takes about 4.7 h, so it is cleared before 17:00. Central trucks have 91 t/h of capacity against 63 t/h of inflow, so Central is not truck-limited. Dev cost is about 0.5 x 5.4 h = 2.7 oz. Net is about 56 oz. LH-09 is on a preparation heading at 2.0 oz/h, so it stays. Reserves can't be activated because no stope is stopped.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.7,
+   "costo_usd": 0.0419,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.7
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07",
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 3.8,
+   "oz_mejor": 12.0,
+   "perdida_oz": 8.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 19.0,
+    "rationale": "Keep LH-08 at C512-10 (130 t at 13.4 g, LH-01 down until about 13:30). Lend LH-09 to N600-08 (165 t at 11.5 g, LH-02 down until about 13:40). Travel is 0.39 h. LH-09 can load about 73 t, roughly 27 oz, before LH-02 returns, against about 7.6 oz of lost development value at 2.0 oz/h. Net is about +19 oz. Norte trucks (66 t/h) are above inflow (42 t/h), so haulage is not the limit. Taking LH-07 or another producing loader gains about nothing net, since it would give up its own ore.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 18.4,
+   "costo_usd": 0.0509,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 8.2
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07",
+    "TJ-N600-08": "LH-06",
+    "TJ-E569-01": "LH-08"
+   },
+   "oz_agente": 3.6,
+   "oz_mejor": 16.1,
+   "perdida_oz": 12.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Keep both existing loans, since they already cover the stopes with failed home loaders (C512-10 at 13.4 g/t, N600-08 at 11.5 g/t). Their cost is low or justified: LH-08 costs 0.5 oz/h, and LH-09 costs 2 oz/h but loads about 8.7 oz/h. Covering E569-01 (LH-03 down, 319 t at 10.4 g/t) would need a loader from a producing stope or one of the loans. That only shifts production, and travel time makes it a net loss. LH-10 is in preventive maintenance until 14:00, which is too late to help much. Radio and CMMS agree on all three failures, so no confirmations are needed. Repairs are likely at 12:50 to 13:40. Norte trucks are nearly saturated and Este has spare truck capacity, but no loader is free for Este without a loss elsewhere.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 18.1,
+   "costo_usd": 0.0509,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 12.5
+  }
+ ]
+}

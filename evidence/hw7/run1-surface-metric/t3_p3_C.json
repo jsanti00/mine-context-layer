@@ -1,0 +1,36 @@
+{
+ "turno": 3,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 32,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-04",
+    "TJ-C564-08": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 41.9,
+   "perdida_oz": 41.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C590-09) and LH-02 (C564-08) are down on site. The repairs take about 3-5 h and 4-6 h, so neither loader is back before roughly 12:30-15:30. No confirmation is needed under CONFIRM-01. Central is truck-limited. Its 4 trucks haul about 4x40 t x 0.227 / ~0.4 h cycle = ~90 t/h, or ~545 t from 09:30 to 17:00 once the 11:00-11:30 break is allowed for. The two remaining Central loaders (LH-04 at 220 m ~35.6 t/h, LH-05 at 160 m ~38.5 t/h) already muck ~74 t/h. With the 303 t already in the stockpile, about 750 t would be available against ~545 t of haul, and the 450 t stockpile cap would also limit loading. A replacement loader for Central would therefore add almost no hauled ounces. The only candidate is LH-10, which is in preventive maintenance until 10:00 and has about 0.5 h of travel. Norte and Este are not worth a loan either. Norte's only loading stope is already served by LH-06. Its other stopes are in drilling or fill and have no broken ore. Este's two loaders are about at truck capacity, and a loan from Este development would cost 0.4 to 5.7 oz per hour. No reserve can be activated, because the stopped stopes' loaders are broken and cannot move, and RESERVE-01 allows activation only with a freed loader and crew. Decision: no moves. Net gain versus doing nothing is 0."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 31.7,
+   "costo_usd": 0.0697,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 41.9
+  }
+ ]
+}

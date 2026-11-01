@@ -1,0 +1,45 @@
+{
+ "turno": 2,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "C",
+ "segundos_total": 42,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-05",
+    "TJ-C512-04": "LH-07"
+   },
+   "oz_agente": 10.2,
+   "oz_mejor": 15.8,
+   "perdida_oz": 5.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 12.0,
+    "rationale": "Radio and CMMS agree that LH-02 (E569-07, 3-5 h, likely 4 h) and LH-06 (C512-04, 1.5-2.5 h, likely 2 h) are down, so CONFIRM-01 does not apply. Este has only that one loader and 3 trucks (about 72 t/h), so trucks sit idle while LH-02 is down. E569-07 has 164 t left (260 broken - 96 mucked) at 10.5 g/t, about 0.34 oz/t. LH-10 is idle in the workshop (no preventive maintenance, not a producing place or heading), so lending it costs nothing. It needs about 0.5 h to reach Este, then mucks about 27 t/h at 160 m. Without it, LH-02 returns around 13:30 and mucks only about 135 t by 17:00, leaving roughly 30 t (range 25-70 t) in place. The loan recovers that ore, worth about 10-23 oz, so I put expected gain at about 12 oz. I do not cover C512-04. Central has 4 trucks (about 95 t/h) against about 78 t/h of loader supply plus a 228 t stockpile, so trucks are the limit and an extra loader hauls nothing more. LH-06 is back at about 11:30 and can finish the remaining 238 t at 5.8 g/t. Taking LH-08 from DS-C564-01 would cost 1.3 oz/h for no gain. LH-09 (4.2 oz/h) stays put. No reserve is activated: RESERVE-01 allows it only with the loader and crew of a stopped stope, and both stopped stopes' loaders are broken down in place. Norte is truck-limited (3 trucks, about 70 t/h) and LH-07 stays at N548-08."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 42.1,
+   "costo_usd": 0.083,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 5.6
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "turno": 2,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 26,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 10.2,
+   "oz_mejor": 10.2,
+   "perdida_oz": 0.0,
+   "dudosos": [
+    "TJ-C564-03"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C564-03",
+      "ask": "Call the Central area chief. The radio at 09:30 says scoop 3 (LH-03) is stopped at C564-03, but CMMS OT-5001 shows it closed 20 min ago and operational. Confirm whether LH-03 is running. No loader is moved to or from that place until then."
+     }
+    ],
+    "expected_net_oz": 52.0,
+    "rationale": "LH-02 is down at TJ-E569-07 (Este). Radio and CMMS agree on this: hydraulic fault, repaired on site, 3 to 5 h (likely 4 h). So it is back about 13:30 at best. The stope still has 260-96 = 164 t of broken ore at 10.5 g/t, worth about 55 oz. LH-10 is idle in TALLER-564 with no maintenance order, so taking it costs no development value. This assumes an idle workshop loader counts as free to lend, which the rules do not state directly. Travel from the workshop is about 0.5 h by the map speeds. At 10:00 it has about 6.5 loading hours left (10:00-11:00 and 11:30-17:00). An LH410 at 160 m runs at 30x100/(100+0.15x60) = 27.5 t/h, so about 179 t, enough to clear the 164 t. Este's stockpile holds 48 of 450 t, so it is not full. Three trucks at a 0.375 h cycle can haul about 70 t/h, so haulage is not the limit. Expected gain is about 55 oz, trimmed to 52 for uncertainty. I did not use the reserves. A reserve needs the loader and crew of a stopped stope, and LH-02 is broken, so it cannot move to RS-E569-01. The LH-03 status is disputed between radio and CMMS (CONFIRM-01), so nothing is moved for TJ-C564-03. I did not take a loader from development (LH-08 costs 1.3 oz/h, LH-09 costs 4.2 oz/h) because LH-10 covers the gap."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C564-03"
+   ],
+   "segundos": 25.5,
+   "costo_usd": 0.0653,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

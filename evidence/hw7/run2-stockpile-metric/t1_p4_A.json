@@ -1,0 +1,48 @@
+{
+ "turno": 1,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "A",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {
+    "TJ-E569-10": "LH-09"
+   },
+   "oz_agente": -4.3,
+   "oz_mejor": 2.0,
+   "perdida_oz": 6.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 38.0,
+    "rationale": "C564-14 holds 134 t at 12.1 g/t (~52 oz). LH-01 is not back until 12:30 to 14:30. LH-09 is 0.34 h away and can load it at 29.1 t/h in about 4.6 h. The cost is the heading at 1.5 oz/h, about 8 oz including travel. Central trucks have spare capacity (91 vs 78 t/h). E569-10 is low grade (5.8 g/t) and LH-06 is likely back at 11:30. Borrowing LH-08 would net only about +4 oz, so I leave it alone.",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.9,
+   "costo_usd": 0.0452,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

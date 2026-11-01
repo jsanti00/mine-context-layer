@@ -1,0 +1,47 @@
+{
+ "turno": 2,
+ "patron": "1 una falla",
+ "config": "A",
+ "segundos_total": 14,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 9.2,
+   "oz_mejor": 9.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "LH-02 is down at E569-07. Radio and CMMS agree, so the CONFIRM rule does not apply. The likely repair is 13:20. LH-10 is idle at the workshop, so lending it costs nothing and it takes 0.49 h to arrive. At 27.5 t/h from about 09:50 it can muck the 168 t (10.5 g/t, about 56.7 oz) by 17:00. Este has no truck limit and its stockpile is nearly empty. Without the loan the stope would sit idle until 13:20. I'm not taking loaders from other stopes or from development headings, because the idle loader covers this.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.4,
+   "costo_usd": 0.0401,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

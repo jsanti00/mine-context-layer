@@ -1,0 +1,62 @@
+{
+ "turno": 1,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "C",
+ "segundos_total": 42,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-07": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 1.5,
+   "perdida_oz": 1.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio and the CMMS agree on LH-03 at TJ-C590-07: hydraulic failure, repaired on site, estimated 0.25 to 0.5 h (likely 0.4 h). The rules therefore don't call for a confirmation. The loss is small: at 220 m LH-03 mucks about 42x100/(100+0.15x120) = 35.6 t/h, so about 14 t (about 0.4 h) is lost, and the stope still holds 412 t of broken ore. Central's stockpile is 174 t with 4 trucks hauling, so haulage, not mucking, limits Central, and the lost mucking is mostly absorbed. A loan would not pay. LH-10 is in preventive maintenance (6 h from 06:00, available about 12:00), so PM-01 rules it out. Any other loader would have to leave a producing stope or a development heading (DEV-COST-01) and spend the travel time plus the 0.25 h manoeuvre, which is as long as the repair itself. Nothing is stopped, so no reserve can be activated. Decision: no moves, expected gain 0 oz versus doing nothing."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.1,
+   "costo_usd": 0.0475,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.5
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-07": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 2.7,
+   "perdida_oz": 2.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 is down at C590-07. The radio at 09:30 says it is stopped, and the revised CMMS order OT-5101 says 5-8 h (likely 6 h) because the part is not in stock. That supersedes the 0.4 h estimate in OT-5100, so radio and CMMS agree on status and no confirmation is needed. LH-03 would be back around 15:30 at best, so Central loses it for most of the rest of the shift. Central is truck-limited, though. Trucks: 4 on a cycle of about 0.35 h from mid depth, at 40 t payload and a 0.227 factor, give about 100 t/h. Loaders: LH-01 (LH514, 120 m) gives about 41 t/h and LH-02 (LH514, 80 m) gives about 43 t/h, so about 84 t/h in total. The Central level stockpile holds 170 t. The trucks therefore keep hauling at about 100 t/h, drawing the stockpile down by about 19 t/h, or about 130 t over 7 h. The stockpile does not run out before 17:00, so hauled ounces do not fall. A replacement loader would add no hauled ounces at Central. LH-10 is in preventive maintenance until 12:00, so it cannot move before then. Taking LH-09 off DS-C564-02 would cost 1.5 oz per hour for nothing. Norte has spare truck capacity, but its only producing stope is N600-08, which LH-05 already works, and the move is a 6 km surface trip, so a loan there is not worth it. Este is truck-limited. Reserve stopes can be activated only with a loader from a stopped stope, and no stope is stopped. Decision: no loans and no reserve activations, so the net gain versus doing nothing is 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 27.2,
+   "costo_usd": 0.0656,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.7
+  }
+ ]
+}

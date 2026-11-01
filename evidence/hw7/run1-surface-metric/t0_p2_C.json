@@ -1,0 +1,35 @@
+{
+ "turno": 0,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 21,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-03": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 2.0,
+   "perdida_oz": 2.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio (LH-05 hydraulic failure at C590-03, 10:00) and CMMS OT-5100 (hydraulic, on site, 1 to 2 h, likely 1.5 h) agree, so no confirmation is needed. Central has 4 trucks. I estimated the cycle at about 0.40 h from mid depth (0.1 load + 0.094 up + 0.05 dump + 0.055 down + 0.1 queue). That gives 40 t / 0.40 h x 0.227 = about 22.7 t/h per truck, or about 91 t/h for the mine. I assumed a mid depth of about 660 m on the ramp. Central's producing loaders are LH-01 at about 42 t/h and LH-07 at about 31 t/h, so about 73 t/h in total. LH-10 is in preventive maintenance and not available until 14:00. Central already has 131 t on its stockpile. Trucks can therefore draw it down at about 18 t/h, which lasts roughly 7 h, so haulage is never starved before 17:00. A loan would add ore to the stockpile but would not raise ounces hauled by 17:00, because haulage is capped by trucks and the stockpile already covers it. A loan from a development heading would also cost 0.5 to 2 oz per hour. The only heading at Central is none, and the Norte headings are a 6 km surface trip away. Other lenders would take production from producing stopes. No stope is stopped, so no reserve can be activated. Decision: no loans and no reserves; LH-05 is repaired on site. Expected net gain versus doing nothing is 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.6,
+   "costo_usd": 0.0588,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.0
+  }
+ ]
+}

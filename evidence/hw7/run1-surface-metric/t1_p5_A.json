@@ -1,0 +1,150 @@
+{
+ "turno": 1,
+ "patron": "5 tres fallas casi juntas",
+ "config": "A",
+ "segundos_total": 52,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": -1.5,
+   "oz_mejor": 9.1,
+   "perdida_oz": 10.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 40.0,
+    "rationale": "LH-01 is down (radio and CMMS agree). Likely repair is 13:30, high is 14:30. TJ-C564-14 holds 134 t at 12.1 g/t, about 52 oz. LH-09 is 0.34 h away and loads 29.1 t/h, so it clears the stope in about 4.6 h, before 17:00. The cost is about 5 h x 1.5 oz/h = ~8 oz of development value. Central's stockpile has 174 of 450 t, so the small truck excess (107 vs 91 t/h) is absorbed. LH-08 is farther away (0.71 h) and no better. LH-10 is in preventive maintenance until 12:00. Net gain is about 40 oz.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.0,
+   "costo_usd": 0.0425,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 10.6
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C590-07": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C590-07": "LH-06"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-06"
+   },
+   "oz_agente": -3.6,
+   "oz_mejor": 4.7,
+   "perdida_oz": 8.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-06",
+      "to": "TJ-C590-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "Keep LH-09 on C564-14 (128 t at 12.1 g/t, ~50 oz, dev cost 1.5 oz/h is far lower). LH-03 down at C590-07 until ~13:40 with 316 t at 8.4 g/t. Este is truck-limited (inflow 101 vs trucks 72, stockpile 167), so lending an Este loader costs little. LH-06 (LH514, 0.45 h away, 35.6 t/h there) gives ~200 t, ~55 oz, minus ~10 oz Este loss. Central has truck headroom since LH-01 and LH-03 are both down. LH-08 would cost 1 oz/h and 0.67 h of travel. LH-10 is in PM until 12:00. CMMS and radio agree on both failures, so no confirmation is needed.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 18.5,
+   "costo_usd": 0.0509,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 8.3
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C590-07": "LH-06",
+    "TJ-C564-14": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-07": "LH-06",
+    "TJ-C564-14": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-04",
+    "TJ-N600-08": "LH-06"
+   },
+   "oz_agente": 2.3,
+   "oz_mejor": 17.3,
+   "perdida_oz": 15.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-C590-07"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 25.0,
+    "rationale": "Keep LH-06 at C590-07 (about 9.6 oz/h vs 7.2 at home) and LH-09 at C564-14 (about 11.3 oz/h vs 1.5 dev). Norte has no loader, 274 t at 5.8 g/t waiting, and an empty stockpile with truck room. Move LH-08 from DS-N522-01 (1.0 oz/h) to N600-08: 0.41 h travel, about 5.1 oz/h, so net about +4 oz/h over roughly 6 h. LH-10 is in PM until 12:00. No reserves, since no stope is stopped. The radio and CMMS agree on all three failures.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.6,
+   "costo_usd": 0.0504,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 15.0
+  }
+ ]
+}

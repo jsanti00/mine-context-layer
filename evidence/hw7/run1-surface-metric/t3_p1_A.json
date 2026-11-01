@@ -1,0 +1,39 @@
+{
+ "turno": 3,
+ "patron": "1 una falla",
+ "config": "A",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 28.2,
+   "perdida_oz": 28.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at C590-09 (16.5 g/t, 260 t). Radio and CMMS agree, and the likely repair is 13:20. Central is already truck-limited: loader inflow is 110 t/h against 91 t/h of truck capacity, and the stockpile is 297 of 450 t. The other Central stopes hold 849 t of broken ore, so trucks can't haul everything already available through 17:00. An extra loader at C590-09 would only add stockpile, not hauled ounces. It would also take a loader from a producing place or from DS-E569-02 (5.7 oz/h). LH-08 on the infrastructure heading is cheap at 0.4 oz/h, but a loan there gains about 0 oz. LH-10 comes out of PM at 10:00 but would hit the same truck limit. No stope is stopped, so no reserve can be activated. No loans.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.1,
+   "costo_usd": 0.0438,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 28.2
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "turno": 3,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 24,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 27.5,
+   "perdida_oz": 27.5,
+   "dudosos": [
+    "TJ-C564-08"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C564-08",
+      "ask": "Call the Central area chief. The radio at 09:30 says scoop 2 (LH-02) is stopped at C564-08, but CMMS OT-5001 says it was closed 20 min ago and is operational. Confirm whether LH-02 is actually running. Until then nothing is moved for C564-08."
+     }
+    ],
+    "expected_net_oz": 15.0,
+    "rationale": "LH-01 broke down at C590-09 (hydraulic). The radio and CMMS agree: OT-5100 is repaired on site with a 3 / 4 / 5 h range, so it is back around 12:30–14:30. C590-09 is the best stope at 16.5 g/t, with 256 t of broken ore left and a short 80 m haul. The only loader free to cover it is LH-10, which sits idle in TALLER-564. Its preventive maintenance ends at 10:00, so it is not moved before then, which satisfies PM-01. The trip is about 0.4 h including the 0.25 h manoeuvre, so it arrives around 10:25. It mucks about 31 t/h at 80 m, so roughly 6.5 h × 31 ≈ 200 t, which is less than the 256 t available. Moving it costs nothing because it takes no producing place or development heading. Central is nearly truck-limited, with 4 trucks and a stockpile of 303 t out of 450 t. Because of that, the extra tonnes mostly raise the grade of the ore hauled rather than the tonnage. I estimate a gain of about 15 oz, and that figure is uncertain. For C564-08 the radio and CMMS disagree (CONFIRM-01), so I am not moving anything there and I am asking the area chief to confirm. I am not taking a loader from a producing stope or from DS-E569-02, which costs 5.7 oz/h. DS-E569-01 costs only 0.4 oz/h, but LH-08 would take about 1 h to travel and would add little in a truck-limited mine. No reserve is activated because no stope is stopped and confirmed."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [
+    "TJ-C564-08"
+   ],
+   "segundos": 23.8,
+   "costo_usd": 0.0607,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 27.5
+  }
+ ]
+}

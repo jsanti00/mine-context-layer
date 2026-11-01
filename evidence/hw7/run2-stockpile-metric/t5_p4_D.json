@@ -1,0 +1,55 @@
+{
+ "turno": 5,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "D",
+ "segundos_total": 12,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-N600-09": "LH-08",
+    "TJ-E543-11": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08",
+    "TJ-E543-11": "LH-06"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08",
+    "TJ-E543-11": "LH-04"
+   },
+   "oz_agente": 35.6,
+   "oz_mejor": 35.6,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-06",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 35.0,
+    "rationale": "Radio and CMMS agree on both failures. LH-08 (development, low cost) goes to N600-09 for a net of about 26.9 oz. LH-06 goes to E543-11 for a net of about 8.3 oz with no home loss. Other options have a lower net or a negative one.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.4,
+   "costo_usd": 0.0277,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

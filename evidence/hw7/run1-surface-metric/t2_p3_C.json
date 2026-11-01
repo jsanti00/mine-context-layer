@@ -1,0 +1,45 @@
+{
+ "turno": 2,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 29,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-07",
+    "TJ-C564-03": "LH-06"
+   },
+   "oz_agente": 10.2,
+   "oz_mejor": 33.6,
+   "perdida_oz": 23.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "Radio and CMMS agree that LH-02 (E569-07) and LH-03 (C564-03) are down. Their repair estimates are 3-5 h and 4-6 h, and both are repaired on site, so neither loader can move. CONFIRM-01 doesn't apply, so no confirmation is needed. No stope is stopped, so no reserve can be activated (RESERVE-01). LH-10 is idle at TALLER-564 and costs nothing to move, so it is the only free loader. Este is the only mine left with no working loader. Its stockpile is just 48 t, and it still has about 164 t of broken ore (260 - 96 mucked) at 10.5 g/t, which is 0.338 oz/t. LH-10 is an LH410 at 160 m from the stockpile, so its rate is 30x100/(100+0.15x60) = 27.5 t/h. Travel is about 0.49 h: 0.25 h manoeuvre, ramp 575 m + 555 m at 7 km/h, surface 800 m at 40 km/h, and drift 605 m at 12 km/h. That leaves about 6.5 h of loading, or about 179 t. This is more than the ore left, so the ore is the limit at about 164 t, or about 55 oz. Este has 3 trucks and is not truck-limited. Central is not worth covering: its 4 trucks haul about 96 t/h, which is more than the 77 t/h from LH-01 and LH-06. Its stockpile is already 228 t, so another loader there adds almost nothing. I did not take loaders from development. LH-09 would cost 4.2 oz/h and LH-08 1.3 oz/h, and neither would gain more than LH-10. LH-07 is the sole loader at N548-08 and would lose production there."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 28.7,
+   "costo_usd": 0.066,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 23.4
+  }
+ ]
+}

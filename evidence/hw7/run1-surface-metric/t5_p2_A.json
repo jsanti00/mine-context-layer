@@ -1,0 +1,48 @@
+{
+ "turno": 5,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "A",
+ "segundos_total": 15,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-C512-01": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-01": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-01": "LH-03"
+   },
+   "oz_agente": -0.3,
+   "oz_mejor": 0.4,
+   "perdida_oz": 0.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-01"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 8.0,
+    "rationale": "LH-06 down at C512-01 (radio+CMMS agree, likely repair 11:30). Stope has 144 t at 7.2 g/t (~33 oz). Central is not truck-limited (91 t/h vs 61 inflow). Lend LH-08 from the infrastructure heading (0.2 oz/h cost); it arrives in 0.33 h and loads at 25.4 t/h, about 17 t before lunch and more if the repair slips. Cost is about 1 oz. The critical-path LH-09 stays put. LH-10 is in PM until 11:00, so it is not used.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.7,
+   "costo_usd": 0.0423,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.7
+  }
+ ]
+}

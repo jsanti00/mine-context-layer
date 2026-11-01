@@ -11,7 +11,8 @@ Qué limita la producción (decisión de Santiago: "ambos"):
 - El scoop limita a cada tajo: sin scoop, el tajo no carga.
 - El camión limita a cada mina: el scoop descarga en el acopio del nivel y los camiones lo suben a superficie.
   Si el acopio se llena, el scoop se detiene; si el acopio tiene mineral, los camiones siguen aunque falle un scoop.
-- Se cuentan las onzas que llegan a superficie durante el turno de día (2 turnos de 12 h).
+- Se cuentan las onzas que llegan a superficie más las que quedan en los acopios de nivel al cierre del turno de día
+  (2 turnos de 12 h). Lo que queda disparado en el tajo no cuenta.
 """
 
 import copy
@@ -184,7 +185,7 @@ def tasa_scoop(mina, sid, lugar):
 
 
 def simular(mina, red, agenda, desde=INICIO, estado=None):
-    """Simula el turno y devuelve onzas a superficie más el valor del desarrollo.
+    """Simula el turno y devuelve onzas a superficie y en acopios más el valor del desarrollo.
 
     agenda: {scoop: [(desde, hasta, lugar), ...]}  dónde trabaja cada scoop (fuera de esos tramos, viaja o está caído)
     estado: toneladas que quedan en tajos y acopios al momento "desde" (si es None, se usa el inicio del turno)
@@ -235,7 +236,10 @@ def simular(mina, red, agenda, desde=INICIO, estado=None):
                     st["acopio_oz"][n] -= oz; st["oz_sup"] += oz
                 st["acopio_t"][n] -= sube; st["t_sup"] += sube
         t = round(t + DT, 6)
-    st["valor"] = st["oz_sup"] + st.get("desarrollo_oz", 0.0)
+    # Valor del turno: onzas en superficie + onzas que quedan en los acopios de nivel (cuentan, decisión de Santiago
+    # del 1-nov) + valor del desarrollo. Lo que queda disparado en el tajo no cuenta.
+    st["oz_acopio"] = sum(st["acopio_oz"].values())
+    st["valor"] = st["oz_sup"] + st["oz_acopio"] + st.get("desarrollo_oz", 0.0)
     return st
 
 

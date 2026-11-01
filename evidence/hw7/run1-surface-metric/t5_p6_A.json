@@ -1,0 +1,93 @@
+{
+ "turno": 5,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 47,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.6,
+   "perdida_oz": 3.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 12.0,
+    "rationale": "LH-01 is down at N600-09 (radio and CMMS agree; likely repair 13:20). Norte is already truck-limited (inflow 71 vs trucks 66 t/h, and the stockpile plus inflow exceeds what trucks can haul by 17:00), so a loan there adds nothing. Este has spare truck capacity (72 vs 33 t/h), and E543-11 has 289 t at 8.3 g/t with only LH-05, which would leave about 52 t unloaded by 17:00. LH-08 comes from the cheap infrastructure heading (0.2 oz/h), travels 0.55 h, and mucks that remainder: about 14 oz gained against about 1.5 oz of development lost. The development heading DS-E543-02 (4 oz/h) is left alone. No stope is stopped, so no reserve activations.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [
+    "préstamo inválido LH-08 -> TJ-E543-11"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 19.4,
+   "costo_usd": 0.0495,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.6
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.6,
+   "oz_mejor": 3.6,
+   "perdida_oz": 3.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 30.0,
+    "rationale": "Norte has only LH-03 working but trucks (66 t/h) plus 241 t stockpile are nearly saturated, so one cheap loader helps: LH-08 (infrastructure heading, 0.2 oz/h) to N600-09 (11.9 g/t), arrives ~10:39, ~+14 oz net. LH-09 is critical path (4 oz/h) so it stays. LH-10 is free from 11:00 and goes to Este (E543-11, 269 t at 8.3 g/t, trucks have spare 39 t/h), roughly +19 oz. Central is already truck-limited. Norte N522-15 is not covered because it would exceed truck capacity. The radio and CMMS agree on both failures, so no confirmation is needed.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "préstamo inválido LH-10 -> TJ-E543-11"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 27.1,
+   "costo_usd": 0.0622,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.0
+  }
+ ]
+}

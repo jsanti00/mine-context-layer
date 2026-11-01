@@ -1,0 +1,122 @@
+{
+ "turno": 3,
+ "patron": "5 tres fallas casi juntas",
+ "config": "B",
+ "segundos_total": 54,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 22.0,
+   "oz_mejor": 38.0,
+   "perdida_oz": 16.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.6,
+   "costo_usd": 0.05,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-08",
+    "TJ-E543-07": "LH-05"
+   },
+   "oz_agente": 22.3,
+   "oz_mejor": 61.0,
+   "perdida_oz": 38.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 14.4,
+   "costo_usd": 0.0417,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-08",
+    "TJ-E543-07": "LH-05",
+    "TJ-N522-01": "LH-04"
+   },
+   "oz_agente": 20.6,
+   "oz_mejor": 62.6,
+   "perdida_oz": 42.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-N522-01"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 16.8,
+   "costo_usd": 0.0467,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

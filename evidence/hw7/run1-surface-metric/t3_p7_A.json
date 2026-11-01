@@ -1,0 +1,56 @@
+{
+ "turno": 3,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 27.5,
+   "perdida_oz": 27.5,
+   "dudosos": [
+    "TJ-C564-08"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C564-08",
+      "ask": "Call the Central area chief to confirm whether LH-02 is actually stopped. Radio and CMMS disagree. Move nothing for this place until confirmed."
+     }
+    ],
+    "expected_net_oz": 45.0,
+    "rationale": "LH-01 is down at C590-09 (radio and CMMS agree). The stope has 256 t at 16.5 g/t, about 135 oz, and the repair is likely around 13:30. LH-10 comes out of preventive maintenance at 10:00, has no home production to lose, and is 0.33 h from the stope. It would load about 30 t/h from 10:20, roughly 190 t, or about 100 oz of high-grade ore. Central is truck-limited (91 t/h against 110 t/h inflow), so the gain is mainly high-grade ore replacing lower-grade ore in the haul, not extra tonnes. I discounted the estimate for that. I did not take a loader from a producing stope or a heading. Moving LH-08 would cost 0.4 oz per hour and the gain would be marginal. The LH-02 conflict is a rule-based hold, so nothing moves there and I ask the area chief to confirm.",
+    "confidence": 0.65,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [
+    "TJ-C564-08"
+   ],
+   "segundos": 19.8,
+   "costo_usd": 0.0524,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 27.5
+  }
+ ]
+}

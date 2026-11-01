@@ -1,0 +1,63 @@
+{
+ "turno": 4,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "B",
+ "segundos_total": 32,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-05": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.6,
+   "perdida_oz": 0.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.7,
+   "costo_usd": 0.0371,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-05": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 11.6,
+   "perdida_oz": 11.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-05"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 19.5,
+   "costo_usd": 0.0496,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

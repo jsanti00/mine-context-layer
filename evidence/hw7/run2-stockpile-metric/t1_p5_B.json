@@ -1,0 +1,120 @@
+{
+ "turno": 1,
+ "patron": "5 tres fallas casi juntas",
+ "config": "B",
+ "segundos_total": 52,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {},
+   "oz_agente": -2.1,
+   "oz_mejor": 0.0,
+   "perdida_oz": 2.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 18.6,
+   "costo_usd": 0.0485,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C590-07": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C590-07": "LH-09"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-09"
+   },
+   "oz_agente": 16.3,
+   "oz_mejor": 16.3,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-C590-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 15.3,
+   "costo_usd": 0.0432,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C590-07": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-07": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 25.8,
+   "oz_mejor": 25.8,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C590-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.4,
+   "costo_usd": 0.0465,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

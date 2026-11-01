@@ -1,0 +1,34 @@
+{
+ "turno": 2,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 28,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N522-13": "LH-04"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 2.9,
+   "perdida_oz": 2.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio (LH-05 hydraulics, stopped at N522-13) and CMMS OT-5100 (hydraulic, on site, 1/1.5/2 h) agree, so no confirmation is needed. Norte is nearly truck-limited. LH-04 gives about 41 t/h and LH-07 about 24 t/h, which is roughly 64 t/h against about 63 t/h of haulage. Extra ore would only add to the stockpile (247 of 450 t). The only loader I could lend is a development one (LH-08 at 1.3 oz/h), because LH-10 is in the workshop and not in a loading stope or a development heading, so the rules bar it. LH-09 is on the critical-path heading at 4.2 oz/h, so it stays. A LH410 at N522-13 (220 m) would muck about 25 t/h, or 0.215 oz/t x 25 t/h, which is about 5.5 oz/h. Travel from Central 564 to Norte takes about 0.7 h, so it would arrive at about 10:40. LH-05 is likely repaired by about 11:30, and loading stops from 11:00 to 11:30. The loan would therefore muck for only about 0.3 h, which is about 2 oz. That is less than the 1.3 oz/h lost at the heading while the loader is away and travelling, about 2 oz or more. The net gain is zero or negative, so I make no loans and activate no reserves. No reserve is eligible anyway, because no stope is stopped. A reserve could only use a stopped stope's loader, and N522-13 is only down for a repair."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 27.5,
+   "costo_usd": 0.0659,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

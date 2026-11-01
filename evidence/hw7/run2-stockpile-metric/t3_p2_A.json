@@ -1,0 +1,47 @@
+{
+ "turno": 3,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "A",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-C512-02": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C512-02": "LH-10"
+   },
+   "mejor": {
+    "TJ-C512-02": "LH-07"
+   },
+   "oz_agente": 0.1,
+   "oz_mejor": 0.6,
+   "perdida_oz": 0.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C512-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 22.0,
+    "rationale": "LH-04 is down (radio and CMMS agree), likely repair 11:30. LH-10 is idle at the workshop, 0.33 h from C512-02, so no home production is lost. C512-02 has 291 t at 7.3 g/t. Without a loan, LH-04 could load about 178 t after repair. With LH-10 the stope can be fully mucked, which adds about 110 t, or about 25 oz. Central is truck-limited (116 t/h inflow against 91 t/h trucks), but with LH-04 out the inflow is about 80 t/h. The stockpile has 116 t of room, so adding LH-10 will not fill it. I did not take loaders from other producing stopes or from the critical-path heading.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.7,
+   "costo_usd": 0.046,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

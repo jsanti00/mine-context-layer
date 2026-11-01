@@ -1,0 +1,141 @@
+{
+ "turno": 4,
+ "patron": "5 tres fallas casi juntas",
+ "config": "A",
+ "segundos_total": 57,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 41.9,
+   "oz_mejor": 67.4,
+   "perdida_oz": 25.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 75.0,
+    "rationale": "LH-01 is down with a hydraulic failure. Radio and CMMS agree, so the CONFIRM-01 rule does not apply. Repair is likely 13:30 (range 12:30-14:30). TJ-E595-06 holds 256 t at 15.4 gpt, about 14.9 oz/h with an LH410 at 30 t/h. Este trucks have room: inflow is 36 t/h against 72 t/h of truck capacity, and the stockpile is 171 of 450 t. The cheapest lender is LH-08, from the preparation heading DS-C512-01. It costs 1.9 oz/h and arrives in 0.53 h. LH-09 would cost 4.0 oz/h on the critical-path heading, and LH-07 would drop a producing Norte stope. Estimate: about 6.5 loading hours gives about 195 t, or about 96 oz. Subtract about 13 oz of heading loss, for a net of about 75-80 oz.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 18.1,
+   "costo_usd": 0.0439,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 49.9,
+   "oz_mejor": 60.9,
+   "perdida_oz": 11.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Keep LH-08 at E595-06 (15.4 g/t, high value, Este not truck-limited). Don't cover C590-05: Central is truck-limited (inflow 118 vs 91 t/h, stockpile 278/450). Remaining Central ore of about 829 t without C590 already fills truck capacity plus stockpile room (about 836 t), so another loader adds almost nothing. Pulling a loader from development would cost 1.9 to 4.0 oz/h. LH-10 returns at 11:00, and the same logic applies to it.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.8,
+   "costo_usd": 0.0444,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E595-06": "LH-08",
+    "TJ-E569-08": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08",
+    "TJ-E569-08": "LH-09"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06",
+    "TJ-E569-08": "LH-08"
+   },
+   "oz_agente": 50.9,
+   "oz_mejor": 68.7,
+   "perdida_oz": 17.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-E569-08"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-05"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "Keep LH-08 at E595-06 (about 14.9 oz/h, 15.4 g/t, 244 t, Este trucks have headroom); its home heading is only worth 1.9 oz/h. LH-09 to E569-08 (0.37 h away): about 6.9 oz/h against 4.0 oz/h lost on the critical heading, net +2.9 oz/h over about 6 h. LH-10 comes out of PM at 11:00 and goes to C590-05 (0.33 h from the workshop), at no cost to any producing place: about 160 t, roughly 38 oz. No reserves are activated because no stope was stopped. Radio and CMMS agree on all three failures, so no confirmations are needed.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 21.0,
+   "costo_usd": 0.0543,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

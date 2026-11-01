@@ -1,0 +1,48 @@
+{
+ "turno": 0,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "D",
+ "segundos_total": 13,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-N574-15": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N574-15": "LH-08"
+   },
+   "mejor": {
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 17.1,
+   "oz_mejor": 17.1,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 16.6,
+    "rationale": "N574-15: LH-06 repair likely 14:30, so it can only clear 105 of 168 t by 17:00. LH-08 comes from a cheap development heading and gains 19 oz against a 2.4 oz home loss, for a net of +16.6 oz. C512-10: LH-01 should be back by 13:30 and can clear all 136 t alone, so any loan gains 0 and only costs the lender's output. I'm not covering it.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.6,
+   "costo_usd": 0.0354,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

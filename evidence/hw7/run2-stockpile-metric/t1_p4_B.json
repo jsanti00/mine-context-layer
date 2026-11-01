@@ -1,0 +1,47 @@
+{
+ "turno": 1,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "B",
+ "segundos_total": 36,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E569-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-10": "LH-09"
+   },
+   "oz_agente": 1.8,
+   "oz_mejor": 2.0,
+   "perdida_oz": 0.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-E569-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 35.9,
+   "costo_usd": 0.098,
+   "agentes": 2,
+   "sin_decision": false
+  }
+ ]
+}

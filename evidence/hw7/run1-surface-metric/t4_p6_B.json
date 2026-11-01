@@ -1,0 +1,83 @@
+{
+ "turno": 4,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "B",
+ "segundos_total": 40,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-03"
+   },
+   "oz_agente": 1.8,
+   "oz_mejor": 28.8,
+   "perdida_oz": 27.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 19.6,
+   "costo_usd": 0.0512,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 27.0
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-03",
+    "TJ-C512-04": "LH-06"
+   },
+   "oz_agente": 3.9,
+   "oz_mejor": 47.2,
+   "perdida_oz": 43.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C512-04"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 20.1,
+   "costo_usd": 0.0512,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 43.3
+  }
+ ]
+}

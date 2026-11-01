@@ -1,0 +1,48 @@
+{
+ "turno": 0,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "A",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-C590-03": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-03": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-03": "LH-07"
+   },
+   "oz_agente": -0.2,
+   "oz_mejor": 2.0,
+   "perdida_oz": 2.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 8.0,
+    "rationale": "LH-05 is down at C590-03 (radio and CMMS agree). Likely repair is 11:30, range 11:00 to 12:00. The stope holds 253 t at 10 g/t, about 81 oz. LH-05 alone could load only about 182 t by 17:00 after the repair. LH-08 comes from the cheap infrastructure heading (0.5 oz/h) and takes 0.58 h to arrive. It covers the outage and adds loading capacity afterwards. Central has about 20 t/h of truck headroom (91 capacity against 71 inflow) and 131 t of stockpile buffer. Estimated gain is roughly 10 to 20 oz against about 3 oz of development cost. I did not move LH-09 because its heading is worth 2 oz/h. LH-10 is in preventive maintenance until 14:00.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.5,
+   "costo_usd": 0.0483,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.2
+  }
+ ]
+}

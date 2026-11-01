@@ -1,0 +1,50 @@
+{
+ "turno": 5,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "C",
+ "segundos_total": 52,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08",
+    "TJ-E543-11": "LH-04"
+   },
+   "oz_agente": 26.8,
+   "oz_mejor": 35.6,
+   "perdida_oz": 8.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 85.0,
+    "rationale": "Radio and CMMS agree that LH-01 (N600-09, likely 4 h) and LH-05 (E543-11, likely 2 h) are down, so the confirmation rule does not apply. No stope is stopped, so no reserve is activated. About 7 loading hours remain (09:30-11:00 and 11:30-17:00). Truck limits are roughly Norte 66 t/h, Central 104 t/h and Este 72 t/h; these assume a mid-depth cycle of about 0.41, 0.35 and 0.38 h. Norte's stockpile is 242 of 450 t. With LH-01 down, Norte's two working loaders give about 71 t/h, so Norte is already truck-limited. One extra LH410 there (25.4 t/h at 220 m) adds net stockpile of about 190 t, which fits in the 208 t of room. A second extra loader would hit the 450 t cap. LH-08 comes from the infrastructure heading DS-C538-01, which costs only 0.2 oz/h. It arrives at N600-09 in about 0.65 h and mucks about 6.3 h, roughly 160 t at 0.383 oz/t. That is about +61 oz, less about 1.4 oz of development cost. N600-09 still has 239 t of broken ore, so ore is not the limit. LH-09 stays on the critical-path heading. Its cost of 4.0 oz/h is about equal to its mucking gain of about 6.3 oz/h at E543-11 (23.6 t/h, 0.267 oz/t), so a loan nets about zero. LH-10 finishes preventive maintenance at 11:00 (06:00 start plus 5 h) and has no home production to lose. It reaches E543-11 at about 11:30, when LH-05 is repaired. E543-11 holds 285 t and LH-05 alone can muck only about 182 t. LH-10 adds up to about 100 t, roughly +27 oz, and Este's stockpile (49 of 450 t) has plenty of room. Total is about 85 oz."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 51.2,
+   "costo_usd": 0.0944,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "turno": 1,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 29,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C564-14",
+      "ask": "Call the Central area chief. Ask for the LH-01 hydraulic repair ETA, and confirm that LH-10 is out of preventive maintenance and free to move from TALLER-564 at about 12:00."
+     }
+    ],
+    "expected_net_oz": 3.5,
+    "rationale": "The radio and CMMS agree that LH-01 is down at TJ-C564-14 (OT-5100, 3-4-5 h, repaired on site), so no confirmation conflict applies. The stope has 236-98=138 t left at 12.1 g/t, which is about 53.7 oz. LH-01 can recover most of that after the repair. At 40.8 t/h (LH514 at 120 m), the 3 h and 4 h cases finish by 17:00: the repair ends at 12:20 or 13:20, and 13:20-17:00 is about 150 t, more than the 138 t left. In the 5 h case (back at 14:20) it only mucks about 109 t, so about 29 t (about 11 oz) is lost. The expected loss from doing nothing is therefore only a few oz. Taking LH-09 off DS-C564-02 would cost 1.5 oz/h for about 5 h (about 7.7 oz) and gain roughly the same few oz, so I leave it in place. LH-10 is at TALLER-564 on the same level and the plan lists it as in preventive maintenance (6.0 start plus 6 h, free about 12:00). It costs no development value and can be at the stope by about 12:18 (about 0.3 h including the manoeuvre). Its rate there is about 29 t/h, so it covers the high-case shortfall of about 29 t and protects against a longer repair. The loan only takes effect from its available_from time, and the Central stockpile (171 of 450 t) is not constraining. I activate no reserves because no stope has stopped. My estimate of the gain is about 1/3 × 11 oz, or roughly 3.5 oz."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 29.2,
+   "costo_usd": 0.0677,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

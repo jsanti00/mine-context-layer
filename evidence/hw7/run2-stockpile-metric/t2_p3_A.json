@@ -1,0 +1,55 @@
+{
+ "turno": 2,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 14,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C564-03": "LH-10",
+    "TJ-E569-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-03": "LH-10",
+    "TJ-E569-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-08",
+    "TJ-C564-03": "LH-10"
+   },
+   "oz_agente": 44.2,
+   "oz_mejor": 44.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-03"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 105.0,
+    "rationale": "Radio and CMMS agree on both failures (likely repairs 13:30 and 14:30). LH-10 is idle at the workshop, so it costs nothing. Send it to C564-03 (241 t at 9.6 g/t, about 74 oz, 0.29 h away). LH-08 is on a cheap heading (1.3 oz/h), so send it to E569-07 (164 t at 10.5 g/t, about 55 oz, 0.52 h away). The Este stockpile is nearly empty and Central trucks have spare capacity (inflow 78 against 91 t/h). The development cost is about 9 oz. I left LH-09 on the critical-path heading (4.2 oz/h). Reserves need a stopped stope, so none are activated.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.0,
+   "costo_usd": 0.0432,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

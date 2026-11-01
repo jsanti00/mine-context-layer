@@ -1,0 +1,45 @@
+{
+ "turno": 0,
+ "patron": "1 una falla",
+ "config": "A",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {},
+   "oz_agente": -0.8,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "LH-01 is down at C512-10 (radio and CMMS agree). Likely repair is 13:20. The stope holds 140 t at 13.4 g/t, about 60 oz. Central trucks have spare capacity (91 t/h vs 63 t/h inflow). LH-08 comes from the infrastructure heading, which costs only 0.5 oz/h. It takes 0.69 h to arrive and loads about 29 t/h, worth about 12 oz/h. That clears the stope well before 17:00. The cost is about 2.5 oz of development value, so the net gain is roughly 45-55 oz. LH-09's heading is worth 2 oz/h and LH-10 is in maintenance until 14:00, so neither is used.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.0,
+   "costo_usd": 0.0536,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

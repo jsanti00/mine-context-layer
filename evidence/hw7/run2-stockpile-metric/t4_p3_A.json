@@ -1,0 +1,55 @@
+{
+ "turno": 4,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 23,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C512-04": "LH-08",
+    "TJ-E595-06": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-04": "LH-08",
+    "TJ-E595-06": "LH-09"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06",
+    "TJ-C512-04": "LH-08"
+   },
+   "oz_agente": 37.9,
+   "oz_mejor": 71.4,
+   "perdida_oz": 33.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-04"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 125.0,
+    "rationale": "Radio and CMMS agree on both failures (LH-01 back 12:30-14:30, LH-02 13:30-15:30). The two stopes are the richest (15.4 and 13.0 g/t) and have enough ore left. Este has truck headroom (72 t/h against 36 t/h inflow) and a stockpile at 171 of 450 t. Central stockpile is at 264 of 450 t, so it has room for the extra ore. LH-08 goes to C512-04 (0.26 h away): about 170 t x 0.418 oz/t = 71 oz, minus 1.9 oz/h x 7 h = 14 oz, net ~57. LH-09 goes to E595-06 (0.38 h away): about 198 t x 0.495 oz/t = 98 oz, minus 4 oz/h x 7 h = 28 oz, net ~70. LH-10 is not available until 11:00, so I did not plan it. Both loans are revisable once the repairs finish.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 22.3,
+   "costo_usd": 0.052,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

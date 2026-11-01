@@ -1,0 +1,86 @@
+{
+ "turno": 2,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 61,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-06"
+   },
+   "oz_agente": 9.2,
+   "oz_mejor": 22.0,
+   "perdida_oz": 12.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TALLER-564",
+      "ask": "Call the Central area chief or workshop supervisor. Confirm that LH-10 is idle and serviceable (it has no CMMS order) and can leave for TJ-E569-07 now."
+     }
+    ],
+    "expected_net_oz": 13.0,
+    "rationale": "Radio and CMMS agree that LH-02 is down at TJ-E569-07 (hydraulic, OT-5100, estimate 3/4/5 h), so the confirmation rule does not block a move. The stope is in the carguio phase with 168 t of broken ore left (260 - 92 mucked), at 10.5 g/t, which is about 0.34 oz/t. Este is loader-limited, not truck-limited: 3 trucks x ~24 t/h is about 72 t/h against a loader rate of 27.5 t/h. Este's stockpile is only 51 t, so extra ore will be hauled. LH-10 is an LH410 in the Central workshop with no work order and no PM. Its travel to the stope is about 0.49 h (1.13 km of ramp, 0.73 km of drift, 0.8 km of surface, plus 0.25 h manoeuvre), so it starts at about 09:50. At 30x100/(100+0.15x60) = 27.5 t/h it mucks about 27 t before the 11:00 break. If LH-02 comes back at the likely 4 h (13:20), LH-10 will have mucked about 82 t of the remaining ore. Without the loan LH-02 would reach only about 141 t of the 168 t by 17:00, a loss of about 27 t (about 9 oz). If the repair takes 5 h, the loss without the loan is about 65 t (about 22 oz). The expected gain is about 13 oz. No reserve can be activated, because the only stopped stope's loader is broken and the rule requires a loader from a stopped stope (RESERVE-01). I did not take a loader from a producing place or a development heading, because the gain is small and each move costs production (DS-C564-02 costs 4.2 oz/h)."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 29.9,
+   "costo_usd": 0.0778,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 12.8
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-07",
+    "TJ-C564-03": "LH-06"
+   },
+   "oz_agente": 4.6,
+   "oz_mejor": 28.9,
+   "perdida_oz": 24.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio and the CMMS agree for both breakdowns. LH-02 at E569-07 is down 3-5 h (OT-5100) and LH-03 at C564-03 is down 5-7 h (OT-5101). Rule CONFIRM-01 therefore does not apply. Este: LH-10 is already on loan at E569-07 and keeps the 10.5 g/t stope producing. About 151 t of broken ore remain there (260 - 109 mucked). A loader at that stope moves about 27 t/h, and Este's 3 trucks can haul more than that. That is roughly 51 oz, so I keep the loan. Central: LH-03's stope has about 220 t left. The other Central loaders, LH-01 (about 36 t/h) and LH-06 (about 42 t/h), give about 79 t/h. Central's 4 trucks haul roughly 95 t/h by my estimate, which is about 620 t over the 6.5 loading hours left. The 242 t stockpile plus about 510 t of mucking adds up to about 750 t, which is more than the trucks can haul. Central is therefore truck-limited, and a loan from LH-08 or LH-09 would add no hauled ounces while costing 1.3 or 4.2 oz per hour of development. I make no loan to Central. Norte is 6 km away on the surface and has no problem, so nothing moves there. No reserve is activated: the two stopped stopes only have broken loaders, and RESERVE-01 allows a reserve only with a loader freed from a stopped stope. expected_net_oz is 0.0 because I take it as the change versus the current state, with LH-10's loan already in place. The loan itself is worth roughly 51 oz against sending LH-10 back."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 30.1,
+   "costo_usd": 0.0697,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 24.3
+  }
+ ]
+}

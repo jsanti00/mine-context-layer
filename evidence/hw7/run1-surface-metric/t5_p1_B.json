@@ -1,0 +1,33 @@
+{
+ "turno": 5,
+ "patron": "1 una falla",
+ "config": "B",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.6,
+   "perdida_oz": 3.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.9,
+   "costo_usd": 0.0425,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.6
+  }
+ ]
+}

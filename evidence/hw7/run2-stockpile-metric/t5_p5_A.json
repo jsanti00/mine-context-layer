@@ -1,0 +1,142 @@
+{
+ "turno": 5,
+ "patron": "5 tres fallas casi juntas",
+ "config": "A",
+ "segundos_total": 56,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 32.5,
+   "oz_mejor": 32.5,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "LH-01 is down at N600-09 (radio and CMMS agree). Likely repair is 13:30, so the stope would sit idle with 239 t at 11.9 g/t. LH-08 comes from the cheap infrastructure heading (0.2 oz/h) and arrives in 0.65 h. It loads about 6.3 h at 25.4 t/h, roughly 160 t, which is about 61 oz. The heading loses about 1.4 oz. Norte trucks are slightly limited (inflow 71 vs 66 t/h), but the stockpile has about 208 t of room, so the extra ore still counts. I left LH-09 alone because its heading is critical path (4 oz/h). I didn't use LH-10 because it is in preventive maintenance until 11:00, and one loader is enough for this stope given the truck limit.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.0,
+   "costo_usd": 0.0449,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 37.7,
+   "oz_mejor": 55.9,
+   "perdida_oz": 18.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-N574-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "LH-01 and LH-03 are down (radio and CMMS agree). Both are likely repaired around 13:30-13:40. I'm keeping LH-08 at N600-09 (11.9 g/t, 234 t). The infrastructure heading it came from costs only 0.2 oz/h. LH-10 comes out of preventive maintenance at 11:00. It travels 0.62 h to N574-02 (10.5 g/t, 194 t), so it loads from about 11:37 to 17:00 at 25.4 t/h. That is about 137 t, or about 46 oz. The Norte stockpile is 248 of 450 t, so the truck limit of 66 t/h does not block it. I'm not taking loaders from producing stopes. The critical-path loader LH-09 costs 4 oz/h, which is too high. Moving LH-06 would only displace ore it would mine anyway.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 19.4,
+   "costo_usd": 0.0518,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 36.4,
+   "oz_mejor": 56.9,
+   "perdida_oz": 20.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-N574-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 25.0,
+    "rationale": "Three hydraulic failures (LH-01, LH-03, LH-04) confirmed by radio and CMMS, so no conflict. LH-08 stays at N600-09. That stope has the best grade (11.9 g/t) and gives about 9.7 oz/h, and LH-08's home heading is worth only 0.2 oz/h. LH-09 stays on the critical-path heading (4 oz/h). No stope is stopped, so I activate no reserves. LH-10 is free of preventive maintenance at 11:00. I send it to N574-02 (10.5 g/t, 194 t, about 8.6 oz/h, 0.62 h travel), which has the highest uncovered value and the longest repair, about 13:40. C512-12 gets LH-04 back around 12:50, and its travel is shorter, so it is the lower priority. Norte is not truck-limited and its stockpile is 247 of 450 t.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 17.8,
+   "costo_usd": 0.0513,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

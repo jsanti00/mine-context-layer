@@ -1,0 +1,42 @@
+{
+ "turno": 5,
+ "patron": "7 fuentes que se contradicen",
+ "config": "B",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.5,
+   "perdida_oz": 3.5,
+   "dudosos": [
+    "TJ-N522-15"
+   ],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N522-15",
+      "ask": "Call the area chief for N522 and confirm whether LH-02 is actually stopped or operating. The radio says stopped, but the CMMS shows it operating with a work order closed 20 minutes ago. If it is down, ask for the cause and an expected repair time."
+     }
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-N522-15"
+   ],
+   "segundos": 20.299999999999997,
+   "costo_usd": 0.0526,
+   "agentes": 2,
+   "sin_decision": false,
+   "diferencia_oz": 3.5
+  }
+ ]
+}

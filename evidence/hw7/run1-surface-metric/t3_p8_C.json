@@ -1,0 +1,75 @@
+{
+ "turno": 3,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "C",
+ "segundos_total": 59,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E543-07": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.7,
+   "perdida_oz": 0.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio (09:30, LH-03 hydraulic failure at E543-07) and CMMS OT-5100 (hydraulic, on-site repair, 0.25/0.4/0.5 h) agree, so no confirmation is needed under CONFIRM-01. The repair should finish by about 09:45-10:00, with 10:00 as the worst case. A loan would not arrive in time. The only idle loader, LH-10, is in preventive maintenance until 10:00. It would then need about 0.5 h to reach Este (about 1.3 km of ramp at 7 km/h, plus a 0.25 h manoeuvre), so it would arrive around 10:30, after LH-03 is back. Este has 93 t in its level stockpile, so its 3 trucks keep hauling while LH-03 is down, and almost no hauled ounces are lost. Taking a loader from a producing stope or from the DS-E569-02 critical-path heading (5.7 oz/h) would cost more than it gains. A loader from DS-E569-01 (0.4 oz/h) would also arrive too late. Central is truck-limited, with 303 t in its stockpile and 4 trucks, so an extra loader there adds little. There are no stopped stopes, so no reserve can be activated (RESERVE-01). Best decision: do nothing, expected gain 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 18.4,
+   "costo_usd": 0.0552,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.7
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-E543-07": "LH-05"
+   },
+   "agente_valida": {
+    "TJ-E543-07": "LH-05"
+   },
+   "mejor": {
+    "TJ-E543-07": "LH-05"
+   },
+   "oz_agente": 47.6,
+   "oz_mejor": 47.6,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-07"
+     },
+     {
+      "loader": "LH-05",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 78.0,
+    "rationale": "LH-03 is down at TJ-E543-07. The radio at 09:30 says it is stopped. The CMMS revision OT-5101 (10:00) says the part is out of stock and the repair takes 5 to 8 h from 09:30, so it is back at 14:30 to 17:30 and the original 0.4 h estimate no longer applies. Radio and CMMS agree the loader is down, so CONFIRM-01 is not triggered. The stope has 396-89=307 t of broken ore left at 8.3 g/t, which is 0.267 oz/t. LH-10 (LH410) finished its 250 h service at 10:00 (06:00 + 4 h) and is free at TALLER-564. Travel to E543-07 is about 0.5 h (up the Central ramp, 800 m of surface, down the Este ramp, plus the 0.25 h manoeuvre), so it arrives around 10:30. At 220 m it mucks 30x100/118 = 25 t/h. Central has 4 trucks and about 110 t/h of haulage (the cycle is about 0.33 h, which I derived with the 0.227 effective factor), and the 4 Central loaders could muck about 153 t/h. Central is therefore truck-limited and its stockpile is at 334 of 450 t. LH-05 (LH514, C538-06, the lowest-grade Central stope at 6.9 g/t) is the loader Central can spare. The three remaining Central loaders still muck about 114 t/h, so the loss at Central is about 0 to 3 oz. LH-05 reaches Este in about 0.5 h and mucks 42x100/118 = 35.6 t/h at E543-07. Este haulage is about 82 t/h, which covers the 61 t/h from the two loans plus LH-07's 21 t/h. The two loaders together muck about 61 t/h, so they clear the 307 t by about 15:30. That is about 82 oz, minus about 3 oz lost at Central, for roughly +78 oz. The other options are worse. Norte N522-01 is ore-limited: LH-06 alone clears its 235 t. LH-10 on E569-15 (5.8 g/t) would add only about 14 oz. A second loader on E543 beyond the 307 t of ore adds nothing. No reserve is activated because no stope is stopped (RESERVE-01), and no development heading loses a loader."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 40.5,
+   "costo_usd": 0.0822,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

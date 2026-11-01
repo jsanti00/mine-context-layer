@@ -1,0 +1,46 @@
+{
+ "turno": 4,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 32,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 55.9,
+   "perdida_oz": 55.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-E595-06",
+      "ask": "Call the Este area chief. Confirm that LH-01's hydraulic failure is a 3-5 h repair on site, that the stope is clear for a second loader, and that LH-10's preventive maintenance really ends at 11:00."
+     }
+    ],
+    "expected_net_oz": 45.0,
+    "rationale": "Radio and CMMS (OT-5100) agree that LH-01 is down at TJ-E595-06 for 3-5 h, so no confirmation is needed before acting. TJ-E595-06 is the best stope in the plan: 15.4 g/t, 80 m to the stockpile, and about 260 t of broken ore left (361 start, 101 mucked). It is worth about 0.5 oz/t. Este stockpile is 170/450 t and the 3 trucks are not a bottleneck. LH-10 is the only free loader, and no producing place or development heading has to give one up. It is in preventive maintenance until about 11:00 (PM-01: 6.0 + 5 h; I did not find an explicit available_from in the files). The trip from TALLER-564 to Este 595 is about 0.45 h including the manoeuvre, so it can start mucking around 11:30. As an LH410 at 80 m it moves about 31 t/h. Without a loan, LH-01 returns around 13:20 and mucks about 155 t of the 260 t, leaving about 100 t in the stope that does not count. LH-10 recovers most of that, roughly 90 t, which is about 45 oz at 0.5 oz/t. I did not borrow LH-09 from DS-E543-02: it would cost 4 oz/h, and the ore left after LH-10 does not justify it. No reserve is activated, because no stope has been stopped."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 31.9,
+   "costo_usd": 0.0691,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

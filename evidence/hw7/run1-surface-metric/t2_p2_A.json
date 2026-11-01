@@ -1,0 +1,48 @@
+{
+ "turno": 2,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "A",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-N522-13": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-N522-13": "LH-10"
+   },
+   "mejor": {
+    "TJ-N522-13": "LH-06"
+   },
+   "oz_agente": 0.4,
+   "oz_mejor": 4.7,
+   "perdida_oz": 4.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-N522-13"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 3.0,
+    "rationale": "LH-05 down at N522-13 (radio+CMMS agree, likely repair 11:30). The idle LH-10 at the workshop costs nothing to move, and it gets there in 0.69h (10:41). It loads about 8t before lunch, and the stope has 210t that LH-05 alone can't finish after 11:30. Norte stockpile has room (247/450), so the added inflow is not truck-limited in practice. No development loader is taken. Gain is small, about 3 oz.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.0,
+   "costo_usd": 0.0452,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 4.3
+  }
+ ]
+}

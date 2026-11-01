@@ -1,0 +1,36 @@
+{
+ "turno": 1,
+ "patron": "1 una falla",
+ "config": "D",
+ "segundos_total": 10,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at TJ-C564-14, and radio and CMMS agree. The likely repair is 13:20, and the repaired loader can clear the 138 t alone by 17:00. Every loan option has zero gain and a home loss of 4.2 to 40.6 oz, so no loan pays.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.1,
+   "costo_usd": 0.0246,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

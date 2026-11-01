@@ -1,0 +1,80 @@
+{
+ "turno": 1,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 29,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-07": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 1.5,
+   "perdida_oz": 1.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 failure at C590-07 confirmed by radio and CMMS, with no disagreement. The repair is in place, likely done by 09:54 and at the latest 10:00. A loan would need travel time and would arrive about when the repair finishes. The only lender candidate in Central is LH-09 on a development heading worth 1.5 oz/h, so the loan would cost development value. Central is also near truck capacity (inflow 83 against 91 t/h). The stope has 323 t and will not run out before 17:00, so the lost loading time is small and can be made up after the repair. No move.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.6,
+   "costo_usd": 0.0378,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.5
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C590-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-07"
+   },
+   "oz_agente": -3.3,
+   "oz_mejor": 2.7,
+   "perdida_oz": 6.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 32.0,
+    "rationale": "LH-03 is down until about 15:30 (range 14:30–17:30), and radio and CMMS agree, so no confirmation is needed. C590-07 holds 323 t at 8.4 g/t, about 87 oz. Central's trucks (91 t/h) are only slightly below the loader inflow (83 t/h), and its stockpile has room. Lending LH-08 (LH410, 25.4 t/h) from the cheaper heading (1.0 oz/h) costs about 0.67 h of travel. That leaves about 5.8 h of loading, roughly 147 t or 40 oz, against about 7 oz of development lost, for about 33 oz net. LH-09 gives about the same net (shorter 0.35 h trip, but 1.5 oz/h development cost), so I picked LH-08. No loader is freed from a stopped stope, so no reserve is activated. LH-10 is in preventive maintenance until 12:00.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.2,
+   "costo_usd": 0.047,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 6.0
+  }
+ ]
+}

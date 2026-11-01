@@ -1,0 +1,67 @@
+{
+ "turno": 5,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "C",
+ "segundos_total": 43,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio (LH-03 hydraulic failure at N574-02) and the CMMS (OT-5100, repaired on site, 0.25-0.5 h, likely 0.4 h) agree, so no confirmation is needed. The repair is shorter than any loan would take. The only loaders that could lend are in Central: LH-08 at development heading DS-C538-01, and LH-07 at a producing stope. Both would need about 0.15 h on the surface between portals, plus the drift and ramp legs at both ends and a 0.25 h manoeuvre. That is well over 0.4 h, so the loader would arrive after LH-03 is already running again. A loan would cost the lender's output (LH-07 loses stope production) or development value (LH-08 loses 0.2 oz/h) for no gain at Norte. LH-10 is in preventive maintenance until 11:00, so it is not available. Norte's stockpile holds 242 t of 450 t, so the lost mucking of about 0.4 h x ~40 t/h, roughly 16 t, mostly stays in the stope and can be mucked later. No reserve can be activated, because no stope is stopped and the loader is only briefly down. Decision: no changes, net gain 0."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.4,
+   "costo_usd": 0.0485,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-N574-02": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N574-02": "LH-08"
+   },
+   "mejor": {
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 39.0,
+   "oz_mejor": 39.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 47.0,
+    "rationale": "The radio (09:30, LH-03 stopped with a hydraulic failure) and the CMMS agree that LH-03 is down. OT-5101 only revises the repair time to 5-8 h (likely 6 h, part not in stock), so LH-03 is out for the rest of the shift and CONFIRM-01 does not apply. TJ-N574-02 has about 201 t left (290 broken, 89 mucked) at 10.5 g/t, and every loader there is stopped. The lender must come from a producing stope or a development heading (LOADER-SOURCE-01). I chose DS-C538-01 (LH-08, an LH410), the cheapest source at 0.2 oz per loader hour (DEV-COST-01). The other development loader, LH-09 at the critical-path DS-E543-02, costs 4.0 oz/h. Moving a loader from a producing stope would lose more ore than the development cost. LH-10 is in the workshop (TALLER-564), but its availability time is not given, so I did not use it. Travel from DS-C538-01 to Norte 574 is about 0.67 h (ramp, 6 km surface, ramp and drift, plus 0.25 h manoeuvre). That gives about 5.8 loading hours. At 220 m an LH410 mucks 30×100/118 ≈ 25 t/h, so about 147 t, which is below the 201 t available. Norte's stockpile is 245 of 450 t. LH-01 and LH-02 give about 71 t/h against truck capacity of about 70 t/h, so the stockpile should end near 390 t, below the cap. The 147 t at 10.5 g/t is about 50 oz. The development cost is about 0.2 × 6.5 h ≈ 1.3 oz, and the net is about 48 oz after a small allowance for uncertainty."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 28.6,
+   "costo_usd": 0.0751,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

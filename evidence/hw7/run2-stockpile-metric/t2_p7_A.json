@@ -1,0 +1,57 @@
+{
+ "turno": 2,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 14,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 10.2,
+   "oz_mejor": 10.2,
+   "perdida_oz": 0.0,
+   "dudosos": [
+    "TJ-C564-03"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C564-03",
+      "ask": "Call the Central area chief: radio says LH-03 is stopped, but CMMS shows it operating (work order closed 20 min ago). Confirm its real status. Nothing moves at C564-03 until then."
+     }
+    ],
+    "expected_net_oz": 50.0,
+    "rationale": "LH-02 is down at E569-07 (radio and CMMS agree). The likely repair is 13:30. The stope has 164 t at 10.5 g/t, about 55 oz. Este has a nearly empty stockpile and trucks that are not limiting, so extra inflow counts. LH-10 is an idle spare at the workshop, 0.49 h away. It loads at 27.5 t/h, so it can clear the 164 t within the loading blocks, and no producing place or development heading loses a loader. The LH-03 conflict is unconfirmed (confidence 0.4), so per CONFIRM-01 I am moving nothing there and asking the area chief. I am not activating a reserve, because no stope has stopped.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C564-03"
+   ],
+   "segundos": 14.4,
+   "costo_usd": 0.0411,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

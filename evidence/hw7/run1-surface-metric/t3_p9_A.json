@@ -1,0 +1,55 @@
+{
+ "turno": 3,
+ "patron": "9 tajo detenido y reserva",
+ "config": "A",
+ "segundos_total": 23,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-06": "RS-N548-02"
+   },
+   "agente_valida": {
+    "LH-06": "RS-N548-02"
+   },
+   "mejor": {
+    "LH-06": "RS-N548-02"
+   },
+   "oz_agente": 64.1,
+   "oz_mejor": 64.1,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [
+     {
+      "loader": "LH-06",
+      "reserve": "RS-N548-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 85.0,
+    "rationale": "N522-01 stopped 5-8h, so LH-06 is idle. Activate Norte reserve RS-N548-02 (9.7 gpt, 350 t). Activation takes 1 h and travel 0.34 h, so loading starts about 11:20. That gives roughly 5 h at 40.8 t/h, about 200 t, or about 62 oz. Norte trucks (66 t/h) are not limited because inflow is 0. Central is truck-limited (inflow 152 vs 91 t/h), so I skipped its reserves. LH-10 is free at the workshop. Send it to TJ-E543-07 (8.3 gpt, 0.49 h away). Este has about 13 t/h of truck headroom, which is about 70-80 t, or about 20 oz. No home place loses production. I did not touch any development headings.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [
+    "préstamo inválido LH-10 -> TJ-E543-07"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 22.7,
+   "costo_usd": 0.0505,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

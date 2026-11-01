@@ -1,0 +1,48 @@
+{
+ "turno": 0,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "D",
+ "segundos_total": 11,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E569-12": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E569-12": "LH-06"
+   },
+   "mejor": {
+    "TJ-E569-12": "LH-06"
+   },
+   "oz_agente": 9.9,
+   "oz_mejor": 9.9,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E569-12"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 9.4,
+    "rationale": "E569-12 has 241 t at 10.3 g/t, and LH-04 is likely repaired at 11:30. Lending LH-06 nets about +9.4 oz, the best option in rank_loan_options. C512-10 gains nothing from any loan: LH-01 clears its 136 t alone by 17:00, and every loan there nets negative. I left C512-10 uncovered.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.4,
+   "costo_usd": 0.0296,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

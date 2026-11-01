@@ -1,0 +1,43 @@
+{
+ "turno": 3,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 43,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-C590-09": "LH-05"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-05"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 32.2,
+   "oz_mejor": 32.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-05",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 70.0,
+    "rationale": "Radio and CMMS agree that LH-01 is down at TJ-C590-09 for 3-5 h, so CONFIRM-01 does not apply. TJ-C590-09 is the richest stope at 16.5 g/t (0.53 oz/t) and has about 260 t of broken ore left. It would otherwise go unmucked, and ore left in a stope does not count. Central is already truck-limited: 4 trucks at about 91 t/h against about 110 t/h of loader supply, and the stockpile is at 297 of 450 t. So an extra loader would add nothing. A swap helps because the trucks move the same tonnes whichever stope they come from. I replace low-grade tonnes with 16.5 g/t tonnes. The other 3 Central loaders already supply about 776 t over the rest of the shift against about 800 t of truck and stockpile capacity, so there is no spare capacity for a pure add. LH-05 comes from TJ-C538-06 (6.9 g/t, 0.222 oz/t), the lowest-grade carguio stope in Central. It is also close (about 0.35 h, one level), at 38.5 t/h there. At C590-09 (80 m) an LH514 mucks about 43 t/h, so the 260 t is done in about 6 h and fits before 17:00. Gain is about 260 t × 0.53 = 138 oz. Loss is about 276 t × 0.222 = 61 oz, plus a little travel time. Net is about 70 oz. LH-10 is not used because it is in preventive maintenance with no available_from time given, and no development loader is moved. TJ-C564-08 (9.0 g/t) and the other producing stopes keep their loaders. No reserves are activated because no stope has stopped; only the loader is down. RETURN-01 leaves the return decision to the layer once LH-01 is repaired."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 43.2,
+   "costo_usd": 0.0817,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

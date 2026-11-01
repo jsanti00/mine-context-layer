@@ -1,0 +1,76 @@
+{
+ "turno": 0,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "D",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-02 repaired in place by ~09:54 (high 10:00). Only 171 t at the stope, which the repaired loader clears alone before 17:00. Every loan option nets ≤0 oz, since travel is 0.34-0.7 h and the home loss is positive. No loans.",
+    "confidence": 0.9,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.3,
+   "costo_usd": 0.0207,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 40.7,
+   "oz_mejor": 40.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 38.0,
+    "rationale": "LH-02 is down until about 15:30 (range 14:30 to 17:30). Of all the loan options, LH-08 from the DS-N600-01 development heading has the best net: +40.7 oz gained at the stope against 2.7 oz lost at home, so +38 oz net. The Norte stockpile has room (306 t). The other options all net less.",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.3,
+   "costo_usd": 0.0225,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

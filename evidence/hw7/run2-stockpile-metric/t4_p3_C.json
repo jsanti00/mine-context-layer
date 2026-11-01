@@ -1,0 +1,50 @@
+{
+ "turno": 4,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 34,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C512-04": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-04": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06",
+    "TJ-C512-04": "LH-08"
+   },
+   "oz_agente": 7.0,
+   "oz_mejor": 71.4,
+   "perdida_oz": 64.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E595-06"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-04"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 140,
+    "rationale": "Radio and CMMS agree that LH-01 (E595-06) and LH-02 (C512-04) are down. The repair estimates are 3-5 h and 4-6 h, so both stopes lose most of the rest of the shift. No confirmation is needed under CONFIRM-01. No reserve can be activated, because no stope is stopped and RESERVE-01 forbids taking a loader from a producing place. LH-10 is idle at TALLER-564 and is free to move, so I send it to E595-06 (15.4 g/t, 0.495 oz/t, 256 t of broken ore left, 80 m from the stockpile). It finishes preventive maintenance at 11:00. Travel is about 0.45 h, so it starts mucking at about 11:30 as loading resumes. An LH410 at 80 m moves about 30.9 t/h. Over about 5.5 h that is about 170 t, or about 84 oz, at no development cost. For C512-04 (13 g/t, 0.418 oz/t, 314 t left, 220 m), I lend LH-08 from DS-C512-01, which is on the same level, so travel is short. At 220 m an LH410 moves about 25.4 t/h. Over about 6.75 h of loading that is about 170 t, or about 71 oz. The development heading is worth 1.9 oz/h, so about 7.5 h away costs about 14 oz, for a net of about 57 oz. I leave LH-09 on DS-E543-02. It is a critical-path heading worth 4 oz/h, and a second loader on E595-06 would add little because LH-10 already covers most of the ore left there. Both stockpiles (Este 171 t, Central 264 t, capacity 450 t each) and the trucks have headroom, so nothing is capped. Total is about 84 + 57, or roughly 140 oz."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 33.1,
+   "costo_usd": 0.0738,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

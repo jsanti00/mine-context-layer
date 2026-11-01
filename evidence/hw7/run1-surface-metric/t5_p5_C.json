@@ -1,0 +1,104 @@
+{
+ "turno": 5,
+ "patron": "5 tres fallas casi juntas",
+ "config": "C",
+ "segundos_total": 105,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 4.1,
+   "perdida_oz": 4.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio (LH-01 stopped with a hydraulic failure at N600-09) and CMMS OT-5100 (LH-01, TJ-N600-09, hydraulic, 3-5 h likely 4 h) agree, so no confirmation is needed. Norte is truck-limited. Truck cycle is roughly 0.41 h (about 0.7 km of ramp from mid depth). That gives 3 trucks x 40 t / 0.41 h x 0.227 = about 67 t/h. This is my estimate from the map and haulage figures, not a figure given in the files. The two remaining Norte loaders (LH-02 and LH-03) each muck about 35.6 t/h at 220 m, so together about 71 t/h. That is already at or above truck capacity. Norte also has 242 t in its stockpile against a 450 t capacity. Losing LH-01 therefore costs almost no hauled ounces. A loan would not add hauled ounces, because the trucks are the limit. Any loan would also cost travel time and take production or development from the lender. The idle LH-10 is in preventive maintenance in the workshop until about 11:00. Taking LH-08 from DS-C538-01 or LH-09 from DS-E543-02 would give up development value (0.2 and 4.0 oz per loader-hour respectively) for no hauled gain. Reserves can only be activated with a loader from a stopped stope, and no stope is stopped. Best decision: no loans, no reserve activations and no confirmations. Net change versus doing nothing is 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.5,
+   "costo_usd": 0.0541,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 4.1
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-02"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.5,
+   "perdida_oz": 3.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 13.0,
+    "rationale": "Radio and CMMS agree that LH-01 (N600-09) and LH-03 (N574-02) are down with hydraulic faults, 3-5 h to repair. There is no conflict, so no confirmation is needed. Norte is truck-limited. Its 3 trucks haul about 3×(40/0.41 h)×0.227 ≈ 66 t/h, or about 450 t over the 6.83 loading hours left. The Norte stockpile holds 243 t, and LH-02 alone mucks about 35 t/h, or about 237 t. Supply of about 480 t already exceeds haulage, so covering the two dead Norte stopes adds nothing. Reserves can only be activated with a loader from a stopped stope, and no stope is stopped, so I activate none. Este is loader-limited. LH-05 mucks only about 33 t/h at 280 m, against truck capacity of about 66 t/h. E543-11 has about 279 t of broken ore left (368 t minus 89 t mucked). LH-05 alone would clear about 225 t, leaving about 54 t. Lending LH-08 from the infrastructure heading DS-C538-01, which is worth only 0.2 oz/h, lets the stope be fully mucked. Travel is about 0.55 h. The extra 54 t at 8.3 g/t is about 14.4 oz. The cost is about 6.3 h × 0.2 = 1.3 oz of development value. Net is about +13 oz. I did not lend LH-09 because DS-E543-02 is critical path at 4 oz/h. The other Este stopes are in drilling or fill, so they have no broken ore to muck."
+   },
+   "violaciones": [
+    "préstamo inválido LH-08 -> TJ-E543-11"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 29.4,
+   "costo_usd": 0.0686,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.5
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-02",
+    "TJ-C512-12": "LH-08"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.8,
+   "perdida_oz": 3.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 12.0,
+    "rationale": "Radio and CMMS agree on LH-01, LH-03 and LH-04 (hydraulic failures), so CONFIRM-01 does not apply. Remaining loading time is 09:50-11:00 plus 11:30-17:00, about 6.67 h. Reserves need a working loader freed by a stopped stope, and all three loaders are broken, so I activate none. I estimated haul capacity from trucks x 40 t x 0.227 x trips per hour, using the cycle in the map. That gives roughly Norte 66 t/h, Central 91 t/h and Este 73 t/h. I assumed the 0.227 factor is an efficiency factor, and I took mid depth as the average of each mine's level depths. NORTE: only LH-02 is working (~35.6 t/h). Haul capacity is about 442 t over the rest of the shift. Supply is 237 t in stock plus about 237 t mucked, roughly 474 t. Norte is truck-limited, so a loan adds almost nothing, and I take no loader from LH-02. CENTRAL: LH-06 and LH-07 muck about 63 t/h. LH-04 is repaired on site in about 3 h and can clear the 136 t left at C512-12 by 17:00. Total supply is about 619 t against about 605 t of haul capacity, so a loan gains little (about 10 oz only if the repair runs to 4 h) and costs about 1.2 oz. ESTE: this mine is loader-limited. The stockpile is 34 t and LH-05 alone (~33 t/h at 280 m) gets about 221 t, so supply is about 255 t against 484 t of haul capacity. TJ-E543-11 still has about 272 t of broken ore at 8.3 g/t (0.267 oz/t). A second loader adds about 51 t, or about 13.6 oz. The cheapest source is LH-08 from the infrastructure heading DS-C538-01. It costs 0.2 oz/h, about 1.2 oz over the rest of the shift. Travel to Este is about 0.55 h. Net is about 12 oz. I leave LH-09 on DS-E543-02 (4 oz/h). LH-10 is in preventive maintenance until about 11:00, so I do not use it."
+   },
+   "violaciones": [
+    "préstamo inválido LH-08 -> TJ-E543-11"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 55.4,
+   "costo_usd": 0.1014,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.8
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "turno": 5,
+ "patron": "5 tres fallas casi juntas",
+ "config": "A",
+ "segundos_total": 48,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 4.1,
+   "perdida_oz": 4.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at N600-09 (radio and CMMS agree; repair likely 13:30). Norte is already truck-limited: inflow 71 t/h from LH-02 and LH-03 against 66 t/h truck capacity. Ore available by 17:00 (242 t in the stockpile plus 507 t in the other Norte stopes) exceeds what the trucks can haul in 7.5 h (about 495 t). A third loader at Norte would add no ounces. Lending LH-08 from the infrastructure heading is cheap at 0.2 oz/h but gains nothing here. LH-09 is on a critical-path heading at 4 oz/h, so I leave it. LH-10 is in preventive maintenance until 11:00. No stope is stopped, so no reserve can be activated. No loans.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.8,
+   "costo_usd": 0.0403,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 4.1
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-02"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.5,
+   "perdida_oz": 3.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Norte lost LH-01 and LH-03 (repairs likely about 13:30). Norte trucks move 66 t/h, which is about 484 t by 17:00. The stockpile already holds 243 t and LH-02 adds about 264 t, so Norte is already at or over truck capacity. An extra loader there would add roughly nothing, only a small grade uplift of 11.9 g/t against a 10.6 g/t stockpile. Borrowing a loader costs its home output. LH-08's heading is cheap at 0.2 oz/h, but the gain is still about zero. Central is already truck-limited, with 96 t/h inflow against 91 t/h capacity. Este's LH-09 is on a critical-path heading worth 4 oz/h and stays put. LH-10 is in maintenance until 11:00 and comes too late to matter. No reserve activations are possible because no stope is stopped. Both radio and CMMS agree on both failures, so no confirmations are needed.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.9,
+   "costo_usd": 0.0435,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.5
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-02",
+    "TJ-C512-12": "LH-08"
+   },
+   "oz_agente": 0.9,
+   "oz_mejor": 3.8,
+   "perdida_oz": 2.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C512-12"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 98.0,
+    "rationale": "Three stopes are uncovered (LH-01, LH-03, LH-04 down, repairs 11:50-14:40 at the earliest). LH-08 comes from the infrastructure heading, which costs only 0.2 oz/h. I sent it to N600-09 (11.9 g/t), which is the richest stope. It arrives in about 0.65 h and loads roughly 150 t, which is about 58 oz; the heading cost is about 1.4 oz. LH-10 leaves preventive maintenance at 11:00 and goes to C512-12 (0.36 h away, 10.2 g/t). It loads about 130 t, about 42 oz. I put it in Central because Norte is near its truck limit (66 t/h against 36 t/h inflow plus 25 t/h from LH-08), while Central has headroom (91 t/h against 63 t/h plus 24 t/h). I did not take LH-09 because its heading is critical path at 4 oz/h. I left N574-02 uncovered because a third loader would exceed Norte's truck capacity. Radio and CMMS agree on all three failures, so CONFIRM-01 does not apply.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 19.2,
+   "costo_usd": 0.0539,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.9
+  }
+ ]
+}

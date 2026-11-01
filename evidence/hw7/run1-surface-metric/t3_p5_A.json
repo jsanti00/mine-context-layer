@@ -1,0 +1,140 @@
+{
+ "turno": 3,
+ "patron": "5 tres fallas casi juntas",
+ "config": "A",
+ "segundos_total": 71,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 29.8,
+   "perdida_oz": 29.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 30.0,
+    "rationale": "LH-01 is down at C590-09 (radio and CMMS agree), repair likely 13:30. That stope holds 256 t at 16.5 g/t, the richest ore. LH-10 comes out of preventive maintenance at 10:00 and is idle, so using it costs no production at another place. Travel is 0.33 h, so it arrives about 10:20 and loads about 30 t/h, roughly 186 t (about 99 oz) by 17:00. Central trucks are near their limit (91 t/h against 110 t/h inflow), so the haul gain is capped. I estimate only about 30 oz because high-grade ore displaces lower-grade ore in the haul mix. I did not take loaders from producing stopes or from development headings, because that would lose more than it gains. No reserve is activated, since no stope is stopped.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 26.5,
+   "costo_usd": 0.0589,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 29.8
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-E543-07": "LH-04"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 65.8,
+   "perdida_oz": 65.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-07"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 75.0,
+    "rationale": "Central is truck-limited (inflow 110 vs 91 t/h), so no loader goes to C590-09 even at 16.5 g/t. Este has truck room (72 t/h vs 24 inflow) and E543-07 holds 300 t at 8.3 g/t, about 6.8 oz/h per LH410. LH-08 comes from the infrastructure heading (0.4 oz/h) and arrives about 10:00. LH-10 leaves PM at 10:00 and arrives about 10:30. Both together clear the 300 t (about 80 oz) by 17:00. The cost is about 3 oz of development. LH-03 repair is likely 13:40, too late to matter. LH-09 stays on the critical-path heading at 5.7 oz/h.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 22.3,
+   "costo_usd": 0.0539,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 65.8
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E543-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E543-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-E543-07": "LH-04",
+    "TJ-N522-01": "LH-02"
+   },
+   "oz_agente": 18.7,
+   "oz_mejor": 82.4,
+   "perdida_oz": 63.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-07"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-N522-01"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 75.0,
+    "rationale": "Three stopes lost loaders. Lend cheap infra loader LH-08 (0.4 oz/h) to E543-07 (8.3 g/t, 0.33h away, Este trucks have spare capacity): ~43 oz minus ~3 oz cost. LH-10 leaves PM at 10:00, goes to N522-01 (Norte stockpile has no inflow, trucks idle): ~37 oz. C590-09 is high grade but Central is truck-limited (inflow 110 vs 91 t/h, large backlog), and LH-09 costs 5.7 oz/h, so net is marginal and I left it uncovered.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 20.5,
+   "costo_usd": 0.0544,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 63.7
+  }
+ ]
+}

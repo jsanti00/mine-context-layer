@@ -1,0 +1,87 @@
+{
+ "turno": 0,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 63,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07"
+   },
+   "oz_agente": -0.4,
+   "oz_mejor": 1.1,
+   "perdida_oz": 1.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 52.0,
+    "rationale": "The radio (LH-01 hydraulics failure, stopped at C512-10) and CMMS OT-5100 (hydraulic, on site, 3/4/5 h) agree. CONFIRM-01 therefore does not apply and the loader is really down. C512-10 is in carguio at 13.4 g/t (0.431 oz/t) with 238-98 = 140 t of broken ore left. Central is not truck-limited: 4 trucks at about 96 t/h against about 64 t/h of loader output (LH-05 about 33 t/h plus LH-07 about 31 t/h). A third loader brings it to about 93 t/h, still within truck capacity, and the 123 t stockpile has room. LH-08 (LH410) comes from the infrastructure heading DS-N600-01, the cheapest source at 0.5 oz/h under DEV-COST-01. Travel is about 0.7 h, so it arrives around 10:00. At 120 m from the stockpile it mucks about 29 t/h, so the 140 t takes about 4.8 h and finishes around 15:25, before 17:00. Gain is 140 t x 0.431 = about 60 oz. Cost is about 5.5 h x 0.5 = about 2.7 oz, plus a small allowance for the repair finishing early and overlapping the loan. Net is about 52 oz. I rejected the alternatives. LH-07 from C590-14 would give up about 6.7 oz/h of 6.7 g/t ore. LH-09 costs 2.0 oz/h. LH-10 is in the workshop and, assuming it is the loader in the 500 h service (06:00 + 8 h, per plan_turno), is not free until 14:00. Drilling and fill stopes cannot lend a loader (LOADER-SOURCE-01). No reserve activation, because no stope has been stopped (RESERVE-01)."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 28.7,
+   "costo_usd": 0.0669,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.5
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N574-15": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N574-15": "LH-09"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07",
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 9.9,
+   "oz_mejor": 22.6,
+   "perdida_oz": 12.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-N574-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 65.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C512-10, 3-5 h) and LH-06 (N574-15, 5-7 h) are down with hydraulic faults, so no confirmation is needed. LH-10 is in preventive maintenance until 14:00 (06:00 + 8 h) and can't be used. No stope is stopped, so no reserves are activated. I estimated the truck rates from the cycle times in the map, so they are approximate. Keep LH-08 (LH410) on C512-10 (13.4 g/t, about 0.43 oz/t, 120 m, about 29 t/h). Central trucks haul about 90 t/h, while LH-05 and LH-07 muck about 64 t/h, so LH-08 adds real throughput. C512-10 has about 123 t of broken ore left, worth about 53 oz. LH-08 costs only 0.5 oz/h from DS-N600-01 (infrastructure, cheap), about 2 oz in total, so net is about +50 oz. Add LH-09 (LH410) from DS-N522-02 to N574-15 (9.4 g/t, about 0.30 oz/t, about 31 t/h). Travel is about 0.35 h along the ramp. Norte has 3 trucks hauling about 63 t/h, but only LH-02 (about 33 t/h) is mucking, so trucks have spare capacity. N574-15 has about 147 t left. LH-09 adds roughly 90-100 t hauled, about 28 oz. Its cost is 2 oz/h for about 5 h, about 10 oz, plus travel, so net is about +15 oz. I did not borrow from Este: its trucks are about saturated by LH-03 and LH-04, so moving one would lose ore. Loaders on drilling and fill stopes can't lend. Total is about +65 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 33.3,
+   "costo_usd": 0.0733,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 12.7
+  }
+ ]
+}

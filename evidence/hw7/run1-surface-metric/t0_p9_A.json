@@ -1,0 +1,48 @@
+{
+ "turno": 0,
+ "patron": "9 tajo detenido y reserva",
+ "config": "A",
+ "segundos_total": 14,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-03": "RS-E595-01"
+   },
+   "agente_valida": {
+    "LH-03": "RS-E595-01"
+   },
+   "mejor": {
+    "LH-03": "RS-E595-01"
+   },
+   "oz_agente": 37.9,
+   "oz_mejor": 37.9,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-03",
+      "reserve": "RS-E595-01"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 70.0,
+    "rationale": "E569-01 stopped 5-8h, so LH-03 is idle. Activate RS-E595-01 (9.8 g/t, 293 t, 0.5 h activation, 0.33 h travel) in Este. Este is not truck-limited (inflow 33 vs 72 t/h), so the extra ore reaches surface. About 6 loading hours at 38.5 t/h gives roughly 230 t, or about 73 oz. RS-E595-03 is lower grade (about 46 oz). RS-N574-02 is in Norte, which is truck-limited. No loans: no producing place has a loader to spare.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.7,
+   "costo_usd": 0.0407,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

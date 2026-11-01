@@ -1,0 +1,47 @@
+{
+ "turno": 4,
+ "patron": "1 una falla",
+ "config": "D",
+ "segundos_total": 13,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-E595-06": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 55.9,
+   "oz_mejor": 55.9,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 52.0,
+    "rationale": "LH-01 is down at E595-06 (15.4 g/t) until about 13:20. Central is truck-limited: loader inflow is 159 t/h against 91 t/h truck capacity. Lending LH-06 from the 5.8 g/t stope costs Central nothing. LH-06 gains about 3 productive hours at Este, where the stockpile has room (170 of 450 t). Net is about +52 oz, and the radio and CMMS agree.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.1,
+   "costo_usd": 0.0406,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

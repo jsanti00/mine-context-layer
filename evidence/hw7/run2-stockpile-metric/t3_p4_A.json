@@ -1,0 +1,54 @@
+{
+ "turno": 3,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "A",
+ "segundos_total": 13,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-04"
+   },
+   "oz_agente": 26.1,
+   "oz_mejor": 32.1,
+   "perdida_oz": 6.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C538-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 130.0,
+    "rationale": "Radio and CMMS agree on both failures (LH-01 back ~13:30, LH-05 ~11:30). Send LH-08 from the cheap infrastructure heading (0.4 oz/h) to C590-09, 16.5 g/t, 256 t: about 195 t at 30 t/h is roughly 100 oz. Send LH-10 from the workshop once PM ends at 10:00 to C538-06, 6.9 g/t: about 40 oz. Do not touch the critical-path heading (LH-09, 5.7 oz/h). Central stockpile at 303/450 and trucks at 91 t/h can absorb the extra ore.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 12.9,
+   "costo_usd": 0.0443,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

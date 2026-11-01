@@ -1,0 +1,39 @@
+{
+ "turno": 3,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "A",
+ "segundos_total": 14,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C512-02": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.8,
+   "perdida_oz": 0.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Central is truck-limited: trucks haul 91 t/h against 116 t/h loader inflow from the three remaining loaders, and the stockpile is 334/450 t. Over 7 h trucks can haul only about 640 t. Central already has roughly 1,060 t available between stockpile and stopes, so another loader on C512-02 adds no tonnes to surface. LH-04 should be back by 11:00-12:00 anyway. Norte and Este have no uncovered stopes with ore. Moving a development loader would give up value (LH-09 costs 5.7 oz/h) for nothing. LH-10 is free but has nowhere useful to go. No loans, and no reserves, since none of the stopes has stopped.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.2,
+   "costo_usd": 0.0408,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.8
+  }
+ ]
+}

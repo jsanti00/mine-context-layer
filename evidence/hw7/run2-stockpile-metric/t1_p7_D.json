@@ -1,0 +1,46 @@
+{
+ "turno": 1,
+ "patron": "7 fuentes que se contradicen",
+ "config": "D",
+ "segundos_total": 10,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [
+    "TJ-C512-06"
+   ],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-06",
+      "ask": "Call the Central area chief to confirm whether LH-02 is actually stopped. Radio says stopped; CMMS says operating, with its work order closed 20 minutes ago."
+     }
+    ],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at TJ-C564-14, likely repair 13:30. The repaired loader can clear the 134 t alone by 17:00, so a loan gains 0 oz. Every option has negative net, from -4.2 to -41.4 oz. No loans. The LH-02 radio and CMMS conflict is at confidence 0.4, so under CONFIRM-01 nothing moves at that place until the area chief confirms.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C512-06"
+   ],
+   "segundos": 9.6,
+   "costo_usd": 0.0239,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

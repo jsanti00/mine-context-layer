@@ -1,0 +1,58 @@
+{
+ "turno": 0,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 2.1,
+   "perdida_oz": 2.1,
+   "dudosos": [
+    "TJ-N574-15"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N574-15",
+      "ask": "Call the Norte area chief to confirm whether LH-06 is actually stopped (radio says stopped, CMMS says operating). No loader moves there until confirmed."
+     }
+    ],
+    "expected_net_oz": 50.0,
+    "rationale": "LH-01 is down at C512-10, with a likely repair at 13:30. That stope has 136 t at 13.4 g/t, which is about 58.6 oz. Central trucks have spare capacity (91 t/h against 63 t/h inflow), so an extra loader is not truck-limited. LH-08 comes from the cheap infrastructure heading, which costs 0.5 oz/h, and takes 0.69 h to get there. At 29.1 t/h it clears the stope in about 4.7 h, so roughly 55 oz arrives before 17:00 for a cost of about 3 oz. I did not take LH-09, because its heading is worth 2.0 oz/h. I did not take LH-07, because C590-14 is a producing stope. LH-06 is under a radio/CMMS conflict, so per CONFIRM-01 nothing moves at N574-15 until the area chief confirms.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-N574-15"
+   ],
+   "segundos": 15.7,
+   "costo_usd": 0.0438,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.1
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "turno": 0,
+ "patron": "9 tajo detenido y reserva",
+ "config": "A",
+ "segundos_total": 13,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-03": "RS-E595-01"
+   },
+   "agente_valida": {
+    "LH-03": "RS-E595-01"
+   },
+   "mejor": {
+    "LH-03": "RS-N574-02"
+   },
+   "oz_agente": 60.5,
+   "oz_mejor": 71.0,
+   "perdida_oz": 10.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-03",
+      "reserve": "RS-E595-01"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 75.0,
+    "rationale": "E569-01 stopped (ventilation 5-8h), so LH-03 is idle. Under RESERVE-01 it can activate a reserve. Este isn't truck-limited: inflow 33 plus 38.5 is about 71.5 t/h against 72 t/h truck capacity, and the stockpile is 111 of 450 t. RS-E595-01 (9.8 g/t, 293 t, 0.5 h activation, LH514 at 38.5 t/h) gives about 250 t, or about 79 oz, by 17:00. RS-E595-03 (6.2 g/t) gives only about 46 oz. No loans, so no other place loses production. No source conflict, so no confirmation is needed.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.5,
+   "costo_usd": 0.0381,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

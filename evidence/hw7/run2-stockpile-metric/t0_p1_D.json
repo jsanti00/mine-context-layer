@@ -1,0 +1,36 @@
+{
+ "turno": 0,
+ "patron": "1 una falla",
+ "config": "D",
+ "segundos_total": 10,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at TJ-C512-10 (radio and CMMS agree), with a likely repair at 13:20. Only 140 t of broken ore is there, and the repaired loader can clear all of it by 17:00. Every loan option ranks with zero gain and a negative net (best is LH-08 at -2.1 oz), so I'm making no loan.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.6,
+   "costo_usd": 0.035,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

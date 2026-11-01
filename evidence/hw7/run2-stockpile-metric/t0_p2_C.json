@@ -1,0 +1,43 @@
+{
+ "turno": 0,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 33,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-C590-03": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-03": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-03": "LH-01"
+   },
+   "oz_agente": 3.0,
+   "oz_mejor": 7.4,
+   "perdida_oz": 4.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 3.0,
+    "rationale": "LH-05 broke down in C590-03 (radio at 10:00). The CMMS order OT-5100 agrees: on site, 1 to 2 h, likely 1.5 h. Because the two sources agree, no confirmation is needed. C590-03 has 253 t of broken ore left at 10.0 g/t. Central's stockpile holds 131 of 450 t, and four trucks move about 100 t/h, so Central is not truck-limited and extra mucking adds ounces. No reserve can be activated. The rules allow it only with the loader of a stopped stope, and LH-05 is down, so it cannot be moved. LH-10 is in preventive maintenance from 06:00 for 8 h, so it is free only from 14:00. LH-07 is the nearest Central loader, but swapping it only trades C590-14 (6.7 g/t, 30 t/h) for C590-03 (10 g/t, 23.6 t/h at 280 m). That gains about +1 oz/h and loses 0.28 h of travel, so the net is about zero. The best lender is LH-08 from DS-N600-01, the cheapest heading at 0.5 oz/loader-h. Travel is about 0.58 h, so it arrives around 10:35. At C590-03 an LH410 mucks 30 x 100/127 = 23.6 t/h x 10 g/t, about 7.6 oz/h. I expect about 0.55 h of useful mucking, because the loading break runs 11:00-11:30 and LH-05 is likely back by about 11:30. That is about +4.2 oz. The development cost is about 2.1 h away x 0.5 = about -1.1 oz. The net is about +3 oz, a small positive that improves if the repair runs long. The loan is only worth it because LH-08's heading is cheap, so the other loaders stay put."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 32.7,
+   "costo_usd": 0.0818,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

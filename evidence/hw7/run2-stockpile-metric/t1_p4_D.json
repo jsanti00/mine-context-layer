@@ -1,0 +1,48 @@
+{
+ "turno": 1,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "D",
+ "segundos_total": 11,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E569-10": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-E569-10": "LH-09"
+   },
+   "mejor": {
+    "TJ-E569-10": "LH-09"
+   },
+   "oz_agente": 2.0,
+   "oz_mejor": 2.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-E569-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 2.0,
+    "rationale": "Radio and CMMS agree on both failures. C564-14: the repaired loader clears the 134 t alone by 17:00, so every loan there has a net of zero or less. E569-10: only the development loader LH-09 nets positive (+2 oz: gain 5, home loss 3). Loans from producing stopes lose ounces. All other loans are skipped.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.7,
+   "costo_usd": 0.0295,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

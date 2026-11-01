@@ -1,0 +1,48 @@
+{
+ "turno": 0,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "A",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-12": "LH-06"
+   },
+   "oz_agente": -0.1,
+   "oz_mejor": 9.9,
+   "perdida_oz": 10.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 38.0,
+    "rationale": "Both failures are confirmed by radio and CMMS. LH-04 at E569-12 is likely repaired by 11:30, so lending a loader there pays little. LH-09's heading is worth 2 oz/h, so I leave it in place. C512-10 has 136 t at 13.4 g/t (about 58 oz), and LH-01 is likely out until 13:30. LH-08 comes from a cheap infrastructure heading (0.5 oz/h) and arrives in 0.69 h. At 29 t/h it mucks about 95 t, or roughly 41 oz, for a development cost of about 2 oz. Central trucks have spare capacity (63+29 inflow against 91 t/h), so the stockpile won't back up.",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.6,
+   "costo_usd": 0.0471,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

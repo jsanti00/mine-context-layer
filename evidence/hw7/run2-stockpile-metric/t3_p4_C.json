@@ -1,0 +1,41 @@
+{
+ "turno": 3,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "C",
+ "segundos_total": 33,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-04"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 32.1,
+   "perdida_oz": 32.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 90.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C590-09, 3-5 h repair) and LH-05 (C538-06, 1.5-2.5 h repair) are both down, so no confirmation is needed. Central is truck-limited. Four trucks move about 91 t/h (4 x 40 t / 0.4 h x 0.227). The two working loaders, LH-02 and LH-04, muck about 36 t/h each, or 71 t/h together. The Central stockpile is at 303 of 450 t, so there is room. LH-10 is the best cover. It is free after preventive maintenance ends at 10:00 and sits at TALLER-564 in Central, so it can reach C590-09 by about 10:20. It takes no loader from a producing place or a development heading, so there is no development cost. C590-09 is the richest stope at 16.5 g/t, or about 0.53 oz/t. About 256 t of broken ore is left there. LH-10 mucks about 31 t/h at 80 m, so over roughly 6 h it moves about 190 t, or about 100 oz. Together the loaders (about 102 t/h) only slightly exceed haulage (about 91 t/h), so the stockpile does not fill. I net off a small allowance for repair-time ranges and the lost haul-limited share, which gives about 90 oz. I leave C538-06 uncovered. It is lower grade at 6.9 g/t, and its repair should finish in about 2 h. A second loader at Central would only add to a stockpile the trucks cannot clear. I did not take LH-08, LH-09 or the Este development loaders. LH-09 is on a critical-path heading worth 5.7 oz/h. LH-08 is cheap at 0.4 oz/h but is no better than LH-10 and is not needed. There are no reserve activations because no stope was stopped."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 32.8,
+   "costo_usd": 0.0714,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

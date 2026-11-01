@@ -1,0 +1,39 @@
+{
+ "turno": 5,
+ "patron": "1 una falla",
+ "config": "A",
+ "segundos_total": 13,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.6,
+   "perdida_oz": 3.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 down at N600-09 (radio+CMMS agree, likely repair 13:20). Norte is already truck-limited (inflow 71 t/h vs trucks 66 t/h, stockpile 238 t of 450), so the trucks already haul at capacity and an extra loader adds no ounces. Lending LH-08 (0.2 oz/h) would also cost home development for no gain. Other mines have no free loaders and no stopped stope to activate a reserve. Keep the status quo and re-evaluate if the repair estimate slips.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.1,
+   "costo_usd": 0.0391,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.6
+  }
+ ]
+}

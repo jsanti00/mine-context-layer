@@ -1,0 +1,43 @@
+{
+ "turno": 0,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 24,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-03": "RS-E595-01"
+   },
+   "agente_valida": {
+    "LH-03": "RS-E595-01"
+   },
+   "mejor": {
+    "LH-03": "RS-N574-02"
+   },
+   "oz_agente": 60.5,
+   "oz_mejor": 71.0,
+   "perdida_oz": 10.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-03",
+      "reserve": "RS-E595-01"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 62,
+    "rationale": "At 10:00 the radio says E569-01 is stopped because of ventilation, so LH-03 is free. The CMMS file has no orders, so the radio and CMMS don't disagree and no confirmation is needed. The reserve rule says a reserve can only be activated with the loader of a stopped stope, so LH-03 is the only loader I can use for one. Option chosen: RS-E595-01 (Este, 9.8 g/t, 293 t broken, 0.5 h activation, 160 m to the stockpile). Travel is about 0.33 h: 389 m drift, 175 m ramp, 293 m drift, plus the 0.25 h manoeuvre. Activation adds 0.5 h, so LH-03 starts after about 0.83 h. Loading time left is about 6 h (10:00 to 17:00 minus the 11:00-11:30 break), so about 5.2 h of mucking remain. The LH514 rate at 160 m is 42×100/(100+0.15×60) = 38.5 t/h, which gives about 200 t, below the 293 t available. At 9.8 g/t (0.315 oz/t) that is about 63 oz. The Este stockpile is only 111 of 450 t, and I estimate trucks can haul about 70 t/h against about 71 t/h of loader feed (LH-04 plus LH-03), so it should not fill. The Norte reserve RS-N574-02 (11.3 g/t) is similar: about 65 oz after a longer move (about 0.6 h) and 1.0 h activation, with a truck-limited Norte stockpile. I chose Este for its shorter move and spare haul capacity. RS-E595-03 is lower grade at 6.2 g/t. No other loans pay. LH-10 is in 8 h preventive maintenance until 14:00. I did not take loaders from the development headings, because that costs 0.5 to 2 oz per loader-hour. Expected gain versus doing nothing is about 62 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 23.7,
+   "costo_usd": 0.0607,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

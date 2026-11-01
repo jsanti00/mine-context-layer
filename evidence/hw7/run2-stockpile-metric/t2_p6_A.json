@@ -1,0 +1,93 @@
+{
+ "turno": 2,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 29,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 9.2,
+   "oz_mejor": 9.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "LH-02 is down at E569-07 (radio and CMMS agree). Likely repair is 13:20. LH-10 is idle at the workshop, so no home place loses production. Travel is 0.49 h. It loads 27.5 t/h at 10.5 g/t, which is about 0.9 oz/h. Este has trucks free (stockpile 51/450 t). By 13:20 it moves about 96 t (about 32 oz) and could clear all 168 t (about 57 oz) by 17:00 if the repair runs long. Reserves can't be activated because no stope has stopped. Taking a loader from a producing stope or a heading would cost more than it gains.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.2,
+   "costo_usd": 0.0389,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-03": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-03": "LH-08"
+   },
+   "mejor": {
+    "TJ-C564-03": "LH-10"
+   },
+   "oz_agente": 44.6,
+   "oz_mejor": 45.7,
+   "perdida_oz": 1.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 50.0,
+    "rationale": "Keep LH-10 at E569-07 (151t, 10.5 g/t, LH-02 down to ~13:20). Lend LH-08 from the cheap preparation heading (1.3 oz/h) to C564-03 (220t, 9.6 g/t, LH-03 down to ~16:00), 0.32 h away. About 6 h of loading at 30 t/h gives ~180t, or ~55 oz, against ~8 oz of development lost. Central stockpile has room. LH-09 is critical path (4.2 oz/h) so it stays. Reserves can't be activated because no stope was stopped.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.9,
+   "costo_usd": 0.0424,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

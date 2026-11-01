@@ -1,0 +1,44 @@
+{
+ "turno": 5,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 43,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N522-15": "LH-08"
+   },
+   "oz_agente": 26.8,
+   "oz_mejor": 56.5,
+   "perdida_oz": 29.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45,
+    "rationale": "The radio and the CMMS agree that LH-01 (N600-09) and LH-02 (N522-15) are down for a likely 4 h and 5 h, so CONFIRM-01 does not apply. Norte then has only LH-03 working, at about 35.6 t/h. Norte's 3 trucks haul about 66 t/h, and its stockpile is at 242 of 450 t, so an extra loader would not hit the cap. An LH410 at 220 m mucks about 25.4 t/h. At N600-09 (11.9 g/t, about 0.383 oz/t) that is about 9.7 oz/h. LH-08 comes from the infrastructure heading DS-C538-01, which costs only 0.2 oz/h. Travel to Norte is about 0.65 h, so it arrives around 10:10. That leaves about 6 loading hours before 17:00, or less if LH-01 is repaired early. The gain is roughly 60 oz before the repair, and the net is about 45 oz after allowing for LH-01 coming back earlier than the likely 4 h. I did not move LH-09, because the critical-path heading DS-E543-02 costs 4 oz/h and that nearly cancels the 8.9 oz/h it would earn at N522-15. I did not move LH-07, because it is a producing stope and its loss would offset most of the gain. LH-10 is in preventive maintenance until 11:00 (PM-01), so it is not available now. Reassess at 11:00 whether to send it to N522-15 (10.9 g/t, about 8.9 oz/h), keeping Norte loader production under about 95 t/h so the stockpile does not fill. No reserve is activated, because no stope has been stopped."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 42.7,
+   "costo_usd": 0.0827,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

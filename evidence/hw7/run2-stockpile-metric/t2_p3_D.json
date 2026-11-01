@@ -1,0 +1,55 @@
+{
+ "turno": 2,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "D",
+ "segundos_total": 12,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C564-03": "LH-10",
+    "TJ-E569-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-03": "LH-10",
+    "TJ-E569-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-08",
+    "TJ-C564-03": "LH-10"
+   },
+   "oz_agente": 44.2,
+   "oz_mejor": 44.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-03"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 43.6,
+    "rationale": "Radio and CMMS agree on both failures. The idle spare LH-10 goes to C564-03 (9.6 g/t), net +39 oz. LH-08 goes to E569-07, net +4.6 oz, because the cheap development heading it leaves costs less than the ore it gains. I did not lend from producing stopes, since their net is negative or marginal.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.3,
+   "costo_usd": 0.0317,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

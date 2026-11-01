@@ -1,0 +1,110 @@
+{
+ "turno": 5,
+ "patron": "5 tres fallas casi juntas",
+ "config": "B",
+ "segundos_total": 44,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 4.1,
+   "perdida_oz": 4.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.0,
+   "costo_usd": 0.0372,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 4.1
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N574-02": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N574-02": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-02"
+   },
+   "oz_agente": -1.3,
+   "oz_mejor": 3.5,
+   "perdida_oz": 4.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.6,
+   "costo_usd": 0.0447,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 4.8
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N574-02": "LH-08",
+    "TJ-C512-12": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N574-02": "LH-08",
+    "TJ-C512-12": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-02",
+    "TJ-C512-12": "LH-08"
+   },
+   "oz_agente": 1.5,
+   "oz_mejor": 3.9,
+   "perdida_oz": 2.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-02"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-12"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 14.0,
+   "costo_usd": 0.043,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.4
+  }
+ ]
+}

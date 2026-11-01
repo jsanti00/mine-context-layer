@@ -1,0 +1,45 @@
+{
+ "turno": 0,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 38,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-N574-15": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N574-15": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07",
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 6.6,
+   "oz_mejor": 8.7,
+   "perdida_oz": 2.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 13.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C512-10) and LH-06 (N574-15) are down in place, so CONFIRM-01 is not triggered. Repairs run 3-5 h for LH-01 and 4-6 h for LH-06. LH-10 is in preventive maintenance until 14:00, so it is not available. I estimated truck capacity from the haulage data and map: roughly 66 t/h for Norte and 88 t/h for Central, which is above what the loaders there can muck. Norte and Central are therefore not truck-limited and a loan can add production.\n\nN574-15 (Norte, 9.4 g/t = 0.30 oz/t, 80 m from the stockpile) has 168 t of broken ore left. LH-06 is expected back around 14:30. After that it can muck only about 43 t/h x 2.5 h = 108 t before 17:00, so about 60 t is stranded without a loan. LH-08 comes from DS-N600-01, the cheap infrastructure heading at 0.5 oz/h. It takes about 0.35 h to travel and mucks about 31 t/h, roughly 145 t before LH-06 returns. That adds about 60 t x 0.30 = 18 oz. The cost is about 0.5 oz/h x 5-6 h = 3 oz plus a little haulage lag, so the net is about +13 oz. LH-09 is not used because its heading is worth 2.0 oz/h.\n\nC512-10 (Central) has only 136 t of broken ore left. LH-01 can still muck it after repair (about 3.3 h from 13:30, finishing around 16:50). Lending LH-07 from C590-14 would cost about 6.7 oz/h at that stope, against a small timing gain, so I leave it uncovered. The Este loaders are not lent because moving them only loses their output. No reserves are activated because no stope is stopped (RESERVE-01)."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 37.5,
+   "costo_usd": 0.0794,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.1
+  }
+ ]
+}

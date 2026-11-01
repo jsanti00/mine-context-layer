@@ -1,0 +1,83 @@
+{
+ "turno": 3,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 59,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 32.2,
+   "perdida_oz": 32.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 38.0,
+    "rationale": "The radio and the CMMS agree that LH-01 is down at TJ-C590-09 (hydraulic, OT-5100, 3/4/5 h), so no confirmation is needed. TJ-C590-09 has the best ore in the plan: 16.5 g/t, about 0.53 oz/t, with about 260 t still broken. LH-10 is in the workshop (TALLER-564) for preventive maintenance until 10:00, so it is free and has no home place that loses production. Its travel is about 0.33 h: 120 m of drift and 175 m of ramp to the Central 590 ramp junction (R-Central-590), then 520 m of drift, plus 0.25 h of manoeuvre. It starts mucking at about 10:20. As an LH410 at 80 m it moves about 30.9 t/h, which is about 16 oz/h. The likely 4 h repair ends at about 13:20, so LH-10 works about 2.5 loading hours after the 11:00 to 11:30 break, for about 38 to 41 oz. I used the lower figure because the 3 to 5 h repair range and the truck limit are uncertain. Central's stockpile is at 297 of 450 t and one of its loaders is down, so it should not fill. I did not move LH-07 from TJ-E569-15 (5.8 g/t) to cover the gap before 10:20. Net gain would be about 12 oz/h for roughly 0.5 h, which is too small to justify the move. No reserve is activated because no stope is stopped. Taking loaders from the development headings, especially the critical-path one at 5.7 oz/h, would cost more than it gains."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 25.4,
+   "costo_usd": 0.0633,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C590-09": "LH-10",
+    "TJ-C564-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-10",
+    "TJ-C564-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-C564-08": "LH-10"
+   },
+   "oz_agente": 37.8,
+   "oz_mejor": 52.7,
+   "perdida_oz": 14.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 110.0,
+    "rationale": "The radio and the CMMS agree that LH-01 (C590-09, 3 to 5 h likely 4 h) and LH-02 (C564-08, 5 to 7 h likely 6 h) are down, so CONFIRM-01 is not triggered. LH-10 finished its preventive maintenance at 10:00 (6.0 + 4 h) and is idle in TALLER-564, so it costs nothing. It goes to C590-09, which has 16.5 g/t (0.53 oz/t), a 80 m haul and about 260 t of broken ore left. At LH410 rate 30.9 t/h for about 6 h of loading it mucks about 190 t, which is about 100 oz. LH-08 comes from the infrastructure heading DS-E569-01, which costs only 0.4 oz per loader hour, about 2.6 oz over the rest of the shift. It goes to C564-08 (9 g/t, about 223 t left, 25 t/h). The Central stockpile is at 309 of 450 t. Central has 4 trucks, which I estimate haul about 90 t/h (rough estimate). With two extra loaders mucking would exceed that, and the stockpile would reach its cap late in the shift. LH-08's gain is therefore limited to about 50 t, or about 14 oz, so the net is about +11 oz. I did not move LH-07 (E569-15) or the critical-path loader LH-09, which costs 5.7 oz/h. No reserve is activated because RESERVE-01 requires the loader of a stopped stope, and the only two stopped loaders are broken. The estimate of about 110 oz is rounded, and the stockpile cap and truck rate are approximate."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 33.0,
+   "costo_usd": 0.0719,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

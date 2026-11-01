@@ -1,0 +1,48 @@
+{
+ "turno": 4,
+ "patron": "1 una falla",
+ "config": "A",
+ "segundos_total": 19,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-E595-06": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-03"
+   },
+   "oz_agente": 17.2,
+   "oz_mejor": 28.8,
+   "perdida_oz": 11.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 110.0,
+    "rationale": "LH-01 is down at E595-06 (15.4 g/t, 260 t ≈ 129 oz) with a likely repair at 13:20. The radio and CMMS agree, so there is no CONFIRM-01 issue. Central is truck-limited (inflow 159 t/h against 91 t/h of truck capacity), so LH-06 leaving C564-01 (5.8 g/t) costs almost nothing. Este has spare truck capacity and a 170 t stockpile buffer. LH-06 is a LH514 (42 t/h) and arrives in 0.49 h, so it can finish the 260 t by about 16:00. That is about 128 oz, less roughly 5 oz of loss at Central. I did not use the development loaders: LH-09 costs 4 oz/h and LH-08 costs 1.9 oz/h, and both are slower LH410s. LH-10 is not available until 11:00.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 19.1,
+   "costo_usd": 0.0517,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 11.6
+  }
+ ]
+}

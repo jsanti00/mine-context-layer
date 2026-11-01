@@ -1,0 +1,137 @@
+{
+ "turno": 3,
+ "patron": "5 tres fallas casi juntas",
+ "config": "D",
+ "segundos_total": 41,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 22.0,
+   "oz_mejor": 38.0,
+   "perdida_oz": 16.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 46.0,
+    "rationale": "LH-01 is down at C590-09 (16.5 g/t, 256 t broken). The likely repair is 13:30. Radio and CMMS agree, so the CONFIRM-01 rule is not triggered. rank_loan_options puts LH-08 first. It comes from the cheap development heading DS-E569-01 and travels 0.48 h. That gives about 48 oz gained, 1.6 oz lost at home, and a net of about 46.5 oz. Central stockpile has room (147 t), so the extra loader is not blocked by a full stockpile. check_decision returned no violations.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.9,
+   "costo_usd": 0.0292,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E543-07": "LH-02"
+   },
+   "agente_valida": {
+    "TJ-E543-07": "LH-02"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-08",
+    "TJ-E543-07": "LH-05"
+   },
+   "oz_agente": 15.7,
+   "oz_mejor": 61.0,
+   "perdida_oz": 45.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-02",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 28.0,
+    "rationale": "Central stockpile is nearly full (room 137 t, excess 152 t), so covering C590-09 gains 0 oz. LH-08 goes home to its development heading. E543-07 has 300 t at 8.3 g/t and plenty of stockpile room, so LH-02 (LH514 from a Central stope whose stockpile is full, home loss 0) nets about 28 oz.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.9,
+   "costo_usd": 0.0301,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C590-09": "LH-02",
+    "TJ-E543-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-02",
+    "TJ-E543-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-E543-07": "LH-02",
+    "TJ-N522-01": "LH-08"
+   },
+   "oz_agente": 47.8,
+   "oz_mejor": 63.9,
+   "perdida_oz": 16.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-02",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 78.0,
+    "rationale": "LH-02 (LH514) moves from E543-07 to C590-09 (16.5 g/t): +59.6 oz. LH-08 (cheap development loader) covers E543-07: +18.9 oz. Net is about 78 oz, against 73 oz for the alternative of LH-08 to C590-09 and LH-02 staying put. N522-01 stays uncovered because every option there is low or negative, and LH-06 is repaired by 12:50. The dry run passed.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.1,
+   "costo_usd": 0.0347,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

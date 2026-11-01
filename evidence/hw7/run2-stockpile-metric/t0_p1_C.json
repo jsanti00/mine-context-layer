@@ -1,0 +1,41 @@
+{
+ "turno": 0,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 1647,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {},
+   "oz_agente": -0.8,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 57.0,
+    "rationale": "The radio (LH-01 hydraulics failed at C512-10, stopped) and CMMS OT-5100 (hydraulic, 3/4/5 h, on site) agree, so CONFIRM-01 doesn't apply and no confirmation is needed. LH-01 will be down for the 3–5 h repair, which is most of the remaining loading time. C512-10 has 238 t broken and 98 t mucked, so 140 t is still in the stope at 13.4 g/t. That is 140 × 13.4 / 31.1 ≈ 60 oz, and ore left in the stope is worth nothing. The Central stockpile is at 123 of 450 t with 4 trucks, so it is not full and not truck-limited. LH-10 is in preventive maintenance until 14:00, and the LOADER-SOURCE-01 rule rules out loaders from stopes in drilling or fill. I considered three loaders. LH-07 (C590-14) would give up about 40 oz of its own ore, so it is worse. LH-09 (DS-N522-02) costs 2.0 oz/h. LH-08 (DS-N600-01) costs only 0.5 oz/h, so it is the cheapest source. LH-08 is an LH410 and needs about 0.7 h to travel from Norte to Central C512, arriving around 10:00. At 120 m from the stockpile it mucks 30 × 100/103 ≈ 29 t/h, so the 140 t takes about 4.8 h and finishes before 17:00. The development loss is about 6.5 h × 0.5 ≈ 3 oz. Net gain is about 60 − 3 ≈ 57 oz. One loader is enough because only 140 t remains, so I'm not adding a second. No reserve is activated because no stope is stopped. The reserve rule says reserves need a stopped stope's loader, and C512-10 is still worth mucking."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 1647.0,
+   "costo_usd": 0.0761,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

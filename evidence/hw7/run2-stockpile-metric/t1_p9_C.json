@@ -1,0 +1,43 @@
+{
+ "turno": 1,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 22,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-05": "RS-N522-03"
+   },
+   "agente_valida": {
+    "LH-05": "RS-N522-03"
+   },
+   "mejor": {
+    "LH-05": "RS-N522-03"
+   },
+   "oz_agente": 61.0,
+   "oz_mejor": 61.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-05",
+      "reserve": "RS-N522-03"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 62.0,
+    "rationale": "At 10:00 the shift chief stopped TJ-N600-08 for ventilation and freed LH-05, an LH514. Under RESERVE-01 a reserve can only be activated with a stopped stope's loader, so LH-05 is the only candidate. I chose RS-N522-03 because it has the best grade and tonnage in Norte: 9.5 g/t and 412 t, against 8.0 g/t and 266 t at RS-N574-01. RS-E543-02 has a higher grade (11.6 g/t), but Este has three loaders and a stockpile at 176 of 450 t, so another loader there would gain little. Norte has no other loaders and its stockpile holds only 4 t, so the three trucks (roughly 60 t/h) can take everything LH-05 mucks. At 160 m the LH514 rate is 42×100/(100+0.15×60) = 38.5 t/h. Travel is about 0.37 h (a 0.25 h manoeuvre plus 525 m of ramp and 492 m of drift) and activation takes 0.5 h. That leaves about 6.5 − 0.87 ≈ 5.6 h of loading, which is about 215 t. At 9.5 g/t this is 215×9.5/31.1 ≈ 66 oz, and the reserve holds enough ore for it. I subtract about 4 oz for repair-time and haul uncertainty, which gives about 62 oz. Nothing else is moved. LH-10 is in preventive maintenance until 12:00 (6.0 h start plus 6 h) and is not available. The CMMS file has no open orders, so it does not conflict with the radio message and no confirmation is needed. Taking development loaders costs 1.0 to 1.5 oz per hour, and an extra loader gains little at the truck-limited stockpiles, so I make no loans."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 21.7,
+   "costo_usd": 0.0589,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

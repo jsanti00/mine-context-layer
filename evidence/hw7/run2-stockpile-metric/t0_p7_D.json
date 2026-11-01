@@ -1,0 +1,46 @@
+{
+ "turno": 0,
+ "patron": "7 fuentes que se contradicen",
+ "config": "D",
+ "segundos_total": 9,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [
+    "TJ-N574-15"
+   ],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N574-15",
+      "ask": "Call the Norte area chief: confirm whether LH-06 is stopped or operating (radio and CMMS disagree)."
+     }
+    ],
+    "expected_net_oz": 0.0,
+    "rationale": "Only 136 t is left at C512-10 (13.4 g/t). The repaired LH-01 can clear it alone by 17:00, so a loan gains 0 oz. Every loan option has a negative net (-2.1 oz at best). The LH-06 status conflict (confidence 0.4) falls under CONFIRM-01, so nothing is moved there and the area chief is asked to confirm.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-N574-15"
+   ],
+   "segundos": 8.5,
+   "costo_usd": 0.0209,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "turno": 1,
+ "patron": "7 fuentes que se contradicen",
+ "config": "B",
+ "segundos_total": 30,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [
+    "TJ-C512-06"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-06",
+      "ask": "Call the Central area chief and confirm whether LH-02 is actually stopped at TJ-C512-06. The radio says stopped. The CMMS shows it operating, and its work order closed 20 minutes ago. If it is down, ask for the cause and an estimated repair time."
+     }
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [
+    "TJ-C512-06"
+   ],
+   "segundos": 29.5,
+   "costo_usd": 0.0832,
+   "agentes": 2,
+   "sin_decision": false
+  }
+ ]
+}

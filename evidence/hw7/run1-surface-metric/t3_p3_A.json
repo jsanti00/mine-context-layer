@@ -1,0 +1,48 @@
+{
+ "turno": 3,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 19,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-04",
+    "TJ-C564-08": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 41.9,
+   "perdida_oz": 41.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 20.0,
+    "rationale": "LH-01 and LH-02 are both down in Central, with repairs expected 13:30 to 14:30 or later. LH-10 comes out of preventive maintenance at 10:00 and has no home place to lose, so lending it costs nothing. It is 0.33 h from C590-09, which holds 256 t at 16.5 g/t (about 136 oz), the best grade on offer, against 9.0 g/t at C564-08. Central trucks (91 t/h) are already near their limit with LH-04 and LH-05 loading (74 t/h). The stockpile has room (303 of 450 t), so one extra LH410 at about 30 t/h only adds value by displacing lower-grade ore. I judged that gain modest, so the 20 oz estimate is rough. I left the development loaders where they are, because taking LH-09 costs 5.7 oz/h and LH-08's 0.4 oz/h would buy little extra at a truck-limited mine. No reserves can be activated, since no stope has been stopped.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 18.8,
+   "costo_usd": 0.0523,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 41.9
+  }
+ ]
+}

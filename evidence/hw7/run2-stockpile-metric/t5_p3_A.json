@@ -1,0 +1,55 @@
+{
+ "turno": 5,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N522-15": "LH-08"
+   },
+   "oz_agente": 26.8,
+   "oz_mejor": 56.5,
+   "perdida_oz": 29.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-N522-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 100.0,
+    "rationale": "LH-01 and LH-02 are down (radio and CMMS agree), and repairs won't finish before 12:30–15:30. Both stopes are high grade (11.9 and 10.9 g/t) in Norte. Norte has stockpile room (242/450) and trucks have spare capacity. LH-08 comes from the infrastructure heading, which costs only 0.2 oz/h. It reaches N600-09 in 0.65 h and loads about 160 t, roughly 61 oz. LH-10 leaves preventive maintenance at 11:00, so it has no home production to lose. It reaches N522-15 in 0.65 h and loads about 135 t, roughly 47 oz. I left LH-09 on its critical-path heading at 4 oz/h. I did not pull loaders from other producing stopes. No reserve activations because no stope has stopped.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 16.4,
+   "costo_usd": 0.0468,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

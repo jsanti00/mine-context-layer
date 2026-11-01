@@ -1,0 +1,35 @@
+{
+ "turno": 3,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "C",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-04"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 27.6,
+   "perdida_oz": 27.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Loaders LH-01 (C590-09) and LH-05 (C538-06) are down with hydraulic faults. The radio and CMMS agree on both, so no confirmation is needed. Repairs are on site and take about 4 h (3-5) for LH-01 and about 2 h (1.5-2.5) for LH-05. Central is truck-limited. It has 4 trucks, and I estimate haulage at about 68 t/h. The estimate uses the 0.227 truck factor and a cycle time of about 0.5 h. I did not do a full cycle calculation. The two Central loaders still working, LH-02 and LH-04, each muck about 35.6 t/h at 220 m, which is about 71 t/h together. That is roughly equal to haulage. The Central stockpile also holds 303 t of its 450 t capacity, which covers any shortfall for several hours. An extra loader there would only fill the stockpile faster than the trucks can empty it, so it adds almost no ounces hauled by 17:00. Every possible lender also has a cost. LH-10 is in the workshop and, if its preventive maintenance runs the planned 4 h from 06:00, it is not available before about 10:00. The development loaders LH-08 and LH-09 lose 0.4 oz/h and 5.7 oz/h while away, plus travel time. Stopes in drilling or fill cannot lend a loader. No reserve can be activated, because no stope has been stopped. No loan gains enough to pay for itself, so I made no moves."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 19.7,
+   "costo_usd": 0.0545,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 27.6
+  }
+ ]
+}

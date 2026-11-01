@@ -1,0 +1,41 @@
+{
+ "turno": 0,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 28,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [
+    "TJ-N574-15"
+   ],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N574-15",
+      "ask": "Call the Norte area chief. Confirm whether LH-06 (scoop 6) is running or stopped at TJ-N574-15. The radio says it is stopped. CMMS OT-5001 says it was closed as operational 20 minutes ago. If it is stopped, ask for the cause and an estimated repair time."
+     }
+    ],
+    "expected_net_oz": 0.0,
+    "rationale": "C512-10 (LH-01): the radio and CMMS OT-5100 agree on a hydraulic failure with a 3/4/5 h repair on site. The stope has 238-102 = 136 t left at 13.4 g/t, which is about 58 oz. Without a loan, LH-01 is back at about 13:30 (likely case) and mucks at about 40.8 t/h at 120 m. That takes about 3.3 h, so it finishes at about 16:50, just before 17:00. Even at the 5 h high estimate, only about 34 t (about 15 oz) would be left. Central has 4 trucks and a stockpile at 125/450 t, so there is no capacity problem. A loan would mainly speed up ore that is mostly mucked anyway. The only eligible Central lender is LH-07 at C590-14, which is a carguio stope with 181 t left. Moving it takes about 0.4 h of travel and removes its own production at 30.9 t/h. That costs about 27 oz over a 4 h loan, against a gain of about 0-15 oz. The other loaders are not worth moving. LH-08 and LH-09 are development loaders in Norte, a different mine about 6 km away over the surface. Taking LH-09 costs 2 oz/h. LH-10 is in preventive maintenance until about 14:00 (6.0 start plus 8 h). N574-15 (LH-06): the radio says stopped, but CMMS says closed and operational. Rule CONFIRM-01 applies, so I move nothing for that place and ask the Norte area chief to confirm. No loans and no reserve activations, so the net gain versus doing nothing is 0."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-N574-15"
+   ],
+   "segundos": 27.4,
+   "costo_usd": 0.0658,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

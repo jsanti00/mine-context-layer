@@ -4,6 +4,7 @@ HW7 benchmark: 6 shifts x 9 case patterns x 3 configurations.
   A "capa":      planning agent with the full layer (all incidents, loans in force, haulage, travel times)
   B "por_falla": layer, but one focused planner per incident, each blind to the others
   C "archivos":  one agent with the raw files (plan, map, dispatch, radio, CMMS), no layer
+  D "capa v3":   A plus two derived-context tools (rank_loan_options, check_decision): the HW7 improvement
 
 At every decision moment of a case, the configuration decides; the evaluator (eval/clave_v2.py)
 measures the expected ounces of that decision against the best possible one with the same
@@ -112,7 +113,7 @@ def estado(T, t):
         "shift_time": hhmm(t),
         "shift": {"day_shift": "06:00-18:00", "loading_blocks": "07:00-11:00 and 11:30-17:00 (lunch 11:00-11:30)",
                   "oz_formula": "oz = tonnes x grade_gpt / 31.1035"},
-        "value_metric": "Ounces hauled to surface by 17:00 plus development value (oz eq). Ore left in stockpiles or stopes carries over to the next shift and does not count.",
+        "value_metric": "Ounces hauled to surface by 17:00 plus ounces in the level stockpiles at 17:00, plus development value (oz eq). Broken ore left in stopes does not count.",
         "operating_rules": REGLAS,
         "sources": [{"name": "radio", "status": "online"}, {"name": "cmms", "status": "online"},
                     {"name": "dispatch", "status": "online"}],
@@ -165,7 +166,7 @@ def archivos(T, t, carpeta):
             "haulage": {n: {"trucks": mm["camiones"], "truck_payload_t": mina_v2.CAMION_T,
                             "truck_effective_factor": round(mina_v2.CAMION_EFECTIVO, 3),
                             "level_stockpile_capacity_t": mm["acopio_cap_t"]} for n, mm in m["minas"].items()},
-            "value_metric": "oz hauled to surface by 17:00 plus development value; stockpiles carry over"}
+            "value_metric": "oz hauled to surface by 17:00 + oz in level stockpiles at 17:00 + development value; ore left in stopes does not count"}
     (carpeta / "plan_turno.json").write_text(json.dumps(plan, ensure_ascii=False, indent=1))
     mapa = {"speeds_kmh": mina_v2.VEL, "fixed_manoeuvre_h": mina_v2.MANIOBRA_H,
             "edges": [{"a": a, "b": b, "m": d, "type": ty} for a, b, d, ty in m["aristas"]],
@@ -246,19 +247,19 @@ def politica(config, carpeta, extras):
         paso = carpeta / ctx["hora"].replace(":", "")
         paso.mkdir(parents=True, exist_ok=True)
         corridas, decisiones = [], []
-        if config in ("A", "B"):
+        if config in ("A", "B", "D"):
             st = estado(T, t)
             con = preparar_db(paso / "layer.db", st)
-            if config == "A":
+            if config in ("A", "D"):
                 focos = [""]
             else:
                 # Un planificador por cada incidente de esta hora, cada uno sin ver los otros
                 focos = sorted({h["lugar"] for h in T.hechos if h["hora"] == ctx["hora"] and h["tipo"] != "reparado"})
             for f in focos:
                 nombre = "planning-agent" if not f else f"planning-{f}"
-                corridas.append(run_agent(nombre, "function", prompts2.LAYER,
+                corridas.append(run_agent(nombre, "function", prompts2.LAYER_V3 if config == "D" else prompts2.LAYER,
                                           f"Shift time {ctx['hora']}. New information arrived. Decide now.",
-                                          paso / "layer.db", model=MODELO, log_dir=paso, server="mcl2/server.py",
+                                          paso / "layer.db", model=MODELO, log_dir=paso, server="mcl2/server_v3.py" if config == "D" else "mcl2/server.py",
                                           extra_env={"MCL_FOCUS": f} if f else None, quiet=True))
             filas = con.execute("SELECT focus, body FROM proposals ORDER BY id").fetchall()
             for foco, body in filas:

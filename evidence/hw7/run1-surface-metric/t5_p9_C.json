@@ -1,0 +1,44 @@
+{
+ "turno": 5,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 30,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-04": "RS-C564-02"
+   },
+   "agente_valida": {
+    "LH-04": "RS-C564-02"
+   },
+   "mejor": {
+    "LH-04": "RS-C564-02"
+   },
+   "oz_agente": 30.0,
+   "oz_mejor": 30.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-04",
+      "reserve": "RS-C564-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 25.0,
+    "rationale": "Radio at 10:00: C512-12 is stopped for ventilation and LH-04 is free. The CMMS file is empty, so radio and CMMS do not conflict and no confirmation is needed. Under RESERVE-01 a freed loader can activate a reserve, so I use LH-04. Haulage capacity (cycle time x 40 t payload x 0.227 factor): Central ~86 t/h (4 trucks, cycle ~0.42 h), Norte ~63 t/h, Este ~73 t/h. Norte is truck-limited (three LH514 give ~107 t/h), so it gets no loan. Central over the 6.5 loading hours: truck capacity ~559 t. Supply is 147 t stockpile + 144 t left at C512-01 (LH-06 runs out) + 179 t from C538-07 (LH-07 at 27.5 t/h), about 470 t. That leaves ~89 t of truck capacity unused. RS-C564-02 (8.9 g/t, 278 t broken, 160 m from stockpile) lets an LH514 muck ~38.5 t/h. Moving from level 512 takes ~0.33 h and activation 0.5 h, so ~5.7 h of mucking is available. The binding limit is the spare truck capacity of ~89 t, so I count ~89 t x 0.286 oz/t = ~25 oz. The reserve is better than the alternatives. A loan to E543-11 would add only ~54 t of broken ore and costs more travel. C512-01 and C538-07 are already covered by their own loaders. RS-C512-01 has the same grade as RS-C564-02 but a longer drift. RS-N574-03 is low grade and in a truck-limited mine. No development loader is touched. The estimate is approximate because the truck cycle mid-depth is assumed and the oz/t conversion uses grade only."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 30.4,
+   "costo_usd": 0.07,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

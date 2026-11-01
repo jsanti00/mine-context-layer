@@ -1,0 +1,78 @@
+{
+ "turno": 1,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 80,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 8.0,
+   "perdida_oz": 8.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Radio (LH-01 stopped, hydraulics, at C564-14) and CMMS OT-5100 (open, 3/4/5 h, repaired on site) agree, so no confirmation is needed. C564-14 has 138 t left (236 broken minus 98 mucked), worth about 53.7 oz at 12.1 g/t. The only nearby lender is LH-09 from DS-C564-02, a LH410 on a heading worth 1.5 oz/h. Moving it takes about 0.34 h and its rate at 120 m is about 29 t/h. After repair LH-01 mucks at about 40.8 t/h (LH514 at 120 m), so the 138 t needs about 3.4 h. Repair ends at about 12:20 (low), 13:20 (likely) or 14:20 (high). In the low and likely cases LH-01 still finishes the stope by about 16:45, so a loan adds almost no ounces. In the high case only about 29 t (about 11 oz) would be left, an expected gain of about 4 oz. The cost is about 1.5 oz/h times about 4 h away, roughly 6 oz, so the loan does not pay. Central trucks (4, about 94 t/h) outrun the two working loaders, and the 171 t stockpile buffers the gap. LH-10 is in preventive maintenance until 12:00 and is not available now. Reserves cannot be activated because no stope has stopped. Decision: no moves."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 38.0,
+   "costo_usd": 0.0751,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 8.0
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C512-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C512-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-06",
+    "TJ-C512-06": "LH-03"
+   },
+   "oz_agente": -0.8,
+   "oz_mejor": 10.9,
+   "perdida_oz": 11.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 88,
+    "rationale": "Radio and CMMS agree on both failures, so CONFIRM-01 does not apply. LH-01 is down at C564-14 (OT-5100, 3-5 h). LH-02 is down at C512-06 (OT-5101, 5-7 h, likely done about 16:00). Both are in Central, whose stockpile holds 163 t and whose 4 trucks can haul roughly 90 t/h (my estimate). Truck capacity is the limit that matters here, and Central has room. Only LH-03 is mucking there now, at about 36 t/h. Remaining loading time is about 6.5 h (10:00-11:00 and 11:30-17:00). 1) LH-09 (LH410, from development heading DS-C564-02, cost 1.5 oz/h) goes to C564-14. Travel is about 0.35 h, and the stope is at 120 m, so the loader mucks about 29 t/h. The stope has 138 t left (236 broken minus 98 mucked) at 12.1 g/t, which is 0.389 oz/t. Mucking all 138 t gives about 53.7 oz. The development loss is about 7 h x 1.5 = 10.5 oz, so the net is about +43 oz. 2) LH-08 (LH410, from DS-N522-01, cost 1.0 oz/h) goes to C512-06. Travel is about 0.75 h, and the stope is at 80 m, so the loader mucks about 31 t/h. The stope has 251 t left (377 minus 126) at 9.2 g/t, which is 0.296 oz/t. About 5.75 h of mucking gives about 178 t, or 52.6 oz. The development loss is about 7 oz, so the net is about +45 oz. The Central loaders then total about 96 t/h against about 91 t/h of truck capacity, and the 163 t stockpile covers the gap. I take nothing from Este, which is truck-limited, or from Norte. LH-10 is in preventive maintenance until 12:00 (PM-01), so I leave it out and it can be reassessed at 12:00. No reserves are activated because no stope is stopped. The expected net gain is about 88 oz versus doing nothing."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 41.7,
+   "costo_usd": 0.0839,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 11.7
+  }
+ ]
+}

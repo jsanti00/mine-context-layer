@@ -1,0 +1,41 @@
+{
+ "turno": 3,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 30,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C512-02": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.6,
+   "perdida_oz": 0.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 15.0,
+    "rationale": "The radio and CMMS agree that LH-04 is down at TJ-C512-02 (hydraulic, 1 to 2 h), so CONFIRM-01 is not triggered. I do not cover C512-02. Central is truck-limited and its stockpile is 334 of 450 t. Its other three loaders (LH-01 about 43 t/h, LH-02 about 36, LH-05 about 38) supply about 117 t/h, which is more than 4 trucks can haul (roughly 90 t/h). Another loader there would only fill the stockpile and gain nothing. Loan LH-10 to Este instead: it has finished preventive maintenance (6:00 + 4 h = 10:00) and is idle in TALLER-564. Este is loader-limited with a low stockpile (86 of 450 t). Its loaders supply about 59 t/h (LH-03 about 36, LH-07 about 24), against roughly 70 t/h of truck capacity, and TJ-E543-07 still has about 289 t of broken ore. LH-10 on E543-07 (220 m, about 25 t/h) would add roughly 10 to 16 t/h after about 0.6 h of travel. Over about 5.9 loading hours that is about 60 to 90 t at 8.3 g/t, or roughly 15 to 24 oz. Lending LH-10 costs nothing, because it is idle and not a development loader. Norte is not worth a loan: TJ-N522-01 has about 235 t left, and LH-06 alone can muck it all before 17:00. No stope is stopped and none can lend a loader, so no reserves are activated. The 15 oz is the conservative end of my estimate."
+   },
+   "violaciones": [
+    "préstamo inválido LH-10 -> TJ-E543-07"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 30.1,
+   "costo_usd": 0.0682,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

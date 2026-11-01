@@ -1,0 +1,69 @@
+{
+ "turno": 5,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 54,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.6,
+   "perdida_oz": 3.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at TJ-N600-09 (radio and OT-5100 agree, so no confirmation is needed). The repair is estimated at 3 to 5 hours. Norte has 3 trucks and about 66 t/h of haul capacity, using a cycle of about 0.41 h and 3 trucks × 40 t × 0.227 / 0.41 h, with a rough mid-depth estimate. The two remaining Norte loaders, LH-02 and LH-03, each muck about 35.6 t/h (LH514 at 220 m), so together they supply about 71 t/h. They already saturate the trucks. The Norte stockpile also holds 238 t. Over the remaining roughly 7.2 loading hours Norte could supply about 750 t but the trucks can haul only about 470 t. An extra loader would therefore add about 0 oz. Every candidate lender would also lose something. LH-10 is in preventive maintenance until 11:00 and is far from Norte, about 6 km over the surface. LH-09 is on a critical-path heading worth 4 oz/h. LH-08 is cheap at 0.2 oz/h but is also far away. LH-07 and the other loaders are producing in their own mines. No reserve is activated because no stope has been stopped. The best decision is to make no moves, for a net gain of 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 18.2,
+   "costo_usd": 0.0546,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.6
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.6,
+   "perdida_oz": 3.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 20.0,
+    "rationale": "Radio and CMMS agree that LH-01 (N600-09) and LH-02 (N522-15) are down, with repairs of about 4 h and 6 h, so CONFIRM-01 does not apply. Norte has 3 trucks. I estimate each truck cycle at about 0.39 h, which gives roughly 70 t/h of truck capacity (3×40 t/0.39 h×0.227). Only LH-03 is mucking in Norte, at about 35.6 t/h (LH514 at 220 m), and its stope N574-02 has about 183 t left, so it runs out around 15:10. Over the 7 h to 17:00, trucks can haul about 490 t. Supply without a loan is the 241 t stockpile plus about 183 t from LH-03, which is about 424 t. That leaves about 66 t of truck capacity unused. A loan can fill that gap, but not much more, because Norte is truck-limited. LH-10 is the best lender. It comes out of preventive maintenance at 11:00 (06:00 start plus 5 h), so no producing place or heading loses anything. LH-08 would cost 0.2 oz/h from DS-C538-01. LH-09 would cost 4 oz/h from the critical-path heading DS-E543-02. LH-10 is a LH410 and mucks about 25 t/h at 220 m. After roughly 1 h of travel it has about 4.5 h of mucking, or about 110 t, which covers the 66 t gap. I send it to N600-09 because that stope has the highest grade (11.9 g/t, about 0.38 oz/t) and about 243 t of broken ore left. The gain is about 66 t × 0.38 oz/t ≈ 25 oz, which I discount to about 20 oz for the uncertainty in the truck estimate. I do not activate reserve RS-N574-03 (grade 5.8). The rules only allow it with a loader from a stopped stope, and a second loader would add nothing because trucks are the limit. A second loan is not worth it either. The returns when the repairs end are left to the layer (RETURN-01)."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 34.8,
+   "costo_usd": 0.0743,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.6
+  }
+ ]
+}

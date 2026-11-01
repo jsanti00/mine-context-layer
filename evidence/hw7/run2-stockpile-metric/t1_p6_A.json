@@ -1,0 +1,91 @@
+{
+ "turno": 1,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 33,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {},
+   "oz_agente": -4.9,
+   "oz_mejor": 0.0,
+   "perdida_oz": 4.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 40.0,
+    "rationale": "LH-01 is down at TJ-C564-14. Radio and CMMS agree, so the rule allows a move. The stope holds 138 t at 12.1 g/t, which is about 53.7 oz. Likely repair is 13:20 and the range is 12:20 to 14:20. LH-09 is the closest loader, 0.34 h away, and comes from the cheap development heading DS-C564-02 at 1.5 oz/h. At 29.1 t/h an LH410 clears the stope in about 4.7 h, which is about 5 h away from development, or roughly 7.7 oz lost. Central's stockpile is at 171 t of 450 t, so there is room even though inflow will pass truck capacity. LH-08 is 0.71 h away, so I did not use it. Net gain is about 40 to 46 oz. No reserves are activated because no stope was stopped.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.1,
+   "costo_usd": 0.0413,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C512-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C512-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-06": "LH-09"
+   },
+   "oz_agente": 31.6,
+   "oz_mejor": 37.3,
+   "perdida_oz": 5.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "Keep LH-09 on C564-14 (121 t at 12.1 g/t, about 47 oz, against a dev cost of 1.5 oz/h). LH-02 is down at C512-06 until about 16:00 and the stope has 251 t at 9.2 g/t (about 74 oz). Send LH-08 from the cheap heading DS-N522-01 (1.0 oz/h, 0.75 h travel). It loads about 172 t, or about 51 oz, for a dev cost of about 6 oz. Net is about 45 oz. LH-10 is in PM until 12:00, so I'm not counting it. It could be loaned to C512-06 later. Radio and CMMS agree on both failures, so no confirmation is needed.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 18.6,
+   "costo_usd": 0.0515,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

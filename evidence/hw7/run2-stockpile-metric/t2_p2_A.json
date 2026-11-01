@@ -1,0 +1,47 @@
+{
+ "turno": 2,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "A",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-N522-13": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-N522-13": "LH-10"
+   },
+   "mejor": {
+    "TJ-N522-13": "LH-04"
+   },
+   "oz_agente": 2.2,
+   "oz_mejor": 2.9,
+   "perdida_oz": 0.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-N522-13"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 4.0,
+    "rationale": "LH-05 is down at N522-13 (radio and CMMS agree). Likely repair is 11:30, range 11:00 to 12:00. The stope has 210 t at 6.7 g/t. LH-10 is idle at the workshop and takes 0.69 h to get there, so lending it costs no production. It should load about 20 t (about 4 oz) before the repair ends, and more if the repair runs long. I took no loaders from producing stopes or headings. The development headings are worth 1.3 and 4.2 oz per hour, and the stopes are too small to justify moving anyone. Norte is near its truck limit (66 t/h against 64 t/h inflow) but its stockpile has room (247 of 450 t), so extra ore still counts.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.3,
+   "costo_usd": 0.0443,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

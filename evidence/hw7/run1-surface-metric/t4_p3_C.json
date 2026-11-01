@@ -1,0 +1,45 @@
+{
+ "turno": 4,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 46,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-E595-06": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-03",
+    "TJ-C512-04": "LH-06"
+   },
+   "oz_agente": 19.0,
+   "oz_mejor": 52.3,
+   "perdida_oz": 33.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 35.0,
+    "rationale": "Radio and CMMS agree that LH-01 (E595-06, 3-5 h) and LH-02 (C512-04, 4-6 h) are down, so CONFIRM-01 does not apply. Reserves need a loader freed by a stopped stope, and these two loaders are broken, so I activated none. Central is truck-limited. Its 4 trucks haul about 94 t/h (my estimate from the cycle formula), and the 3 working loaders could muck about 125 t/h. Central has 264 t in stock and over 800 t available, against about 705 t of haul capacity to 17:00. Moving LH-06 (on the lowest-grade stope, C564-01 at 5.8 g/t) therefore costs essentially nothing. Este is loader-limited. It has only LH-03 (about 36 t/h) against about 70 t/h of truck capacity, and E595-06 is the richest producing stope (15.4 g/t, about 256 t still broken). Travel from C564-01 to E595-06 is about 0.5 h. The extra loader lifts Este to roughly 525 t hauled, about 87 t more than the roughly 438 t it could haul without it. That is worth about 35 oz at the stockpile mix of roughly 0.4 oz/t. I did not cover C512-04 because Central is truck-limited and a loader there would add almost nothing. Norte has no other loading stope to cover, since its other stopes are in fill or drilling. I left the development headings alone: DS-E543-02 is critical path at 4.0 oz/h, and DS-C512-01 at 1.9 oz/h would cost more than a second Este loader gains, because Este trucks saturate. LH-10 is in preventive maintenance until 11:00 and I did not move it."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 45.2,
+   "costo_usd": 0.088,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 33.3
+  }
+ ]
+}

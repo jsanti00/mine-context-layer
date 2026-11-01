@@ -1,0 +1,41 @@
+{
+ "turno": 1,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 23,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [
+    "TJ-C512-06"
+   ],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-06",
+      "ask": "Call the Central area chief. Confirm whether LH-02 is running or stopped at C512-06. The radio says it is stopped, but CMMS OT-5001 shows it closed 20 minutes ago and operational. Do not move anything for this place until it is confirmed."
+     }
+    ],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at TJ-C564-14 with a hydraulic fault. OT-5100 says 3 to 5 h on site, likely 4 h, so it is back at about 13:30, with a range of 12:30 to 14:30. The stope has 134 t of broken ore left (236 t minus 102 t mucked) at 12.1 g/t, worth about 52 oz. After repair LH-01 mucks about 41 t/h (LH514 at 120 m), so it clears the 134 t in about 3.3 h. That fits before 17:00 in the low and likely cases. In the high case (back at 14:30) about 32 t, roughly 12 oz, would be left. The expected loss from waiting is therefore only about 4 oz. The only valid lender is LH-09 from DS-C564-02, because the other loaders are producing and the stopes in drilling or fill have none to lend. Moving it costs about 1.5 oz/h for about 3.5 h, which is about 5 oz, plus travel. That is no better than the gain, so I keep it where it is. Central haulage is not the limit (stockpile 174 of 450 t), so extra mucking there is not capped. The radio and CMMS disagree on LH-02 at C512-06, so under CONFIRM-01 I move nothing there and ask the area chief. LH-10 is in preventive maintenance until 12:00 and is not available. No reserve is activated, because no stope has been stopped."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C512-06"
+   ],
+   "segundos": 22.9,
+   "costo_usd": 0.06,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

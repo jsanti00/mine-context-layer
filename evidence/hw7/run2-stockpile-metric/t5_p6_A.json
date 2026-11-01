@@ -1,0 +1,94 @@
+{
+ "turno": 5,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 35,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 27.0,
+   "oz_mejor": 27.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 35.0,
+    "rationale": "LH-01 is down at N600-09 (radio and CMMS agree). Likely repair is 13:20. The stope has 243 t at 11.9 g/t, about 93 oz. LH-08 comes from the infrastructure heading, which costs only 0.2 oz per hour. It takes 0.65 h to travel, then loads at 25.4 t/h. That is roughly 75 t (about 28 oz) before the likely repair time, and up to about 60 oz if it stays to 17:00. The cost is about 1.5 oz. The Norte stockpile is 238 of 450 t, so it won't fill and truck limits don't bind. I kept LH-09 on the critical-path heading, which costs 4 oz per hour.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.6,
+   "costo_usd": 0.0442,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N522-15": "LH-08"
+   },
+   "oz_agente": 27.4,
+   "oz_mejor": 65.4,
+   "perdida_oz": 38.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-N522-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "Keep LH-08 at N600-09 (11.9 g/t, 227 t, cheap 0.2 oz/h dev cost). LH-02 is down at N522-15 (288 t at 10.9 g/t, likely repair 16:00), so send LH-10 there. It is free at 11:00 and takes 0.65 h to travel, so it starts about 11:40. That gives about 5.3 h x 25.4 t/h = 135 t, or about 47 oz. Norte is slightly truck-limited, but the stockpile has 193 t of room, so the extra ore still counts. I did not take LH-09 from the critical-path heading (4 oz/h). I did not move LH-08 because it earns about the same where it is.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 17.8,
+   "costo_usd": 0.0489,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

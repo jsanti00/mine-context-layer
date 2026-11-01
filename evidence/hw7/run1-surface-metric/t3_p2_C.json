@@ -1,0 +1,35 @@
+{
+ "turno": 3,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C512-02": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.8,
+   "perdida_oz": 0.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio (LH-04 hydraulic failure at C512-02, stopped) and CMMS OT-5100 (open, hydraulic, repair 1 to 2 h, likely 1.5 h, on site) agree. No confirmation is needed under CONFIRM-01. Central is already truck-limited. It has 4 trucks at about 22 t/h each, roughly 90 t/h in total (estimated from the map cycle time and the truck factor). The three working Central loaders (LH-01 at 80 m, LH-02 at 220 m, LH-05 at 160 m) muck about 43 + 36 + 38 = 117 t/h. The Central stockpile holds 334 t of 450 t capacity and carries over, so losing LH-04 for about 1.5 h costs almost no hauled ounces: the trucks keep hauling from the stockpile. A loan would add nothing to hauling. Possible lenders would also lose production at their home place (LH-08 costs 0.4 oz/h; LH-09 costs 5.7 oz/h on the critical-path heading) and need travel time. No reserve can be activated, because RESERVE-01 requires a loader freed by a stopped stope, and LH-04 is broken and not available to move. Best action is to keep everything as is. Net gain versus doing nothing is 0."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.2,
+   "costo_usd": 0.0526,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.8
+  }
+ ]
+}

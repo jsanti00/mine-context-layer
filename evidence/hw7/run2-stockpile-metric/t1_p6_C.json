@@ -1,0 +1,73 @@
+{
+ "turno": 1,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 57,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Radio and CMMS agree that LH-01 is down at TJ-C564-14 (OT-5100, repair 3 to 5 h, likely 4 h), so no confirmation is needed. The stope has 236 t broken and 98 t already mucked, which leaves 138 t at 12.1 g/t, about 53.7 oz. LH-01 mucks about 40.8 t/h at 120 m. If the repair takes the likely 4 h, it is back at 13:20 and has 3.7 h x 40.8 = 151 t of capacity, which clears the 138 t before 17:00. With the 3 h repair it clears them even sooner. Only a 5 h repair (back at 14:20) leaves about 29 t unmucked, roughly 11 oz, and that case is unlikely. The only nearby loader I could lend is LH-09 from DS-C564-02, which costs 1.5 oz/h. LH-09 is an LH410 and mucks only about 29 t/h, so covering the stope would take about 4.7 h and cost about 7 oz. That is more than the expected gain. LH-08 on DS-N522-01 is on another mine and would lose 1.0 oz/h. LH-10 is in preventive maintenance until about 12:00 (06:00 start plus 6 h) and is not available now. The stope's value is 1.5 times smaller than ore already being mucked elsewhere, and Central's stockpile has room (171 of 450 t). Reserves cannot be activated because no stope has been stopped. Decision: make no changes."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 25.1,
+   "costo_usd": 0.061,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-06": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-06": "LH-09"
+   },
+   "mejor": {
+    "TJ-C512-06": "LH-09"
+   },
+   "oz_agente": 36.7,
+   "oz_mejor": 36.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C512-06"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 100.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C564-14, repair 3-5 h) and LH-02 (C512-06, repair 5-7 h) are down, so the loans are allowed. Central has 4 trucks, about 91 t/h by my estimate from the 0.4 h cycle and the 0.227 factor. That is well above the loader output, and the stockpile is only 163 of 450 t, so extra loaders add real tonnage. Loan 1: LH-09 (LH410, taken from DS-C564-02, which costs 1.5 oz/h) goes to C512-06. That stope has 251 t left at 9.2 g/t and 80 m to the stockpile, so the loader rate is 30.9 t/h. Travel takes about 0.35 h, which leaves about 6.2 h of loading and roughly 190 t, or 56 oz. The dev cost is about 9 oz, so the net is about 47 oz. Loan 2: LH-10 is idle at the workshop and has no dev cost. Preventive maintenance ends at 12:00 (06:00 start, 6 h), so it can only go to C564-14 once it is free. That stope has 138 t left at 12.1 g/t, with a rate of 29.1 t/h, and about 4.6 h remains after 12:20. That gives roughly 136 t, or about 53 oz, at no dev cost. I did not take loaders from other producing stopes or reserves, because RESERVE-01 forbids it and no stope is stopped. No confirmations are needed because the radio and CMMS agree. Estimated net gain is about 100 oz."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 30.9,
+   "costo_usd": 0.07,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

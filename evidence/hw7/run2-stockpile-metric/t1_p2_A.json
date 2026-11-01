@@ -1,0 +1,38 @@
+{
+ "turno": 1,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "A",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E543-01": "LH-01"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.1,
+   "perdida_oz": 3.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-04 is down at E543-01 (radio and CMMS agree). Likely repair is 11:30, and the range is 11:00–12:00. The closest cheap lender, LH-08 (dev 1.0 oz/h), needs 0.77 h to get there and would arrive at 10:46. Lunch runs 11:00–11:30, so it would load only about 0.25 h before the likely repair. That is roughly 1 oz of ore (23.6 t/h at 5.8 g/t), against about 1.5–2 oz of lost development value. LH-09 is worse at 1.5 oz/h. The stope has 260 t, and the repaired LH-04 can still load most of it by 17:00. No stope is stopped, so no reserve can be activated. LH-10 is in preventive maintenance until 12:00. No loans.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.2,
+   "costo_usd": 0.0453,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

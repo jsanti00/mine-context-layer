@@ -1,0 +1,54 @@
+{
+ "turno": 4,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "D",
+ "segundos_total": 13,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E595-06": "LH-08",
+    "TJ-C538-03": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08",
+    "TJ-C538-03": "LH-06"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 38.5,
+   "oz_mejor": 56.8,
+   "perdida_oz": 18.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     },
+     {
+      "loader": "LH-06",
+      "to": "TJ-C538-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 43.0,
+    "rationale": "Radio and CMMS agree on both failures. LH-08 (cheap development heading, 7.7 oz loss) covers the 15.4 g/t stope E595-06, net +36.5 oz. LH-06 (low-grade 5.8 g/t stope) covers C538-03, net +6.5 oz. Other options were worse or negative.",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.3,
+   "costo_usd": 0.0343,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

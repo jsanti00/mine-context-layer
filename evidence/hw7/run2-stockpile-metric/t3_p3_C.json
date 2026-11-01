@@ -1,0 +1,50 @@
+{
+ "turno": 3,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 40,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-C564-08": "LH-08"
+   },
+   "oz_agente": 31.9,
+   "oz_mejor": 44.4,
+   "perdida_oz": 12.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 100.0,
+    "rationale": "LH-01 (C590-09) and LH-02 (C564-08) are down with hydraulic faults. Radio and CMMS agree on this, and CMMS estimates 3-6 h on site, so no confirmation is needed. Central now has only LH-04 and LH-05 loading. They muck about 36 and 38 t/h, which is about 74 t/h. Central trucks haul about 86 t/h (my estimate from the 4-truck cycle and the 0.227 factor). The stockpile is at 303 of 450 t and is draining, so Central is loader-limited and an extra loader pays. (1) LH-08 comes off DS-E569-01, an infrastructure heading worth only 0.4 oz/h. It loads TJ-C590-09, which has 16.5 g/t, 80 m to the stockpile and 256 t of broken ore left. Travel is about 0.5 h. The LH410 rate at 80 m is about 31 t/h, or about 16 oz/h. Over roughly 6 loading hours that is about 98 oz, minus about 2.6 oz of development loss, for a net of about 95 oz. (2) LH-10 is idle in the workshop and its preventive maintenance ends at 10:00 (06:00 start plus 4 h), so lending it costs nothing. I sent it to TJ-C564-08 (9 g/t, about 25 t/h), which is about 0.3 h away. Central is near its truck limit with LH-08 added, so I count only about 5 oz of gain. I did not touch LH-07, because lending it would cost Este output and Central cannot take much more. I did not touch LH-09, because its critical-path heading is worth 5.7 oz/h. No reserve is activated, because no stope is stopped. Net is about +100 oz."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 39.6,
+   "costo_usd": 0.0787,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

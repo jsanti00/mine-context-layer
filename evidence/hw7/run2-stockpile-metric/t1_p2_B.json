@@ -1,0 +1,32 @@
+{
+ "turno": 1,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "B",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E543-01": "LH-01"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.1,
+   "perdida_oz": 3.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 18.0,
+   "costo_usd": 0.0457,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

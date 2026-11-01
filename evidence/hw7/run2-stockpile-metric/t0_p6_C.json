@@ -1,0 +1,82 @@
+{
+ "turno": 0,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 65,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {},
+   "oz_agente": -0.8,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 1.5,
+    "rationale": "The radio and CMMS agree that LH-01 is down at C512-10 for 3, 4 or 5 h (OT-5100, repaired on site), so CONFIRM-01 is not triggered. C512-10 has 238-98 = 140 t of broken ore left at 13.4 g/t, worth about 60 oz, and it counts only if mucked by 17:00. LH-10 is in preventive maintenance until 14:00 and can't be used. Stopes in drilling or fill can't lend loaders. LH-09 costs 2.0 oz/h, while LH-08 on infrastructure heading DS-N600-01 costs only 0.5 oz/h, so LH-08 is the cheapest source. Travel from Norte to Central is about 0.7 h, so LH-08 arrives around 10:00. At 120 m from the stockpile it mucks about 29 t/h. The Central stockpile (123 of 450 t, 4 trucks) has room. Without a loan, LH-01 returns at about 13:20 on the likely estimate and can still muck all 140 t by 17:00 at about 41 t/h. The loan only pays in the slow-repair tail: at 5 h, about 30 t (13 oz) would be left in the stope. The expected gain from that is about 3.5 oz. The expected cost is about 2 oz, from roughly 4 h of LH-08 away from its heading at 0.5 oz/h. Net is a small positive of about 1.5 oz. The layer handles the return when LH-01 is repaired (RETURN-01)."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 24.8,
+   "costo_usd": 0.0634,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N574-15": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N574-15": "LH-09"
+   },
+   "mejor": {
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 19.1,
+   "oz_mejor": 29.7,
+   "perdida_oz": 10.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-N574-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 83.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C512-10, OT-5100, 3-5 h) and LH-06 (N574-15, OT-5101, 5-7 h) are down, so CONFIRM-01 does not apply. Both repairs outlast the shift's 6.5 loading hours, so both stopes need cover. 1) C512-10: 238-115 = 123 t left at 13.4 g/t, which is 0.431 oz/t or about 53 oz. LH-08 (LH410, about 29 t/h at 120 m) is already there and clears it in about 4.2 h. Its home heading DS-N600-01 is the cheapest at 0.5 oz/h, so the cost is about 2.5 oz and the net is about 50 oz. Keep the loan. 2) N574-15: 273-126 = 147 t left at 9.4 g/t, which is 0.302 oz/t or about 44 oz. LH-09 (LH410, about 31 t/h at 80 m) comes from DS-N522-02. Travel is about 0.34 h, and it needs about 4.8 h of mucking, so it is away roughly 5.5-6 h at 2.0 oz/h, a cost of about 11-12 oz. Net is about +33 oz. The Norte stockpile (161 of 450 t) with 3 trucks will not fill, so extra mucking counts. LH-07 is the only loader on C590-14 and would leave 166 t at 6.7 g/t unmucked. It is also in a different mine, 6 km across the surface, so it is not used. The other loaders (LH-02/03/04/05) have more ore than they can muck by 17:00, so they cannot lend. LH-10 is in preventive maintenance until about 14:00, so it is unavailable now (PM-01). No reserve is activated because no stope has been stopped with a freed loader (RESERVE-01). Total is about 50 + 33 = 83 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 39.9,
+   "costo_usd": 0.0826,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

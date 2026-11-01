@@ -1,0 +1,44 @@
+{
+ "turno": 1,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-05": "RS-N522-03"
+   },
+   "agente_valida": {
+    "LH-05": "RS-N522-03"
+   },
+   "mejor": {
+    "LH-05": "RS-N522-03"
+   },
+   "oz_agente": 61.0,
+   "oz_mejor": 61.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-05",
+      "reserve": "RS-N522-03"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 62.0,
+    "rationale": "The radio says N600-08 is stopped for ventilation, so LH-05 is free. The CMMS has no open orders, so radio and CMMS don't conflict and no confirmation is needed. RESERVE-01 allows a reserve only with a stopped stope's loader, which is the case here. I chose RS-N522-03 because it has the most broken ore (412 t) at 9.5 g/t. Its 160 m distance gives LH514 a rate of 42x100/(100+0.15x60) = 38.5 t/h. Travel is about 0.37 h: 0.02 h in the drift, 0.075 h on the ramp down to level 522, 0.02 h in the drift to the reserve, and 0.25 h of manoeuvre. Activation takes 0.5 h. The loader starts around 10:55 to 11:00, and the 11:00 to 11:30 gap loses nothing extra. That leaves about 5.5 h of loading to 17:00, or roughly 212 t. This is below the 412 t of broken ore, so the loader is the limit, not the ore. Norte has almost no other loaders, so its 3 trucks (about 65 t/h by my estimate) are not a constraint. 212 t x 9.5 g/t / 31.1 is about 65 oz, less a small haulage lag, so about 62 oz. I made no loans. The other Norte reserve is lower grade (8.0 g/t) and smaller. The Este reserve is farther away, and Este is already near its truck limit. Lending to a truck-limited mine gains little, and moving a development loader costs 1.0 to 1.5 oz per hour."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 19.8,
+   "costo_usd": 0.0552,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

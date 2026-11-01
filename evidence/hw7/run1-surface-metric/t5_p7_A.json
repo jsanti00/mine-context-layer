@@ -1,0 +1,56 @@
+{
+ "turno": 5,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 21,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.5,
+   "perdida_oz": 3.5,
+   "dudosos": [
+    "TJ-N522-15"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N522-15",
+      "ask": "Call the Norte area chief to confirm whether LH-02 is actually stopped or operating (radio and CMMS disagree). Nothing moved there until confirmed."
+     }
+    ],
+    "expected_net_oz": 12.0,
+    "rationale": "Norte is truck-limited (inflow 71 vs 66 t/h) and its stockpile holds 242 t, so a loader for N600-09 adds no hauled ounces. Este has spare truck capacity (33 of 72 t/h). E543-11 has 285 t at 8.3 g/t and LH-05 alone mucks only about 231 t by 17:00. LH-08 comes from the infrastructure heading, which costs only 0.2 oz/h, and takes 0.55 h to reach E543-11. It adds about 54 t, or roughly 14 oz, against a cost of about 1 oz. LH-09 is on a critical-path heading (4 oz/h), so I leave it alone. LH-02 is not touched because the radio and CMMS conflict (CONFIRM-01). LH-10 is not available until 11:00. Reserves cannot be activated because no stope has stopped.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "préstamo inválido LH-08 -> TJ-E543-11"
+   ],
+   "confirmo_dudosos": [
+    "TJ-N522-15"
+   ],
+   "segundos": 21.2,
+   "costo_usd": 0.0538,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.5
+  }
+ ]
+}

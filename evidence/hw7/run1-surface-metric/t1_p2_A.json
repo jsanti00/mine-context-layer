@@ -1,0 +1,39 @@
+{
+ "turno": 1,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "A",
+ "segundos_total": 15,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E543-01": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 1.7,
+   "perdida_oz": 1.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Este trucks haul 72 t/h, so about 504 t by 17:00. Este already has 176 t in the stockpile plus 457 t still in the stopes with working loaders, so supply (about 633 t) exceeds truck capacity. A loan to E543-01 would add almost no hauled ounces. Taking LH-08 or LH-09 would cost 1.0 to 1.5 oz per hour in development, plus travel time. LH-04 is repaired in place by 11:00 to 12:00 (likely 11:30), and the radio and CMMS agree on its status. Keep everything as is.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.4,
+   "costo_usd": 0.0401,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.7
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "turno": 1,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 34,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-E543-01": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E543-01": "LH-08"
+   },
+   "mejor": {
+    "TJ-E543-01": "LH-01"
+   },
+   "oz_agente": -0.5,
+   "oz_mejor": 3.1,
+   "perdida_oz": 3.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-01"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 19.5,
+    "rationale": "Radio (10:00, LH-04 hydraulics failed, stopped) and CMMS OT-5100 (open, repair 1 to 2 h, on site) agree. So CONFIRM-01 does not apply and E543-01 is stopped. Reserves cannot be activated: RESERVE-01 requires a loader freed by a stopped stope, and LH-04 is broken and cannot move. E543-01 still has about 260 t of broken ore at 5.8 g/t, worth about 48 oz. Este has 3 trucks at about 83 t/h, while LH-06 and LH-07 muck about 67 t/h. Its stockpile is 176 of 450 t. Este is therefore not truck-limited, and an extra loader's output is absorbed. A loader on loan lasts past the repair, because RETURN-01 leaves that decision to the layer. Only a carguio stope or a development heading can lend a loader (LOADER-SOURCE-01). The candidates were LH-08 from DS-N522-01 (1.0 oz/h) and LH-09 from DS-C564-02 (1.5 oz/h). LH-10 is in preventive maintenance until about 12:00 (PM-01, 6:00 + 6 h) and cannot be loaned now. LH-08 travel is about 0.77 h. It then works about 6.2 h at 23.6 t/h (LH410 at 280 m), which is about 146 t, or 27 oz. The development cost is about 7 oz (1.0 oz/h for 7 h away). Net is about +20 oz. LH-09 would net about +17 oz (travel about 0.65 h, 150 t, 28 oz, cost 10.5 oz), so LH-08 is better. Possible later step, not in this decision: loan LH-10 to E543-01 once it is available at 12:00. It costs no development value, but it would add only about 100 t."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 34.2,
+   "costo_usd": 0.0711,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

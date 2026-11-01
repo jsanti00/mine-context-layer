@@ -1,0 +1,91 @@
+{
+ "turno": 0,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 33,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {},
+   "oz_agente": -0.8,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 52.0,
+    "rationale": "LH-01 is down at TJ-C512-10 (radio and CMMS agree). The likely repair is 13:20, so the stope would sit idle with 140 t at 13.4 g/t, about 60 oz. LH-08 comes from the infrastructure heading, which is the cheapest source at 0.5 oz/h. Travel is 0.69 h. An LH410 loads 29.1 t/h there, so the 140 t takes about 5 h including lunch. The development cost is about 2.5 oz. Central trucks (91 t/h) are not limiting against the 63 t/h inflow. Other loaders come from producing stopes or higher-value development, so I left them alone.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.5,
+   "costo_usd": 0.0414,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N574-15": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N574-15": "LH-09"
+   },
+   "mejor": {
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 19.1,
+   "oz_mejor": 29.7,
+   "perdida_oz": 10.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-N574-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 32.0,
+    "rationale": "Keep LH-08 at C512-10 (123 t at 13.4 g/t, about 53 oz, finishes in about 4.2 h; LH-01 is not back until 12:20 at the earliest). LH-06 is down at N574-15 until 15:00-17:00, which strands 147 t at 9.4 g/t (about 44 oz). Lend LH-09 from DS-N522-02, 0.34 h away. It loads 30 t/h, so about 4.9 h clears the stope. Development cost is 2 oz/h, so about 11 oz over the round trip. Net is about +32 oz. Norte inflow rises to about 63 t/h against 66 t/h truck capacity, so trucks are not limiting. No reserve activation because no stope is stopped. LH-02 and the Este and Central loaders keep their own stopes.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.7,
+   "costo_usd": 0.046,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

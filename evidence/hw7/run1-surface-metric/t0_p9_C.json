@@ -1,0 +1,44 @@
+{
+ "turno": 0,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 24,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-03": "RS-E595-01"
+   },
+   "agente_valida": {
+    "LH-03": "RS-E595-01"
+   },
+   "mejor": {
+    "LH-03": "RS-E595-01"
+   },
+   "oz_agente": 37.9,
+   "oz_mejor": 37.9,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-03",
+      "reserve": "RS-E595-01"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 65.0,
+    "rationale": "Radio at 10:00: TJ-E569-01 is stopped (ventilation), so LH-03 is free. The CMMS is empty, so there is no radio/CMMS conflict and nothing needs confirming. RESERVE-01 allows a reserve to be activated only with a stopped stope's loader, so LH-03 goes to a reserve rather than being loaned to a producing stope. The Este reserves are the best fit. RS-E595-01 has 9.8 g/t, 293 t of broken ore and a 0.5 h activation, and it is 160 m from the stockpile, so the LH514 rate is 42x100/(100+0.15x60) = 38.5 t/h. Travel from E569 is about 0.33 h (0.25 h manoeuvre plus drift and ramp), so mucking starts around 10:50. That gives about 10 min before the 11:00 break plus 5.5 h from 11:30 to 17:00, roughly 5.7 h x 38.5 = 218 t, which is under the 293 t available. Value is 218 t x 9.8 g/t / 31.1 = about 69 oz. I discount that to about 65 oz because of travel and activation uncertainty. Este is not truck-limited. I estimate Este haulage at about 72 t/h (3 trucks, 40 t payload, factor 0.227, cycle about 0.38 h). The remaining Este loader LH-04 (33 t/h at 280 m) plus LH-03 (38.5 t/h) loads about 71.5 t/h, and the 111 t stockpile also carries over. Alternatives are worse. RS-E595-03 has only 6.2 g/t. RS-N574-02 has a 1 h activation, is far from Este, and Norte is already truck-limited. Loaning LH-03 to a stope that already has a loader would add little, and the other uncovered stopes are in drilling or fill with no broken ore. No other loans: I keep the other loaders in place so no home place loses production, and the development headings are left alone."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 24.2,
+   "costo_usd": 0.0605,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

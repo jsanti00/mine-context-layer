@@ -1,0 +1,49 @@
+{
+ "turno": 0,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 27,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-N574-15": "LH-08",
+    "TJ-C512-10": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-N574-15": "LH-08",
+    "TJ-C512-10": "LH-09"
+   },
+   "mejor": {
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 10.6,
+   "oz_mejor": 17.1,
+   "perdida_oz": 6.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-15"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 90.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C512-10, 3-5 h) and LH-06 (N574-15, 4-6 h) are down, so no confirmation is needed. No stope is stopped, so I activate no reserves. The broken ore left in the two stopes is C512-10: 238-102 = 136 t at 13.4 g/t = 58.6 oz, and N574-15: 273-105 = 168 t at 9.4 g/t = 50.8 oz. LH-10 is in 8 h preventive maintenance from 06:00, so it is not available before about 14:00. I did not use it. LH-08 (LH410) comes from DS-N600-01, the cheapest source at 0.5 oz/h. It goes to N574-15, which is close: travel is about 0.35 h and the rate is about 30 t/h, so the 168 t take about 5.5 h. The cost is about 0.5 × 5.9 ≈ 3 oz, for a net of about 48 oz. LH-09 comes from DS-N522-02 at 2 oz/h. It goes to C512-10: travel is about 0.7 h, the rate is about 29 t/h, and the 136 t take about 4.7 h. The cost is about 2 × 5.4 ≈ 11 oz, for a net of about 48 oz. The stockpiles have room: Norte holds 156 of 450 t and Central 125 of 450 t. Norte trucks haul roughly 70 t/h against about 63 t/h of loader inflow. Both loans are positive after the development cost. I did not estimate the repair-return timing, which the layer decides."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 26.9,
+   "costo_usd": 0.0666,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

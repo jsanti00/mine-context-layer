@@ -1,0 +1,80 @@
+{
+ "turno": 0,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 25,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-08": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 1.1,
+   "perdida_oz": 1.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-02 repair estimate is 09:45-10:00 (likely 09:54), in place. N600-08 holds 171 t (~63 oz). After repair LH-02 loads it at 33 t/h in about 5.2 h, which is done by about 15:15, before 17:00. A short delay therefore costs no ounces. A loan from a Norte heading would cost development value and arrive about when the repair finishes. Radio and CMMS agree, so there is no conflict. No move is made.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.0,
+   "costo_usd": 0.036,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.1
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 35.1,
+   "oz_mejor": 35.1,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "LH-02 is down at N600-08 until at least 14:30, likely 15:30, and the radio and CMMS agree. The stope has 171 t at 11.5 g/t, about 63 oz. LH-08 comes from the infrastructure heading, which costs only 0.5 oz/h, and is 0.34 h away. It loads 23.6 t/h, so the 171 t takes about 7.2 h, or about 3.6 oz of heading value lost. Norte inflow rises from 42 to about 66 t/h, which just fits the 66 t/h truck capacity. Net gain is about 55 oz. I left the LH-09 heading alone (2 oz/h) and LH-10 is in PM until 14:00. No reserve is activated because no stope was stopped.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.8,
+   "costo_usd": 0.0414,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

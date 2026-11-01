@@ -1,0 +1,53 @@
+{
+ "turno": 4,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 31,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-E595-06": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-03"
+   },
+   "oz_agente": 17.1,
+   "oz_mejor": 29.1,
+   "perdida_oz": 12.0,
+   "dudosos": [
+    "TJ-C512-04"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-04",
+      "ask": "Call the Central area chief. Radio at 09:30 says scoop LH-02 is stopped at C512-04, but CMMS OT-5001 shows it closed 20 min ago and operational. Confirm whether LH-02 is running. Nothing is moved for C512-04 until then."
+     }
+    ],
+    "expected_net_oz": 115,
+    "rationale": "LH-01 is down at TJ-E595-06 (hydraulic). Radio and CMMS agree on this: OT-5100 is open, 3-5 h, repaired on site, so the loader is out for most of the shift. Este has 171 t in its stockpile and only LH-03 mucking (about 35.6 t/h). Este's 3 trucks (my estimate, about 73 t/h) can haul more than that, so Este is loader-limited and a replacement loader pays. E595-06 grade is 15.4 g/t with about 256 t of broken ore left (361 - 105). That is about 256 x 15.4 / 31.1 = 127 oz. Central has 4 trucks (about 90 t/h) against 4 or more loaders at 36-43 t/h each, plus 264 t in stockpile. It is truck-limited, so lending LH-06 from TJ-C564-01 (lowest grade, 5.8 g/t) costs almost nothing, and that stope's broken ore carries over. Travel for LH-06 is about 0.5 h (drift, ramp, surface, ramp, drift and 0.25 h manoeuvre). It has time to muck the remaining ore, at 43 t/h over about 6 h, before 17:00. I deduct about 10 oz for travel and truck limits, which gives about 115 oz. I did not take LH-09 (DS-E543-02, 4.0 oz/h, about 28 oz over the rest of the shift) or LH-07 (Norte, which has only that one loader). LH-10 is in preventive maintenance until 11:00 (PM-01), so it is not available now. No reserve is activated because no stope is stopped."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C512-04"
+   ],
+   "segundos": 30.7,
+   "costo_usd": 0.0703,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 12.0
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "turno": 0,
+ "patron": "5 tres fallas casi juntas",
+ "config": "B",
+ "segundos_total": 54,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-08"
+   },
+   "oz_agente": 3.4,
+   "oz_mejor": 3.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.3,
+   "costo_usd": 0.0431,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 18.2,
+   "oz_mejor": 18.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 15.9,
+   "costo_usd": 0.045,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-08": "LH-08",
+    "TJ-E569-01": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-08": "LH-08",
+    "TJ-E569-01": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08",
+    "TJ-E569-01": "LH-06"
+   },
+   "oz_agente": 13.3,
+   "oz_mejor": 34.9,
+   "perdida_oz": 21.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-E569-01"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 20.9,
+   "costo_usd": 0.0511,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

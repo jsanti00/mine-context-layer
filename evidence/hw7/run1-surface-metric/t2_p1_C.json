@@ -1,0 +1,44 @@
+{
+ "turno": 2,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 25,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-06"
+   },
+   "oz_agente": 9.2,
+   "oz_mejor": 22.0,
+   "perdida_oz": 12.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 12.0,
+    "rationale": "The radio and OT-5100 agree that LH-02 is down at TJ-E569-07 (hydraulic fault, 3/4/5 h, repaired on site), so CONFIRM-01 does not apply. LH-10 is idle at TALLER-564 and is not in preventive maintenance, so lending it costs no development or production. Its route is workshop to Central 564, up to the Central portal, across the surface to the Este portal, down to Este 569, then the drift to the stope. That is about 0.24 h of travel plus a 0.25 h manoeuvre, so it arrives at about 09:50. The stope has 168 t of broken ore left (260 t minus 92 t mucked). An LH410 at 160 m from the stockpile does 30×100/(100+0.15×60) = 27.5 t/h. Este has 3 trucks, which I estimate can haul about 72 t/h, so the trucks are not the limit and the extra loader adds output. Without a loan, the Este stockpile (51 t) drains and the stope is idle until LH-02 is back. At the likely 4 h repair that is about 13:20, and LH-02 then mucks about 140 t by 17:00 at 38.5 t/h. With LH-10 the stope's remaining 168 t is mucked by 17:00 in both cases. The gain is therefore about 28 t at 10.5 g/t, or about 9.5 oz, and about 22 oz if the repair runs the full 5 h. I used about 12 oz as the expected figure. No reserve is activated: the rules allow that only with the loader of a stopped stope, and LH-02 is broken, not a stopped stope with a loader to move. Per RETURN-01, the layer decides what happens to the loan when the repair ends."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 24.6,
+   "costo_usd": 0.0624,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 12.8
+  }
+ ]
+}

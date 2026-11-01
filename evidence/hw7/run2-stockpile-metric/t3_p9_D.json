@@ -1,0 +1,47 @@
+{
+ "turno": 3,
+ "patron": "9 tajo detenido y reserva",
+ "config": "D",
+ "segundos_total": 13,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-06": "RS-N548-02"
+   },
+   "agente_valida": {
+    "LH-06": "RS-N548-02"
+   },
+   "mejor": {
+    "LH-06": "RS-N548-02"
+   },
+   "oz_agente": 64.1,
+   "oz_mejor": 64.1,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-06",
+      "reserve": "RS-N548-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "N522-01 stopped (5-8h vent), LH-06 idle. Activate the highest-grade reserve in Norte, RS-N548-02 (9.7 g/t, 350 t, LH514 at 40.8 t/h). Norte stockpile has room (70/450) and trucks are idle, so no haulage limit. Central is near-full and truck-limited, so RS-C564-03 is worse. Roughly 4.5-5 h of loading at 40.8 t/h gives about 190-200 t, or about 60 oz. No loans: no loader is down and no other gain is available.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.4,
+   "costo_usd": 0.0408,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

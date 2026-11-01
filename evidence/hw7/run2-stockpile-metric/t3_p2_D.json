@@ -1,0 +1,47 @@
+{
+ "turno": 3,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "D",
+ "segundos_total": 11,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-C512-02": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C512-02": "LH-10"
+   },
+   "mejor": {
+    "TJ-C512-02": "LH-07"
+   },
+   "oz_agente": 0.1,
+   "oz_mejor": 0.6,
+   "perdida_oz": 0.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C512-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 3.8,
+    "rationale": "LH-04 is down at TJ-C512-02. Radio and CMMS agree, and the likely repair is 11:30. LH-10 is idle in the workshop, so lending it has no home loss. Net is +3.8 oz, the best option. Every loan from a producing stope or heading has a lower net, and most are negative. Central's stockpile has little room (116 t), which limits the gain.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.1,
+   "costo_usd": 0.024,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

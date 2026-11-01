@@ -1,0 +1,76 @@
+{
+ "turno": 5,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "D",
+ "segundos_total": 19,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 is being repaired in place, likely by 09:54 (high 10:00). It can clear the 201 t alone before 17:00. Every loan option has net ≤ 0 oz because travel takes longer than the repair. Radio and CMMS agree, so no confirmation is needed. I made no moves.",
+    "confidence": 0.9,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 8.0,
+   "costo_usd": 0.0185,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-N574-02": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N574-02": "LH-08"
+   },
+   "mejor": {
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 39.0,
+   "oz_mejor": 39.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 36.0,
+    "rationale": "LH-03 repair is now likely 15:30 (high 17:30), so it clears only about 53 t alone by 17:00. LH-08 is a cheap development loader (home loss 1.1 oz) and gains 37.1 oz at N574-02, for a net of 36 oz. That is the best option in the ranking. Other loans net less or are negative. The Norte stockpile has room. check_decision returned no violations.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.6,
+   "costo_usd": 0.0229,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

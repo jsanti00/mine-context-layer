@@ -1,0 +1,55 @@
+{
+ "turno": 3,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "D",
+ "segundos_total": 12,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C590-09": "LH-07",
+    "TJ-C564-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-07",
+    "TJ-C564-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-C564-08": "LH-08"
+   },
+   "oz_agente": 19.4,
+   "oz_mejor": 44.4,
+   "perdida_oz": 25.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-07",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 58.0,
+    "rationale": "Both failures confirmed by radio and CMMS. Each loader can go to only one place. LH-07 to C590-09 nets 30.8 oz and LH-08 to C564-08 nets 27.2 oz, for 58 oz total. The other split (LH-08 to C590-09, LH-07 to C564-08) nets about 54 oz. The other loaders cost more at home than they gain.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.6,
+   "costo_usd": 0.028,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

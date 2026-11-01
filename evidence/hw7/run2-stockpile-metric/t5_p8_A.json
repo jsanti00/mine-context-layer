@@ -1,0 +1,74 @@
+{
+ "turno": 5,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 34,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 is repaired in place, likely by 09:54 (range 09:45-10:00), and radio and CMMS agree. N574-02 has 201 t (about 68 oz). LH-03 can muck it in about 5.6 h at 35.6 t/h, and about 6.5 h remain before 17:00, so the ore is not at risk. Norte is already truck-limited (inflow 71 t/h against 66 t/h truck capacity), so an extra loader adds little. Any loan would cost travel time and take production or development from another place. Do nothing.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.4,
+   "costo_usd": 0.0344,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 39.0,
+   "perdida_oz": 39.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-N574-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "LH-03 is down at N574-02 until about 15:30 or later, because the part is not in stock. That stope has 201 t at 10.5 g/t, about 68 oz. LH-10 comes out of preventive maintenance at 11:00 and takes 0.62 h to get there. It has no home place, so lending it costs nothing. It loads at 25.4 t/h from about 11:40 to 17:00, roughly 135 t or 46 oz. Norte is nearly truck-limited, with 245 of 450 t in the stockpile. One extra loader keeps the stockpile under capacity. A second loader (LH-08) would fill the stockpile and only displace higher-grade Norte ore, so I left it on its heading.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 22.7,
+   "costo_usd": 0.0533,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "turno": 3,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-06": "RS-N548-02"
+   },
+   "agente_valida": {
+    "LH-06": "RS-N548-02"
+   },
+   "mejor": {
+    "LH-06": "RS-N548-02"
+   },
+   "oz_agente": 64.1,
+   "oz_mejor": 64.1,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-06",
+      "reserve": "RS-N548-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 65.0,
+    "rationale": "Radio at 10:00 says N522-01 is stopped for ventilation and LH-06 is free. The CMMS has no open orders, so radio and CMMS don't disagree and no confirmation is needed. RESERVE-01 lets a reserve use only the loader of a stopped stope, so LH-06 is the one to use. I chose RS-N548-02 because it has the best grade (9.7 g/t) and 350 t of broken ore. Norte is the only mine with room: its stockpile is 70 of 450 t and it has no other loader now. Central's stockpile is at 334 of 450 t and truck-limited, so RS-C564-03 and RS-C538-01 would add little. LH-06 needs about 0.35 h to travel (drift, ramp, drift, plus 0.25 h manoeuvre) and the reserve needs 1.0 h to activate, so loading starts around 11:30 after the break. That leaves about 5.5 h to 17:00. At 120 m a LH514 mucks 42×100/(100+0.15×20) ≈ 40.8 t/h, so about 224 t, which is under the 350 t available. 224 t × 9.7 g/t / 31.1 ≈ 70 oz. I subtract a margin for travel and queue uncertainty and get about 65 oz. Nothing is lost at the stopped stope. I made no other loans. LH-10 (LH410, out of preventive maintenance) has nowhere useful to go. Central's stockpile is nearly full, and Este's E569-15 is low grade at 5.8 g/t and 280 m. The Este development loaders are worth more on the headings (DS-E569-02 is worth 5.7 oz per loader hour)."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.1,
+   "costo_usd": 0.0564,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "turno": 3,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "B",
+ "segundos_total": 39,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-C538-06": "LH-08",
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C538-06": "LH-08",
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-04"
+   },
+   "oz_agente": 26.1,
+   "oz_mejor": 32.1,
+   "perdida_oz": 6.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C538-06"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 38.4,
+   "costo_usd": 0.0971,
+   "agentes": 2,
+   "sin_decision": false
+  }
+ ]
+}

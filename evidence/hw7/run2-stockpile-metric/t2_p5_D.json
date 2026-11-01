@@ -1,0 +1,143 @@
+{
+ "turno": 2,
+ "patron": "5 tres fallas casi juntas",
+ "config": "D",
+ "segundos_total": 37,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 16.7,
+   "oz_mejor": 16.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 16.2,
+    "rationale": "LH-02 is down at TJ-E569-07 (10.5 g/t, 164 t) until about 13:30. Radio and CMMS agree. The idle spare LH-10 is at the workshop and takes 0.49 h to get there. It gains about 16.2 oz with no home loss. Every other loader has a lower or negative net. Este's stockpile has room.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.9,
+   "costo_usd": 0.0238,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "oz_agente": 36.3,
+   "oz_mejor": 36.3,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 36.9,
+    "rationale": "Keep LH-10 on loan at E569-07 (net +14.2). Send LH-08 from dev heading DS-C564-01 to C564-14 (net +22.7, home loss 5 oz). Other options have lower or negative net. Radio and CMMS agree on both failures.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.0,
+   "costo_usd": 0.0295,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-08",
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-08",
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-06",
+    "TJ-N600-11": "LH-08"
+   },
+   "oz_agente": 38.0,
+   "oz_mejor": 39.4,
+   "perdida_oz": 1.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 37.0,
+    "rationale": "Keep both loans in force. LH-08 already sits at C564-14 and nets about 24 oz. LH-10 already sits at E569-07 and nets about 12.5 oz, which beats moving it to N600-11 (11.7 oz) once travel is counted. Pulling producing-stope or development loaders to N600-11 nets zero or negative, so I left it uncovered. LH-04 clears 170 t alone after the 12:50 repair.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.2,
+   "costo_usd": 0.0354,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

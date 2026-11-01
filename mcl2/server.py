@@ -92,7 +92,8 @@ def get_loaders() -> list[dict]:
 def get_haulage() -> list[dict]:
     """Per mine: level stockpile now (t and oz) and its capacity, trucks running, truck capacity
     to surface (t/h) and current loader inflow (t/h). If inflow exceeds truck capacity, the mine
-    is truck-limited and an extra loader there adds little until the stockpile has room."""
+    is truck-limited: ore still counts once it is in the stockpile, but when the stockpile is full
+    the loaders feeding it stop, so an extra loader there adds little."""
     con = db(); st = state(con); log_call(con, "get_haulage", {})
     return st["haulage"]
 

@@ -1,0 +1,79 @@
+{
+ "turno": 3,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 70,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 28.2,
+   "perdida_oz": 28.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 20.0,
+    "rationale": "Radio and CMMS agree that LH-01 is down on a hydraulic fault at TJ-C590-09 (OT-5100, 3-5 h, repaired on site), so no confirmation is needed. Central haulage is about 96 t/h, from 4 trucks x 40 t / 0.38 h cycle x 0.227 (my estimate; the cycle uses an assumed mid-depth of about 575 m). The three Central loaders still working (LH-02, LH-04, LH-05) muck about 110 t/h at 220/220/160 m, so Central is already truck-limited. Central has about 1,400 t of ore on hand against about 690 t of haulage left, and the stockpile is 297 of 450 t. Extra loaders therefore only pay by raising the grade mix, not the tonnage. LH-10 is the best candidate because it is in preventive maintenance until about 10:00 (06:00 + 4 h, my reading of the PM entry) and has no home place that loses output. It is 0.33 h from TJ-C590-09, which is 80 m from the stockpile (about 31 t/h) and the best-grade stope at 16.5 g/t. Mixing LH-10 in lifts the average stockpile grade from about 7.7 to about 9.6 g/t over about 550 t hauled. That is about 30 oz, less travel and a possible stockpile cap, so about 20 oz. No other moves: Norte (LH-06) holds only 260 t of ore at its stope and has no spare loader, and its other stopes are in drilling or fill, so they cannot lend. Este is 6.8 km away. Taking LH-08 or LH-09 from development would cost 0.4 or 5.7 oz/h with no gain. No reserves, since no stope is stopped."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 31.2,
+   "costo_usd": 0.0696,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 28.2
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C590-09": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-10"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-04",
+    "TJ-C564-08": "LH-05"
+   },
+   "oz_agente": 12.2,
+   "oz_mejor": 35.5,
+   "perdida_oz": 23.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 20,
+    "rationale": "Radio and CMMS agree that LH-01 (C590-09, repair 3-5 h) and LH-02 (C564-08, repair 5-7 h) are down, so no confirmation is needed. LH-10 finished its 250 h preventive maintenance at 10:00 (06:00 + 4 h) and is idle in TALLER-564, so lending it costs no production. It can't take a reserve, because RESERVE-01 requires the loader of a stopped stope. Central has 4 trucks at about 22.7 t/h each (0.227 × 40 t / 0.4 h cycle), roughly 91 t/h in total. The two Central loaders still working, LH-04 and LH-05, give about 74 t/h. With 309 t in the stockpile, trucks stay saturated until 17:00 either way, so more tonnage would add nothing. The gain is grade: C590-09 is the richest stope at 16.5 g/t and only 80 m from the stockpile. Feeding it raises the stockpile average from about 0.31 oz/t, so each truckload carries more ounces. The loader is an LH410, about 31 t/h at 80 m, and loses about 0.33 h travelling there (roughly 0.1 h via drift and ramp plus the 0.25 h manoeuvre). I estimate +15 to +30 oz, so I used 20. C564-08 is worse: 9 g/t and 220 m from the stockpile. I did not move loaders into Norte or Este. Both mines have spare truck capacity, but their only carguio stopes already have a loader and limited broken ore. Moving a loader there also takes the long surface trip, or means taking a loader from a producing place or from critical-path development (5.7 oz/h). I left LH-08 and LH-09 in place for the same reason."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 38.2,
+   "costo_usd": 0.0786,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 23.3
+  }
+ ]
+}

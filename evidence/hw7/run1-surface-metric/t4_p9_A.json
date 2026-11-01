@@ -1,0 +1,48 @@
+{
+ "turno": 4,
+ "patron": "9 tajo detenido y reserva",
+ "config": "A",
+ "segundos_total": 15,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-03": "RS-N548-03"
+   },
+   "agente_valida": {
+    "LH-03": "RS-N548-03"
+   },
+   "mejor": {
+    "LH-03": "RS-N548-03"
+   },
+   "oz_agente": 109.0,
+   "oz_mejor": 109.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-03",
+      "reserve": "RS-N548-03"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 115.0,
+    "rationale": "E569-08 stopped 5-8h, so LH-03 is idle. Central is truck-limited (inflow 159 vs 91 t/h), so a reserve there adds little. Norte has spare truck capacity (inflow 29 vs 66 t/h). RS-N548-03 grades 18.4 g/t with 311 t. LH-03 needs 0.72 h to travel plus 1.0 h to activate, so it starts about 11:43. That leaves about 5.2 h at 38.5 t/h, roughly 200 t, or about 118 oz. No development loader is taken, so no development cost. No loans are needed.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.9,
+   "costo_usd": 0.0427,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "turno": 2,
+ "patron": "1 una falla",
+ "config": "D",
+ "segundos_total": 11,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 9.2,
+   "oz_mejor": 9.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 9.1,
+    "rationale": "LH-02 is down at E569-07. Radio and CMMS agree, and the likely repair is 13:20. The idle spare LH-10 at the workshop has no home loss and gains about 9.1 oz, which is the best net of all options. Every other loader loses more at its home than it gains.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.3,
+   "costo_usd": 0.0262,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

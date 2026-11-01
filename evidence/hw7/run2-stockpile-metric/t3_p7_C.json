@@ -1,0 +1,50 @@
+{
+ "turno": 3,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 28,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 33.6,
+   "perdida_oz": 33.6,
+   "dudosos": [
+    "TJ-C564-08"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C564-08",
+      "ask": "Call the Central area chief. Radio at 09:30 says scoop 2 (LH-02) is stopped at C564-08. CMMS OT-5001 shows it closed 20 min ago and operational. Confirm whether LH-02 is running. Move nothing for C564-08 until then."
+     }
+    ],
+    "expected_net_oz": 40.0,
+    "rationale": "LH-01 is down at C590-09, a high-grade stope at 16.5 g/t. Radio and CMMS agree (OT-5100, hydraulic, 3-5 h, repaired on site), so this is a real stoppage. LH-10 is in the shop for preventive maintenance and is free from 10:00 (06:00 start plus 4 h). Using it costs no other place any production, because it is not taking over from another working loader. Travel from TALLER-564 to C590-09 is about 0.33 h, so it starts around 10:20. At 80 m from the stockpile an LH410 mucks about 31 t/h. Over the remaining ~6.3 h that is about 195 t, which is below the 256 t still broken in the stope (361 t minus 105 t mucked). At 16.5 g/t that is up to about 103 oz. Central haulage is close to truck-limited: 4 trucks give roughly 90 t/h, and the stockpile is at 303 of 450 t. Much of that ore would therefore displace lower-grade ore. I discounted the gain to about 40 oz. It is higher if LH-02 is really down. LH-02 has a radio/CMMS conflict, so under CONFIRM-01 I am not moving anything for that place. No loader is taken from a producing place or a development heading, and there are no stopped stopes whose loaders could activate a reserve, so I activated none."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [
+    "TJ-C564-08"
+   ],
+   "segundos": 28.0,
+   "costo_usd": 0.0649,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

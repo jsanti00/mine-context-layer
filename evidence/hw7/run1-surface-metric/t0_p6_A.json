@@ -1,0 +1,96 @@
+{
+ "turno": 0,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 33,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07"
+   },
+   "oz_agente": -0.4,
+   "oz_mejor": 1.1,
+   "perdida_oz": 1.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 52.0,
+    "rationale": "LH-01 is down at C512-10 (radio and CMMS agree). Repair is likely 13:20, range 12:20 to 14:20. The stope holds 140 t at 13.4 g/t, about 60 oz. LH-08 is on the cheap infrastructure heading (0.5 oz/h) and is 0.69 h away. As an LH410 it loads 29.1 t/h, so it arrives about 10:00 and clears the 140 t in about 5 h, before 17:00. Central trucks have spare capacity (91 vs 63 t/h inflow), so the extra loader is not truck-limited. Cost is about 5.5 h x 0.5 = 2.8 oz of development. I did not take LH-09 because its heading is worth 2.0 oz/h. I did not take LH-07 because it would stop a producing stope.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.8,
+   "costo_usd": 0.0426,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.5
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N574-15": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N574-15": "LH-09"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07",
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 9.9,
+   "oz_mejor": 22.6,
+   "perdida_oz": 12.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-N574-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 30.0,
+    "rationale": "Keep LH-08 at C512-10 (LH-01 down until ~13:20; 123 t @13.4 g ≈ 53 oz, 12.5 oz/h vs 0.5 dev cost; Central inflow ~ truck capacity). Lend LH-09 from preparation heading (2 oz/h) to N574-15 (LH-06 down until ~16:00): 147 t @9.4 g ≈ 44 oz, ~4.9 h load + 0.34 h travel; Norte inflow 33+30=63 < 66 truck cap. Net ≈ 44 - 11 ≈ 33. LH-10 PM until 14:00, too late.",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.3,
+   "costo_usd": 0.0477,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 12.7
+  }
+ ]
+}

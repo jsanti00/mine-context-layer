@@ -1,0 +1,47 @@
+{
+ "turno": 2,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "D",
+ "segundos_total": 12,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-N522-13": "LH-04"
+   },
+   "agente_valida": {
+    "TJ-N522-13": "LH-04"
+   },
+   "mejor": {
+    "TJ-N522-13": "LH-04"
+   },
+   "oz_agente": 2.9,
+   "oz_mejor": 2.9,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-04",
+      "to": "TJ-N522-13"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 3.1,
+    "rationale": "LH-05 is down with a likely repair at 11:30, and radio and CMMS agree. The repaired loader can clear most of the stope itself by 17:00, so a loan adds little. LH-04 has the best net in rank_loan_options: +3.1 oz, with zero home loss and 0.42 h of travel. Every other loader nets less or is negative. I didn't send a second loader, since the extra ore would be small.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.7,
+   "costo_usd": 0.0236,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

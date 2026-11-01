@@ -1,0 +1,67 @@
+{
+ "turno": 5,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "B",
+ "segundos_total": 37,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.6,
+   "perdida_oz": 3.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.7,
+   "costo_usd": 0.0439,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.6
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-N522-15": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N522-15": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": -1.3,
+   "oz_mejor": 3.6,
+   "perdida_oz": 4.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N522-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.4,
+   "costo_usd": 0.0474,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 4.9
+  }
+ ]
+}

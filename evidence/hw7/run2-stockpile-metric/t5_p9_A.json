@@ -1,0 +1,47 @@
+{
+ "turno": 5,
+ "patron": "9 tajo detenido y reserva",
+ "config": "A",
+ "segundos_total": 14,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-04": "RS-C564-02"
+   },
+   "agente_valida": {
+    "LH-04": "RS-C564-02"
+   },
+   "mejor": {
+    "LH-04": "RS-C564-02"
+   },
+   "oz_agente": 54.4,
+   "oz_mejor": 54.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-04",
+      "reserve": "RS-C564-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 62.0,
+    "rationale": "C512-12 stopped 5-8h, so LH-04 is idle and can activate a reserve (RESERVE-01). Central trucks have spare capacity (inflow 63 vs 91 t/h), and the stockpile is at 147 of 450 t. RS-C564-02 has 278 t at 8.9 g/t and loads at 38.5 t/h with an LH514. After 0.5 h activation and the lunch break, about 6 loading hours gives roughly 230 t, or about 66 oz. RS-C512-01 gives roughly 57 oz. RS-N574-03 is at truck-limited Norte and only 5.8 g/t. No loans, because taking a loader from a producing place or from critical-path development costs more than it gains.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.4,
+   "costo_usd": 0.0415,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

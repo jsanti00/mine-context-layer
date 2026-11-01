@@ -1,0 +1,124 @@
+{
+ "turno": 2,
+ "patron": "5 tres fallas casi juntas",
+ "config": "B",
+ "segundos_total": 54,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 16.7,
+   "oz_mejor": 16.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.1,
+   "costo_usd": 0.0379,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "oz_agente": 25.7,
+   "oz_mejor": 36.3,
+   "perdida_oz": 10.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 16.0,
+   "costo_usd": 0.0475,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-10",
+    "TJ-N600-11": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-10",
+    "TJ-N600-11": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-06",
+    "TJ-N600-11": "LH-08"
+   },
+   "oz_agente": 37.4,
+   "oz_mejor": 40.8,
+   "perdida_oz": 3.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 23.8,
+   "costo_usd": 0.0576,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

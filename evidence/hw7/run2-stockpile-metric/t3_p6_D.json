@@ -1,0 +1,94 @@
+{
+ "turno": 3,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "D",
+ "segundos_total": 23,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 22.7,
+   "oz_mejor": 32.2,
+   "perdida_oz": 9.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 46.0,
+    "rationale": "LH-01 is down at C590-09 (16.5 g/t, 260 t in the stope). The radio and CMMS agree, and the likely repair is 13:20. LH-08 comes from development heading DS-E569-01, which has a low loss of 1.6 oz. It travels 0.48 h and gets about 3 productive hours at the stope. That gives a gain of 48.1 oz and a net of 46.5 oz, the best ranked option. The other options lose more at their home stopes. The dry run passed.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.3,
+   "costo_usd": 0.0246,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C590-09": "LH-08",
+    "TJ-C564-08": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08",
+    "TJ-C564-08": "LH-10"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-08",
+    "TJ-C564-08": "LH-05"
+   },
+   "oz_agente": 38.0,
+   "oz_mejor": 44.8,
+   "perdida_oz": 6.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 82.0,
+    "rationale": "Keep LH-08 at C590-09 (net ~43.8 oz, home dev loss only 1.3). Send idle spare LH-10 from the workshop to C564-08 (net ~38.1 oz, no home loss). Taking loaders from producing stopes nets less. Radio and CMMS agree on both failures. Dry run OK.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.1,
+   "costo_usd": 0.0323,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "turno": 1,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 32,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-07": "LH-01"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.4,
+   "perdida_oz": 0.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 is repairable in place, with a likely fix at 09:54 and a high estimate of 10:00. Radio and CMMS agree. The stope holds 323 t at 8.4 g/t, which is more than LH-03 can load before 17:00, so the loss is only about 0.4 h, or roughly 3 oz. A loan would have to travel and would take a loader from a producing stope or a development heading (1.0–1.5 oz/h). It would arrive about when LH-03 is back, so it wouldn't pay. I'm making no moves.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.7,
+   "costo_usd": 0.0368,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C590-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-08"
+   },
+   "oz_agente": 26.2,
+   "oz_mejor": 26.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 33.0,
+    "rationale": "LH-03 is down until about 15:30 (likely) and could be down until 17:30. C590-07 holds 323 t at 8.4 g/t, about 87 oz, and has no loader. The radio and CMMS agree on the failure, so a loan is allowed. LH-08 (LH410, 25.4 t/h) comes from the Norte heading worth 1.0 oz/h. It takes 0.67 h to arrive and then loads about 5.8 h, which is roughly 147 t or 39 oz. The heading loses about 6.3 oz, so the net gain is about 33 oz. LH-09 would cost 1.5 oz/h, which nets about 30 oz even with its shorter 0.35 h trip. Central's stockpile is 170 of 450 t. Inflow would be about 108 t/h against truck capacity of 91 t/h, a surplus of about 17 t/h, or about 100 t over 6 h. That fits in the 280 t of free space. Reserves cannot be activated because no stope has stopped.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.9,
+   "costo_usd": 0.0468,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

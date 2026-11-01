@@ -1,0 +1,94 @@
+{
+ "turno": 5,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "D",
+ "segundos_total": 26,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 27.0,
+   "oz_mejor": 27.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 26.9,
+    "rationale": "LH-01 down at N600-09 (radio+cmms agree), likely repair 13:20. LH-08 from the DS-C538-01 development heading has the best net: +27.7 oz gain, -0.8 oz home loss. Producing-stope loaders net less.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.2,
+   "costo_usd": 0.0233,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-N522-15": "LH-08",
+    "TJ-N600-09": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-N522-15": "LH-08",
+    "TJ-N600-09": "LH-06"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N522-15": "LH-08"
+   },
+   "oz_agente": 65.4,
+   "oz_mejor": 65.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N522-15"
+     },
+     {
+      "loader": "LH-06",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 65.0,
+    "rationale": "LH-08 moves from N600-09 to N522-15 (net 44.3 oz; the repair there isn't until 16:00). LH-06 from the lower-grade Central stope covers N600-09 (net 21.3 oz; repair 13:20). Norte stockpile has room (193 t), so the extra loader isn't truck-limited. Radio and CMMS agree on both failures.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.9,
+   "costo_usd": 0.0333,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "turno": 4,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 37,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E595-06": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-03"
+   },
+   "oz_agente": 17.2,
+   "oz_mejor": 28.8,
+   "perdida_oz": 11.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 115.0,
+    "rationale": "LH-01 is down at E595-06 (radio and CMMS agree), and the likely repair is 13:20. That stope holds 260 t at 15.4 g/t, about 129 oz. Este trucks move 72 t/h against 36 t/h inflow, so an extra loader fits. LH-06 (LH514, 42 t/h) takes 0.49 h to get there and clears the 260 t in about 6.2 h, finishing before 17:00. Central is truck-limited (159 t/h inflow against 91 t/h haulage, 257 t already in the stockpile), and C564-01 is its lowest-grade stope (5.8 g/t), so taking LH-06 costs almost nothing. I did not take LH-08 or LH-09 from development because that costs 1.9 and 4.0 oz per hour. No reserve is activated because no stope was stopped.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.1,
+   "costo_usd": 0.0479,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 11.6
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E595-06": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-03",
+    "TJ-C512-04": "LH-06"
+   },
+   "oz_agente": 15.9,
+   "oz_mejor": 46.7,
+   "perdida_oz": 30.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C512-04"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "Keep LH-06 at E595-06 (15.4 g/t, 235 t, Este already truck-limited, so no second loader there). LH-02 is down at C512-04 (13 g/t, 296 t) until 15:00-17:00. LH-10 leaves preventive maintenance at 11:00 and has no development cost. It arrives about 11:34 and loads about 5.4 h at 25.4 t/h, roughly 137 t or 57 oz. Taking LH-08 from DS-C512-01 would cost 1.9 oz/h and add little, so I leave it in place. Central has truck headroom.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 19.6,
+   "costo_usd": 0.0516,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 30.8
+  }
+ ]
+}

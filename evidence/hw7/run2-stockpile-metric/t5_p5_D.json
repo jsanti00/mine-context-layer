@@ -1,0 +1,142 @@
+{
+ "turno": 5,
+ "patron": "5 tres fallas casi juntas",
+ "config": "D",
+ "segundos_total": 38,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 32.5,
+   "oz_mejor": 32.5,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 26.9,
+    "rationale": "LH-01 is down at N600-09 (radio and CMMS agree). The likely repair is 13:30. Of the loan options, LH-08 from the DS-C538-01 development heading has the best net: +27.7 oz gain, -0.8 oz home loss, so +26.9 oz. The Norte stockpile has room (208 t), so no excess ore is lost. Loans from producing stopes net less.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.1,
+   "costo_usd": 0.0261,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N574-02": "LH-08",
+    "TJ-N600-09": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-N574-02": "LH-08",
+    "TJ-N600-09": "LH-06"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 55.9,
+   "oz_mejor": 55.9,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-02"
+     },
+     {
+      "loader": "LH-06",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 48.0,
+    "rationale": "Two Norte stopes down (LH-01, LH-03), both with radio+cmms agreeing. Net oz from rank_loan_options: LH-08 to N574-02 is 24.6 and LH-06 to N600-09 is 24.2, total about 48.8. The alternative, LH-08 staying at N600-09 plus LH-06 to N574-02, gives 31.6+11.4=43. The other loaders have low or negative net, so I left them at home.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.1,
+   "costo_usd": 0.03,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N574-02": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N574-02": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 53.1,
+   "oz_mejor": 53.1,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 66.0,
+    "rationale": "Keep LH-06 at N600-09 (net +43 oz) and LH-08 at N574-02 (net +23 oz); both are already on site, with no travel and almost no home loss. Every other loan option is near zero or negative, because it takes a loader from a producing stope. C512-12 needs no loan: LH-04 is repaired by 12:50 and clears the ore alone, so a loan gains 0.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.6,
+   "costo_usd": 0.0332,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "turno": 0,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "C",
+ "segundos_total": 40,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07",
+    "TJ-E569-12": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 2.5,
+   "perdida_oz": 2.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 30.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C512-10, 3-5 h, likely 4 h) and LH-04 (E569-12, 1.5-2.5 h, likely 2 h) are down with hydraulic faults, so no confirmation is needed. Both loaders are broken, so no crew is freed and no reserve can be activated. LH-10 is in preventive maintenance until 14:00 and cannot be used. Truck capacity: Norte is already truck-limited at about 76 t/h against about 76 t/h of loader output, so it gains nothing from an extra loader. Central (about 100 t/h trucks) and Este (about 80 t/h) have spare haul capacity. C512-10 has 136 t of broken ore left at 13.4 g/t, which is 0.43 oz/t, and sits 120 m from the stockpile, so an LH410 mucks about 29 t/h there, or roughly 12.5 oz/h. LH-08 comes off infrastructure heading DS-N600-01, which costs only 0.5 oz/h. It arrives at about 10:10 after roughly 0.7 h of travel and mucks until the likely repair at about 13:30, which is about 2.8 h of loading after the 11:00-11:30 break. That gives about 80 t, or about 35 oz, less about 2 oz of development loss, for roughly 30 oz net. LH-09 costs 2 oz/h and LH-07 would give up 6.7 g/t ore, so both are worse choices. Loaning to E569-12 gives only about 0.8 h of loading before LH-04's likely repair at 11:30, because the loader arrives at about 10:12 and the 11:00-11:30 break follows. The gain is about 6 oz, which is under the lost development value, so I leave it uncovered."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 39.6,
+   "costo_usd": 0.0791,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.5
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "turno": 2,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 30,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-06"
+   },
+   "oz_agente": 10.2,
+   "oz_mejor": 22.9,
+   "perdida_oz": 12.7,
+   "dudosos": [
+    "TJ-C564-03"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C564-03",
+      "ask": "Call the Central area chief. Radio at 09:30 says scoop 3 (LH-03) is stopped at C564-03, but CMMS OT-5001 closed 20 minutes ago as 'equipment operational'. Confirm whether LH-03 is running or down. Nothing is moved for this place until then."
+     }
+    ],
+    "expected_net_oz": 11,
+    "rationale": "LH-02 broke down at E569-07. Radio and CMMS OT-5100 agree (hydraulic, on site, 3/4/5 h). E569-07 is in carguio, with 164 t of broken ore left at 10.5 g/t, which is about 0.338 oz/t, or about 55 oz in total. LH-10 is idle in TALLER-564, so lending it costs no development hours. Travel is about 0.5 h: drift 120 m, ramp 575 m, surface 800 m, ramp 555 m, drift 605 m, plus 0.25 h manoeuvre. It would start mucking at about 10:00. An LH410 at 160 m mucks 30x100/109 = 27.5 t/h. Este has 3 trucks and about 72 t/h of effective haulage (my reading of the 0.227 factor), so the loader is the limit, not the trucks. Gain against doing nothing, assuming LH-02 resumes on repair and mucks 38.5 t/h as an LH514: if repair takes 3 h, gain is about 0 oz. If 4 h, LH-02 would muck about 135 t by 17:00 and LH-10 about 164 t, so the gain is about 29 t, or 10 oz. If 5 h, LH-02 would muck about 96 t and LH-10 164 t, so the gain is about 68 t, or 23 oz. The mean is about 11 oz. I did not activate a reserve, because RS-E569-01 would need a working loader from the stopped stope, and LH-02 is broken. I did not move LH-03 because the radio and CMMS disagree (CONFIRM-01). No other loader is taken from a producing place."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C564-03"
+   ],
+   "segundos": 29.8,
+   "costo_usd": 0.0687,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 12.7
+  }
+ ]
+}

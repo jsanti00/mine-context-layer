@@ -1,0 +1,38 @@
+{
+ "turno": 5,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "D",
+ "segundos_total": 9,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C512-01": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 1.4,
+   "perdida_oz": 1.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-06 is down at TJ-C512-01 and is likely back at 11:30 (range 11:00–12:00). The stope has 144 t, and the repaired loader can clear that alone by 17:00. rank_loan_options shows a gain of 0 for every candidate loan and a net of 0 or less. Radio and CMMS agree, so CONFIRM-01 doesn't apply. No loans.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.1,
+   "costo_usd": 0.0228,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

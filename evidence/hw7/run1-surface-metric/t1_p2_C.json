@@ -1,0 +1,35 @@
+{
+ "turno": 1,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E543-01": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 1.7,
+   "perdida_oz": 1.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-04 is down at TJ-E543-01 (radio and OT-5100 agree: hydraulic fault, 1 to 2 h, likely 1.5 h), so no confirmation is needed. Este has 3 trucks, and I put their capacity at roughly 70 to 75 t/h. That is a rough figure, because I did not compute the truck cycle in full. The two Este loaders still working, LH-06 at about 38 t/h and LH-07 at about 29 t/h, add up to about 68 t/h and already nearly saturate the haul. Este's stockpile holds 176 t of its 450 t capacity, so trucks keep running. An extra loader would add at most about 5 t/h, which is about 1 oz/h at 5.8 g/t, before travel time. The only loaders that could be lent are the development ones: LH-08 costs 1.0 oz/h and LH-09 costs 1.5 oz/h while away. LH-10 is in preventive maintenance until 12:00 (06:00 start plus 6 h). Stopes in drilling or fill can't lend loaders, and no stope has stopped, so no reserve can be activated. A loan would lose more development value than it gains, so I make no moves. The expected gain versus doing nothing is 0."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.9,
+   "costo_usd": 0.0531,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.7
+  }
+ ]
+}

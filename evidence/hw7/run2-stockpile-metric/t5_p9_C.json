@@ -1,0 +1,43 @@
+{
+ "turno": 5,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 25,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-04": "RS-C564-02"
+   },
+   "agente_valida": {
+    "LH-04": "RS-C564-02"
+   },
+   "mejor": {
+    "LH-04": "RS-C564-02"
+   },
+   "oz_agente": 54.4,
+   "oz_mejor": 54.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-04",
+      "reserve": "RS-C564-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 62,
+    "rationale": "At 10:00 the radio says TJ-C512-12 is stopped for ventilation, so LH-04 is free. The CMMS has no work orders, so it doesn't contradict the radio and CONFIRM-01 isn't triggered. The best use of LH-04 is a Central reserve (RESERVE-01: only a stopped stope's loader can activate one). RS-C564-02 is the best candidate: 8.9 g/t, 278 t, 160 m from the stockpile. An LH514 at 160 m mucks 42*100/(100+0.15*60) = 38.5 t/h. Travel is about 0.38 h (584 m drift, 350 m ramp, 383 m drift, plus 0.25 h manoeuvre), and activation takes 0.5 h. That leaves about 5.6 h of mucking out of the 6.5 h of loading time left, or about 216 t. 216 t * 8.9 g/t / 31.1 = about 62 oz, below the 278 t available. Central has 4 trucks (about 86 t/h by my cycle estimate) against about 100 t/h of loader capacity, and its stockpile is only 147/450 t, so the stockpile absorbs the surplus and the extra loader isn't blocked. Alternatives: RS-C512-01 is lower grade (8.3 g/t) and farther away (220 m, 35.6 t/h). RS-N574-03 is 5.8 g/t with a 1.0 h activation, and Norte is already truck-limited. A loan to Este's TJ-E543-11 adds nothing, because LH-05 can already clear its remaining 269 t. Pulling LH-09 off the critical-path heading costs 4 oz/h. No other loans pay, so nothing else moves. The 133 t still broken in C512-12 is lost either way."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 24.8,
+   "costo_usd": 0.0637,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

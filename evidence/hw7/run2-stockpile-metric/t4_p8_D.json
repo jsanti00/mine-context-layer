@@ -1,0 +1,78 @@
+{
+ "turno": 4,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "D",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-05": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.6,
+   "perdida_oz": 0.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-04 repaired in place by about 09:54 (high 10:00). It can clear the 238 t alone before 17:00. Every loan option nets 0 or less, and the stockpile has limited room, so no loans.",
+    "confidence": 0.9,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 8.1,
+   "costo_usd": 0.018,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C590-05": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-05": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-05": "LH-06"
+   },
+   "oz_agente": -5.9,
+   "oz_mejor": 11.6,
+   "perdida_oz": 17.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-05"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 21.9,
+    "rationale": "LH-04 is down with a likely repair at 15:30, and radio and CMMS agree. LH-08 is the best loan. It comes from the DS-C512-01 development heading and travels 0.41 h. That gives a gain of 32.2 oz against a home loss of 10.3 oz, so net +21.9 oz. The other options net less, and lending from producing stopes is negative or marginal. The Central stockpile has room.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.1,
+   "costo_usd": 0.0229,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

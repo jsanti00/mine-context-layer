@@ -1,0 +1,48 @@
+{
+ "turno": 1,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 32,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 8.2,
+   "perdida_oz": 8.2,
+   "dudosos": [
+    "TJ-C512-06"
+   ],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-06",
+      "ask": "Call the Central area chief. Radio at 09:30 says scoop 2 (LH-02) is stopped at C512-06, but CMMS OT-5001 shows it closed 20 min ago and operational. Confirm whether LH-02 is running. If it is down, ask for the fault and an ETA so a loan can be re-evaluated."
+     },
+     {
+      "place": "TJ-C564-14",
+      "ask": "Call the Central area chief. Confirm the LH-01 hydraulic failure (OT-5100, on-site repair, 3-5 h, likely 4 h) and whether the repair crew is already there. If the estimate grows beyond 5 h, re-evaluate a loan."
+     }
+    ],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at C564-14, which has 134 t of ore left (236 - 102) at 12.1 g/t, about 52 oz. Loading time is 1.5 h to 11:00 plus 5.5 h from 11:30 to 17:00. A repaired LH-01 returns at about 13:30 (11:30 to 14:30 range). It then has 3.5 h at about 41 t/h, roughly 143 t, so it can finish the stope on its own. Only the 5 h case loses ore: about 32 t, or 12 oz. Weighted by probability, that is about 4 oz. The only nearby lender is LH-09 from DS-C564-02, which costs 1.5 oz/h. Including about 0.35 h of travel each way and about 4 h away, the cost is about 6 oz or more, and LH-410 (29 t/h) is slower than LH-514. The other source, LH-08 from DS-N522-01, is too far away. Central stopes are ore-limited rather than truck-limited, at about 91 t/h truck capacity against about 78 t/h loader capacity, so an extra loader adds little. LH-02 is a radio/CMMS conflict, so under CONFIRM-01 nothing moves for C512-06 until the area chief confirms. LH-10 is in preventive maintenance until 12:00 and is not available now. No reserve can be activated because no stope has been stopped. Decision: no loans, and re-check after the confirmations."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C512-06"
+   ],
+   "segundos": 32.2,
+   "costo_usd": 0.0707,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 8.2
+  }
+ ]
+}

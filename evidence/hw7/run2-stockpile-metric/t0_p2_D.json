@@ -1,0 +1,47 @@
+{
+ "turno": 0,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "D",
+ "segundos_total": 12,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-C590-03": "LH-01"
+   },
+   "agente_valida": {
+    "TJ-C590-03": "LH-01"
+   },
+   "mejor": {
+    "TJ-C590-03": "LH-01"
+   },
+   "oz_agente": 7.4,
+   "oz_mejor": 7.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-01",
+      "to": "TJ-C590-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 6.5,
+    "rationale": "LH-05 is down at C590-03. Radio and CMMS agree, and the likely repair is 11:30. LH-01 from C512-10 has the best net in rank_loan_options: +6.5 oz, no home loss, 0.39 h travel. The other options net less or go negative. Central's stockpile has room (319 t). The gain is small because the repaired loader clears 182 t by itself.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.4,
+   "costo_usd": 0.025,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

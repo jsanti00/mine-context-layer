@@ -1,0 +1,50 @@
+{
+ "turno": 0,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "A",
+ "segundos_total": 24,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E569-12": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-12": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07",
+    "TJ-E569-12": "LH-06"
+   },
+   "oz_agente": -1.1,
+   "oz_mejor": 2.5,
+   "perdida_oz": 3.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E569-12"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 4.0,
+    "rationale": "Radio and CMMS agree on both failures. LH-01 is likely back at 13:30, with a low estimate of 12:30. C512-10 holds only 136 t, and LH-01 can still clear it by 17:00 at 40 t/h, so a loan adds little. E569-12 holds 241 t. LH-04 is likely back at 11:30, and after that it can load only about 182 t by 17:00, so the stope would not finish. LH-08 comes from the infrastructure heading, which costs only 0.5 oz/h, and takes 0.64 h to get there. It would load about 20 t before lunch and cover the repair gap. Este is not truck-limited (33 t/h inflow against 72 t/h truck capacity). That is roughly +6.6 oz, minus about 2 oz of heading cost, for about +4 oz net. I did not take LH-09 because its heading is worth 2 oz/h, and LH-10 is in preventive maintenance until 14:00.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 23.3,
+   "costo_usd": 0.0575,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.6
+  }
+ ]
+}

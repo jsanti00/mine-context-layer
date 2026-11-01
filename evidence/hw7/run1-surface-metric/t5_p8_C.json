@@ -1,0 +1,70 @@
+{
+ "turno": 5,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "C",
+ "segundos_total": 45,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio (LH-03 hydraulic failure at N574-02) and the CMMS (OT-5100, hydraulic, on-site repair, 0.25-0.5 h, likely 0.4 h) agree, so no confirmation is needed. The repair is short, so LH-03 is back around 09:55-10:00 and a loan would arrive about when it finishes. Norte is truck-limited. It has 3 trucks, with a cycle of about 0.43 h and 40 t payload at factor 0.227, which gives roughly 63 t/h. LH-01 and LH-02 alone muck about 36 t/h each at 220 m, roughly 71 t/h. The Norte stockpile holds 242 t of 450 t, so trucks keep hauling while LH-03 is down and little is lost. A loan would need a lender from another mine. Central and Este loaders would face long travel (Central to Norte is 6 km of surface plus ramps), and the lender's home stope or heading would lose production. DS-E543-02 costs 4.0 oz per hour, and the other lenders would also lose output. The gain from a loan is below its cost, so I make no moves. There is no stopped stope, so no reserve is activated. Expected gain versus doing nothing is 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.7,
+   "costo_usd": 0.05,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N574-02",
+      "ask": "Call the Norte area chief. Confirm that LH-03 is down for the hydraulic failure and that OT-5101 (part not in stock, 5-8 h from 09:30) replaces the 0.25-0.5 h on-site estimate in OT-5100. The radio log only has the 09:30 call. If the repair is actually short, nothing needs to move."
+     }
+    ],
+    "expected_net_oz": 13,
+    "rationale": "Norte: with LH-03 down, LH-01 and LH-02 each muck about 35.6 t/h, so about 71 t/h together. The 3 Norte trucks haul roughly 66 t/h, and the stockpile already holds 245 t of 450 t. Norte is truck-limited, so a replacement loader at N574-02 adds almost nothing, and no loader is free to lend anyway. I leave it uncovered. Central: LH-04, LH-06 and LH-07 muck about 96 t/h against 4 trucks at about 94 t/h, so it is saturated. LH-10 is in the workshop and I did not move it. Este: TJ-E543-11 (8.3 g/t) has 269 t of broken ore left (368 t at the start of the shift minus 99 t mucked). LH-05 alone mucks about 33 t/h × 6.5 h of loading time, about 215 t, which leaves about 54 t unmucked. Este has 3 trucks at about 78 t/h, which is more than enough, so the ore can be hauled. I lend LH-08 from DS-C538-01, an infrastructure heading worth only 0.2 oz/h. Travel is about 0.5 h and it can muck the 54 t within about 2.3 h at 23.6 t/h. Gain is 54 t × 8.3 g/t ÷ 31.1 = about 14.4 oz, less about 1.2 oz of development loss, so about +13 oz net. I did not touch DS-E543-02, the critical-path heading worth 4 oz/h, and I activated no reserves, since no stope has been stopped. Radio and CMMS both show LH-03 down, so the confirmation call is a precaution rather than a rule trigger."
+   },
+   "violaciones": [
+    "préstamo inválido LH-08 -> TJ-E543-11"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 30.3,
+   "costo_usd": 0.0705,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

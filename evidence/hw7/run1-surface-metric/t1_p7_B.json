@@ -1,0 +1,51 @@
+{
+ "turno": 1,
+ "patron": "7 fuentes que se contradicen",
+ "config": "B",
+ "segundos_total": 22,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": -2.2,
+   "oz_mejor": 8.2,
+   "perdida_oz": 10.4,
+   "dudosos": [
+    "TJ-C512-06"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-06",
+      "ask": "Call the area chief for C512: confirm whether LH-02 is actually stopped or operating (radio says stopped, CMMS shows operating with work order closed 20 min ago). If it is down, get a repair estimate."
+     }
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C512-06"
+   ],
+   "segundos": 22.200000000000003,
+   "costo_usd": 0.0569,
+   "agentes": 2,
+   "sin_decision": false,
+   "diferencia_oz": 10.4
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "turno": 4,
+ "patron": "5 tres fallas casi juntas",
+ "config": "D",
+ "segundos_total": 39,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E595-06": "LH-04"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-04"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 59.6,
+   "oz_mejor": 67.4,
+   "perdida_oz": 7.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-04",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 63.0,
+    "rationale": "LH-01 is down at E595-06 (15.4 g/t, 256 t). Radio and CMMS agree, and the likely repair is 13:30. Central is truck-limited: loader inflow is 159 t/h against 91 t/h of truck capacity. Lending LH-04 from C590-05 therefore costs nothing at home, and the rank tool puts it first at +63 oz net. Este's stockpile has room (279 t). One loader is enough at the stope.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.6,
+   "costo_usd": 0.0412,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E595-06": "LH-06",
+    "TJ-C590-05": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06",
+    "TJ-C590-05": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 57.8,
+   "oz_mejor": 58.9,
+   "perdida_oz": 1.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-05"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 54.0,
+    "rationale": "Both failures confirmed by radio+CMMS. Best distinct loans from rank_loan_options: LH-06 (5.8 g/t stope) to E595-06, net +40 oz. LH-08 (cheap dev heading) to C590-05, net +14 oz. Other options are lower or negative.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.5,
+   "costo_usd": 0.0263,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E595-06": "LH-06",
+    "TJ-C590-05": "LH-08",
+    "TJ-E569-08": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06",
+    "TJ-C590-05": "LH-08",
+    "TJ-E569-08": "LH-09"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-05",
+    "TJ-C590-05": "LH-08",
+    "TJ-E569-08": "LH-06"
+   },
+   "oz_agente": 58.5,
+   "oz_mejor": 65.6,
+   "perdida_oz": 7.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-05"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-E569-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 74.0,
+    "rationale": "Keep LH-06 at E595-06 (15.4 g/t, +54.9) and LH-08 at C590-05 (+16). Send LH-09 to E569-08 (+3.3, marginal). Producing-stope loaders have negative or near-zero net, so they stay home. LH-10 is in PM until 11:00.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.4,
+   "costo_usd": 0.0378,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

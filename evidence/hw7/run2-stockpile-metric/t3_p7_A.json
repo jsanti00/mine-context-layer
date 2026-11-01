@@ -1,0 +1,61 @@
+{
+ "turno": 3,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 19,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 21.9,
+   "oz_mejor": 33.6,
+   "perdida_oz": 11.7,
+   "dudosos": [
+    "TJ-C564-08"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C564-08",
+      "ask": "Call the Central area chief to confirm whether LH-02 is actually stopped at C564-08. The radio says stopped and the CMMS says operating. No loader will be moved until this is confirmed."
+     }
+    ],
+    "expected_net_oz": 45.0,
+    "rationale": "LH-01 is down at C590-09 until about 13:30 (range 12:30–14:30). That stope holds 256 t at 16.5 g/t, about 136 oz, and an LH410 loads it at 30 t/h, about 16 oz/h. LH-10 comes out of preventive maintenance at 10:00 and is 0.33 h away, so it needs no producing place to give it up. LH-08 is on an infrastructure heading worth only 0.4 oz/h and is 0.48 h away, so it covers the gap and then doubles the loading rate. Central is truck-limited (91 t/h) with 147 t of stockpile headroom. The extra ore still counts once it is in the stockpile, and it is higher grade than what it displaces. Net gain is about 45 oz after the heading cost of roughly 3 oz. LH-02 is a radio/CMMS conflict, so under CONFIRM-01 I am not moving anything for that place.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C564-08"
+   ],
+   "segundos": 18.8,
+   "costo_usd": 0.0498,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

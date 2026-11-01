@@ -1,0 +1,71 @@
+{
+ "turno": 0,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "C",
+ "segundos_total": 40,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-08": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 1.1,
+   "perdida_oz": 1.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio and the CMMS agree that LH-02 at TJ-N600-08 is down with a hydraulic fault. OT-5100 is repaired on site and is estimated at 0.25 to 0.5 h, most likely 0.4 h, so the loader should be back by about 10:00. A loan would cost more than it gains. Any lender from Norte must leave a place that is producing or developing. Travel over the ramp and drift, plus the 0.25 h manoeuvre, would take about as long as the repair itself. The loan would also arrive after LH-02 is already running again. The lost mucking is small: LH-02 produces about 33 t/h at 280 m, so roughly 13 t (about 4 oz) over 0.4 h. Norte's stockpile holds 156 t, so trucks keep hauling meanwhile. Reserve activation is not allowed because no stope has been stopped, and no confirmation is needed because the sources agree. Best action: do nothing, net 0 oz versus the baseline."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.3,
+   "costo_usd": 0.0468,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.1
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 35.1,
+   "oz_mejor": 35.1,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 22.0,
+    "rationale": "LH-02 is down at TJ-N600-08. The radio (09:30) and the revised CMMS order OT-5101 (5-8 h, likely 6 h, part not in stock) agree it is stopped, so CONFIRM-01 does not apply. OT-5100 (0.4 h) is superseded. No reserve activation: RESERVE-01 needs a loader from a stopped stope, and LH-02 is broken and cannot be moved. Norte haulage is about 66 t/h (3 trucks x 40 t / 0.41 h cycle x 0.227). Over roughly 5.5 loading hours that is about 363 t. Norte supply without a loan is the stockpile (144 t) plus the remaining ore at TJ-N574-15 (273-126 = 147 t), about 291 t. That leaves about 70 t of truck capacity unused, so a second Norte loader pays. TJ-N600-08 has 171 t of broken ore left at 11.5 g/t. LH-08 is an LH410 at 280 m, so about 23.6 t/h, and it arrives about 0.35 h after the move. It can muck about 145 t, but hauling is capped at roughly 70 t, or about 26 oz gross. LH-08 leaves DS-N600-01, which costs 0.5 oz/h x about 6.2 h = 3.1 oz. Net is about +22 oz. I did not take LH-09 from DS-N522-02 because it costs 2.0 oz/h. I did not use LH-10 because it is in the workshop and probably in preventive maintenance. Its available_from time is not in the files."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 27.6,
+   "costo_usd": 0.0663,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "turno": 1,
+ "patron": "5 tres fallas casi juntas",
+ "config": "C",
+ "segundos_total": 94,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 15.0,
+    "rationale": "Radio (LH-01 hydraulics, stopped at C564-14) and CMMS OT-5100 (hydraulic, 3/4/5 h, repaired at TALLER-564) agree, so no confirmation is needed. LH-01 should be back around 12:30-14:30, likely 13:30. TJ-C564-14 is a 12.1 g/t carguio stope with 236-102 = 134 t of broken ore left, worth about 52 oz. Central's stockpile is at 174 of 450 t with 4 trucks, so it has room. LH-10 is the only spare loader. It is in preventive maintenance and not available before 12:00 (PM-01: 6.0 start plus 6 h). It lends nothing, so no development or production is lost. Travel is about 532 m of drift, roughly 0.3 h including manoeuvre, so it starts mucking about 12:20. A LH410 at 120 m mucks 30x100/103 = 29 t/h, which is about 29 t (about 11 oz) before LH-01 is likely back at 13:30. If the repair runs to the 5 h upper estimate (14:30), LH-10 mucks about 70 t more (about 27 oz). That is about 15 oz expected. Borrowing LH-09 from DS-C564-02 would start earlier, about 09:50. It would cost 1.5 oz/h of development, which is about 8 oz over the 4.6 h of mucking, and gain little more because the ore is limited. Taking a loader from a producing stope would cost more than it gains. No reserves are activated, because no stope has stopped."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 24.2,
+   "costo_usd": 0.062,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-09"
+   },
+   "oz_agente": -2.5,
+   "oz_mejor": 15.7,
+   "perdida_oz": 18.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-07"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 108.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C564-14) and LH-03 (C590-07) are down for 3-5 h (likely 4 h), so there is no CONFIRM-01 conflict. The unmucked ore left in those two stopes is worth more than the development hours. Central has 4 trucks, about 91 t/h by my reading of the cycle and factor. Its stockpile holds 171 of 450 t, and only LH-02 (about 43 t/h) is feeding it, so extra loaders will not hit a truck or stockpile limit. No reserve is activated: the two stopped stopes have broken loaders rather than freed ones, and no reserve is in Central. (1) LH-09 goes from DS-C564-02 to C564-14. That stope has 236-102 = 134 t left at 12.1 g/t, and the LH410 rate at 120 m is about 29 t/h, so the ore is mucked in about 4.6 h. Value is 134 x 12.1 / 31.1 = 52 oz. It gives up 1.5 oz/h of development for about 5 h, about 7.5 oz. Net is about 45 oz. Travel is about 0.35 h. (2) LH-08 goes from DS-N522-01 to C590-07. That stope has 316 t left at 8.4 g/t, and the LH410 rate at 220 m is about 25 t/h, which is about 6.9 oz/h against 1.0 oz/h of development lost. Travel is about 0.7 h, so it mucks about 155 t over the rest of the shift. Net is about 42 - 6 = 36 oz. (3) LH-10 is in preventive maintenance, which runs 06:00 + 6 h, so it is free only from about 12:00 (PM-01). It then goes from the Central 564 workshop to C590-07 for about 4.5 h at 25 t/h, about 114 t. Value is about 30 oz and it takes no one's development. About 270 t of the 316 t is mucked in total, so ore remains and the Central stockpile stays under capacity. I left LH-02 where it is, because C512-06 has 264 t left and will take it to about 17:00. I did not pull from the other mines' producing stopes, since those are truck-limited or hold ore that needs their own loader."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 35.2,
+   "costo_usd": 0.0754,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 5.1,
+   "oz_mejor": 23.1,
+   "perdida_oz": 18.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 10.0,
+    "rationale": "Radio and CMMS agree that LH-01 (C564-14), LH-03 (C590-07) and LH-05 (N600-08) are down with hydraulic faults, so CONFIRM-01 does not apply. No stope is stopped, so no reserve is activated. (1) Keep the existing loan of LH-09 (LH410) to C564-14, which has 12.1 g/t, about 0.39 oz/t and about 128 t left. At 120 m the rate is 30x100/103 = 29 t/h, which is about 11 oz/h against a development cost of 1.5 oz/h. Central's stockpile is 167 of 450 t, so it is not full. (2) Lend LH-08 (LH410, a development loader at DS-N522-01) to N600-08, which has 5.8 g/t, about 0.186 oz/t and about 274 t left. At 160 m the rate is 27.5 t/h, which is about 5.1 oz/h against a development cost of 1.0 oz/h. Travel is about 0.4 h. Norte's stockpile is nearly empty (7 t) and its 3 trucks are not a limit. The repair lasts 2 to 4 h, which gives about 58 t (about 11 oz) over the likely repair window. Net of travel and development loss, that is about +8 oz in the likely case and more if the repair runs long. (3) Do not take a loader from a producing stope for C590-07, which has 8.4 g/t. A replacement loses about 12.8 oz/h at C512-06 and gains only about 9.6 oz/h, and the Este loaders would need a long surface trip. (4) LH-10 is in preventive maintenance until 12:00 under PM-01, so I have not lent it now. At 12:00 it is the best loader for C590-07, worth about 4.5 h x 25 t/h x 0.27 oz/t, or about 30 oz. Revisit then."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 32.4,
+   "costo_usd": 0.0721,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

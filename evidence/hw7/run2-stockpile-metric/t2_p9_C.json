@@ -1,0 +1,43 @@
+{
+ "turno": 2,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 25,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-04": "RS-N600-02"
+   },
+   "agente_valida": {
+    "LH-04": "RS-N600-02"
+   },
+   "mejor": {
+    "LH-04": "RS-N600-02"
+   },
+   "oz_agente": 70.2,
+   "oz_mejor": 70.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-04",
+      "reserve": "RS-N600-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 70.0,
+    "rationale": "The radio says N600-11 is stopped for ventilation and LH-04 is free. No CMMS order exists, so radio and CMMS don't disagree and no confirmation is needed. RESERVE-01 allows a reserve to be activated only with the loader of a stopped stope, so I use LH-04. I chose RS-N600-02 because it has the best grade (11.5 g/t), 419 t of broken ore (enough for the day), and a short 265 m drift on the same Norte level 600, so there is no travel. It takes 1 h to activate, so LH-04 starts at about 11:00 and mucks from 11:30 to 17:00, about 5.5 h. At 160 m from the stockpile, LH514 rate = 42×100/(100+0.15×60) ≈ 38.5 t/h, which gives about 212 t, or about 78 oz at 11.5 g/t. Norte's stockpile is 247 of 450 t. Norte loaders produce about 59 t/h and 3 trucks haul about 63 t/h (my rough estimate from the cycle time and the 0.227 factor). The extra loader should therefore raise the stockpile by only about 190 t, to roughly 430 t, which stays under the 450 t cap, so nearly all of the ore counts. I discount the 78 oz to about 70 oz for that cap risk and the uncertain truck estimate. I considered and rejected two alternatives. RS-N522-03 grades lower (6.5 g/t) and is also at Norte. Lending LH-04 to Central or Este would mean a long surface transfer, and Central is already truck-limited. No loans are made, and no existing loan changes."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 24.6,
+   "costo_usd": 0.0619,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

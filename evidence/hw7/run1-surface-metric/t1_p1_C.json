@@ -1,0 +1,35 @@
+{
+ "turno": 1,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 29,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 8.0,
+   "perdida_oz": 8.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio and CMMS agree that LH-01 is down at TJ-C564-14 with a hydraulic failure (OT-5100, 3-5 h, likely 4 h), so no confirmation is needed. I recommend no loan, because Central's trucks are already the limit. Truck capacity is about 91 t/h (4 trucks x 40 t x 0.227, cycle about 0.4 h). Without LH-01, the two Central loaders still working (LH-02 at about 43 t/h and LH-03 at about 36 t/h) give about 79 t/h, plus a 171 t stockpile that is not drained by 17:00. Supply is about 737 t against about 700 t of truck capacity, so an extra loader adds almost no hauled ounces. The only candidate is LH-09, taken from DS-C564-02. That costs 1.5 oz/h x about 7 h, roughly 11 oz, plus about 0.34 h of travel, against a gain close to zero (a small grade benefit at best, since TJ-C564-14 is 12.1 g/t against the other Central stopes at 8.4-9.2 g/t). LH-10 is in preventive maintenance until 12:00 (PM-01), and LH-01 is likely back around 13:20, so a loan would overlap only about 1 h and gain about 2 oz at most. The reserve stopes need a loader from a stopped stope, and none is stopped. Net expected change is about 0 oz, so I keep everything as it is."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 29.2,
+   "costo_usd": 0.0668,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 8.0
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "turno": 5,
+ "patron": "9 tajo detenido y reserva",
+ "config": "A",
+ "segundos_total": 14,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-04": "RS-C564-02"
+   },
+   "agente_valida": {
+    "LH-04": "RS-C564-02"
+   },
+   "mejor": {
+    "LH-04": "RS-C564-02"
+   },
+   "oz_agente": 30.0,
+   "oz_mejor": 30.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-04",
+      "reserve": "RS-C564-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "C512-12 is stopped for 5-8 h, so LH-04 is idle. Rule RESERVE-01 allows it to activate a reserve. RS-C564-02 (8.9 g/t, 278 t, LH514 rate 38.5 t/h) beats RS-C512-01 (8.3 g/t, 35.6 t/h). Travel is 0.38 h and activation 0.5 h, which leaves about 5.6 loading hours, or about 215 t, or about 60 oz. Central has stockpile room (147 of 450 t). Inflow rises to about 100 t/h against 91 t/h truck capacity, a small truck limit, so I discount to about 55 oz. No other moves: Norte is truck-limited, the critical-path heading is too valuable to take a loader from, and no loans are needed.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.1,
+   "costo_usd": 0.0427,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

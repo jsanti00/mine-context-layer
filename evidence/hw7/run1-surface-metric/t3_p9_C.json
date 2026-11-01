@@ -1,0 +1,49 @@
+{
+ "turno": 3,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 27,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-06": "RS-N548-02"
+   },
+   "agente_valida": {
+    "LH-06": "RS-N548-02"
+   },
+   "mejor": {
+    "LH-06": "RS-N548-02"
+   },
+   "oz_agente": 64.1,
+   "oz_mejor": 64.1,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-06",
+      "reserve": "RS-N548-02"
+     }
+    ],
+    "confirmations_requested": [
+     {
+      "place": "Norte level 548 (RS-N548-02)",
+      "ask": "Call the Norte area chief. Confirm the ventilation fault that stopped TJ-N522-01 does not affect the level 548 reserve, and that the crew and LH-06 can start there."
+     }
+    ],
+    "expected_net_oz": 68.0,
+    "rationale": "The shift chief's radio message at 10:00 stops TJ-N522-01 for ventilation, which frees LH-06 (LH514). The CMMS has no open orders, so radio and CMMS do not conflict. RESERVE-01 allows a reserve only with the loader of a stopped stope, and this is the only one. Norte now has only a 70 t stockpile and 3 idle-capable trucks. I estimate truck capacity at about 25 t/h each, so about 75 t/h for the mine, which is above one loader's output. Central is truck-limited with a 334 t stockpile, so an extra loader there adds almost nothing (RS-C564-03 and RS-C538-01 excluded). Este's gain from LH-06 would be only about 20 oz after a long surface transfer, so I did not loan it. RS-N548-02 is Norte, 9.7 g/t (0.312 oz/t), 350 t broken, 120 m from the stockpile. LH514 rate there is 42×100/(100+0.15×20) = 40.8 t/h. Travel is about 0.34 h (774 m of drift at 12 km/h, 175 m of ramp at 7 km/h, 0.25 h manoeuvre), plus 1.0 h activation, so production starts at the 11:30 restart. That gives 5.5 h × 40.8 ≈ 224 t, below the 350 t available. 224 t × 0.312 ≈ 70 oz, and I take 68 oz after trimming for haul lag and risk. The stopped stope's loader had been working to the same Norte stockpile, so the net gain is roughly this reserve output (no loader moves from a producing place). No development headings are touched, so there is no development cost."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 27.1,
+   "costo_usd": 0.0635,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

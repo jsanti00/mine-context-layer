@@ -1,0 +1,34 @@
+{
+ "turno": 5,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C512-01": "LH-07"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 1.4,
+   "perdida_oz": 1.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Radio and CMMS agree that LH-06 is down at TJ-C512-01 (OT-5100, hydraulic, 1 to 2 h on site), so no confirmation is needed. TJ-C512-01 has 251 - 107 = 144 t of broken ore left, about 33 oz at 7.2 g/t. Without a loan, LH-06 would be repaired by 12:00 at the latest. Loading is 07:00-11:00 and 11:30-17:00, so the loader would have about 5 h at 35.6 t/h (LH514 at 220 m), roughly 178 t. That is more than the 144 t left, so all of it gets mucked by 17:00 even in the worst repair case. The Central stockpile is at 147 of 450 t, so it is not full. A loan of LH-08 from DS-C538-01 would cost about 0.34 h of travel plus 0.2 oz per hour away, and it would add essentially no ore. LH-10 is in preventive maintenance until 11:00 and its place is not a loading stope or a heading, so it cannot lend. No reserve can be activated because no stope is stopped. Best action: no moves, net gain of 0 oz versus doing nothing."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 19.8,
+   "costo_usd": 0.056,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

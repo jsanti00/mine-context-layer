@@ -1,0 +1,80 @@
+{
+ "turno": 4,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 62,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 55.9,
+   "perdida_oz": 55.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TALLER-564",
+      "ask": "Call the workshop chief. Confirm that LH-10's 250 h service finishes at 11:00 and that the loader is released then. If it slips, the loan starts later and the gain shrinks."
+     }
+    ],
+    "expected_net_oz": 80.0,
+    "rationale": "The radio (LH-01 hydraulics failed, stopped at E595-06) and CMMS OT-5100 (open, repaired on site, 3/4/5 h) agree, so the CONFIRM-01 rule does not block a move. LH-01 will be back at about 12:20 to 14:20. Meanwhile E595-06 is the richest producing stope (15.4 g/t, 80 m from the stockpile) and has about 260 t of broken ore left. The Este stockpile is at 170 t of 450 t capacity, and the Este trucks outpace the loaders, so the stockpile will not fill. LH-10 is idle in the workshop and costs nothing to lend, because its service ends at 11:00 (06:00 + 5 h). Travel to E595-06 is about 0.46 h including the manoeuvre, so it arrives around 11:28 and works the 11:30–17:00 loading block, about 5.5 h. A 30 t/h LH410 at 80 m moves about 165 t. At 15.4 g/t that is about 165 × 15.4 / 31.1, or roughly 82 oz, which I rounded down to 80 for travel and repair-return uncertainty. I did not take LH-08 from DS-C512-01 for an earlier start. That would gain only about 1 h of loading (about 15 oz), and the development heading would lose 1.9 oz per hour for the whole time the loader is away, so it does not pay. DS-E543-02 (4.0 oz/h) stays untouched. No reserves are activated, because no stope is stopped."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 23.7,
+   "costo_usd": 0.0612,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E595-06": "LH-04",
+    "TJ-C512-04": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 69.8,
+   "perdida_oz": 69.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 84.0,
+    "rationale": "Radio and CMMS agree that LH-01 (E595-06, repair 3 to 5 h) and LH-02 (C512-04, repair 5 to 7 h) are down, so CONFIRM-01 is not triggered. LH-10 was in preventive maintenance until 11:00 and is idle at TALLER-564. Lending it costs no production and no development value. Travel to E595-06 is about 0.45 h, so it arrives around 11:30, when loading restarts. E595-06 has 260 t of broken ore left at 15.4 g/t, with the stockpile at 80 m. An LH410 there mucks about 30.9 t/h. Over about 5.5 h that is about 170 t, or 170 × 15.4 / 31.1 ≈ 84 oz. Este is not truck-limited: its trucks move about 73 t/h, LH-03 plus LH-10 muck about 66 t/h, and the stockpile is at 148 of 450 t. LH-01 may also return in 3 to 5 h and take the remaining ore, so I did not add a second loader. I did not cover C512-04: Central is truck-limited (4 trucks move about 90 t/h against about 125 t/h of loader capacity) and its stockpile is 298 of 450 t, so an extra loader there adds almost nothing. I did not lend LH-09, because it costs 4 oz/h of critical-path development and would only mine the last ~90 t. No reserve is activated, since no stope has been stopped. All truck and loader rates here are my own estimates."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 38.1,
+   "costo_usd": 0.0762,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

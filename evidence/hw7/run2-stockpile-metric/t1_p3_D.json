@@ -1,0 +1,48 @@
+{
+ "turno": 1,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "D",
+ "segundos_total": 11,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C512-06": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-06": "LH-09"
+   },
+   "mejor": {
+    "TJ-C512-06": "LH-09"
+   },
+   "oz_agente": 29.3,
+   "oz_mejor": 29.3,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C512-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 29.0,
+    "rationale": "C512-06 (9.2 g/t, 272 t) has a repair ETA of 14:30. LH-09 from a cheap development heading nets +29 oz. C564-14 has only 134 t, and LH-01 clears it alone after repair, so every loan there is negative. No other loan pays.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.2,
+   "costo_usd": 0.0253,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

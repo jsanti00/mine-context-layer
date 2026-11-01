@@ -1,0 +1,35 @@
+{
+ "turno": 3,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 24,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 28.2,
+   "perdida_oz": 28.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at TJ-C590-09 with a hydraulic failure. The radio and OT-5100 agree (repair on site, 3 to 5 h, likely 4 h), so no confirmation is needed. Central is truck-limited. I estimated truck throughput at about 90 t/h, from 4 trucks, a cycle of about 0.4 h, 40 t payload and factor 0.227. The three remaining Central loaders (LH-02, LH-04, LH-05) muck about 35.6 + 35.6 + 38.5 = 110 t/h, which is already more than the trucks can haul. The Central stockpile holds 297 t of its 450 t capacity. Losing LH-01 therefore costs almost no hauled ounces, and a replacement loader would only add to the stockpile. Candidate lenders are poor. LH-10 is in preventive maintenance until about 10:00. Norte is 6 km away over the surface road, so a loan there would arrive late and add little. The producing loaders at Norte and Este are needed at home. Taking LH-08 or LH-09 from the Este development headings costs 0.4 or 5.7 oz per hour. No stope was stopped, so there are no reserve activations. Net change versus doing nothing is about 0 oz, so I recommend no moves."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 23.7,
+   "costo_usd": 0.0585,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 28.2
+  }
+ ]
+}

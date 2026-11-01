@@ -1,0 +1,35 @@
+{
+ "turno": 5,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 28,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C512-01": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.4,
+   "perdida_oz": 0.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio and CMMS agree that LH-06 is down at TJ-C512-01 with a hydraulic fault. OT-5100 gives 1 / 1.5 / 2 h, repaired on site, so no confirmation is needed under CONFIRM-01. Stope C512-01 has 251 - 107 = 144 t of broken ore left. LH-06 (LH514, 220 m) mucks about 35.6 t/h, so it needs about 4 h to clear it. Loading time left is about 6.5 h (10:00-11:00 plus 11:30-17:00). Even if the repair takes the full 2 h, about 5 h remain, so the stope is still emptied and the downtime costs no ounces. LH-10 (LH410) is in preventive maintenance until 11:00, and its best case is about 25 t/h from 11:30. Sending it would add nothing when LH-06 is back, and the layer decides who keeps the stope on return (RETURN-01). Taking a Norte loader would need about 0.7 h of travel to the Central portal. It would also remove production from a mine that is truck-limited but whose loaders still have ore to muck, for no gain. The only reserves are stopped-stope reserves, and no stope is stopped, so none can be activated (RESERVE-01). Best action is to keep everything as is, an expected gain of about 0 oz versus doing nothing."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 28.1,
+   "costo_usd": 0.0661,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.4
+  }
+ ]
+}

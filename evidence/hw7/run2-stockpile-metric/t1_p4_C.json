@@ -1,0 +1,43 @@
+{
+ "turno": 1,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "C",
+ "segundos_total": 31,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {
+    "TJ-E569-10": "LH-09"
+   },
+   "oz_agente": -4.3,
+   "oz_mejor": 2.0,
+   "perdida_oz": 6.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 10.0,
+    "rationale": "I did not run any calculation scripts. These are hand estimates, and the truck capacities are rough. Radio and CMMS agree on both breakdowns: LH-01 at C564-14 (OT-5100, 3 to 5 h, likely 4 h) and LH-06 at E569-10 (OT-5101, 1.5 to 2.5 h, likely 2 h). So CONFIRM-01 is not triggered. No stope is stopped, so no reserve can be activated (RESERVE-01). LH-10 is in preventive maintenance until about 12:00 (PM-01), so I did not count it. C564-14 is a 12.1 g/t stope with about 134 t of broken ore left (236 t at start, 102 t mucked). It feeds the Central stockpile (174 of 450 t), and Central's trucks have spare capacity, so an extra loader is not blocked by haulage. LH-01 alone is back about 13:30 and can muck about 100 t of the 134 t by 17:00 at about 29 t/h. That leaves about 34 t, or about 13 oz, unmucked. LH-09 (LH410) is the closest loader, coming from development heading DS-C564-02 on the same level. It travels about 0.35 h and mucks about 20 t/h at 412 m. It clears the remaining ore in the 4 h before LH-01 returns. The cost is about 1.5 oz/h of development value for roughly 2 h, which is about 3 oz. That gives a net gain of about 10 oz. I rejected a loan to E569-10 (5.8 g/t). LH-06 is back by about 11:30 and can muck about 166 t of the 259 t left. A loan from LH-08 (Norte) needs about 0.7 h or more of travel and would muck about 40 t, worth about 7 oz. The development cost of about 2 oz/h leaves roughly zero net, so I left it uncovered."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 30.7,
+   "costo_usd": 0.0691,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

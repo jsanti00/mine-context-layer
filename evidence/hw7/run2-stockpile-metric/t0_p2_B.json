@@ -1,0 +1,41 @@
+{
+ "turno": 0,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "B",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-C590-03": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-03": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-03": "LH-01"
+   },
+   "oz_agente": 3.0,
+   "oz_mejor": 7.4,
+   "perdida_oz": 4.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.7,
+   "costo_usd": 0.0473,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

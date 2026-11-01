@@ -1,0 +1,48 @@
+{
+ "turno": 5,
+ "patron": "7 fuentes que se contradicen",
+ "config": "B",
+ "segundos_total": 27,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 26.8,
+   "perdida_oz": 26.8,
+   "dudosos": [
+    "TJ-N522-15"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N522-15",
+      "ask": "Call the area chief for N522-15. Confirm whether LH-02 is actually stopped or operating, and whether the work order closed 20 minutes ago was completed. If it is down, ask for the cause and an expected return time."
+     }
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [
+    "TJ-N522-15"
+   ],
+   "segundos": 27.2,
+   "costo_usd": 0.062,
+   "agentes": 2,
+   "sin_decision": false
+  }
+ ]
+}

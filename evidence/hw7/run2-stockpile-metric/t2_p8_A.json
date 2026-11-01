@@ -1,0 +1,87 @@
+{
+ "turno": 2,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 29,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C564-14": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-10"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": 1.2,
+   "oz_mejor": 1.7,
+   "perdida_oz": 0.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 40.0,
+    "rationale": "LH-01 hydraulic failure (radio+CMMS agree), repair likely about 09:54. The idle LH-10 at the workshop is 0.3 h away and has no home place to lose. TJ-C564-14 has 324 t at 10.7 g/t, more than LH-01 alone can load by 17:00 (about 230 t). A second loader adds roughly 25 t/h for about 6 h, around 150 t or 50 oz. Central's stockpile has room (228 of 450 t). I took no loaders from producing places or development.",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.0,
+   "costo_usd": 0.0414,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C564-14": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-10"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-10"
+   },
+   "oz_agente": 47.1,
+   "oz_mejor": 47.1,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "LH-01 is down until about 15:30 (range 14:30-17:30), confirmed by radio and CMMS. LH-10 has no home production, so keeping it on C564-14 costs nothing. It can muck about 165 t at 10.7 g/t, roughly 57 oz, and Central's stockpile (237/450 t) has room. Pulling loaders from the other stopes or the headings would cost more than it gains. Reserves need a stopped stope, and none is stopped.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.3,
+   "costo_usd": 0.0382,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

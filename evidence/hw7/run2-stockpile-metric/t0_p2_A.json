@@ -1,0 +1,47 @@
+{
+ "turno": 0,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "A",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-C590-03": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-03": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-03": "LH-01"
+   },
+   "oz_agente": 3.0,
+   "oz_mejor": 7.4,
+   "perdida_oz": 4.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 15.0,
+    "rationale": "LH-05 is down (radio and CMMS agree). Likely repair is 11:30 in place. Its stope has 253 t at 10 g/t, about 81 oz. LH-08 comes from the infrastructure heading, which costs only 0.5 oz/h and is 0.58 h away. It loads about 7.6 oz/h at 23.6 t/h. Central trucks have spare capacity (91 t/h vs 71 inflow). With LH-05 alone, about 180 t would be loaded by 17:00. With both loaders, all 253 t should be loaded. That is roughly +20 oz against a cost of about 3 oz. I chose LH-08 over LH-09, whose heading is worth 2 oz/h.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.3,
+   "costo_usd": 0.0459,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

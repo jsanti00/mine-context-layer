@@ -1,0 +1,47 @@
+{
+ "turno": 3,
+ "patron": "1 una falla",
+ "config": "D",
+ "segundos_total": 11,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 22.7,
+   "oz_mejor": 32.2,
+   "perdida_oz": 9.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 46.0,
+    "rationale": "LH-01 is down at TJ-C590-09 (16.5 g/t). Radio and CMMS agree, so the rules allow a move. The likely repair is 13:20. LH-08 comes from a cheap development heading (DS-E569-01). It gains 48.1 oz and loses 1.6 oz at home, for a net of 46.5 oz, the best option. Only one loader is needed because the stockpile room is limited, and the check_decision dry run passed.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.4,
+   "costo_usd": 0.0256,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

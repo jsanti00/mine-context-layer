@@ -1,0 +1,54 @@
+{
+ "turno": 2,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "A",
+ "segundos_total": 21,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C512-04": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C512-04": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 9.9,
+   "oz_mejor": 10.2,
+   "perdida_oz": 0.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-04"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 30.0,
+    "rationale": "LH-10 is idle at the workshop (no home loss). Send it to E569-07 (10.5 g/t, 164 t, Este stockpile nearly empty, trucks not limiting). It arrives in 0.49 h and mucks about 27.5 t/h until LH-02 is back (likely 13:30), about 80 t or 28 oz. LH-08 is a cheap preparation heading (1.3 oz/h). Lend it to C512-04 (5.8 g/t, 238 t, about 5.6 oz/h at 30 t/h) until LH-06 returns (likely 11:30). That is a small net gain of about 3 to 4 oz. I left LH-09 (critical path, 4.2 oz/h) alone. Radio and CMMS agree on both failures, so no confirmation is needed.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.6,
+   "costo_usd": 0.0483,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "turno": 5,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 22,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 4.6,
+   "perdida_oz": 4.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Norte lost LH-01 and LH-02 (repairs likely 13:30/14:30). Norte has 3 trucks at 66 t/h and a 242 t stockpile. LH-03 inflow is 36 t/h, so the stockpile drains at about 30 t/h and lasts roughly 8 h. Trucks therefore run near full until 17:00 (about 495 t hauled vs about 512 t available) without a loan. An extra loader such as LH-08 (0.65 h travel, about 25 t/h) would add almost no hauled ounces, because the trucks are the limit. It would cost about 0.2 oz/h of development value, about 1.4 oz. Central is already truck-limited (96 vs 91 t/h). Este is the only mine with truck room, but its only possible lender is the critical-path heading at 4 oz/h. LH-10 is in preventive maintenance until 11:00 and is not a valid lender. A loan therefore doesn't pay, so I'm making no moves.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 21.3,
+   "costo_usd": 0.0553,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 4.6
+  }
+ ]
+}

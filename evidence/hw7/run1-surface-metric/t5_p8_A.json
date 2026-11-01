@@ -1,0 +1,74 @@
+{
+ "turno": 5,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 34,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 is down at N574-02 but the repair is in place and expected by 09:45-10:00 (likely 09:54). The radio and CMMS agree. Norte is already truck-limited: inflow is 71 t/h against 66 t/h truck capacity, and its stockpile is 242 of 450 t. A loan would lose its travel time, take production or development from the lender, and add almost nothing. Only a stope in loading phase or a heading can lend a loader, and moving one would cost more than the ~0.5 h outage. Making no move is best.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.2,
+   "costo_usd": 0.034,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 14.0,
+    "rationale": "LH-03 is down until about 15:30 or later (CMMS and radio agree). Norte is already truck-limited (inflow 71 vs 66 t/h) with 245 t in the stockpile, and Central is also truck-limited (96 vs 91). A loan to N574-02 would add nothing. Este has truck spare capacity (inflow 33 vs 72 t/h). LH-05 alone loads about 214 t of the 269 t at E543-11 by 17:00. A second loader recovers about 55 t at 8.3 g/t, which is roughly 14.7 oz. LH-10 leaves the workshop at 11:00, arrives at 11:30 and has no home place to lose. LH-08 would cost 0.2 oz/h and LH-09 costs 4 oz/h, so I leave both where they are.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "préstamo inválido LH-10 -> TJ-E543-11"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 23.7,
+   "costo_usd": 0.0557,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 0.0
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "turno": 5,
+ "patron": "5 tres fallas casi juntas",
+ "config": "B",
+ "segundos_total": 53,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 32.5,
+   "oz_mejor": 32.5,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.9,
+   "costo_usd": 0.0454,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-09": "LH-08",
+    "TJ-N574-02": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08",
+    "TJ-N574-02": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 24.4,
+   "oz_mejor": 55.9,
+   "perdida_oz": 31.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 18.0,
+   "costo_usd": 0.0488,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N574-02": "LH-08",
+    "TJ-C512-12": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N574-02": "LH-08",
+    "TJ-C512-12": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 1.2,
+   "oz_mejor": 57.0,
+   "perdida_oz": 55.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-02"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-12"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 16.8,
+   "costo_usd": 0.048,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

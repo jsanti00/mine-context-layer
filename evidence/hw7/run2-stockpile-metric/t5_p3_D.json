@@ -1,0 +1,55 @@
+{
+ "turno": 5,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "D",
+ "segundos_total": 12,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-N522-15": "LH-08",
+    "TJ-N600-09": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-N522-15": "LH-08",
+    "TJ-N600-09": "LH-06"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N522-15": "LH-08"
+   },
+   "oz_agente": 56.5,
+   "oz_mejor": 56.5,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N522-15"
+     },
+     {
+      "loader": "LH-06",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 57.0,
+    "rationale": "Both failures confirmed by radio+CMMS. LH-08 (cheap development heading, net 32.7) to N522-15; LH-06 (7.2 g/t stope, net 24.8) to N600-09. Combined ~57 oz, better than the swapped assignment (~51). Stockpile has room. Other loaders have a net below 20 oz, so I left them in place.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.6,
+   "costo_usd": 0.0316,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

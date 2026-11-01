@@ -1,0 +1,47 @@
+{
+ "turno": 1,
+ "patron": "9 tajo detenido y reserva",
+ "config": "D",
+ "segundos_total": 19,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-05": "RS-N522-03"
+   },
+   "agente_valida": {
+    "LH-05": "RS-N522-03"
+   },
+   "mejor": {
+    "LH-05": "RS-N522-03"
+   },
+   "oz_agente": 61.0,
+   "oz_mejor": 61.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-05",
+      "reserve": "RS-N522-03"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 66.0,
+    "rationale": "N600-08 is stopped, so LH-05 is free. I'm activating RS-N522-03 (9.5 g/t, 412 t) with it. It is 0.37 h away and Norte's stockpile is empty with spare truck capacity. Loading starts about 10:52 and lunch takes 0.5 h, so about 5.6 h of loading at 38.5 t/h gives roughly 217 t, or about 66 oz. RS-E543-02 has a similar yield (about 73 oz), but Este is already truck-limited and its stockpile would approach capacity. No loans are made, and nothing is down.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 19.1,
+   "costo_usd": 0.049,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "turno": 2,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "C",
+ "segundos_total": 43,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 1.7,
+   "perdida_oz": 1.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio report (LH-01 down with a hydraulic failure at C564-14) matches CMMS OT-5100 (hydraulic, repaired on site, 0.25-0.5 h, likely 0.4 h), so CONFIRM-01 does not apply. The repair is shorter than any loan would take to pay off. A loan needs travel plus the 0.25 h fixed manoeuvre, about 0.3 h or more. LH-10 is the only idle loader and sits in the 564 workshop. It is not a loading stope or a development heading, so the rules do not clearly let it lend. Even if it could, it would arrive at about the time LH-01 is repaired. Taking a loader from a producing stope or from DS-C564-02 (4.2 oz/h) would cost more than the roughly 0.4 h of lost mucking at C564-14. The Central stockpile is at 228 of 450 t and C564-14 still has broken ore, so the lost mucking is recovered after the repair. No reserve can be activated because no stope has stopped. I keep the plan unchanged, so the net gain versus doing nothing is 0."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.0,
+   "costo_usd": 0.049,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C564-14": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-08"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-10"
+   },
+   "oz_agente": 36.2,
+   "oz_mejor": 44.4,
+   "perdida_oz": 8.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TALLER-564 (LH-10)",
+      "ask": "Call the Central area chief or workshop. Confirm whether LH-10 is an idle, serviceable loader that can go to TJ-C564-14. If it is, a second loader could muck the rest of the stope's 324 t. I have not moved it, because the rules only let carguio stopes or development headings lend a loader."
+     },
+     {
+      "place": "TJ-C564-14 (LH-01)",
+      "ask": "Ask the Central area chief to confirm LH-01's hydraulic repair is the revised 5-8 h (OT-5101, part not in stock) and not the original 0.4 h on-site fix."
+     }
+    ],
+    "expected_net_oz": 45,
+    "rationale": "The radio (LH-01 stopped at 09:30) and the revised CMMS order OT-5101 (5-8 h, part not in stock) agree that LH-01 is down for the rest of the shift, so I did not treat this as a radio/CMMS conflict. TJ-C564-14 has 413 t broken and 89 t mucked, leaving 324 t at 10.7 g/t (0.344 oz/t), the best grade in Central. LH-08 is an LH410 on development heading DS-C564-01, which is the cheapest source at 1.3 oz/h. LH-09 costs 4.2 oz/h, and LH-07 is in Norte, 6 km away. Travel is about 0.33 h: 930 m at 12 km/h plus 0.25 h manoeuvre. At 220 m from the stockpile, its rate is 30×100/(100+0.15×120) ≈ 25.4 t/h. Loading time is about 6.5 h (10:00-17:00 less the 11:30 break), so about 6.2 h of mucking, or roughly 157 t. That is about 54 oz. The development cost is 1.3 × 6.5 ≈ 8.5 oz, so the net is about 45 oz. The Central stockpile (225/450 t) will not fill. Trucks move about 100 t/h and the loaders add only about 112 t/h, so the stockpile ends near 300 t. The extra ore therefore counts either way. No reserve is activated, because no stope was stopped and no loader was freed."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 28.4,
+   "costo_usd": 0.0673,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

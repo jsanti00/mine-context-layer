@@ -1,0 +1,48 @@
+{
+ "turno": 2,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "D",
+ "segundos_total": 12,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 10.2,
+   "oz_mejor": 10.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 9.9,
+    "rationale": "Both failures are confirmed by radio and CMMS. LH-10 is an idle spare, so lending it costs nothing. At Este (10.5 g/t, repair likely 13:30) it nets +9.9 oz. At Central (5.8 g/t, repair likely 11:30) a loan nets only +1.3 oz, and every other lender has a negative net. So I send LH-10 to Este and leave Central uncovered.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.6,
+   "costo_usd": 0.034,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

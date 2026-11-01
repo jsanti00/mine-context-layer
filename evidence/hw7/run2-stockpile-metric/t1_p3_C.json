@@ -1,0 +1,49 @@
+{
+ "turno": 1,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 29,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C512-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C512-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-06": "LH-09"
+   },
+   "oz_agente": 23.6,
+   "oz_mejor": 29.3,
+   "perdida_oz": 5.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 65.0,
+    "rationale": "The radio and the CMMS agree that LH-01 (C564-14) and LH-02 (C512-06) are down, with likely repairs of 4 h and 5 h, so no confirmation is needed. LH-10 is in preventive maintenance until 12:00 and can't be used. Both stopes still have broken ore and a mine stockpile with room. Central's stockpile is 174 of 450 t, and 4 trucks are hauling. Only LH-08 and LH-09 can lend, because both are on development headings. Mining stopes in carguio phase have more valuable output than the oz lost by pulling a loader. Development costs 1.0 oz/h for DS-N522-01 and 1.5 oz/h for DS-C564-02.\n\nLH-09 to TJ-C564-14: it is on the same level, so travel is about 0.34 h. 134 t of broken ore remain at 12.1 g/t. An LH410 at 120 m moves about 29 t/h, which is 11.3 oz/h. After the 1.5 oz/h development cost that is about 9.8 oz/h, or about 38 oz over roughly 3.9 h.\n\nLH-08 to TJ-C512-06: travel is about 0.7 h. 272 t of broken ore remain at 9.2 g/t. An LH410 at 80 m moves about 30.9 t/h, which is 9.1 oz/h. After the 1.0 oz/h development cost that is about 8.1 oz/h, or about 35 oz over roughly 4.3 h.\n\nI chose this pairing because it matches the shorter travel to the higher-grade stope. The swapped pairing nets the same per hour but has longer travel. I did not use LH-07 or the other stope loaders, since their own production would be lost. The loans end when the repairs finish, which the layer handles. Net after travel is about 65 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 28.1,
+   "costo_usd": 0.0673,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

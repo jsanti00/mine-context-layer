@@ -1,0 +1,76 @@
+{
+ "turno": 0,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "D",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at TJ-C512-10 with 140 t of broken ore left. The likely repair is 13:20 and the repaired loader can clear all 140 t alone before 17:00. Every loan option has a gain of 0 and a negative net (-2.1 oz or worse). Radio and CMMS agree, so there is no confirmation to request. No loans.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.2,
+   "costo_usd": 0.0213,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-N574-15": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N574-15": "LH-08"
+   },
+   "mejor": {
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 29.3,
+   "oz_mejor": 29.3,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 28.8,
+    "rationale": "N574-15: LH-06 is likely down until 16:00, so the stope has about 105 t left that the repaired loader can't clear by 17:00. LH-08 comes from a cheap development heading and is the best net option at +28.8 oz. C512-10: LH-01 should clear its 140 t alone after repair (likely 13:20), so every loan there nets zero or negative. No loan there.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.9,
+   "costo_usd": 0.0258,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

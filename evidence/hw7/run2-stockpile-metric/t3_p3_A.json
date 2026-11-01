@@ -1,0 +1,55 @@
+{
+ "turno": 3,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-C564-08": "LH-08"
+   },
+   "oz_agente": 31.9,
+   "oz_mejor": 44.4,
+   "perdida_oz": 12.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 145.0,
+    "rationale": "LH-01 and LH-02 are down until about 13:30 and 14:30 (radio and CMMS agree). LH-08 comes from the infrastructure heading, which costs only 0.4 oz/h. It takes 0.48 h to reach C590-09, which is rich at 16.5 g/t. At 30 t/h for about 6.5 h that is roughly 195 t, or about 103 oz, against a cost of about 3 oz. LH-10 leaves PM at 10:00 and takes 0.31 h to reach C564-08 (9 g/t). At 25 t/h for about 6 h that is roughly 155 t, or about 45 oz. The critical-path heading LH-09 stays put. Central has trucks to spare (91 t/h against inflow of 74 t/h or less) and its stockpile is at 303 of 450 t.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 16.5,
+   "costo_usd": 0.0473,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

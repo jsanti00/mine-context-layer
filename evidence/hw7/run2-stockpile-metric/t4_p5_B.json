@@ -1,0 +1,122 @@
+{
+ "turno": 4,
+ "patron": "5 tres fallas casi juntas",
+ "config": "B",
+ "segundos_total": 61,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 41.9,
+   "oz_mejor": 67.4,
+   "perdida_oz": 25.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.7,
+   "costo_usd": 0.0463,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 49.9,
+   "oz_mejor": 60.9,
+   "perdida_oz": 11.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-05"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 25.6,
+   "costo_usd": 0.0588,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E595-06": "LH-08",
+    "TJ-E569-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08",
+    "TJ-E569-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06",
+    "TJ-E569-08": "LH-08"
+   },
+   "oz_agente": 10.2,
+   "oz_mejor": 68.7,
+   "perdida_oz": 58.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-E569-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "un scoop asignado a dos lugares"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 16.0,
+   "costo_usd": 0.0455,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

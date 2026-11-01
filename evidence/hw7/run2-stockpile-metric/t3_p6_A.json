@@ -1,0 +1,94 @@
+{
+ "turno": 3,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 43,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 22.7,
+   "oz_mejor": 32.2,
+   "perdida_oz": 9.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 60.0,
+    "rationale": "LH-01 is down at C590-09 (16.5 g/t, 260 t, about 138 oz). Radio and CMMS agree, and the likely repair is 13:20. LH-08 is on an infrastructure heading worth 0.4 oz/h, and it can reach the stope in 0.48 h. As an LH410 it loads about 30 t/h, which is about 16 oz/h at this grade, so the loan clearly pays. I did not take LH-09 because its heading is on the critical path (5.7 oz/h). LH-10 is free from 10:00 but would arrive about 10:20 and add little. Central is slightly truck-limited. Its stockpile has 153 t of headroom, and the higher-grade ore displaces lower-grade ore, so the net gain is still positive. Gain is a rough estimate.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 21.7,
+   "costo_usd": 0.0525,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C590-09": "LH-08",
+    "TJ-C564-08": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08",
+    "TJ-C564-08": "LH-10"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-08",
+    "TJ-C564-08": "LH-05"
+   },
+   "oz_agente": 38.0,
+   "oz_mejor": 44.8,
+   "perdida_oz": 6.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 30.0,
+    "rationale": "Keep LH-08 (cheap 0.4 oz/h infrastructure loan) on the 16.5 gpt stope C590-09, since LH-01 is out until about 13:20 or later. Send idle LH-10 (free at 10:00, 0.31 h away) to C564-08, which has 223 t at 9 gpt and no loader because LH-02 is down until 15:00 to 17:00. LH-10 loads about 25 t/h, so about 6.7 h gives roughly 170 t, or about 49 oz of stope ore. Central stockpile has 123 t of room and trucks move 91 t/h, so truck and stockpile limits cut the real gain to about 30 oz. No reserve activation, because no stope was stopped. Taking LH-09 (critical path, 5.7 oz/h) is not worth it.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.9,
+   "costo_usd": 0.0527,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

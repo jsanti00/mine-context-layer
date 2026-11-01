@@ -1,0 +1,58 @@
+{
+ "turno": 4,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-03"
+   },
+   "oz_agente": 1.7,
+   "oz_mejor": 29.1,
+   "perdida_oz": 27.4,
+   "dudosos": [
+    "TJ-C512-04"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-04",
+      "ask": "Call the Central area chief to confirm whether LH-02 is actually stopped at TJ-C512-04 (radio says stopped, CMMS says operating). No loader moved there until confirmed."
+     }
+    ],
+    "expected_net_oz": 70.0,
+    "rationale": "LH-01 is down at E595-06 (radio and CMMS agree). Likely repair is 13:30. The stope holds 256 t at 15.4 g/t, about 127 oz, and is worth about 15 oz per loader hour at the LH410 rate of 30 t/h. Este trucks have room (inflow 36 against 72 t/h capacity). LH-08 comes from the cheap infrastructure heading DS-C512-01 (1.9 oz/h) and takes 0.53 h to travel. LH-09 would cost 4.0 oz/h on the critical-path heading, so it is not used. Estimate: about 6.4 loading hours at 30 t/h is roughly 190 t, or about 95 oz. Lost development is about 14 oz. Net is about 70-80 oz. LH-02 is left alone under CONFIRM-01 until the area chief confirms its status. LH-10 is not available until 11:00.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C512-04"
+   ],
+   "segundos": 16.6,
+   "costo_usd": 0.0469,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 27.4
+  }
+ ]
+}

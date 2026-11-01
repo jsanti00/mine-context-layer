@@ -1,0 +1,120 @@
+{
+ "turno": 3,
+ "patron": "5 tres fallas casi juntas",
+ "config": "C",
+ "segundos_total": 132,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 29.8,
+   "perdida_oz": 29.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at TJ-C590-09. The radio (hydraulics) and CMMS OT-5100 (hydraulic, 3-5 h likely 4 h, repaired at TALLER-564) agree, so no confirmation is needed. I recommend no loan. Central is truck-limited: 4 trucks x 40 t over a cycle of about 0.34 h x 0.227 gives about 107 t/h of haulage. The four remaining Central loaders (LH-02 and LH-04 at 220 m, about 35.6 t/h each, and LH-05 at 160 m, about 38.5 t/h) muck about 110 t/h, and the Central stockpile holds 303 t. Another loader would add essentially no hauled ounces, and a lent loader would leave its own place idle. I did not apply the LH-10 preventive-maintenance rule, because no loan is planned. Norte's only loading stope, TJ-N522-01, has about 256 t left, which LH-06 (about 43 t/h) can muck before 17:00, so an extra loader there adds nothing. Taking a loader from the Este development headings would cost 0.4 to 5.7 oz/h with no offsetting gain. No stopped stope exists, so no reserve can be activated (RESERVE-01). Net change versus doing nothing is 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 21.1,
+   "costo_usd": 0.0583,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 29.8
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E543-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E543-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-E543-07": "LH-04"
+   },
+   "oz_agente": 19.8,
+   "oz_mejor": 65.8,
+   "perdida_oz": 46.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 60,
+    "rationale": "Radio and CMMS agree that LH-01 (C590-09) and LH-03 (E543-07) are both down for 3-5 h, so no confirmation is needed. Central is truck-limited: the 3 working LH514s give about 110 t/h against roughly 91 t/h of truck capacity, and the stockpile is at 307 t. A replacement for LH-01 would add almost nothing, so I leave it uncovered. Este is loader-limited: its only working loader is LH-07 at about 24 t/h against truck capacity of roughly 70-80 t/h. E543-07 is worth covering at 8.3 g/t (0.267 oz/t) with 300 t of broken ore left. LH-10 has finished its 4 h preventive maintenance (available 10:00) and is idle at TALLER-564, so lending it costs nothing. It needs about 0.5 h to reach E543-07 and works about 6 h at about 25 t/h (LH410 at 220 m). That is about 150 t, or about 41 oz. LH-08 comes from DS-E569-01, the infrastructure heading worth 0.4 oz/h, so about 6.5 h away costs 2.6 oz. It travels about 0.33 h and mucks the remaining E543-07 ore. Together the two loaders can clear the 300 t, about 148 t more than LH-10 alone. That is about 39 oz, which I discounted to about 20-25 oz for truck limits and model uncertainty. I leave the critical-path heading DS-E569-02 (5.7 oz/h) and the other loaders alone. No reserve activations are possible because no stope is stopped."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 42.3,
+   "costo_usd": 0.0819,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 46.0
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E543-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E543-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-E543-07": "LH-04",
+    "TJ-N522-01": "LH-02"
+   },
+   "oz_agente": 21.6,
+   "oz_mejor": 82.4,
+   "perdida_oz": 60.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-07"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-N522-01"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 13.0,
+    "rationale": "Radio and CMMS agree that LH-01, LH-03 and LH-06 are down (OT-5100, 5101, 5102), so no confirmation is needed. LH-10 is the only free loader. Its preventive maintenance ends at 10:00 (06:00 + 4 h). Moving it to Norte costs nothing. I calculated the cost of every other candidate source and none was worth taking. Reserves cannot be activated: the only stopped stopes are the three with broken loaders, and there is no working loader or crew to move. 1) Keep LH-08 on loan at TJ-E543-07. It mucks about 25 t/h at 8.3 g/t, worth about 6.8 oz/h. Its home heading DS-E569-01 is infrastructure and costs only 0.4 oz/h. Este trucks (3 × 22.7 = 68 t/h) are not saturated. 2) Send LH-10 to TJ-N522-01. Norte has one loader, now down, and only 73 t in its stockpile. Norte trucks would run dry around 11:05 and idle until LH-06 is repaired, which is 2–4 h away (about 12:50 if likely). LH-10 leaves the workshop at 10:00 and arrives about 10:40 (0.65 h of travel). It mucks about 31 t/h, below the 68 t/h truck capacity, so trucks are not the limit. The stope has 239 t of broken ore left at 6.4 g/t (0.206 oz/t). LH-10 adds about 50–85 t before LH-06 returns, which is about 11–17 oz. 3) Central is truck-limited. Its stockpile is 311 t, its 4 trucks haul about 91 t/h, and its three working loaders have more ore available than the trucks can haul. Replacing LH-01 there adds almost nothing, and taking a second Central loader for Norte would add only about 59 t, because that stope's ore is almost exhausted. Este would gain at most about 11 oz (about 42 t) from LH-10, which is no better than Norte."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 66.8,
+   "costo_usd": 0.1149,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 60.8
+  }
+ ]
+}

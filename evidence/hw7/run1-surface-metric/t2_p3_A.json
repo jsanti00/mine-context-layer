@@ -1,0 +1,56 @@
+{
+ "turno": 2,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 22,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C564-03": "LH-10",
+    "TJ-E569-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-03": "LH-10",
+    "TJ-E569-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-07",
+    "TJ-C564-03": "LH-06"
+   },
+   "oz_agente": 8.3,
+   "oz_mejor": 33.6,
+   "perdida_oz": 25.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-03"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 60.0,
+    "rationale": "Both radio and CMMS agree on the LH-02 and LH-03 failures, so the confirmation rule does not apply. LH-10 is idle at the workshop and 0.29 h from C564-03. That stope has 241 t at 9.6 g/t, about 9.3 oz/h for an LH410. Central has room in its stockpile (228 of 450 t) and trucks at 91 t/h against inflow of 78 t/h plus 30 t/h from the loan. LH-03 is not back until 13:30-15:30 at the earliest. LH-08 comes off the preparacion heading, which costs 1.3 oz/h, and goes to E569-07, 0.52 h away. That stope has 164 t at 10.5 g/t, about 9.3 oz/h, and Este has no truck constraint. Net is about 8 oz/h for roughly 5-6 h. I leave LH-09 on the critical-path heading, which is worth 4.2 oz/h. Reserves cannot be activated because no stope is stopped. The estimate of 60 oz is rough. Once a loader is repaired it takes over from the loan, so the gain from each loan is mainly the hours before the repair.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 21.5,
+   "costo_usd": 0.054,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 25.3
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "turno": 0,
+ "patron": "1 una falla",
+ "config": "B",
+ "segundos_total": 15,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07"
+   },
+   "oz_agente": -0.4,
+   "oz_mejor": 1.1,
+   "perdida_oz": 1.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.5,
+   "costo_usd": 0.0428,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.5
+  }
+ ]
+}

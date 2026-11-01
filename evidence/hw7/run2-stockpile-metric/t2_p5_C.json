@@ -1,0 +1,128 @@
+{
+ "turno": 2,
+ "patron": "5 tres fallas casi juntas",
+ "config": "C",
+ "segundos_total": 79,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 16.7,
+   "oz_mejor": 16.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.4,
+    "rationale": "The radio and the CMMS agree that LH-02 is down with a hydraulic fault (OT-5100, 3 to 5 h in TALLER-564), so CONFIRM-01 does not apply. LH-02 will not return before about 12:30 to 14:30, and TJ-E569-07 (carguio, 10.5 g/t) would lose its loader for the rest of the shift. Ore left there is 260 - 96 = 164 t, worth about 164 x 10.5 / 31.1 = 55.4 oz. LH-10 is an idle LH410 in the Central workshop with no work order, so lending it costs no development or production. Its travel is about 0.5 h: ramp and portal 0.08 h, surface 0.02 h, Este ramp 0.08 h, drift 0.05 h, plus 0.25 h manoeuvre. Its rate at 160 m is 30 x 100 / (100 + 0.15 x 60) = 27.5 t/h. From about 10:00 it has roughly 6.5 loading hours (1 h before the 11:00 break, then 5.5 h), so it can muck about 179 t. That is enough to clear the 164 t. Este is not a bottleneck: its trucks move about 70 t/h and its stockpile is only 48 of 450 t. No reserve can be activated, because no stope is stopped. I leave the other loaders and the development headings in place. Pulling the DS-C564-02 loader would cost 4.2 oz per hour away, and the Este stope can only yield 55.4 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.9,
+   "costo_usd": 0.0564,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "oz_agente": 36.3,
+   "oz_mejor": 36.3,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 48,
+    "rationale": "The radio and the CMMS agree that LH-02 (E569-07) and LH-01 (C564-14) are both down for 3 to 5 h. Rule CONFIRM-01 therefore does not apply, so I asked for no confirmations. Both repairs outlast the roughly 6.8 loading hours left (09:40 to 11:00, then 11:30 to 17:00). I keep the existing loan of LH-10 to E569-07. That stope has about 158 t of broken ore left, and LH-10 mucks about 27 t/h there, so the ore lasts. I lend LH-08 from DS-C564-01 to TJ-C564-14, which is on the same level. LH-08 is a development loader, so it is allowed to lend. That heading is worth only 1.3 oz/h, the cheapest loss available. Travel takes about 0.33 h. At 220 m an LH410 mucks 30×100/118, about 25 t/h. At 10.7 g/t that is about 8.7 oz/h. Net gain is (8.7 − 1.3) × ~6.5 h, about 48 oz. C564-14 has about 317 t of broken ore left, which is enough. Central has 4 trucks and its stockpile is at 234 of 450 t, so a third loader there is not truck-limited. I did not lend LH-09, because it is critical path at 4.2 oz/h. A fourth Central loader would also push the stockpile toward full. No reserve is activated, because no stope is stopped. The reserve rule requires a stopped stope's loader."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 26.4,
+   "costo_usd": 0.0635,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-08",
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-08",
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-06",
+    "TJ-N600-11": "LH-08"
+   },
+   "oz_agente": 38.0,
+   "oz_mejor": 39.4,
+   "perdida_oz": 1.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 95.0,
+    "rationale": "Radio and CMMS agree on all three breakdowns (LH-01, LH-02, LH-04, hydraulic, 2-5 h repairs), so no confirmation is needed. I kept the two existing loans. LH-08 (LH410) covers TJ-C564-14: about 25 t/h at 220 m over about 6 h is roughly 150 t at 10.7 g/t, or about 52 oz. It was lent from DS-C564-01, which costs only 1.3 oz/h, about 8 oz. Central has 4 trucks and its stockpile is at 238 of 450 t, so there is room. LH-10 (idle in the workshop) covers TJ-E569-07: about 27 t/h, but only about 153 t of broken ore remain, which is about 51 oz at 10.5 g/t. Este's stockpile is at 30 t, so it is not full. I did not lend LH-09 because it would cost 4.2 oz/h on the critical-path heading DS-C564-02. It would also face a 6 km surface trip to Norte, and Norte's two working loaders already roughly match its 3 trucks. I did not activate a reserve: RS-N600-02 or RS-E569-01 would need a stopped stope's loader, and all three stopped loaders are broken with 2-5 h repairs. Reserves would also lose 1 h to activation. Net gain is about 52 + 51 - 8, roughly 95 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 28.9,
+   "costo_usd": 0.0685,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

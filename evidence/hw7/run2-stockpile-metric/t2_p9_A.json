@@ -1,0 +1,47 @@
+{
+ "turno": 2,
+ "patron": "9 tajo detenido y reserva",
+ "config": "A",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-04": "RS-N600-02"
+   },
+   "agente_valida": {
+    "LH-04": "RS-N600-02"
+   },
+   "mejor": {
+    "LH-04": "RS-N600-02"
+   },
+   "oz_agente": 70.2,
+   "oz_mejor": 70.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-04",
+      "reserve": "RS-N600-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 70.0,
+    "rationale": "N600-11 stopped 5-8h, so LH-04 is idle. Per RESERVE-01 its loader can activate a reserve. RS-N600-02 is on the same Norte level (11.5 g/t, 419 t, 1h activation), so there is no travel. After activation it has about 5.5 loading hours at 38.5 t/h, or about 190 t, which is about 70 oz. Norte stockpile is 247 of 450 t, so the extra inflow (59+38 vs 66 truck capacity) does not fill it before 17:00. RS-E569-01 grades lower (9.2 g/t) and would need travel. No loans are needed because no producing loader is taken.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.5,
+   "costo_usd": 0.0398,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

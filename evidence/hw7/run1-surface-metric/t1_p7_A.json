@@ -1,0 +1,58 @@
+{
+ "turno": 1,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 21,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": -2.2,
+   "oz_mejor": 8.2,
+   "perdida_oz": 10.4,
+   "dudosos": [
+    "TJ-C512-06"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-06",
+      "ask": "Call the Central area chief to confirm whether LH-02 is actually stopped at C512-06 (radio says stopped, CMMS says operating). No loader moved from or to this place until confirmed."
+     }
+    ],
+    "expected_net_oz": 40.0,
+    "rationale": "LH-01 is down at C564-14 (radio and CMMS agree). Likely repair is 13:30, so the stope would sit idle with 134 t at 12.1 g/t, about 52 oz. LH-09 (LH410, 29.1 t/h) is 0.34 h away at DS-C564-02, in the same mine. It would clear the 134 t in about 4.6 h. Cost is about 1.5 oz/h x ~5 h, roughly 8 oz. Central has 174 t in the stockpile against a 450 t capacity, and the inflow of about 107 t/h only slightly exceeds truck capacity of 91 t/h, so this is acceptable. DS-N522-01 is farther away (0.71 h) and its LH-08 is cheaper, but a 0.71 h trip costs more production, so I chose LH-09. LH-02's status conflict is unresolved, so by CONFIRM-01 nothing is moved there and I asked for confirmation. No stope is stopped, so no reserve is activated.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C512-06"
+   ],
+   "segundos": 20.5,
+   "costo_usd": 0.0462,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 10.4
+  }
+ ]
+}

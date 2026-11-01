@@ -1,0 +1,52 @@
+{
+ "turno": 4,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 28,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-E595-06": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 57.6,
+   "oz_mejor": 57.6,
+   "perdida_oz": 0.0,
+   "dudosos": [
+    "TJ-C512-04"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-04",
+      "ask": "Call the Central area chief. Radio at 09:30 says scoop 2 (LH-02) is stopped at C512-04, but CMMS OT-5001 shows it closed 20 min ago as operational. Confirm whether LH-02 is running. Nothing is moved for C512-04 until then."
+     }
+    ],
+    "expected_net_oz": 115,
+    "rationale": "LH-01 is down at E595-06. Radio and CMMS OT-5100 agree on a hydraulic failure of 3-5 h on site, so the loader will not be back in time to matter. E595-06 is the best grade (15.4 g/t, about 0.495 oz/t) and has about 256 t of broken ore left (361 - 105). The Este stockpile is 171/450 t. Este trucks move about 80 t/h, and LH-03 alone mucks about 36 t/h, so Este has truck capacity to spare. Central has 4 trucks (about 90 t/h) and 5 LH514 loaders (about 190 t/h), and its stockpile (264/450 t) will fill within about 2 h. Central is truck-limited, so taking its lowest-grade loader costs almost nothing. That loader is LH-06 at C564-01 (5.8 g/t, a carguio stope, so allowed to lend). Travel is about 0.5 h. At about 43 t/h for roughly 6 h, LH-06 can muck all 256 t, worth about 127 oz. I subtract about 10 oz for the small Central loss, which gives about 115 oz net. LH-08 would cost 1.9 oz/h of development and mucks only about 31 t/h. LH-09 would cost 4.0 oz/h. LH-10 is in preventive maintenance until 11:00. No reserve is activated because no stope has stopped. LH-02 at C512-04 is not touched, per CONFIRM-01, because radio and CMMS disagree."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C512-04"
+   ],
+   "segundos": 28.3,
+   "costo_usd": 0.0677,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

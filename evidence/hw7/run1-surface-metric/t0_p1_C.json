@@ -1,0 +1,44 @@
+{
+ "turno": 0,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 32,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07"
+   },
+   "oz_agente": -0.4,
+   "oz_mejor": 1.1,
+   "perdida_oz": 1.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 25.0,
+    "rationale": "The radio (LH-01 hydraulic failure at C512-10, stopped) and CMMS OT-5100 (hydraulic, on site, 3/4/5 h) agree, so no confirmation is needed. C512-10 is a 13.4 g/t stope at 120 m from the stockpile with about 140 t of broken ore left (238 t minus 98 t mucked). The likely repair ends about 13:20. Without a loan the stope would sit idle for about 4 h, and the last ore would reach the stockpile too late to be hauled by 17:00. Central has 4 trucks, which I estimate at about 79 t/h, against about 64 t/h of loader capacity now, plus a 123 t stockpile buffer. So an extra loader at Central converts to hauled ounces. The cheapest lender under the rules is LH-08 from DS-N600-01 (infrastructure heading, 0.5 oz/h). Lending a producing stope's loader would cost far more (about 6.7 oz/h at C590-14). LH-09 costs 2.0 oz/h. LH-10 is in preventive maintenance until 14:00. Travel for LH-08 is about 0.7 h (drift, ramp, 6 km of surface road, ramp, drift, plus 0.25 h manoeuvre), so it arrives about 10:00. As an LH410 at 120 m it mucks about 29 t/h, which clears the 140 t in about 4.8 h. The ore is mucked and hauled by about 15:30, instead of finishing around 16:45 with part of it unhauled at 17:00. That is about 60 to 70 t avoided at 13.4 g/t, or about 28 oz. The heading loses about 3 oz (about 5 h at 0.5 oz/h). Net is about +25 oz. No reserve activations, because no stope is stopped. The heading's loader hours and the repair-time range (3 to 5 h) are the main uncertainties. The layer decides the return when LH-01 is repaired (RETURN-01)."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 31.9,
+   "costo_usd": 0.0719,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 1.5
+  }
+ ]
+}

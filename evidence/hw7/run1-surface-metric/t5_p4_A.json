@@ -1,0 +1,50 @@
+{
+ "turno": 5,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "A",
+ "segundos_total": 21,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E543-11": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E543-11": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-03",
+    "TJ-E543-11": "LH-06"
+   },
+   "oz_agente": 5.9,
+   "oz_mejor": 12.5,
+   "perdida_oz": 6.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 38.0,
+    "rationale": "Radio and CMMS agree on both failures (LH-01 back ~13:30, LH-05 ~11:30). Este has 0 inflow and idle trucks (72 t/h), and E543-11 holds 285 t at 8.3 g/t. LH-08 is on the cheap infrastructure heading (0.2 oz/h) and reaches E543-11 in 0.55 h. At 23.6 t/h it loads about 150 t, roughly 40 oz, against about 1.4 oz of development lost. Norte is already truck-limited (inflow 71 vs 66 t/h), so covering N600-09 adds little. LH-09 is on a critical-path heading (4 oz/h), so I'm leaving it. LH-10 is in preventive maintenance until 11:00, and LH-05 will likely be back by then, so I'm not using it.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.4,
+   "costo_usd": 0.0508,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 6.6
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "turno": 3,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "C",
+ "segundos_total": 45,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 hydraulic failure at TJ-E543-07: radio and CMMS (OT-5100) agree, so no confirmation is needed. The repair is on site and takes 0.25-0.5 h (likely 0.4 h). The lost production is about 0.4 h x 35.6 t/h (LH514 at 220 m: 42x100/118) = about 14 t, or about 3.8 oz at 8.3 g/t. Este's stockpile is at 93 of 450 t and 396 t of broken ore remains in the stope, so nothing is lost permanently. Any loan would cost at least the 0.25 h manoeuvre plus travel time, and it would take a loader from a producing place or from development. DS-E569-02 costs 5.7 oz/h, and DS-E569-01 costs 0.4 oz/h but is also needed. LH-10 is still in preventive maintenance and is not available before 10:00 (06:00 start plus 4 h). A loan would arrive after the repair ends and could not recover more than the roughly 4 oz at stake. Best action: no loans, no reserve activations (no stope is stopped), and let the repair finish."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.3,
+   "costo_usd": 0.0483,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-E543-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E543-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-E543-07": "LH-05"
+   },
+   "oz_agente": 31.5,
+   "oz_mejor": 44.8,
+   "perdida_oz": 13.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 76.0,
+    "rationale": "The radio at 09:30 says LH-03 is stopped with a hydraulic failure at E543-07. The CMMS agrees. OT-5100 (0.4 h on site) was revised at 10:00 by OT-5101: part not in stock, 5-8 h from 09:30, so the loader is back about 14:30-17:30. The two sources do not conflict, so CONFIRM-01 does not apply and I can move loaders. E543-07 (Este, grade 8.3 g/t, about 0.267 oz/t) still has 307 t of broken ore (396 - 89 mucked). Its 220 m distance gives an LH410 rate of 30x100/(100+0.15x120) = 25.4 t/h. LH-10 finished its preventive maintenance at 10:00 (06:00 + 4 h), so it is free. It lends at no cost. Its trip from TALLER-564 takes about 0.5 h, so it loads about 0.5 h before the break and 5.5 h after, roughly 150 t, or about 41 oz. LH-08 comes from the infrastructure heading DS-E569-01, which costs only 0.4 oz/h under DEV-COST-01. It needs about 0.33 h of travel and adds roughly 150 t, or about 40 oz, for a development cost of about 2.5 oz. The two loaders together take about 300 t, which is about the 307 t available. Este has 3 trucks, and I estimate they haul about 73 t/h against about 74 t/h of inflow with LH-07 included. The stockpile is at 68 of 450 t, so it will not fill. I did not touch LH-09 on the critical-path heading, which costs 5.7 oz/h. No reserve is activated because no stope is stopped. Net gain is about 41 + 37.5, rounded to 76 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 31.7,
+   "costo_usd": 0.0694,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

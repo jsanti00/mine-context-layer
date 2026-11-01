@@ -1,0 +1,45 @@
+{
+ "turno": 5,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "C",
+ "segundos_total": 38,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E543-11": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E543-11": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-03",
+    "TJ-E543-11": "LH-06"
+   },
+   "oz_agente": 5.9,
+   "oz_mejor": 12.5,
+   "perdida_oz": 6.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 5.0,
+    "rationale": "Radio and CMMS agree that LH-01 (N600-09, 3/4/5 h) and LH-05 (E543-11, 1.5/2/2.5 h) are down, so no confirmation is needed. Norte: 2 working LH514 at 220 m give about 2x35.6 = 71 t/h. Three trucks haul about 3x40/0.39 h x 0.227 = 70 t/h, and the stockpile holds 242 t. Norte is truck-limited, so an extra loader adds almost nothing and I leave it uncovered. Este: with LH-05 down, mucking stops, the stockpile is only 49 t, and the trucks can haul about 72 t/h. The stope has 285 t left at 8.3 g/t, which is 0.267 oz/t. A loan to TJ-E543-11 is worthwhile. Options: LH-08 comes from DS-C538-01, an infrastructure heading that costs only 0.2 oz/h. Travel is about 0.55 h, so it arrives around 10:05. An LH410 at 280 m gives 30x100/127 = 23.6 t/h, which is about 6.3 oz/h. It works about 0.9 h until 11:00 and about 1.4 h if the repair runs to 12:00. Expected gain is about 5.8 oz, less about 0.3-0.5 oz of lost development, so about +5 oz. LH-09 is in the critical-path heading DS-E543-02 at 4.0 oz/h. Moving it nets only about 2.3 oz/h, so it is worse. Taking a Central LH514 would cut a truck-limited Central, where 3 loaders at about 96 t/h match the trucks' 95 t/h, so I rejected that. LH-10 is in preventive maintenance until 11:00 and would arrive too late to help. No reserves, because no stope is stopped."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 37.2,
+   "costo_usd": 0.0801,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 6.6
+  }
+ ]
+}

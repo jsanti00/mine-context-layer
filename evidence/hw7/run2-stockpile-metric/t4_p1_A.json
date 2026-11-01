@@ -1,0 +1,47 @@
+{
+ "turno": 4,
+ "patron": "1 una falla",
+ "config": "A",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 36.2,
+   "oz_mejor": 55.9,
+   "perdida_oz": 19.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 35.0,
+    "rationale": "LH-01 is down at E595-06, a 15.4 g/t stope with 260 t. Radio and CMMS agree, and the likely repair is 13:20. Este stockpile has room (170/450) and trucks are not limiting. LH-08 comes from the cheap preparation heading (1.9 oz/h) and takes 0.53 h to get there. It loads about 87 t at 30 t/h before the repair, which is about 44 oz. The heading loses about 7 oz. LH-09 is on the critical-path heading (4 oz/h), so I left it. Taking LH-03 would only move the loss to another producing stope. Net is about +35 oz.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.8,
+   "costo_usd": 0.0435,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "turno": 3,
+ "patron": "1 una falla",
+ "config": "A",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 22.7,
+   "oz_mejor": 32.2,
+   "perdida_oz": 9.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "LH-01 is down at C590-09 (radio and CMMS agree; likely repair 13:20). The stope holds 260 t at 16.5 g/t, about 138 oz, the richest ore in the mine. Central is truck-limited and its stockpile has room (297 of 450 t), so the gain comes from swapping 16.5 g/t ore in for ~7 g/t ore. LH-08 comes from the infrastructure heading, which costs only 0.4 oz/h, and arrives in 0.48 h. LH-10 would arrive about 10:20 but is in preventive maintenance until 10:00. The critical-path loader LH-09 stays put. About 7 h x 30 t/h is ~200 t, worth ~60 oz, less ~3 oz of development cost.",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.2,
+   "costo_usd": 0.0485,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

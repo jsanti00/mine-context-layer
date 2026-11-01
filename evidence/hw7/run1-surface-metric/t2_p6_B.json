@@ -1,0 +1,83 @@
+{
+ "turno": 2,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "B",
+ "segundos_total": 33,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-06"
+   },
+   "oz_agente": 9.2,
+   "oz_mejor": 22.0,
+   "perdida_oz": 12.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.9,
+   "costo_usd": 0.0421,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 12.8
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-03": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-03": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-07",
+    "TJ-C564-03": "LH-06"
+   },
+   "oz_agente": 0.6,
+   "oz_mejor": 28.9,
+   "perdida_oz": 28.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.7,
+   "costo_usd": 0.0461,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 28.3
+  }
+ ]
+}

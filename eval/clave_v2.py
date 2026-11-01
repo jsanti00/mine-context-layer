@@ -165,7 +165,7 @@ def decidir(T, ahora):
     duenos_detenidos = {s for s in m["scoops"] if T.casa[s] in T.detenidos}
     movibles = [s for s in m["scoops"]
                 if s not in ocupados and s not in duenos_detenidos and T.libre_desde[s] <= ahora + 0.01
-                and (T.casa[s] in m["desarrollos"]
+                and (T.casa[s] in m["desarrollos"] or T.casa[s] == "TALLER-564"     # el de repuesto, si ya salió del taller
                      or (T.casa[s] in m["tajos"] and m["tajos"][T.casa[s]]["fase"] == "carguio" and T.casa[s] not in T.caidos))]
     movibles += [s for s in duenos_detenidos]
     base = evaluar(T, ahora, st, {})

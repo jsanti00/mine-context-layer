@@ -1,0 +1,44 @@
+{
+ "turno": 5,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 23,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.5,
+   "perdida_oz": 3.5,
+   "dudosos": [
+    "TJ-N522-15"
+   ],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N522-15",
+      "ask": "Call the Norte area chief. Confirm whether LH-02 (scoop 2) at TJ-N522-15 is stopped or operating. Radio at 09:30 says it is stopped. CMMS OT-5001 shows it closed 20 min ago as 'equipment operational'. Also ask whether it can load right now."
+     }
+    ],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 at TJ-N600-09 is down. Radio and CMMS agree (OT-5100, hydraulic, repaired on site, 3-5 h, likely 4 h). Norte is truck-limited rather than loader-limited. It has 3 trucks hauling about 70 t/h (my estimate from the 574 t hauled so far across all mines) and a 242 t stockpile. LH-03 alone mucks about 36 t/h at 220 m, so the stockpile and LH-03 together cover truck demand to 17:00 (about 512 t supply against about 525 t demand). A loan would add roughly 0 to 20 t, which is under 8 oz. The only loader that can reach Norte is LH-10, which is in preventive maintenance until 11:00. After about 0.6 h of travel it would arrive near 11:40 and be partly wasted. Pulling LH-08 or LH-09 would cost development oz (0.2 or 4.0 per hour) for little gain. Radio and CMMS disagree on LH-02 at TJ-N522-15, so rule CONFIRM-01 means I move nothing for that place and ask the area chief. If LH-02 is confirmed down, I will re-evaluate loaning LH-10 to Norte after 11:00. I made no reserve activations, because no stope is stopped. Net change versus doing nothing is 0."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-N522-15"
+   ],
+   "segundos": 22.5,
+   "costo_usd": 0.059,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.5
+  }
+ ]
+}

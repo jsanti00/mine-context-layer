@@ -1,0 +1,47 @@
+{
+ "turno": 5,
+ "patron": "1 una falla",
+ "config": "D",
+ "segundos_total": 9,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 27.0,
+   "oz_mejor": 27.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 26.9,
+    "rationale": "LH-01 is down at TJ-N600-09. Radio and CMMS agree, and the likely repair is 13:20. LH-08 comes from a low-value development heading. It gains 27.7 oz against a 0.8 oz home loss, for a net of 26.9 oz, the best option in rank_loan_options. The Norte stockpile has room.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.3,
+   "costo_usd": 0.0222,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

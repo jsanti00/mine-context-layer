@@ -1,0 +1,47 @@
+{
+ "turno": 1,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "D",
+ "segundos_total": 10,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {
+    "TJ-E543-01": "LH-01"
+   },
+   "agente_valida": {
+    "TJ-E543-01": "LH-01"
+   },
+   "mejor": {
+    "TJ-E543-01": "LH-01"
+   },
+   "oz_agente": 3.1,
+   "oz_mejor": 3.1,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-01",
+      "to": "TJ-E543-01"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 2.8,
+    "rationale": "LH-04 down at E543-01, likely repair 11:30. rank_loan_options: only LH-01 (from C564-14, 0 home loss because Central is inflow-over-haulage) has positive net, +2.8 oz. Other loans are negative because of home loss. Radio and CMMS agree, so the CONFIRM-01 rule doesn't apply.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.1,
+   "costo_usd": 0.0285,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

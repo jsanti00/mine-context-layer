@@ -1,0 +1,42 @@
+{
+ "turno": 5,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 38,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.6,
+   "perdida_oz": 3.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-03",
+      "to": "TJ-E543-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 12.0,
+    "rationale": "Radio and CMMS agree: LH-01 is down at TJ-N600-09 with a hydraulic fault (OT-5100, 3-5 h, repaired on site). CONFIRM-01 is not triggered, so no confirmation is needed. The radio opens with 'Central', which I read as the caller addressing control. The place and loader match the CMMS. Norte has 3 trucks and about 66 t/h of haul capacity, using my rough cycle estimate of about 0.41 h. Its 2 remaining LH514 loaders give about 35.6 t/h each, so about 71 t/h, which is already enough to feed the trucks. Norte also holds a 238 t stockpile, and the stockpile carries over, so Norte loses almost no hauled ounces even if it gives up one more loader. Taking LH-03 would leave Norte at about 494 t of supply (238 t stockpile plus 256 t mucked) against about 475 t of truck capacity to 17:00. That is roughly break-even. I chose LH-03 because N574-02 (10.5 g/t) has a lower grade than N522-15 (10.9 g/t), and because it is a loading stope, so rule LOADER-SOURCE-01 allows it to lend. A replacement loader at N600-09 would only be an uncertain grade swap, so I leave it uncovered. Central is truck-limited with 4 trucks (about 88 t/h) against about 96 t/h of loader rate, so it needs no help. Este is loader-limited: 1 loader gives about 33 t/h against about 66 t/h of truck capacity. TJ-E543-11 (8.3 g/t) has about 289 t left. LH-05 alone mucks about 238 t by 17:00. LH-03 arrives after about 0.7 h of travel and adds the remaining roughly 51 t, which is about 51 × 8.3 / 31.1 = 13.6 oz. After allowing for travel and a small Norte risk, I expect about 12 oz net. I did not use LH-10 because its status in the workshop is unknown. I activated no reserves because no stope is stopped (RESERVE-01). I did not touch the development headings: DS-E543-02 costs 4.0 oz per hour and the gain is too small to justify taking LH-09."
+   },
+   "violaciones": [
+    "préstamo inválido LH-03 -> TJ-E543-11"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 37.9,
+   "costo_usd": 0.0795,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.6
+  }
+ ]
+}

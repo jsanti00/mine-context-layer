@@ -1,0 +1,35 @@
+{
+ "turno": 4,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 22,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C564-01": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 5.6,
+   "perdida_oz": 5.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio log and CMMS agree: LH-06 is down at TJ-C564-01 with a hydraulic failure (OT-5100, 1 to 2 h, likely 1.5 h). There is no conflict, so CONFIRM-01 does not apply. Moving a loader would not pay. Central is truck-limited. Its three working loaders (LH-02 at 220 m, LH-04 and LH-05 at 120 m) muck about 35.6 + 40.8 + 40.8 = 117 t/h. Its 4 trucks haul only about 90 t/h (cycle about 0.4 h, payload 40 t, factor 0.227), and the Central stockpile already holds 298 of 450 t. A replacement for LH-06 would just add to the stockpile, and loading at C564-01 resumes when the repair ends. Pulling LH-08 or LH-09 off development would cost 1.9 or 4.0 oz per hour for no gain. LH-10 is in preventive maintenance (5 h from 06:00), so it is not available before 11:00. The idle loader cannot be redeployed to the reserves: RESERVE-01 only allows a reserve to be activated with the loader of a stopped stope, and LH-06 is broken, not freed. The other lenders do not help either. Este (LH-01, LH-03) is roughly balanced between loaders and trucks. Norte's only stope in phase carguio is N548-10, which already has LH-07. The other Norte stopes are in drilling or fill, so they cannot take a loader. Net: do nothing, 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 22.0,
+   "costo_usd": 0.0599,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 5.6
+  }
+ ]
+}

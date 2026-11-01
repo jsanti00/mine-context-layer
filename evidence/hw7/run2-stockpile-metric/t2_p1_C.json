@@ -1,0 +1,43 @@
+{
+ "turno": 2,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 25,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-E569-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 3.9,
+   "oz_mejor": 9.2,
+   "perdida_oz": 5.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 47,
+    "rationale": "The radio and the CMMS agree that LH-02 is down at E569-07, with a 3 to 5 h repair (likely 4 h), so no confirmation is needed. The stope is still in the carguio phase and has about 168 t of broken ore left (260 t at the start of shift, 92 t mucked). Este is the only mine with no working loader. Its stockpile holds 51 of 450 t and it has 3 trucks, so the stockpile will not fill and ore can be mucked freely. Reserve RS-E569-01 cannot be activated, because LH-02 is broken and cannot be used under RESERVE-01. LH-10 sits in the workshop, which is neither a loading stope nor a heading, so under LOADER-SOURCE-01 it cannot lend. Of the two development loaders, DS-C564-01 (LH-08) costs 1.3 oz per hour away and DS-C564-02 costs 4.2 oz per hour, so I take LH-08. An LH410 at 160 m mucks about 30×100/109 = 27.5 t/h. Travel is roughly 0.5 h, leaving about 6.5 h of loading time, which is enough to clear nearly all of the 168 t. At 10.5 g/t that is about 168 × 0.3376 = 56.7 oz. The development loss is about 1.3 × 7 h ≈ 9 oz. The net gain is therefore about 47 oz. I left the producing stopes alone, because moving their loaders would just move production from one place to another."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 24.7,
+   "costo_usd": 0.0615,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

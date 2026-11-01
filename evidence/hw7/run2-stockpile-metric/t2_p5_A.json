@@ -1,0 +1,149 @@
+{
+ "turno": 2,
+ "patron": "5 tres fallas casi juntas",
+ "config": "A",
+ "segundos_total": 52,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 16.7,
+   "oz_mejor": 16.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "LH-02 is down at E569-07, confirmed by radio and CMMS. The likely repair is 13:30, so the stope would sit idle. LH-10 is idle at the workshop, has no home place, and is 0.49 h away. At 27.5 t/h it clears the 164 t (about 55 oz at 10.5 g/t) in about 6 h, which fits before 17:00. Este's trucks (72 t/h) are unconstrained and its stockpile is nearly empty. Nothing is taken from a producing place or from development. A reserve activation isn't allowed, because no stope has stopped.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.9,
+   "costo_usd": 0.0381,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-08"
+   },
+   "oz_agente": 36.3,
+   "oz_mejor": 36.3,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "LH-10 stays on E569-07 (158 t at 10.5 g, covers LH-02's failure). Move LH-08 from the cheap preparation heading (1.3 oz/h) to C564-14 (317 t at 10.7 g, 0.33 h away). It loads about 25 t/h for roughly 6.5 h, which is about 57 oz of ore against about 9 oz of development lost. I left LH-09 on the critical-path heading (4.2 oz/h), because a second loader would add about 50 oz and cost about 29 oz while risking a full Central stockpile. Repairs are expected at 12:30–14:30, so I plan on no repaired loader contributing early. Radio and CMMS agree on both failures, so no confirmation is needed.",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.2,
+   "costo_usd": 0.0466,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-08",
+    "TJ-E569-07": "LH-10",
+    "TJ-N600-11": "LH-07"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-08",
+    "TJ-E569-07": "LH-10",
+    "TJ-N600-11": "LH-07"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-14": "LH-06",
+    "TJ-N600-11": "LH-08"
+   },
+   "oz_agente": 37.3,
+   "oz_mejor": 39.4,
+   "perdida_oz": 2.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-07",
+      "to": "TJ-N600-11"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 25.0,
+    "rationale": "Keep LH-08 on C564-14 (312t at 10.7 g) and LH-10 on E569-07 (10.5 g), which cover the failed LH-01 and LH-02. Move LH-07 from N548-08 (157t at 5.8 g, about 29 oz) to N600-11 (210t at 9.1 g, about 61 oz) for a 0.37 h trip. It runs faster there (29.1 vs 23.6 t/h). Norte is near truck-limited, but this swaps one loader for another, so inflow stays about the same. I did not take LH-09 because it is on the critical-path heading (4.2 oz/h). I did not activate a reserve because no stope was stopped. All three failures are confirmed by both radio and CMMS, so there is no CONFIRM-01 conflict.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.9,
+   "costo_usd": 0.0492,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

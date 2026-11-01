@@ -1,0 +1,57 @@
+{
+ "turno": 5,
+ "patron": "7 fuentes que se contradicen",
+ "config": "D",
+ "segundos_total": 13,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 26.8,
+   "oz_mejor": 26.8,
+   "perdida_oz": 0.0,
+   "dudosos": [
+    "TJ-N522-15"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N522-15",
+      "ask": "Call the Norte area chief to confirm whether LH-02 is stopped (radio) or operating (CMMS). Nothing moved there until confirmed."
+     }
+    ],
+    "expected_net_oz": 26.9,
+    "rationale": "LH-01 is down at N600-09 (11.9 g/t, 239 t broken). The likely repair is 13:30. Lending LH-08 from the DS-C538-01 development heading is the best option: it gains 27.7 oz and loses 0.8 oz at home, for a net of 26.9 oz. Norte stockpile has 208 t of room, so the extra ore fits. LH-02 has a radio/CMMS conflict, so I move nothing for that place (CONFIRM-01) and no loader is borrowed from it.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-N522-15"
+   ],
+   "segundos": 12.7,
+   "costo_usd": 0.0313,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

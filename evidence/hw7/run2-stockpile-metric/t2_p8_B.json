@@ -1,0 +1,74 @@
+{
+ "turno": 2,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "B",
+ "segundos_total": 30,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C564-14": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-10"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": 1.2,
+   "oz_mejor": 1.7,
+   "perdida_oz": 0.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.9,
+   "costo_usd": 0.042,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C564-14": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-08"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-10"
+   },
+   "oz_agente": 36.2,
+   "oz_mejor": 47.1,
+   "perdida_oz": 10.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.6,
+   "costo_usd": 0.0441,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

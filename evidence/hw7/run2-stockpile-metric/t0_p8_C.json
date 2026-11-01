@@ -1,0 +1,67 @@
+{
+ "turno": 0,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "C",
+ "segundos_total": 42,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio (LH-02 hydraulic failure at TJ-N600-08) and the CMMS (OT-5100, on-site repair, 0.25/0.4/0.5 h) agree, so no confirmation is needed. The repair should take about 24 minutes, with a worst case of 30 minutes. The closest possible lender is LH-08 on DS-N600-01, on the same level. Its trip would be about 1.1 km of drift at 12 km/h plus a 0.25 h manoeuvre, roughly 0.34 h. LH-08 would reach the stope about when LH-02 is already repaired. It would also lose development value (0.5 oz/h) for the time away, and the return trip would add more. Any other lender would arrive later still, or would be a loader I cannot take: LH-10 is in preventive maintenance until 14:00, and stopes in drilling or fill cannot lend. No reserve can be activated because no stope has been stopped. Norte's stockpile (156 of 450 t) has room, so the brief outage costs little. Doing nothing is best: expected net gain 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.8,
+   "costo_usd": 0.0482,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 40.7,
+   "oz_mejor": 40.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 50,
+    "rationale": "LH-02 is down at N600-08. Radio at 09:30 said hydraulics failed and the loader was stopped. The CMMS revision at 10:00 says the part is not in stock and the repair takes 5-8 h from 09:30, which is about 15:30 likely and 17:30 at worst. The radio and CMMS agree the loader is down, so no confirmation is needed. The stope still has 171 t of broken ore (254 - 83 mucked) at 11.5 g/t, which is 0.37 oz/t, and it has no loader for most of the remaining shift. Only a producing 'carguio' stope or a development heading can lend a loader. Norte has no other spare loader, so I take LH-08 (LH410) from DS-N600-01, the cheap infrastructure heading at 0.5 oz/h. The other candidate, LH-09 on DS-N522-02, costs 2 oz/h and is not worth it. LH-10 is in preventive maintenance and is not available until about 14:00. At N600-08's 280 m to the stockpile, LH-08 mucks 30 x 100 / (100 + 0.15 x 180) = 23.6 t/h. Allowing about 0.3 h of travel, it works about 6.2 h of the 6.5 h of loading time left. That is about 146 t, which is within the 171 t of ore available, and worth about 54 oz. The development cost is about 6.2 h x 0.5 = 3.1 oz. Norte haulage is 3 trucks x 23 t/h = 69 t/h. Inflow would be 42 t/h from LH-06 plus 23.6 t/h, or 65.6 t/h, which is below haulage capacity. The stockpile is only 144 of 450 t, so nothing backs up. Net gain is about 50 oz. No reserves are activated because no stope is stopped. When the repair ends, the layer decides whether LH-08 goes home or LH-02 takes over (RETURN-01)."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 28.7,
+   "costo_usd": 0.0671,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

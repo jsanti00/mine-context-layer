@@ -1,0 +1,55 @@
+{
+ "turno": 1,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {},
+   "oz_agente": -4.3,
+   "oz_mejor": 0.0,
+   "perdida_oz": 4.3,
+   "dudosos": [
+    "TJ-C512-06"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-06",
+      "ask": "Call the Central area chief: confirm whether LH-02 is really stopped at C512-06 (radio says stopped, CMMS says operating, work order closed 20 min ago). No loader moved from or to this place until confirmed."
+     }
+    ],
+    "expected_net_oz": 42.0,
+    "rationale": "LH-01 is down at C564-14 (radio and CMMS agree). The likely repair is 13:30, so the stope would sit idle. It holds 134 t at 12.1 g/t, about 52 oz. LH-09 is an LH410 on the Central preparation heading, which is worth only 1.5 oz/h. It loads 29.1 t/h there, about 11 oz/h, and travel is 0.34 h. The 134 t takes about 4.6 h, so it clears before 17:00. The cost is about 7 oz of development, so net is about 42-45 oz. Central stockpile is 174/450 t, so there is room. I did not touch LH-02 because of the radio/CMMS conflict (CONFIRM-01). LH-10 is in PM until 12:00 and I did not use it. The Norte and Este loaders are producing, so I left them alone.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C512-06"
+   ],
+   "segundos": 16.6,
+   "costo_usd": 0.0441,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

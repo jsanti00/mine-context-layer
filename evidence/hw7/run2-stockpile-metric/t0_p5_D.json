@@ -1,0 +1,135 @@
+{
+ "turno": 0,
+ "patron": "5 tres fallas casi juntas",
+ "config": "D",
+ "segundos_total": 33,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-08"
+   },
+   "oz_agente": 3.4,
+   "oz_mejor": 3.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 1.3,
+    "rationale": "LH-01 is down at TJ-C512-10 (radio and CMMS agree). Likely repair is 13:30. Only 136 t is broken there, and the repaired loader can clear 128 t of it alone by 17:00, so a loan gains little. LH-08 comes from a cheap development heading, so its net is +1.3 oz. Every other candidate is negative because producing stopes lose more than the 3.4 oz gain. Stockpile room is fine.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.6,
+   "costo_usd": 0.0231,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 18.2,
+   "oz_mejor": 18.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 18.0,
+    "rationale": "Both failures are confirmed by radio and CMMS. Moving LH-08 from C512-10 to N600-08 nets about +18.3 oz. It gains 20.2 oz on 165 t at 11.5 g/t, and its home development loss is 1.9 oz. C512-10 has only 130 t, and its repaired loader clears that alone, so covering it gains 0.8 oz and loses more. Every other lender nets less or is negative, so I made no other loans.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.8,
+   "costo_usd": 0.0288,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-08": "LH-08",
+    "TJ-E569-01": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-N600-08": "LH-08",
+    "TJ-E569-01": "LH-06"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08",
+    "TJ-E569-01": "LH-06"
+   },
+   "oz_agente": 34.9,
+   "oz_mejor": 34.9,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     },
+     {
+      "loader": "LH-06",
+      "to": "TJ-E569-01"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 36.0,
+    "rationale": "Keep LH-08 at N600-08 (net +16.5). Lend LH-06 to E569-01 (net +19.7). Central C512-10: every option is negative (only 130 t, the repaired loader clears it alone), so leave it uncovered.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.7,
+   "costo_usd": 0.0326,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

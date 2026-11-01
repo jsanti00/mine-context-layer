@@ -1,0 +1,94 @@
+{
+ "turno": 4,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 32,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 36.2,
+   "oz_mejor": 55.9,
+   "perdida_oz": 19.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 80.0,
+    "rationale": "E595-06 holds 260 t at 15.4 g/t (~129 oz) and its loader LH-01 is down until about 13:20 (range 12:20–14:20). Radio and CMMS agree, so the rules allow a move. Este trucks have spare capacity (72 t/h against 36 t/h inflow). LH-08 is on the cheap preparation heading (1.9 oz/h) and is 0.53 h away. It would muck about 30 t/h × 6.6 h ≈ 198 t ≈ 98 oz. The heading loses about 13.5 oz. Net is about 80 oz. I did not take LH-09 because it is on the critical-path heading (4 oz/h). LH-10 is not free until 11:00, and the repaired LH-01 can finish the remaining ~60 t.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.6,
+   "costo_usd": 0.0443,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-08",
+    "TJ-C512-04": "LH-06"
+   },
+   "oz_agente": 37.1,
+   "oz_mejor": 78.3,
+   "perdida_oz": 41.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C512-04"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "Keep LH-08 on E595-06 (15.4 g/t, 242 t; LH-01 repair 12:20-14:20). LH-02 down at C512-04 (13 g/t, 296 t, repair 15:00-17:00). LH-10 finishes PM at 11:00, is free (no home cost), 0.34 h away, so it can load about 5.5 h at 25.4 t/h, roughly 140 t, about 58 oz. Central stockpile has room (298/450) and inflow falls without LH-02. I did not pull LH-09 (4.0 oz/h) or any producing loader.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 14.9,
+   "costo_usd": 0.0461,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

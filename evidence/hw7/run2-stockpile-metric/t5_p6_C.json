@@ -1,0 +1,90 @@
+{
+ "turno": 5,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 68,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 27.0,
+   "oz_mejor": 27.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N600-09",
+      "ask": "Call the Norte area chief. Confirm that LH-01 is down with a hydraulic failure at TJ-N600-09 and give a repair ETA. The radio call said 'Central' but the place is in Norte. CMMS OT-5100 estimates 3 to 5 h, so confirm that range."
+     }
+    ],
+    "expected_net_oz": 26,
+    "rationale": "The radio and CMMS agree that LH-01 is stopped (OT-5100, repair 3 to 5 h on site), so CONFIRM-01 does not block a move. Only the area name in the radio call is odd, so I am asking for a confirmation call. The loader should come from the cheapest eligible source. LH-08 is on infrastructure development at 0.2 oz/h, while LH-07 is in a producing stope and DS-E543-02 costs 4 oz/h. Reserves are not allowed because no stope is stopped. Norte's stockpile is 238 of 450 t with 3 trucks. I estimate trucks move about 53 t/h (3 × 40 t / 0.51 h × 0.227). LH-02 and LH-03 muck about 35 t/h each, roughly 71 t/h, so Norte is already truck-limited. The stockpile would reach about 376 t by 17:00 without LH-01. An LH410 at 220 m gives about 25 t/h. It can only fill the remaining space, about 74 t. At 11.9 g/t (0.38 oz/t), that is about 28 oz. The loan costs about 0.64 h travel, then about 7 h away at 0.2 oz/h, so about 1.4 oz. The net is about 26 oz. N600-09 still has about 243 t of broken ore, enough for the loan."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 29.8,
+   "costo_usd": 0.0665,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-N600-09": "LH-08",
+    "TJ-N522-15": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08",
+    "TJ-N522-15": "LH-06"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N522-15": "LH-08"
+   },
+   "oz_agente": 55.7,
+   "oz_mejor": 65.4,
+   "perdida_oz": 9.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-06",
+      "to": "TJ-N522-15"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 38.5,
+    "rationale": "Radio and CMMS agree that LH-01 (N600-09, 3-5 h repair) and LH-02 (N522-15, 5-7 h repair) are down, so no confirmation is needed. I keep the existing loan of LH-08 on N600-09. LH-08 is an LH410 at 220 m, about 25 t/h, so it mucks roughly 165 t at 11.9 g/t, about 63 oz. It costs only 0.2 oz/h of infrastructure development, about 1.3 oz. N522-15 is uncovered and holds 288 t of broken ore at 10.9 g/t. I lend LH-06 (LH514) from C512-01. At 220 m it mucks about 35.6 t/h. After roughly 0.75 h of travel, it mucks about 205 t over the remaining 5.75 h, which is 205 t x 10.9 g/t / 31.1 = about 72 oz. C512-01 has only 144 t of broken ore left at 7.2 g/t, so losing LH-06 there costs at most about 33 oz. Net gain is about 38.5 oz. The other lenders cost more. LH-04 would lose about 44 oz. LH-07 would lose about 39 oz. LH-09 costs 4 oz/h. LH-05 would lose more ore than LH-06. Stopes in drilling or fill cannot lend. LH-10 is in preventive maintenance until about 11:00 and has no producing home place, so I leave it out. Norte haulage is about 75 t/h against about 97 t/h of mucking with the extra loader. The Norte stockpile reaches about 383 t, below the 450 t capacity, so the full gain holds. A second extra loader would fill the stockpile, so I don't add one. Ore mucked into the stockpile counts, and Central's stockpile does not fill, so the loss at Central is only the ore LH-06 would have mucked."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 37.3,
+   "costo_usd": 0.0798,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

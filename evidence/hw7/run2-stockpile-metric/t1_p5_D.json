@@ -1,0 +1,124 @@
+{
+ "turno": 1,
+ "patron": "5 tres fallas casi juntas",
+ "config": "D",
+ "segundos_total": 32,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 down at TJ-C564-14 (radio and CMMS agree), likely repair 13:30. The stope holds only 134 t at 12.1 g/t, about 52 oz. The repaired loader can clear 131 t by 17:00 by itself. Every loan has negative net value, from -3 oz for LH-08 to -40 oz for LH-02, because the gain is only 1.2 oz. So no loan.",
+    "confidence": 0.9,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 8.6,
+   "costo_usd": 0.0197,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C590-07": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C590-07": "LH-09"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-09"
+   },
+   "oz_agente": 15.7,
+   "oz_mejor": 15.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C590-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 15.8,
+    "rationale": "C590-07 (8.4 g/t, 316 t): LH-09 from a cheap development heading nets +15.8 oz. C564-14 has only 134 t and the repaired loader clears 131 t alone, so every loan there is negative. Producing-stope loans net less than LH-09 or are negative.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.8,
+   "costo_usd": 0.0277,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C590-07": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-07": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-09",
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 25.8,
+   "oz_mejor": 25.8,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C590-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 25.0,
+    "rationale": "Keep LH-09 at C590-07 (net +17.3). Send LH-08 from DS-N522-01 to N600-08 (net +7.8). Leave C564-14 uncovered: every option is negative, and the stope has only 134 t of broken ore. Producing-stope loaders cost more than they gain.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.4,
+   "costo_usd": 0.0309,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

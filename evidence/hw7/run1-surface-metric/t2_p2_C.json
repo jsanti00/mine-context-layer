@@ -1,0 +1,35 @@
+{
+ "turno": 2,
+ "patron": "2 falla corta en tajo pobre",
+ "config": "C",
+ "segundos_total": 21,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "2 falla corta en tajo pobre",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N522-13": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 4.7,
+   "perdida_oz": 4.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-05 broke down at TJ-N522-13 at 10:00. The radio and OT-5100 agree on this, so no confirmation is needed. OT-5100 gives a repair of 1 to 2 h, likely 1.5 h, on site. Norte is truck-limited. Its 3 trucks have a cycle of about 0.41 h (0.1 load + 0.10 up + 0.05 dump + 0.06 down + 0.1 queue), measured from mid depth. At 40 t payload and a 0.227 factor that is about 66 t/h of haulage. The loaders still working at Norte are LH-04 at N600-11 (about 41 t/h at 120 m) and LH-07 at N548-08 (about 24 t/h at 280 m). Together they muck about 64 t/h, which is already close to haulage capacity. The Norte stockpile holds 247 t of its 450 t capacity, which buffers the gap. With LH-05 working, the three loaders would muck about 100 t/h, well above what the trucks can haul. Losing LH-05 therefore costs almost no hauled ounces. The only spare loader is LH-10 in TALLER-564 at Central. It would take about 0.7 h to reach N522-13, arriving around 10:41, which leaves about 0.8 h of useful work before the likely repair end. Because haulage is the limit, that work adds almost nothing. The loan would also pull a loader away from Central. The other possible lenders are LH-08 on DS-C564-01 (1.3 oz/h) and LH-09 on DS-C564-02, the critical-path heading (4.2 oz/h). Both would cost development value with no matching gain. No Norte stope is stopped, so no reserve can be activated. Decision: make no loans and no reserve activations, and let LH-05 be repaired on site. Expected net gain versus doing nothing is 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.9,
+   "costo_usd": 0.0576,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 4.7
+  }
+ ]
+}

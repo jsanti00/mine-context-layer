@@ -1,0 +1,69 @@
+{
+ "turno": 4,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 26,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-05": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.6,
+   "perdida_oz": 0.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-04 is down at C590-05, but radio and CMMS agree. The repair is in place, with a likely finish at 09:54 (range 09:45 to 10:00). A loan would have to travel and would arrive about when the repair ends. Central is also already truck-limited (inflow 118 t/h against 91 t/h truck capacity), and its stockpile is at 264 of 450 t. The 238 t left in the stope stays available after the repair, since the stope has hours of loading time left. Pulling LH-08 from development would cost 1.9 oz/h and gain almost nothing. The best move is to make no loans.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.3,
+   "costo_usd": 0.0349,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-05": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 11.6,
+   "perdida_oz": 11.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Central is truck-limited (inflow 118 vs 91 t/h). Its stockpile is at 278 of 450 t. The three other Central stopes hold 793 t. Trucks can haul about 637 t and the stockpile has room for about 172 t before 17:00, so Central can absorb about 809 t. An extra loader at C590-05 would add almost nothing. The development loaders are worth 1.9 oz/h (LH-08) and 4.0 oz/h (LH-09), and the gain at Central would not cover that cost. LH-10 is in preventive maintenance until 11:00. The LH-04 repair now runs 14:30 to 17:30, likely 15:30. No reserve can be activated, because no stope has stopped and freed a loader. No loans.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.9,
+   "costo_usd": 0.0426,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

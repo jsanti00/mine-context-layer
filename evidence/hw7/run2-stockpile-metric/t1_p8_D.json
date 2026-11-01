@@ -1,0 +1,78 @@
+{
+ "turno": 1,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "D",
+ "segundos_total": 19,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-07": "LH-01"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.4,
+   "perdida_oz": 0.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 repair is in place, likely 09:54 (high 10:00). Repaired loader clears 235 t alone by 17:00. The best loan (LH-01) nets only +0.8 oz and takes the producing stope's loader through a 0.32 h trip, so it is not worth the risk. No loans.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 8.3,
+   "costo_usd": 0.0189,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C590-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-08"
+   },
+   "oz_agente": 26.2,
+   "oz_mejor": 26.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 24.0,
+    "rationale": "LH-03 is down until about 15:30 (range 14:30 to 17:30), and the radio and CMMS agree. Lending development loader LH-08 from DS-N522-01 has the best net in rank_loan_options: gain 29.7 oz, home loss 5.7 oz, net 24 oz. The Central stockpile has room. Lending a producing-stope loader nets less. LH-09 is nearly equal at 23.9 oz and is the fallback.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.6,
+   "costo_usd": 0.0237,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

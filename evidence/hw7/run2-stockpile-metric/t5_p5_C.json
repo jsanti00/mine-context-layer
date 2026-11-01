@@ -1,0 +1,133 @@
+{
+ "turno": 5,
+ "patron": "5 tres fallas casi juntas",
+ "config": "C",
+ "segundos_total": 105,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 32.5,
+   "oz_mejor": 32.5,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 57,
+    "rationale": "The radio (LH-01 hydraulics failed) and CMMS OT-5100 (hydraulic, 3-5 h, in the workshop) agree, so no confirmation is needed. LH-01 is out for most of the shift. TJ-N600-09 is the richest Norte stope at 11.9 g/t, with about 239 t of broken ore left. Norte's stockpile is at 242 of 450 t. I estimated Norte truck capacity at roughly 66 t/h from the map speeds and the 0.227 truck factor; this is a rough figure. The two remaining Norte loaders (LH-02 and LH-03 on N522-15 and N574-02) give about 71 t/h, so Norte is already truck-limited. Without a third loader the stockpile reaches only about 277 t. A third loader adds the stockpile's remaining room, about 150 t of ore. LH-08 (LH410) at 220 m digs about 25 t/h, so over about 6.3 h it adds roughly 157 t. That is about 150 t × 0.38 oz/t ≈ 57 oz, since stockpile ounces count. LH-08 is the cheapest lender: its infrastructure heading costs 0.2 oz/h, about 1.4 oz over the shift, plus about 0.65 h of travel. LH-09 is on the critical-path heading at 4 oz/h, so I left it alone. LH-07 sits on a producing Central stope. LH-10 is in the workshop and may be in preventive maintenance. Reserve stopes are not applicable because no stope was stopped. Net ≈ 57 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 27.3,
+   "costo_usd": 0.0644,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N600-09": "LH-08",
+    "TJ-N574-02": "LH-07"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08",
+    "TJ-N574-02": "LH-07"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 37.0,
+   "oz_mejor": 55.9,
+   "perdida_oz": 18.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-07",
+      "to": "TJ-N574-02"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 12,
+    "rationale": "The radio log and CMMS agree that LH-01 (at N600-09, OT-5100) and LH-03 (at N574-02, OT-5101) are both down for 3 to 5 h, so CONFIRM-01 does not apply. I did not move anything for LH-01 or LH-03.\n\nMy time and rate figures are rough hand estimates, not exact calculations.\n\nI kept the existing loan of LH-08 to N600-09. Its ore is the best grade (11.9 g/t), and LH-08 costs only 0.2 oz/h at the infrastructure heading.\n\nThe new loan is LH-07 (LH410) from C538-07 to N574-02.\n- N574-02 holds about 194 t at 10.5 g/t, which is 0.338 oz/t.\n- At 220 m, LH-07 mucks about 25 t/h. Travel is about 0.65 h, leaving about 6.15 h of mucking, or about 156 t. That is worth about 53 oz.\n- Norte has stockpile room (248 of 450 t). Its three trucks haul about 66 t/h, and the working loaders muck about 61 t/h, so the stockpile does not fill.\n- Central is not truck-limited in a way that matters: its stockpile is at 146 of 450 t, and loaders and trucks are roughly balanced. Losing LH-07 therefore costs its full mucking, about 27 t/h at 6.7 g/t (0.215 oz/t), or about 40 oz over the shift.\n- Net gain is about +12 oz.\n\nI did not take LH-09, because the Este heading is critical-path and costs 4 oz/h. I did not use the reserves, because no stope has been stopped (RESERVE-01). LH-10 is in preventive maintenance until 11:00 (PM-01), so it cannot be loaned now. Re-evaluate at 11:00: it could cover N574-02 at no home cost and would then free LH-07 to go home."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 37.5,
+   "costo_usd": 0.0799,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-N574-02": "LH-07",
+    "TJ-N600-09": "LH-08",
+    "TJ-C512-12": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-N574-02": "LH-07",
+    "TJ-N600-09": "LH-08",
+    "TJ-C512-12": "LH-06"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-06",
+    "TJ-N574-02": "LH-08"
+   },
+   "oz_agente": 39.7,
+   "oz_mejor": 55.1,
+   "perdida_oz": 15.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-07",
+      "to": "TJ-N574-02"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     },
+     {
+      "loader": "LH-06",
+      "to": "TJ-C512-12"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55,
+    "rationale": "Radio and CMMS agree on all three breakdowns (LH-01 at N600-09, LH-03 at N574-02, LH-04 at C512-12), so no confirmation is needed. I keep the two existing loans. LH-08 comes from DS-C538-01, which costs only 0.2 oz/h, or about 1.3 oz over the rest of the shift. At N600-09 (11.9 g/t, 229 t left) it mucks about 25 t/h for about 6.7 h, or 170 t, which is about 65 oz. LH-07 leaves C538-07 (6.7 g/t, about 40 oz of production at home) for N574-02 (10.5 g/t, 189 t left), where it mucks about 170 t, or about 57 oz. Norte stays below its 450 t stockpile cap, so the extra loaders are not wasted. New loan: C512-12 (10.2 g/t, 136 t left, about 45 oz) has lost its loader. I move LH-06 from C512-01 (7.2 g/t, 148 t left, 220 m from the stockpile). LH-06 mucks about 33 t/h at 280 m and clears C512-12 in about 4 h. It can then go home, and the layer decides that. C512-01 would still get about 90 t mucked by 17:00, so it loses only about 13 oz. Net gain is about +30 oz. I do not use LH-09, because taking it off the critical-path heading costs 4 oz/h. LH-10 is in the workshop and, by my reading of the plan, not available until about 11:00 after preventive maintenance. LH-01 and LH-03 are in repair and LH-04 is stopped. Total versus doing nothing is about 55 oz, counting the LH-07/LH-08 loans (about +45) and the new LH-06 loan (about +30), less the reserved margin for repair and travel uncertainty. That sum is rounded down for travel time."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 37.4,
+   "costo_usd": 0.0793,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

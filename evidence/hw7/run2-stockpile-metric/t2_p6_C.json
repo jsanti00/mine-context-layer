@@ -1,0 +1,89 @@
+{
+ "turno": 2,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 46,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 9.2,
+   "oz_mejor": 9.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TALLER-564",
+      "ask": "Call the Central area chief or workshop foreman. Confirm that LH-10 is serviceable and idle in the workshop, with no open work order, so it can go to TJ-E569-07. Also confirm that LH-02's hydraulic repair (OT-5100) is on site with a 3 to 5 h estimate."
+     }
+    ],
+    "expected_net_oz": 50.0,
+    "rationale": "The radio and the CMMS agree that LH-02 is down at TJ-E569-07. OT-5100 gives 3/4/5 h, so the repair can't pay back before 17:00 with any margin. Only carguio stopes and development headings can lend a loader. Taking a loader from a producing stope would cost more than it gains. Taking one from DS-C564-02 would cost 4.2 oz/h, and DS-C564-01 would cost 1.3 oz/h. LH-10 is parked at TALLER-564 and no CMMS order covers it, so it costs no production. I did not check this against the dispatch snapshot, which only lists its position. Travel is about 0.5 h (drift, ramp, surface, ramp, drift, plus 0.25 h manoeuvre), so it starts mucking around 09:50. The LH410 rate at 160 m is 30×100/(100+0.15×60) = 27.5 t/h. That is about 6.6 h of loading time to 17:00 after the 11:00–11:30 break. At that rate it could muck about 180 t, but only 260−92 = 168 t of broken ore remains in the stope. Este's stockpile holds 51 of 450 t, and the trucks move roughly 73 t/h, so haulage is not a limit. Value is 168 t × 10.5 g/t ÷ 31.1 ≈ 56.7 oz, less a small allowance for travel time and for the loan being returned when the repair ends, so about 50 oz. The reserve RS-E569-01 can't be activated because the only freed loader, LH-02, is broken. The rules also forbid using LH-10 for a reserve."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 21.1,
+   "costo_usd": 0.0579,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-03": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-03": "LH-08"
+   },
+   "mejor": {
+    "TJ-C564-03": "LH-10"
+   },
+   "oz_agente": 44.6,
+   "oz_mejor": 45.7,
+   "perdida_oz": 1.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 50.0,
+    "rationale": "Radio and CMMS agree that LH-02 (E569-07, 3-5 h repair) and LH-03 (C564-03, 5-7 h repair) are down, so no confirmation is needed. Both repairs outlast the shift, so each stope needs cover.\n\nE569-07 (Este): LH-10 is already there, so I keep that loan. About 151 t of broken ore remain at 10.5 g/t, which is about 0.34 oz/t. LH-10 mucks about 27.5 t/h at 160 m, so it clears the ore in about 5.5 h. Este's stockpile is only 25 of 450 t, so there is no capacity limit.\n\nC564-03 (Central): 220 t remain at 9.6 g/t, which is about 0.31 oz/t. I take LH-08 from DS-C564-01 because it is the cheapest source. Its development value is 1.3 oz/h, against 4.2 oz/h for LH-09 on the critical-path heading. Travel is about 0.32 h. From about 10:20 to 17:00, less the 11:00-11:30 break, that leaves about 6.2 h of mucking at about 30.9 t/h (LH410 at 80 m). That is about 191 t, or about 59 oz. The cost is about 6.5 h × 1.3 = 8.5 oz of development value.\n\nCentral stockpile and haulage: the stockpile is at 242 of 450 t. Loader output is about 109 t/h and truck capacity about 91 t/h, which I estimated with a rough mid-depth cycle. The shortfall over the shift is about 117 t, which fits in the 208 t of spare room. The ore stays in the stockpile, which still counts.\n\nNo reserve activations, because no stope is being left stopped. Net gain is about 59 - 8.5 ≈ 50 oz. I did not count the value of the existing LH-10 loan, since it is already in place."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 23.9,
+   "costo_usd": 0.063,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

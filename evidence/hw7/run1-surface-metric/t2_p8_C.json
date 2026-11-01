@@ -1,0 +1,71 @@
+{
+ "turno": 2,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "C",
+ "segundos_total": 42,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C564-14": "LH-06"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 2.0,
+   "perdida_oz": 2.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio (LH-01 hydraulic failure at C564-14) and CMMS OT-5100 (hydraulic, repaired on site, 0.25-0.5 h, likely 0.4 h) agree, so no confirmation is needed. Central is truck-limited. Each truck does about 0.43 h per cycle (0.1 load + 0.082 up at 7 km/h + 0.05 dump + 0.048 down + 0.1 queue), which is roughly 21 t/h effective with the 0.227 factor. Four trucks therefore haul about 85 t/h. The two other Central loaders, LH-03 and LH-06, each muck about 43 t/h at 80 m, about 87 t/h together, which already matches truck capacity. The Central stockpile holds 228 t, so trucks keep hauling at full rate during the roughly 0.4 h repair. Nothing is lost during the repair, so an extra loader would add almost nothing. Sending idle LH-10 (about 0.3 h travel) would arrive near the end of the repair, and LH-01 will be back mucking before it matters. Taking a loader from DS-C564-02 would cost 4.2 oz/h and DS-C564-01 would cost 1.3 oz/h, both for no gain. No loans and no reserve activations. Expected net gain versus doing nothing is 0 oz."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.8,
+   "costo_usd": 0.0513,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 2.0
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-C564-14": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-10"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-06"
+   },
+   "oz_agente": 7.2,
+   "oz_mejor": 26.0,
+   "perdida_oz": 18.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 50.0,
+    "rationale": "The radio (09:30) and the CMMS (OT-5101, revised at 10:00) agree that LH-01 is down. The part is not in stock and the repair takes 5-8 h from 09:30, so likely about 15:30. Treat LH-01 as lost for most of the shift, which also overrides the earlier 0.4 h estimate in OT-5100. There is no conflict, so no confirmation is needed. TJ-C564-14 is a carguio stope with 413 t broken and only 89 t mucked, and it is the second-highest grade in Central at 10.7 g/t (0.344 oz/t). Central has 4 trucks, which I estimate haul about 110 t/h. Without LH-01, only LH-03 and LH-06 (about 43 t/h each, about 87 t/h total) are mucking, so Central is loader-limited and a replacement loader pays. LH-10 is the idle LH410 in the workshop at TALLER-564, so it costs no production or development value. I am assuming the lender rule does not apply because it has no stope or heading to lose. Its trip is 120 m + 527 m at 12 km/h plus a 0.25 h manoeuvre, about 0.3 h. At 220 m from the stockpile its rate is 30 x 100 / (100 + 0.15 x 120) = 25.4 t/h, or about 8.7 oz/h. Muck time is about 0.7 h before the 11:00 break and 5.5 h after it, about 6.2 h in total. That gives about 54 oz, which I trim to about 50 for truck limits. I did not take LH-08 or LH-09 from development: LH-09 costs 4.2 oz/h, and a fourth Central loader would exceed truck capacity. Taking LH-08 would cost 1.3 oz/h but add little for the same reason. No reserve activation, because there is no stopped stope to supply a loader."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 26.1,
+   "costo_usd": 0.0609,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 18.8
+  }
+ ]
+}

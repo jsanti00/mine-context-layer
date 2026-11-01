@@ -1,0 +1,96 @@
+{
+ "turno": 2,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "A",
+ "segundos_total": 29,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-06"
+   },
+   "oz_agente": 9.2,
+   "oz_mejor": 22.0,
+   "perdida_oz": 12.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "LH-02 is down at E569-07 (radio and CMMS agree, likely repair 13:20). The stope holds 168 t at 10.5 g/t, about 56.7 oz. LH-10 is idle at the workshop, so lending it costs no production or development. Travel is 0.49 h. At 27.5 t/h it clears the 168 t in about 6.1 h of loading, which fits before 17:00 (about 6.7 h of loading time after arrival). Este's stockpile is nearly empty (51 of 450 t) and its trucks can take 72 t/h, so haulage is not a limit. A second loader would add nothing, because the ore in the stope is the cap. I did not take LH-08 from its development heading.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.3,
+   "costo_usd": 0.0402,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 12.8
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-03": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10",
+    "TJ-C564-03": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-07",
+    "TJ-C564-03": "LH-06"
+   },
+   "oz_agente": 0.6,
+   "oz_mejor": 28.9,
+   "perdida_oz": 28.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C564-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "Keep LH-10 at E569-07 (151 t at 10.5 g/t, about 5.5 h of work, covers the LH-02 outage). Lend LH-08 from the cheap preparation heading (1.3 oz/h) to C564-03 (220 t at 9.6 g/t). Travel is 0.32 h, and loading at 30 t/h for about 6.2 h gives about 185 t, or about 57 oz. Cost is about 8.5 oz of development, so net about 48 oz, trimmed slightly for the Central truck limit (inflow 108 vs 91 t/h, with stockpile headroom). Leave critical-path LH-09 (4.2 oz/h) in place. No stope is stopped, so no reserve can be activated. Both radio and CMMS agree on the failures.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.2,
+   "costo_usd": 0.0466,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 28.3
+  }
+ ]
+}

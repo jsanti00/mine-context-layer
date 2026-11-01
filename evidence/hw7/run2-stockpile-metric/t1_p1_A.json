@@ -1,0 +1,36 @@
+{
+ "turno": 1,
+ "patron": "1 una falla",
+ "config": "A",
+ "segundos_total": 21,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "C564-14 holds 138 t at 12.1 g/t, about 53.7 oz. LH-01 is down, with repair estimates of 12:20 (low), 13:20 (likely) and 14:20 (high). Once repaired, LH514 loads 40.8 t/h, so by 17:00 it can clear the 138 t in the low and likely cases (3.7 h x 40.8 = 150 t). In the high case it clears about 109 t, so a loan would add about 11 oz. The only nearby lender is LH-09 from DS-C564-02, 0.34 h away. It costs 1.5 oz per hour away, about 5-6 oz until the likely repair. The expected gain is about 0.25 x 11 = 3 oz, which is less than the cost. LH-08 is 0.71 h away and slower to arrive. The other stopes are all producing and have no spare loader. The reserves need a stopped stope, and none is stopped. No loans.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 20.7,
+   "costo_usd": 0.0508,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "turno": 4,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 35.9,
+   "oz_mejor": 57.6,
+   "perdida_oz": 21.7,
+   "dudosos": [
+    "TJ-C512-04"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C512-04",
+      "ask": "Call the Central area chief: radio says LH-02 is stopped at C512-04, but CMMS shows it operating. Confirm its real status. Nothing is moved for this place until then."
+     }
+    ],
+    "expected_net_oz": 80.0,
+    "rationale": "LH-01 is down at E595-06 (15.4 g/t, 256 t, about 127 oz). The likely repair is 13:30, so the stope would sit idle for hours. LH-08 comes from the cheap preparacion heading (1.9 oz/h) and travels 0.53 h. It loads at 30 t/h for about 6.4 h, which is roughly 190 t or 95 oz. The heading loses about 13 oz, so the net is about 80 oz. Este trucks (72 t/h) can take the extra inflow (36 + 30 t/h). I did not take LH-09 because its critical-path heading is worth 4 oz/h. LH-10 is in PM until 11:00. LH-02 is left alone because radio and CMMS conflict (CONFIRM-01).",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C512-04"
+   ],
+   "segundos": 16.3,
+   "costo_usd": 0.0455,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

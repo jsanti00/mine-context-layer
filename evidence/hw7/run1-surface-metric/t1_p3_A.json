@@ -1,0 +1,56 @@
+{
+ "turno": 1,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C512-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C512-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-06",
+    "TJ-C512-06": "LH-03"
+   },
+   "oz_agente": 1.0,
+   "oz_mejor": 16.7,
+   "perdida_oz": 15.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 90.0,
+    "rationale": "Radio and CMMS agree that LH-01 and LH-02 are down. Likely repair is 13:30 and 14:30, so both Central stopes stay unloaded for hours. Central trucks have headroom (91 t/h against 36 t/h inflow). The only loaders that can be lent are the two development ones, since producing stopes are not touched and LH-10 is in PM until 12:00. LH-09 (cost 1.5 oz/h, 0.34 h away) goes to C564-14: 134 t at 12.1 g/t is about 52 oz, loaded in about 4.6 h. LH-08 (cost 1.0 oz/h, 0.75 h away) goes to C512-06: about 187 t at 9.2 g/t is about 55 oz by 17:00. The development cost is about 7 oz for each loader. Net is about 90 oz. Este is truck-limited, so no Este loader is moved. No reserves are activated because no stope was stopped.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.9,
+   "costo_usd": 0.0499,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 15.7
+  }
+ ]
+}

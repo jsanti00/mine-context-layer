@@ -1,0 +1,76 @@
+{
+ "turno": 1,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "D",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-01 is down at TJ-C564-14 (radio and CMMS agree). Likely repair is 13:20 and only 138 t is broken there. Once repaired, LH-01 clears that ore alone before 17:00. Every loan option has zero gain and a home loss of 4.2 to 40.6 oz, so the best net is no loan.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.2,
+   "costo_usd": 0.025,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-06": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-06": "LH-09"
+   },
+   "mejor": {
+    "TJ-C512-06": "LH-09"
+   },
+   "oz_agente": 36.7,
+   "oz_mejor": 36.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C512-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 36.6,
+    "rationale": "C512-06 (9.2 g/t, 251 t, repair likely 16:00) gains 45.4 oz from LH-09 against an 8.8 oz development loss, so net +36.6. C564-14 repairs by 13:20 and clears its 138 t alone, so every loan there nets negative. I left it uncovered.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.0,
+   "costo_usd": 0.0294,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

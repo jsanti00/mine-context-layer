@@ -1,0 +1,48 @@
+{
+ "turno": 3,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "D",
+ "segundos_total": 11,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-04"
+   },
+   "oz_agente": 26.1,
+   "oz_mejor": 32.1,
+   "perdida_oz": 6.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 46.5,
+    "rationale": "Radio and CMMS agree on both failures. C590-09 (16.5 g/t, repair about 13:30) is best covered by LH-08 from a cheap development heading, net +46.5 oz. C538-06 (6.9 g/t, repair about 11:30) has no positive-net loan, so I left it uncovered.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 10.6,
+   "costo_usd": 0.0299,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

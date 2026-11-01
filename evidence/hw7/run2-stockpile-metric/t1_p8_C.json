@@ -1,0 +1,65 @@
+{
+ "turno": 1,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "C",
+ "segundos_total": 28,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-07": "LH-01"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 0.4,
+   "perdida_oz": 0.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 is down at TJ-C590-07. The radio (hydraulic failure) and CMMS OT-5100 (hydraulic, on site) agree, so no confirmation is needed. The repair is 0.25-0.5 h, likely 0.4 h. A loan would take about 0.35 h to arrive, which is drift 692 m at 12 km/h plus a 175 m ramp at 7 km/h plus a 178 m drift plus the 0.25 h manoeuvre. The loader would arrive about when LH-03 is repaired and add almost no mucking. The only nearby candidate, LH-09 on DS-C564-02, would also cost 1.5 oz per hour away. LH-10 is in preventive maintenance until 12:00 (6.0 + 6 h) and can't be used. Central's stockpile is only 174 of 450 t with 4 trucks, so a short stop of one loader loses little. The stope's broken ore stays available for later mucking. No reserve can be activated because no stope is stopped. Best action is to do nothing, so the net gain is 0."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.4,
+   "costo_usd": 0.0481,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-07": "LH-08"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 26.2,
+   "perdida_oz": 26.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C590-07",
+      "ask": "Call the Central area chief. Confirm the status of LH-03 (scoop 3), which has a hydraulic failure. The radio at 09:30 and OT-5100 imply about 0.4 h of repair on site. The revised OT-5101 at 10:00 says the part is not in stock and the repair needs 5 to 8 h from 09:30. Ask which is correct, whether the part is available, and the realistic return time."
+     }
+    ],
+    "expected_net_oz": 0.0,
+    "rationale": "The radio and the first work order (OT-5100) suggest a quick on-site fix of 0.25 to 0.5 h. The revised work order (OT-5101) says the part is out of stock and the repair takes 5 to 8 h. These conflict on LH-03's status, so rule CONFIRM-01 applies. I move nothing for TJ-C590-07 and ask the area chief to confirm. I make no other loans. Every candidate lender is either a producing place (a loan would cost its production), a development heading (a loan costs 1.0 to 1.5 oz per hour), or LH-10. LH-10 is in preventive maintenance for 6 h from 06:00, so it is not available before about 12:00. I did not check that against the files. I can't show that any other move pays, so I recommend no change, which is 0 oz versus doing nothing. I will re-plan once the area chief confirms. If the repair is long, a loan to TJ-C590-07 (412 t broken, 8.4 g/t, Central stockpile at 170 of 450 t) could then be worth considering."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.0,
+   "costo_usd": 0.0489,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

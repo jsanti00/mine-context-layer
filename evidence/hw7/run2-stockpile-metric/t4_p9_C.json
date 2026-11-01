@@ -1,0 +1,43 @@
+{
+ "turno": 4,
+ "patron": "9 tajo detenido y reserva",
+ "config": "C",
+ "segundos_total": 24,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-03": "RS-N548-03"
+   },
+   "agente_valida": {
+    "LH-03": "RS-N548-03"
+   },
+   "mejor": {
+    "LH-03": "RS-N548-03"
+   },
+   "oz_agente": 111.9,
+   "oz_mejor": 111.9,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-03",
+      "reserve": "RS-N548-03"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 115,
+    "rationale": "At 10:00 the radio says the chief stopped TJ-E569-08 because of ventilation, so LH-03 (LH514) is free. The CMMS has no open orders, so radio and CMMS don't conflict and no confirmation is needed. RESERVE-01 allows a reserve to be activated only with a stopped stope's loader, so LH-03 is the only candidate and I take no loaders from producing places. Norte's RS-N548-03 (18.4 g/t, 311 t, 1.0 h activation, 160 m to stockpile) is the best reserve. Travel from Este 569 to Norte 548 is about 0.72 h, so LH-03 arrives about 10:43. Activation ends about 11:43, which leaves about 5.3 h of loading to 17:00. At 160 m the loader mucks 42×100/109 ≈ 38.5 t/h, or about 203 t, which is under the 311 t available. Norte's stockpile has 22 of 450 t and 3 trucks (about 70 t/h) against about 29 t/h from LH-07, so Norte is not truck-limited. Value is about 203 t × 18.4 g/t ÷ 31.1 ≈ 120 oz, less a small allowance for truck and manoeuvre uncertainty, giving about 115 oz. The alternatives are worse. RS-C538-01 (Central, 11.3 g/t) would give only about 71 oz, and Central is truck-limited with its stockpile at 298 of 450 t. RS-C512-02 grades only 5.8 g/t. I make no loans. Taking LH-08 from DS-C512-01 costs 1.9 oz per hour, and LH-09 from DS-E543-02 costs 4.0 oz per hour. Neither loan pays, because Central's stockpile is near full and the truck-limited stopes gain little from an extra loader. LH-10 is in the workshop, and I did not use it because it has no confirmed available_from time."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 23.6,
+   "costo_usd": 0.0612,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

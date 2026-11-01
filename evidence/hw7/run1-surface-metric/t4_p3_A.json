@@ -1,0 +1,50 @@
+{
+ "turno": 4,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 25,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-03",
+    "TJ-C512-04": "LH-06"
+   },
+   "oz_agente": 1.7,
+   "oz_mejor": 52.3,
+   "perdida_oz": 50.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "Both failures are confirmed by radio and CMMS. Repairs are likely at 13:30 for LH-01 and 14:30 for LH-02. Central is truck-limited (inflow 124 t/h against 91 t/h of truck capacity), so covering C512-04 adds almost nothing. Este has spare truck capacity (inflow 36 against 72) and E595-06 is 15.4 g/t with 256 t, about 127 oz. Moving LH-08 from the cheap preparation heading (1.9 oz/h) takes 0.53 h. It loads about 30 t/h, roughly 20 oz per hour of loading against 1.9 oz per hour of lost development. The critical-path LH-09 stays put. LH-10 comes out of maintenance at 11:00 and can be reassessed then.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 24.6,
+   "costo_usd": 0.0572,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 50.6
+  }
+ ]
+}

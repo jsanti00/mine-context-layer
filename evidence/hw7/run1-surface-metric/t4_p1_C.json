@@ -1,0 +1,42 @@
+{
+ "turno": 4,
+ "patron": "1 una falla",
+ "config": "C",
+ "segundos_total": 32,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E595-06": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 28.8,
+   "perdida_oz": 28.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 38.0,
+    "rationale": "Radio and CMMS agree: LH-01 is down at TJ-E595-06 with a hydraulic fault, repaired on site, estimated 3-5 h (likely 4 h). CONFIRM-01 does not apply. Este has 3 trucks. Truck cycle is about 0.376 h (0.1 load + 0.555 km up at 7 km/h + 0.05 dump + 0.555 km down at 12 km/h + 0.1 queue), so haulage is about 3 x 40 / 0.376 x 0.227 = 72 t/h. That is about 516 t over the remaining 7.17 loading hours. Without a replacement, only LH-03 (LH514, 220 m, about 35.6 t/h) loads at Este. Este would then supply 170 t stockpile + 255 t mucked = 425 t, which is about 91 t below truck capacity. LH-10 comes out of preventive maintenance at 11:00 (06:00 + 5 h) and is idle, so lending it costs no development value. Travel from TALLER-564 to Este 595 is about 0.455 h, so it starts mucking about 11:30. As an LH410 at 80 m it moves about 30.9 t/h, giving about 170 t over 5.5 h. Este supply is then about 595 t, which exceeds truck capacity, so haulage becomes truck-limited at about 516 t. The extra hauled tonnage is about 91 t. E595-06 grade is 15.4 g/t, or 0.495 oz/t, and about 260 t of broken ore remains there. That gives about 45 oz upper bound, and about 38 oz after a mixed-grade haul and uncertainty in the truck rate. Alternatives were rejected. LH-09 (DS-E543-02, 4.0 oz/h critical path) would cost about 28 oz. LH-08 (DS-C512-01, 1.9 oz/h) would cost about 13 oz and gain no more than LH-10, which is free. No reserve is activated because no stope was stopped (RESERVE-01). LH-01 stays out for repair. RETURN-01 lets the layer decide the handback."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 31.8,
+   "costo_usd": 0.073,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 28.8
+  }
+ ]
+}

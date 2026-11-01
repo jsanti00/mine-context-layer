@@ -1,0 +1,80 @@
+{
+ "turno": 3,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "D",
+ "segundos_total": 26,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-03 repair in place, likely 09:54 (high 10:00). Loaners need 0.3-0.7h travel and arrive after repair; best net is +0.2 oz (LH-08), negligible. The repaired LH-03 can clear the 307 t alone. No loans.",
+    "confidence": 0.9,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.3,
+   "costo_usd": 0.0225,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-E543-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E543-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E543-07": "LH-05"
+   },
+   "oz_agente": 33.1,
+   "oz_mejor": 44.8,
+   "perdida_oz": 11.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-01",
+      "to": "TJ-E543-07"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 60.0,
+    "rationale": "LH-03 repair now 14:30-17:30, so it can't clear the 307 t (82 oz) at TJ-E543-07 before 17:00. Este stockpile has room (68/450 t). Central is truck-limited (inflow 152 vs 91 t/h), so lending LH-01 costs nothing (net 42.8 oz). Idle spare LH-10 is free (net 30.6 oz). Together they should clear most of the stope. I did not use development loaders because they have a home cost.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.7,
+   "costo_usd": 0.0337,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

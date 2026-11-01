@@ -1,0 +1,94 @@
+{
+ "turno": 4,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "D",
+ "segundos_total": 26,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E595-06": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 55.9,
+   "oz_mejor": 55.9,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 52.0,
+    "rationale": "LH-01 is down at TJ-E595-06 (15.4 g/t, 260 t). The likely repair is 13:20. Radio and CMMS agree, so no confirmation is needed. LH-06 comes from TJ-C564-01, the lowest-grade producing stope (5.8 g/t), and arrives in 0.49 h. The ranking tool gives a net gain of about 52.5 oz with zero home loss, the same as the other LH514 options. Este stockpile has room (170 of 450 t).",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.4,
+   "costo_usd": 0.0263,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C512-04": "LH-06",
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-04": "LH-06",
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-08",
+    "TJ-C512-04": "LH-06"
+   },
+   "oz_agente": 61.4,
+   "oz_mejor": 61.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-C512-04"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 102.0,
+    "rationale": "LH-06 moves from E595-06 to C512-04 (net 74 oz, 13 g/t, repair about 16:00). LH-08 comes from the DS-C512-01 heading to E595-06 (net 27.8 oz, repair about 13:20). Together that is about 102 oz. Keeping LH-06 at E595-06 and sending LH-08 to C512-04 gives about 85 oz. Both stockpiles have room. Radio and CMMS agree on both failures.",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.7,
+   "costo_usd": 0.0319,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

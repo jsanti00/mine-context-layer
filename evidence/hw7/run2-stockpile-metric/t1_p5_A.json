@@ -1,0 +1,139 @@
+{
+ "turno": 1,
+ "patron": "5 tres fallas casi juntas",
+ "config": "A",
+ "segundos_total": 49,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {},
+   "oz_agente": -2.1,
+   "oz_mejor": 0.0,
+   "perdida_oz": 2.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 42.0,
+    "rationale": "LH-01 is down until 12:30-14:30 (radio and CMMS agree). TJ-C564-14 holds 134 t at 12.1 g/t, about 52 oz. LH-09 is 0.34 h away at DS-C564-02 and loads 29.1 t/h, so it clears the stope in about 4.6 h, well before 17:00. Cost is about 5 h x 1.5 oz/h = 7.5 oz of development, plus travel. Net gain is about 42 oz. Central trucks (91 t/h) have room against the 78 t/h inflow, and the stockpile is 174 of 450 t. LH-08 is farther away and its heading is cheaper at 1.0 oz/h, but the extra travel and lost loading time make LH-09 the better choice. LH-10 is in preventive maintenance until 12:00, so it is not used.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.9,
+   "costo_usd": 0.0399,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C590-07": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09",
+    "TJ-C590-07": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-09"
+   },
+   "oz_agente": 12.2,
+   "oz_mejor": 16.3,
+   "perdida_oz": 4.1,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     },
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 35.0,
+    "rationale": "Keep LH-09 at C564-14 (128 t at 12.1 g/t, about 50 oz, done in about 4.4 h; it costs 1.5 oz/h of development). Send LH-08 from the cheap heading DS-N522-01 (1.0 oz/h) to C590-07. It arrives about 10:20 and loads about 6.6 h at 25.4 t/h, roughly 168 t at 8.4 g/t, or about 45 oz. Less about 7 oz of development lost, that is about 38 oz net. LH-03 is not back until 12:40 at the earliest (likely 13:40). Central trucks (91 t/h) have spare capacity and the stockpile is at 177 of 450 t. Both failures are confirmed by radio and CMMS, so no confirmation is needed. LH-10 is still in preventive maintenance until 12:00.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.1,
+   "costo_usd": 0.0472,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C590-07": "LH-08",
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C590-07": "LH-08",
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {
+    "TJ-C590-07": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "oz_agente": 16.4,
+   "oz_mejor": 25.2,
+   "perdida_oz": 8.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-07"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Keep LH-08 on C590-07 (311 t at 8.4 g/t) and LH-09 on C564-14 (122 t at 12.1 g/t). Both loans cover high-grade stopes whose own loaders are down, and both lenders are development headings worth only 1.0 and 1.5 oz/h. N600-08 (5.8 g/t) has no loader. No free loader is available before LH-10 is out of maintenance at 12:00. LH-10 would need 0.58 h to travel, arriving about 12:35. LH-05 is likely repaired by 12:50, so a loan would add under 1 loader-hour. Taking a loader from the Este stopes (5.8 g/t) loses more than it gains. No reserve can be activated, because no stope has been stopped. No radio/CMMS conflict, since both sources agree on all three failures.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.2,
+   "costo_usd": 0.0504,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

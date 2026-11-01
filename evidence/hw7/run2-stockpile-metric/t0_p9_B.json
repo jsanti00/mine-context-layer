@@ -1,0 +1,41 @@
+{
+ "turno": 0,
+ "patron": "9 tajo detenido y reserva",
+ "config": "B",
+ "segundos_total": 15,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-03": "RS-E595-01"
+   },
+   "agente_valida": {
+    "LH-03": "RS-E595-01"
+   },
+   "mejor": {
+    "LH-03": "RS-N574-02"
+   },
+   "oz_agente": 60.5,
+   "oz_mejor": 71.0,
+   "perdida_oz": 10.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-03",
+      "reserve": "RS-E595-01"
+     }
+    ],
+    "confirmations_requested": []
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.1,
+   "costo_usd": 0.043,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

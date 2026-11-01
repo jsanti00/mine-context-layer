@@ -1,0 +1,50 @@
+{
+ "turno": 5,
+ "patron": "7 fuentes que se contradicen",
+ "config": "C",
+ "segundos_total": 24,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08"
+   },
+   "oz_agente": 26.8,
+   "oz_mejor": 26.8,
+   "perdida_oz": 0.0,
+   "dudosos": [
+    "TJ-N522-15"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-N522-15 (LH-02)",
+      "ask": "Call the Norte area chief. Radio at 09:30 says scoop 2 is stopped at N522-15, but CMMS OT-5001 shows it closed 20 min ago as operational. Confirm whether LH-02 is running. I moved nothing for this place until confirmed."
+     }
+    ],
+    "expected_net_oz": 60.0,
+    "rationale": "LH-01 is down at TJ-N600-09 (OT-5100, hydraulic, repaired on site, 3-5 h, likely 4 h). Radio and CMMS agree on this, so covering it is allowed. N600-09 is the best stope: 11.9 g/t, about 239 t still to muck. LH-08 comes from DS-C538-01, a cheap infrastructure heading at 0.2 oz/h, so it is the cheapest loader to take. LH-10 is in preventive maintenance until 11:00. LH-07 would leave a producing Central stope, so I left it. Travel for LH-08 is about 0.65 h: ramp, 6 km on the surface, ramp, drift, plus the 0.25 h manoeuvre. At 220 m, an LH410 mucks 30x100/118 = 25.4 t/h. Over about 6.85 h that is about 174 t, or 174x11.9/31.1 = about 66 oz. Norte's stockpile is 242 of 450 t. The extra loader adds about 160 t, so it ends near 400 t and does not fill. Development cost is 0.2x7.5 = about 1.5 oz. Net is about 60 oz after allowing for truck limits and repair-time uncertainty. N522-15 is not covered because of the radio/CMMS conflict (CONFIRM-01). No reserves are activated, because no stope is stopped. If LH-01 is repaired, the layer decides whether the loan goes home (RETURN-01)."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 24.3,
+   "costo_usd": 0.0625,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

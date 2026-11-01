@@ -1,0 +1,51 @@
+{
+ "turno": 3,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "A",
+ "segundos_total": 20,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-04"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 27.6,
+   "perdida_oz": 27.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     },
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 120.0,
+    "rationale": "C590-09 is the richest stope (16.5 g/t, 256 t, about 136 oz). LH-01 is down until 12:30 to 14:30. LH-08 comes from the cheap infrastructure heading (0.4 oz/h, about 3 oz lost) and arrives at 09:59. LH-10 leaves PM at 10:00 and arrives at 10:20. Together they can muck the 256 t before 17:00, worth about 130 oz. C538-06 (6.9 g/t) is worth about 64 oz. LH-05 is likely back at 11:30, so it is not covered. LH-09 (critical path, 5.7 oz/h) stays put. Central has about 147 t of stockpile room and 91 t/h of truck capacity, so it is not truck-limited.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 19.6,
+   "costo_usd": 0.052,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 27.6
+  }
+ ]
+}

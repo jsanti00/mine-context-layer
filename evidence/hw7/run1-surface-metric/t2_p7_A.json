@@ -1,0 +1,58 @@
+{
+ "turno": 2,
+ "patron": "7 fuentes que se contradicen",
+ "config": "A",
+ "segundos_total": 14,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-06"
+   },
+   "oz_agente": 10.2,
+   "oz_mejor": 22.9,
+   "perdida_oz": 12.7,
+   "dudosos": [
+    "TJ-C564-03"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C564-03",
+      "ask": "Call the Central area chief to confirm whether LH-03 is stopped or operating. The radio and CMMS disagree, so nothing moves there until confirmed."
+     }
+    ],
+    "expected_net_oz": 50.0,
+    "rationale": "LH-02 is down at E569-07 (radio and CMMS agree). Likely repair is 13:30. LH-10 is idle at the workshop and 0.49 h away. At 27.5 t/h (LH410) it clears the 164 t at 10.5 gpt in about 6 h, which is roughly 55 oz. Este's stockpile is nearly empty (48 of 450 t) and its trucks carry 72 t/h, so Este is not truck-limited. No development loader is taken and no producing stope loses its loader. A reserve can't be activated because no stope has stopped. LH-03 is left alone under CONFIRM-01.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C564-03"
+   ],
+   "segundos": 14.1,
+   "costo_usd": 0.041,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 12.7
+  }
+ ]
+}

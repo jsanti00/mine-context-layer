@@ -1,0 +1,49 @@
+{
+ "turno": 5,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "A",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-N600-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-09": "LH-08",
+    "TJ-E543-11": "LH-04"
+   },
+   "oz_agente": 26.8,
+   "oz_mejor": 35.6,
+   "perdida_oz": 8.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 55.0,
+    "rationale": "Radio and CMMS agree on both failures. LH-08 comes from the infrastructure heading, which costs only 0.2 oz/h. It goes to N600-09, the richest stope (11.9 g/t, 239 t). LH410 loads there at 25.4 t/h, worth about 9.7 oz/h. It arrives at about 10:10. That gives roughly 160 t, or 61 oz, minus about 1.4 oz of development loss. LH-09 stays put because its critical heading costs 4 oz/h, and LH-05 should be repaired by about 11:30, so covering E543-11 gains little. LH-10 is not available until 11:00, and a second loader would add little at Norte, where the trucks are the limit.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.8,
+   "costo_usd": 0.0487,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

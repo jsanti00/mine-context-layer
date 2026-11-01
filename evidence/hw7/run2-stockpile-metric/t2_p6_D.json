@@ -1,0 +1,87 @@
+{
+ "turno": 2,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "D",
+ "segundos_total": 24,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E569-07": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-E569-07": "LH-10"
+   },
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 9.2,
+   "oz_mejor": 9.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E569-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 9.1,
+    "rationale": "LH-02 is down at E569-07 (radio and CMMS agree). Likely repair is 13:20. The idle spare LH-10 arrives in 0.49 h and gains about 9.1 oz at no home loss. Every other option is net negative or smaller.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.4,
+   "costo_usd": 0.024,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-C564-03": "LH-10"
+   },
+   "agente_valida": {
+    "TJ-C564-03": "LH-10"
+   },
+   "mejor": {
+    "TJ-C564-03": "LH-10"
+   },
+   "oz_agente": 45.7,
+   "oz_mejor": 45.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-03"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 43.0,
+    "rationale": "Move LH-10 from E569-07 to C564-03. It gains about 46 oz there, against about 3 oz if it stays. The home loss is zero because it is a spare loader. Covering E569-07 with another loader nets -1 oz or worse, so I left it to LH-02, which is repaired around 13:20. Taking a producing loader for C564-03 gains less than it costs.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.1,
+   "costo_usd": 0.0321,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

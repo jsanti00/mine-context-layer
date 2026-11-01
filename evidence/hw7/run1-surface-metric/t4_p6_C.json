@@ -1,0 +1,79 @@
+{
+ "turno": 4,
+ "patron": "6 segunda falla con respaldo ocupado",
+ "config": "C",
+ "segundos_total": 68,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E595-06": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 28.8,
+   "perdida_oz": 28.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 8.0,
+    "rationale": "Radio (09:20) and CMMS OT-5100 agree that LH-01 is down at TJ-E595-06 (15.4 g/t, 260 t of broken ore left). The hydraulic repair is on site and takes 3-5 h, most likely 4 h, so LH-01 is back around 13:20. Because the sources agree, no confirmation is needed (CONFIRM-01). The only free loader is LH-10, an LH410 in preventive maintenance that is unavailable until 11:00 (PM-01). It costs nothing to move because it has no home place or development heading. Travel is about 0.45 h (about 0.05 h in drifts, 0.14 h on ramps, 0.02 h on surface, plus 0.25 h manoeuvre), so it arrives around 11:27 and loads from 11:30. At 80 m from the stockpile it mucks about 31 t/h. Este trucks haul about 72 t/h (3 x 40 t / 0.376 h x 0.227). LH-03 alone mucks about 36 t/h, so Este is not truck-limited while LH-01 is down. The 170 t stockpile would last until about 13:55, which covers LH-01's likely return. The extra loader therefore mainly keeps trucks fed if the repair runs long and adds rich ore at about 0.495 oz/t. I estimate a small gain of about 8 oz. Taking LH-08 or LH-09 from development would cost 1.9 or 4.0 oz/h and add no hauled ounces, because haulage is the limit. No reserve stope applies because no stope was stopped (RESERVE-01). LH-10 should go home or swap with LH-01 once the repair ends (RETURN-01)."
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 35.0,
+   "costo_usd": 0.0744,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 28.8
+  },
+  {
+   "hora": "10:00",
+   "patron": "6 segunda falla con respaldo ocupado",
+   "agente": {
+    "TJ-E595-06": "LH-06"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-06"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-03",
+    "TJ-C512-04": "LH-06"
+   },
+   "oz_agente": 14.7,
+   "oz_mejor": 47.7,
+   "perdida_oz": 33.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-06",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 30,
+    "rationale": "The radio and the CMMS agree that LH-01 (E595-06, repair 3-5 h) and LH-02 (C512-04, repair 5-7 h) are down, so no confirmation is needed. Este is loader-limited. Its trucks can move about 3 x 22.7 = 68 t/h, but LH-03 supplies only about 35.6 t/h, so the 148 t stockpile drains. E595-06 holds about 260 t at 15.4 g/t, roughly 0.495 oz/t. Central is truck-limited: 4 trucks move about 91 t/h against about 127 t/h of loader capacity, and it has a 298 t stockpile. Without LH-02, LH-04 and LH-05 supply about 84 t/h. Moving LH-06 (LH514, from the lowest-grade Central stope, C564-01 at 5.8 g/t) therefore costs essentially nothing, because the stockpile covers the gap of about 7 t/h. LH-06 reaches E595-06 in about 0.5 h (drift, ramp, surface, ramp, drift, plus the 0.25 h manoeuvre), arriving around 10:30. It lifts Este hauling from about 379 t to the truck limit of about 440 t, roughly 60 t more at 0.495 oz/t, or about 30 oz. LH-10 is in preventive maintenance until 11:00, and Central does not need cover. I did not take any development loader: DS-E543-02 costs 4.0 oz/h, and reserves can only be activated with the loader of a stopped stope. C512-04 is left uncovered because Central is truck-limited."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 32.9,
+   "costo_usd": 0.0723,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 33.0
+  }
+ ]
+}

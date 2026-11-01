@@ -1,0 +1,35 @@
+{
+ "turno": 5,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "C",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-N600-09": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 4.6,
+   "perdida_oz": 4.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Radio and CMMS agree that LH-01 (N600-09) and LH-02 (N522-15) are both down with hydraulic faults. Repairs are estimated at 3-5 h and 4-6 h, so CONFIRM-01 does not apply. Norte is truck-limited, so a loan would gain almost nothing. Haul capacity: cycle is about 0.41 h (0.25 fixed + about 0.7 km up at 7 km/h + down at 12 km/h). 3 trucks x 40 t / 0.41 h x 0.227 gives about 67 t/h, or about 470 t over the 7 h of loading left (09:30-11:00 and 11:30-17:00). Supply: the Norte stockpile holds 242 t, and LH-03 at N574-02 (LH514 at 220 m, 42 x 100/118 = 35.6 t/h) adds about 249 t. That is about 491 t against about 470 t of haul capacity. An extra loader would only fill the 450 t stockpile cap, and the loaders in repair are expected back around 13:00-15:30 anyway. Any loan would cost a lender its own production (LH-07 at C538-07, a LH410 in Central), or 4 oz/h at DS-E543-02, or 0.2 oz/h at DS-C538-01, for roughly zero extra hauled ounces. Reserve activations are not allowed because no stope has been stopped. Decision: keep all loans empty, activate no reserves, request no confirmations; the net gain versus doing nothing is about 0."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.4,
+   "costo_usd": 0.0537,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 4.6
+  }
+ ]
+}

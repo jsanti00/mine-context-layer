@@ -1,0 +1,107 @@
+{
+ "turno": 3,
+ "patron": "5 tres fallas casi juntas",
+ "config": "B",
+ "segundos_total": 60,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 29.8,
+   "perdida_oz": 29.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 20.1,
+   "costo_usd": 0.0508,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 29.8
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-E543-07": "LH-04"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 65.8,
+   "perdida_oz": 65.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-E543-07"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 21.3,
+   "costo_usd": 0.0529,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 65.8
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-09": "LH-05",
+    "TJ-E543-07": "LH-04",
+    "TJ-N522-01": "LH-02"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 82.4,
+   "perdida_oz": 82.4,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-N522-01"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": []
+   },
+   "violaciones": [
+    "LH-10 no se puede prestar (caído, en mantenimiento o en ciclo combinado)"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 16.8,
+   "costo_usd": 0.0474,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 82.4
+  }
+ ]
+}

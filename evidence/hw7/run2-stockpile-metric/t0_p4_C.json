@@ -1,0 +1,43 @@
+{
+ "turno": 0,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "C",
+ "segundos_total": 36,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E569-12": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E569-12": "LH-08"
+   },
+   "mejor": {
+    "TJ-E569-12": "LH-06"
+   },
+   "oz_agente": 5.9,
+   "oz_mejor": 9.9,
+   "perdida_oz": 4.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E569-12"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 16,
+    "rationale": "Radio and CMMS agree that LH-01 (C512-10, likely 4 h) and LH-04 (E569-12, likely 2 h) are down, so CONFIRM-01 does not apply. LH-10 is in preventive maintenance until 14:00 and can't move. No stope is stopped, so no reserve can be activated. E569-12: 324 t broken, 83 t mucked, so 241 t left. A repaired LH-04 at 280 m mucks about 33 t/h. From 11:30 to 17:00 that is about 181 t, which leaves about 60 t in the stope that would not count. LH-08 is the cheapest loader to lend, since its heading is worth only 0.5 oz/h under DEV-COST-01. It is an LH410 and mucks about 23.6 t/h at 280 m. It takes about 0.6 h to get there. It would muck that remaining ore, worth about 60 t x 0.331 oz/t = about 20 oz. The cost is about 7 h x 0.5 = 3.5 oz, so the net is about 16 oz. The Este stockpile (114 of 450 t) has room, and the trucks keep up. C512-10: 136 t are left, and LH-01 can probably muck them after a 4 h repair, at about 40.8 t/h from 13:30. A loan there would gain little in the likely case, so I did not cover it. I also did not take LH-07 or LH-09, because their opportunity costs are higher."
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 35.9,
+   "costo_usd": 0.0752,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

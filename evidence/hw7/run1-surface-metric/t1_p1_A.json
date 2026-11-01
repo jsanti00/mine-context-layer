@@ -1,0 +1,48 @@
+{
+ "turno": 1,
+ "patron": "1 una falla",
+ "config": "A",
+ "segundos_total": 14,
+ "decisiones": [
+  {
+   "hora": "09:20",
+   "patron": "1 una falla",
+   "agente": {
+    "TJ-C564-14": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C564-14": "LH-09"
+   },
+   "mejor": {
+    "TJ-C564-14": "LH-03"
+   },
+   "oz_agente": -2.3,
+   "oz_mejor": 8.0,
+   "perdida_oz": 10.3,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-09",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 40.0,
+    "rationale": "LH-01 is down at C564-14 (radio and CMMS agree, likely repair 13:20). The stope holds 138 t at 12.1 g/t, about 53.7 oz. LH-09 comes from DS-C564-02, which is 0.34 h away and is the cheaper nearby development heading at 1.5 oz/h. At 29.1 t/h it clears the stope in about 4.7 h, so the dev cost is about 7-8 oz. Central has truck headroom: 91 t/h capacity against 78 t/h inflow, and the stockpile is 171 of 450 t. LH-08 is 0.71 h away, which is farther. The other stopes are producing, so I'm not moving them. Net is about +40 oz.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 14.4,
+   "costo_usd": 0.0418,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 10.3
+  }
+ ]
+}

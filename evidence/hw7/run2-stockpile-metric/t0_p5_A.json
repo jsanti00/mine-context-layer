@@ -1,0 +1,141 @@
+{
+ "turno": 0,
+ "patron": "5 tres fallas casi juntas",
+ "config": "A",
+ "segundos_total": 51,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-08"
+   },
+   "oz_agente": 3.4,
+   "oz_mejor": 3.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 50.0,
+    "rationale": "LH-01 is down at C512-10 (radio and CMMS agree). Likely repair is 13:30, so 136 t at 13.4 g/t (about 58.6 oz) would sit idle for most of the shift. LH-08 comes from the cheapest source, the infrastructure heading at 0.5 oz/h, and is 0.69 h away. At 29.1 t/h it clears the stope in about 4.7 h, finishing around 15:00. Central trucks are not limiting (63 t/h inflow against 91 t/h capacity) and the stockpile has room. Cost is about 6 oz of development value, so net is about 50 oz. LH-09's heading is worth 2.0 oz/h and LH-07's stope is a producing one, so I left both in place.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.5,
+   "costo_usd": 0.0424,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:40",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 13.4,
+   "oz_mejor": 18.2,
+   "perdida_oz": 4.8,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 13.0,
+    "rationale": "Keep LH-08 on C512-10 (130 t at 13.4 g/t, about 56 oz, LH-01 down until about 13:30). Lend LH-09 from the preparation heading (2 oz/h) to N600-08 (165 t at 11.5 g/t, about 61 oz). Travel is 0.4 h. It loads about 85 t before LH-02 is repaired at about 13:40. That is about 21 oz more than waiting for LH-02 alone, against a heading cost of about 8 oz. Norte trucks have spare capacity (66 t/h against 42 t/h inflow). The infrastructure heading is already giving up LH-08. No reserves, because no stope is stopped.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 19.3,
+   "costo_usd": 0.0512,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "09:50",
+   "patron": "5 tres fallas casi juntas",
+   "agente": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-C512-10": "LH-08",
+    "TJ-N600-08": "LH-09"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08",
+    "TJ-E569-01": "LH-06"
+   },
+   "oz_agente": 12.4,
+   "oz_mejor": 35.1,
+   "perdida_oz": 22.7,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C512-10"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "Keep both loans: LH-08 at C512-10 (124t at 13.4 g/t, about 55 oz, finishes in ~4.3h) and LH-09 at N600-08 (160t at 11.5 g/t, about 59 oz, ~6.8h). Their dev cost is small (0.5 and 2.0 oz/h). The only uncovered stope is E569-01 (319t, about 106 oz), but every possible lender is a loading stope with ore to finish by 17:00. LH-07 would gain about 55 oz at E569-01 and lose about 36 oz at C590-14, plus travel time, so the net is about zero or negative. LH-10 is in PM until 14:00. Repairs are expected 11:50-14:50, so I will re-evaluate then. Nothing is in conflict between radio and CMMS.",
+    "confidence": 0.6,
+    "sources": [
+     "EV-0001",
+     "EV-0002",
+     "EV-0003"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.9,
+   "costo_usd": 0.0496,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

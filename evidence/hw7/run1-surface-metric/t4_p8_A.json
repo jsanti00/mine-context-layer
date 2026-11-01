@@ -1,0 +1,71 @@
+{
+ "turno": 4,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 26,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-05": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 3.5,
+   "perdida_oz": 3.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-04 is repaired in place, likely 09:54 and at worst 10:00. The radio and CMMS agree. A loan would arrive after the repair is done, and the stope has only 238 t left. Central is truck-limited (inflow 118 t/h against 91 t/h truck capacity), so an extra loader adds little. A loan from a development heading would also cost 1.9 to 4.0 oz per hour. Best action: no loans.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 11.1,
+   "costo_usd": 0.0337,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 3.5
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-C590-05": "LH-03"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 8.0,
+   "perdida_oz": 8.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-04 is down until about 14:30-17:30 (likely 15:30). Central is already truck-limited: the loaders there feed 118 t/h against 91 t/h of truck capacity, and the stockpile is at 278 of 450 t. Covering C590-05 with another loader would add no hauled ounces. Este is also truck-limited (78 inflow against 72 truck). Norte has truck headroom, but its only loading stope, N548-10, has 189 t, which LH-07 already clears at 29 t/h by 17:00. Taking LH-08 or LH-09 off development would cost 1.9 or 4.0 oz per hour for no gain. LH-10 is still in preventive maintenance until 11:00. No reserve can be activated because no stope is stopped. Best decision is no loans.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 15.1,
+   "costo_usd": 0.0434,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 8.0
+  }
+ ]
+}

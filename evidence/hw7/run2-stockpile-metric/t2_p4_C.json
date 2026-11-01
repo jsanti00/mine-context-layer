@@ -1,0 +1,41 @@
+{
+ "turno": 2,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "C",
+ "segundos_total": 48,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {
+    "TJ-E569-07": "LH-10"
+   },
+   "oz_agente": 0.0,
+   "oz_mejor": 10.2,
+   "perdida_oz": 10.2,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-10",
+      "to": "TJ-C564-14"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 30.0,
+    "rationale": "Radio and CMMS agree that LH-02 (OT-5100, 3-5 h) and LH-06 (OT-5101, 1.5-2.5 h) are down with hydraulic failures. CONFIRM-01 therefore does not apply. RESERVE-01 allows a reserve only with the loader of a stopped stope. Both of those loaders are broken in place, so I activate no reserves. Loading time left is about 7 h (09:30-17:00 minus the 11:00-11:30 break). LH-10 is idle at TALLER-564 with no CMMS order, so lending it costs no development value. C564-14 is the best place for it: it is loading, has 324 t of broken ore left at 10.7 g/t (about 0.344 oz/t), and sits 220 m from the stockpile. Its LH514 rate there is about 31.6 t/h, which is about 221 t over 7 h. That leaves about 100 t that would not be mucked without help. LH-10 (LH410, about 25 t/h at 220 m) mucks that 100 t, worth about 30-35 oz. It is on the same level, so travel is short. Central trucks (about 100 t/h) and the stockpile (228 of 450 t) can absorb the extra ore. For E569-07 a loan would gain only about 29 t (roughly 10 oz), because LH-02 finishes the 164 t left once repaired, and LH-08 would cost about 1.3 oz/h. I skip it. C512-04 has 238 t left and LH-06 can finish it after repair, so a loan gains about 4 oz or less. I leave that stope uncovered."
+   },
+   "violaciones": [
+    "préstamo inválido LH-10 -> TJ-C564-14"
+   ],
+   "confirmo_dudosos": [],
+   "segundos": 47.8,
+   "costo_usd": 0.0869,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "turno": 4,
+ "patron": "4 dos fallas, una vale la pena",
+ "config": "A",
+ "segundos_total": 17,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "4 dos fallas, una vale la pena",
+   "agente": {
+    "TJ-E595-06": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-E595-06": "LH-08"
+   },
+   "mejor": {
+    "TJ-E595-06": "LH-06"
+   },
+   "oz_agente": 35.9,
+   "oz_mejor": 56.8,
+   "perdida_oz": 20.9,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-E595-06"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 75.0,
+    "rationale": "E595-06 holds 256 t at 15.4 g/t (~127 oz), and Este trucks and stockpile have room (inflow 36 against 72 t/h capacity). LH-01 is not expected back until 12:30 to 14:30. LH-08 comes from the cheapest source, the preparation heading at 1.9 oz/h, and takes 0.53 h to arrive. It can load about 190 t (~95 oz) by 17:00 against about 13 oz of development lost. C538-03 is not covered: Central is truck-limited (inflow 118 against 91 t/h), and LH-05 is likely back at 11:30. LH-09 stays put because it is on the critical path (4.0 oz/h). LH-10 is in maintenance until 11:00. Radio and CMMS agree on both failures, so no confirmation is needed.",
+    "confidence": 0.7,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.5,
+   "costo_usd": 0.0462,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

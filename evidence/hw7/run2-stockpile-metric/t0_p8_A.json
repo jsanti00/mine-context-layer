@@ -1,0 +1,76 @@
+{
+ "turno": 0,
+ "patron": "8 el estimado de reparación cambia",
+ "config": "A",
+ "segundos_total": 24,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {},
+   "agente_valida": {},
+   "mejor": {},
+   "oz_agente": 0.0,
+   "oz_mejor": 0.0,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 0.0,
+    "rationale": "LH-02 hydraulic failure at N600-08. Radio and CMMS agree. Repair is in place, likely 09:54 and at worst 10:00. The stope has only 171 t (about 63 oz), and the repaired LH-02 can load it before 17:00. A loan would cost development hours and travel time for about 20-30 min of gain, so I make no moves.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 9.8,
+   "costo_usd": 0.0334,
+   "agentes": 1,
+   "sin_decision": false
+  },
+  {
+   "hora": "10:00",
+   "patron": "8 el estimado de reparación cambia",
+   "agente": {
+    "TJ-N600-08": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-N600-08": "LH-08"
+   },
+   "mejor": {
+    "TJ-N600-08": "LH-08"
+   },
+   "oz_agente": 40.7,
+   "oz_mejor": 40.7,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N600-08"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 48.0,
+    "rationale": "LH-02 is down (radio and CMMS agree). The revised repair estimate puts it back at 14:30 to 17:30, likely 15:30. N600-08 holds 171 t at 11.5 g/t, about 63 oz, which would mostly stay unmucked. LH-08 is on infrastructure heading DS-N600-01, which is worth only 0.5 oz/h, and it is 0.34 h away. After travel and lunch it has about 6 h of loading at 23.6 t/h, roughly 140 t or 52 oz. The heading loses about 3 oz. Norte inflow rises to about 66 t/h against truck capacity of 66 t/h, and the stockpile is only 144 of 450 t, so there is no stockpile constraint. LH-09 stays on DS-N522-02 (2.0 oz/h). The other mines have no idle loaders, and LH-10 is in preventive maintenance until 14:00.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.8,
+   "costo_usd": 0.0416,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

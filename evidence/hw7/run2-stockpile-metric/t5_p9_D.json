@@ -1,0 +1,47 @@
+{
+ "turno": 5,
+ "patron": "9 tajo detenido y reserva",
+ "config": "D",
+ "segundos_total": 16,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-04": "RS-C564-02"
+   },
+   "agente_valida": {
+    "LH-04": "RS-C564-02"
+   },
+   "mejor": {
+    "LH-04": "RS-C564-02"
+   },
+   "oz_agente": 54.4,
+   "oz_mejor": 54.4,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-04",
+      "reserve": "RS-C564-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 65.0,
+    "rationale": "C512-12 is stopped for 5-8 h, so LH-04 is idle. I moved it to reserve RS-C564-02 (8.9 g/t, 278 t, 38.5 t/h). It should load about 235 t, or about 67 oz, by 17:00. The alternative RS-C512-01 (8.3 g/t) gives about 58 oz. Central stockpile is 147 of 450 t and trucks move 91 t/h, so there is room. No loans are needed because nothing is down. Radio and CMMS don't conflict.",
+    "confidence": 0.85,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 16.1,
+   "costo_usd": 0.0444,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

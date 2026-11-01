@@ -1,0 +1,47 @@
+{
+ "turno": 0,
+ "patron": "9 tajo detenido y reserva",
+ "config": "D",
+ "segundos_total": 14,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-03": "RS-E595-01"
+   },
+   "agente_valida": {
+    "LH-03": "RS-E595-01"
+   },
+   "mejor": {
+    "LH-03": "RS-N574-02"
+   },
+   "oz_agente": 60.5,
+   "oz_mejor": 71.0,
+   "perdida_oz": 10.5,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-03",
+      "reserve": "RS-E595-01"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 45.0,
+    "rationale": "E569-01 is stopped for 5-8 h, so LH-03 is idle. I put it on RS-E595-01 (9.8 g/t, 293 t, 0.5 h activation). It should load about 150 t, or about 47 oz, by 17:00. RS-E595-03 is bigger but only 6.2 g/t, which gives roughly 28 oz. Este has haulage room (inflow 33 t/h against 72 t/h truck capacity, stockpile 111 of 450 t). No loans: no stope is down and no repair estimates are open.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 13.7,
+   "costo_usd": 0.038,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

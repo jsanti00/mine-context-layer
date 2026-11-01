@@ -1,0 +1,47 @@
+{
+ "turno": 2,
+ "patron": "9 tajo detenido y reserva",
+ "config": "D",
+ "segundos_total": 13,
+ "decisiones": [
+  {
+   "hora": "10:00",
+   "patron": "9 tajo detenido y reserva",
+   "agente": {
+    "LH-04": "RS-N600-02"
+   },
+   "agente_valida": {
+    "LH-04": "RS-N600-02"
+   },
+   "mejor": {
+    "LH-04": "RS-N600-02"
+   },
+   "oz_agente": 70.2,
+   "oz_mejor": 70.2,
+   "perdida_oz": 0.0,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [],
+    "reserve_activations": [
+     {
+      "loader": "LH-04",
+      "reserve": "RS-N600-02"
+     }
+    ],
+    "confirmations_requested": [],
+    "expected_net_oz": 100.0,
+    "rationale": "N600-11 is stopped for 5-8 h, so LH-04 is idle. Activating RS-N600-02 (11.5 g/t, 419 t, same Norte level 600) with LH-04 is the best use. It takes 1 h to activate, which leaves about 6 h of loading. At about 28-40 t/h that is roughly 170-240 t, or 60-90 oz, and the stockpile has room. No loader is down, so there are no loans to make.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 12.9,
+   "costo_usd": 0.0353,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

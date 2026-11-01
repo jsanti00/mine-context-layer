@@ -1,0 +1,57 @@
+{
+ "turno": 3,
+ "patron": "7 fuentes que se contradicen",
+ "config": "D",
+ "segundos_total": 12,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "7 fuentes que se contradicen",
+   "agente": {
+    "TJ-C590-09": "LH-08"
+   },
+   "agente_valida": {
+    "TJ-C590-09": "LH-08"
+   },
+   "mejor": {
+    "TJ-C590-09": "LH-05"
+   },
+   "oz_agente": 21.9,
+   "oz_mejor": 33.6,
+   "perdida_oz": 11.7,
+   "dudosos": [
+    "TJ-C564-08"
+   ],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-C590-09"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [
+     {
+      "place": "TJ-C564-08",
+      "ask": "Call the Central area chief to confirm whether LH-02 is stopped (radio) or operating (CMMS). Do not move LH-02 until confirmed."
+     }
+    ],
+    "expected_net_oz": 46.0,
+    "rationale": "LH-01 is down at C590-09 (16.5 g/t). Repair is likely at 13:30, so about 3 productive hours remain after the loan travels in. LH-08 comes from a cheap development heading: gain 48.1 oz, home loss 1.6 oz, net 46.5 oz. Other options net less. Central's stockpile has room. LH-02 has a radio/CMMS conflict, so per CONFIRM-01 nothing moves at that place until the area chief confirms.",
+    "confidence": 0.8,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [
+    "TJ-C564-08"
+   ],
+   "segundos": 11.7,
+   "costo_usd": 0.0299,
+   "agentes": 1,
+   "sin_decision": false
+  }
+ ]
+}

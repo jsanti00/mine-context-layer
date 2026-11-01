@@ -1,0 +1,56 @@
+{
+ "turno": 0,
+ "patron": "3 dos fallas en tajos ricos",
+ "config": "A",
+ "segundos_total": 18,
+ "decisiones": [
+  {
+   "hora": "09:30",
+   "patron": "3 dos fallas en tajos ricos",
+   "agente": {
+    "TJ-N574-15": "LH-08",
+    "TJ-C512-10": "LH-09"
+   },
+   "agente_valida": {
+    "TJ-N574-15": "LH-08",
+    "TJ-C512-10": "LH-09"
+   },
+   "mejor": {
+    "TJ-C512-10": "LH-07",
+    "TJ-N574-15": "LH-08"
+   },
+   "oz_agente": 0.1,
+   "oz_mejor": 8.7,
+   "perdida_oz": 8.6,
+   "dudosos": [],
+   "decision_cruda": {
+    "loans": [
+     {
+      "loader": "LH-08",
+      "to": "TJ-N574-15"
+     },
+     {
+      "loader": "LH-09",
+      "to": "TJ-C512-10"
+     }
+    ],
+    "reserve_activations": [],
+    "confirmations_requested": [],
+    "expected_net_oz": 85.0,
+    "rationale": "Radio and CMMS agree on both failures, so moving is allowed. C512-10 holds 136 t at 13.4 g/t, about 58.6 oz. N574-15 holds 168 t at 9.4 g/t, about 50.8 oz. LH-08 (infrastructure heading, 0.5 oz/h) goes to N574-15: 0.34 h travel, 30 t/h, about 5.6 h to clear it, cost about 3 oz. LH-09 (2.0 oz/h) goes to C512-10: 0.74 h travel, 29 t/h, about 4.7 h, cost about 11 oz. Truck capacity is above inflow at both mines (Norte 66 vs 33, Central 91 vs about 92), so neither is truck-limited. Net is roughly 95 oz less repair-return uncertainty. LH-10 is in PM until 14:00, so I did not use it. I took no loader from a producing stope.",
+    "confidence": 0.75,
+    "sources": [
+     "EV-0001",
+     "EV-0002"
+    ]
+   },
+   "violaciones": [],
+   "confirmo_dudosos": [],
+   "segundos": 17.8,
+   "costo_usd": 0.0498,
+   "agentes": 1,
+   "sin_decision": false,
+   "diferencia_oz": 8.6
+  }
+ ]
+}
